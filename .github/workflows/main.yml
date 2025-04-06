@@ -6,7 +6,6 @@ on:
       - main
   schedule:
     - cron: '0 14 * * *'
-
 jobs:
   build:
     runs-on: ubuntu-latest
