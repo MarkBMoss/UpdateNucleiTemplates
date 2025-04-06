@@ -62,3 +62,6 @@ python NucleiPocGather.py
 - `repo.txt`: Nuclei POC 仓库列表。
 - `poc.txt`: 已存档 POC 列表。
 - `poc/`: 存放分类后的 Nuclei POC 文件夹。
+
+原始仓库：https://github.com/lianqingsec/NucleiPocGather
+添加了部分nuclei poc templates仓库，主要自用并优化该项目。
