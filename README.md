@@ -64,4 +64,7 @@ python NucleiPocGather.py
 - `poc/`: 存放分类后的 Nuclei POC 文件夹。
 - `原始仓库`：`https://github.com/lianqingsec/NucleiPocGather`
 - 添加了部分`Nuclei Poc Templates`仓库，主要自用并优化该项目。
+<<<<<<< HEAD
 
+=======
+>>>>>>> d8deff7a1 (Update Readme)
