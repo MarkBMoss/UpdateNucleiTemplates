@@ -194,6 +194,10 @@ https://github.com/rainnull/nuclei-poc
 https://github.com/rhbb/nuclei-poc
 https://github.com/tomilgxa/nuclei-poc
 https://github.com/GhostTroops/scan4all
+https://github.com/zan8in/pxplan
+https://github.com/MeowwBox/pxplan
+https://github.com/Anguvia/pxplan
+https://github.com/DaoShiLingYuGeWu/pxplan
 https://github.com/k3ppf0r/2024-PocLib
 # https://github.com/0XParthJ/Nuclei-Templates
 # https://github.com/1dayluo/My-Nuclei-Templates
