@@ -45,7 +45,7 @@ cd UpdateNucleiTemplates
 运行 Python 脚本：
 
 ```bash
-python NucleiPocGather.py
+python UpdateNucleiTemplates.py
 ```
 
 ### GitHub Action
