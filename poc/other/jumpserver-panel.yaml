@@ -10,13 +10,15 @@ info:
     - https://www.jumpserver.org/
   classification:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
-    cvss-score: 0
     cwe-id: CWE-200
+    cpe: cpe:2.3:a:fit2cloud:jumpserver:*:*:*:*:*:*:*:*
   metadata:
     verified: true
     max-request: 1
     shodan-query: http.title:'JumpServer'
     zoomeye-query: title:'JumpServer'
+    product: jumpserver
+    vendor: fit2cloud
   tags: panel,jumpserver
 
 http:
@@ -29,20 +31,11 @@ http:
       - type: regex
         part: body
         regex:
-          - "(?i)<title>(
-
-            .*)JumpServer Open Source Bastion Host(
-
-            .*)</title>"
-          - "(?i)<title>(
-
-            .*)JumpServer 开源堡垒机(
-
-            .*)</title>"
+          - "(?i)<title>(\n.*)JumpServer Open Source Bastion Host(\n.*)</title>"
+          - "(?i)<title>(\n.*)JumpServer 开源堡垒机(\n.*)</title>"
         condition: or
 
       - type: status
         status:
           - 200
-
-# digest: 490a0046304402206cff357d8002b515fba192769da689f97bc0847fd191ace3863fc347697c86b90220018362328610860f8e8529974926e57083c63a72f7510c5f6eb6ed13fcce7ada:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022100b0193aa901be83a2ee7aafbab1feec0611ebec1452df27b4f5100ff7f8836230022036e989243081a687b79eacfb03c7122b2bf99a93424b58da49f9298dbf1f71d1:922c64590222798bb761d5b6d8e72950
