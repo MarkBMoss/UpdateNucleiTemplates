@@ -4,20 +4,20 @@ UpdateNucleiTemplates，每日更新
 这个项目是一个 Python 脚本，用于批量克隆 GitHub 项目，获取 Nuclei Templates，并将 POC 按类别分类存放到文件夹中。同时，使用 GitHub Action 每日自动运行脚本。
 # POC 详情统计
 
-> **当前项目 POC 更新时间：**`2025-05-19 14:59`
+> **当前项目 POC 更新时间：**`2025-05-20 14:57`
 
 | ID | 标签      | 数量 | 目录       | 数量 | 严重性   | 数量 |
 |:---| :-------- | :--- | :--------- | :--- | :------- | :--- |
-| 1 | cve | 38297 | cve | 31380 | medium | 21333 |
-| 2 | wordpress | 34483 | other | 26689 | info | 19274 |
-| 3 | wp-plugin | 32122 | sql | 1712 | high | 13286 |
-| 4 | medium | 15416 | auth | 1476 | low | 9727 |
-| 5 | tech | 13666 | wordpress | 1472 | critical | 7031 |
+| 1 | cve | 38301 | cve | 31382 | medium | 21338 |
+| 2 | wordpress | 34486 | other | 26691 | info | 19277 |
+| 3 | wp-plugin | 32124 | sql | 1712 | high | 13290 |
+| 4 | medium | 15416 | auth | 1480 | low | 9729 |
+| 5 | tech | 13667 | wordpress | 1472 | critical | 7033 |
 | 6 | detect | 12853 | remote_code_execution | 1315 | unknown | 88 |
-| 7 | service | 11677 | detect | 892 | informative | 17 |
-| 8 | low | 8521 | api | 729 | hight | 16 |
-| 9 | high | 6133 | web | 717 | meduim | 9 |
-| 10 | http | 4357 | default | 701 | cretical | 2 |
+| 7 | service | 11677 | detect | 893 | informative | 17 |
+| 8 | low | 8523 | api | 730 | hight | 16 |
+| 9 | high | 6133 | web | 718 | meduim | 9 |
+| 10 | http | 4357 | default | 702 | cretical | 2 |
 
 **81 个目录，44572 个文件**
 ## 如何使用
