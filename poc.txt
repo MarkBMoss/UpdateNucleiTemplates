@@ -1046,8 +1046,6 @@
 ./poc/api/heroku-api-key_2.yaml
 ./poc/api/hidden-api-endpoint-discovery.yaml
 ./poc/api/hidden-api-key-exposure.yaml
-./poc/api/http-etcd-unauthenticated-api-data-leak-8056.yaml
-./poc/api/http-etcd-unauthenticated-api-data-leak-8056_1.yaml
 ./poc/api/http-etcd-unauthenticated-api-data-leak-8057.yaml
 ./poc/api/http-etcd-unauthenticated-api-data-leak.yaml
 ./poc/api/ibm-api-connect-panel.yaml
@@ -1584,7 +1582,7 @@
 ./poc/api/widget-for-eventbrite-api.yaml
 ./poc/api/widget-for-eventbrite-api_1.yaml
 ./poc/api/wikipedia-api-csp-bypass.yaml
-./poc/api/woocommerce-legacy-rest-api.yaml
+./poc/api/woocommerce-legacy-rest-api_1.yaml
 ./poc/api/wordpress-rest-api.yaml
 ./poc/api/wp-mapit-2b7abff28c48fb1a7c273c1f4fcddc53.yaml
 ./poc/api/wp-mapit.yaml
@@ -101530,8 +101528,8 @@
 ./poc/google/google-language-translator_1.yaml
 ./poc/google/google-language-translator_2.yaml
 ./poc/google/google-listings-and-ads-d88b001d013917797b33cd055710a896.yaml
-./poc/google/google-listings-and-ads.yaml
 ./poc/google/google-listings-and-ads_1.yaml
+./poc/google/google-listings-and-ads_2.yaml
 ./poc/google/google-listings-and-ads_3.yaml
 ./poc/google/google-listings-and-ads_4.yaml
 ./poc/google/google-map-generator-0f9998ac8360351cb244b49502099b48.yaml
@@ -102432,6 +102430,8 @@
 ./poc/http/http-cache-poisoning.yaml
 ./poc/http/http-cors-header.yaml
 ./poc/http/http-csp-header.yaml
+./poc/http/http-etcd-unauthenticated-api-data-leak-8056.yaml
+./poc/http/http-etcd-unauthenticated-api-data-leak-8056_1.yaml
 ./poc/http/http-get.yaml
 ./poc/http/http-header-misconfiguration.yaml
 ./poc/http/http-headers-11c701ce2d0af62ea084b4889e52e678.yaml
@@ -127706,7 +127706,7 @@
 ./poc/other/burst-statistics-572fa8c231433c420ab958dc2819ba3e.yaml
 ./poc/other/burst-statistics-90cd4bb89b70b4e1de488e705e5998aa.yaml
 ./poc/other/burst-statistics-eb7bd7cb641c545979229039c0fa21aa.yaml
-./poc/other/burst-statistics.yaml
+./poc/other/burst-statistics_1.yaml
 ./poc/other/burst-statistics_2.yaml
 ./poc/other/burst-statistics_3.yaml
 ./poc/other/bus-booking-manager-87c1ac3659e74e5e7077abb83ccac660.yaml

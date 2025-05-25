@@ -1,24 +1,23 @@
-id: wordpress-google-listings-and-ads
+id: wordpress-burst-statistics
 
 info:
-  name: Google Listings & Ads Detection
+  name: Burst Statistics – Privacy-Friendly Analytics for WordPress Detection
   author: ricardomaia
   severity: info
   reference:
-    - https://wordpress.org/plugins/google-listings-and-ads/
+    - https://wordpress.org/plugins/burst-statistics/
   metadata:
-    plugin_namespace: google-listings-and-ads
-    wpscan: https://wpscan.com/plugin/google-listings-and-ads
-  tags: tech,wordpress,wp-plugin,top-100,top-200
+    plugin_namespace: burst-statistics
+    wpscan: https://wpscan.com/plugin/burst-statistics
+  tags: tech,wordpress,wp-plugin,top-200
 
 http:
   - method: GET
-
     path:
-      - "{{BaseURL}}/wp-content/plugins/google-listings-and-ads/readme.txt"
+      - "{{BaseURL}}/wp-content/plugins/burst-statistics/readme.txt"
 
     payloads:
-      last_version: helpers/wordpress/plugins/google-listings-and-ads.txt
+      last_version: helpers/wordpress/plugins/burst-statistics.txt
 
     extractors:
       - type: regex
@@ -47,3 +46,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
+# digest: 4a0a00473045022100b0c2237ce7ba2d9104b3a250385b6cf0110980b1fdf87caad984bb22c1430bce02204b6c0f95a8f9024b69234ff127103c3df50d511f81d011e28d3842c568d9b4cd:922c64590222798bb761d5b6d8e72950
