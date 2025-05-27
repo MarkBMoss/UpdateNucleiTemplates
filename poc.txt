@@ -1049,6 +1049,7 @@
 ./poc/api/http-etcd-unauthenticated-api-data-leak-8056.yaml
 ./poc/api/http-etcd-unauthenticated-api-data-leak-8056_1.yaml
 ./poc/api/http-etcd-unauthenticated-api-data-leak-8057.yaml
+./poc/api/http-etcd-unauthenticated-api-data-leak.yaml
 ./poc/api/ibm-api-connect-panel.yaml
 ./poc/api/iis-enum-httpapi.yaml
 ./poc/api/indeed-api-5dd766636e9a5eefdd52627bcffa8873.yaml
@@ -1210,6 +1211,7 @@
 ./poc/api/mstore-api-a57c8c0705eb9b80f8f4283e89729950.yaml
 ./poc/api/mstore-api-a89a120d612658b3b440a66988a743e4.yaml
 ./poc/api/mstore-api-b04821f92bc1fa09ad4daf81d27d02ea.yaml
+./poc/api/mstore-api-b6a9c539239ea84c7c468c6b48588179.yaml
 ./poc/api/mstore-api-cbc5f2dade7ffd73dc94047427495160.yaml
 ./poc/api/mstore-api-d2b388339242c720f46cbe77baee82e9.yaml
 ./poc/api/mstore-api-d41d8cd98f00b204e9800998ecf8427e.yaml
@@ -80574,6 +80576,7 @@
 ./poc/cve/CVE-2024-8520-75b3152a3863a63ee47b0b578e9ae20e.yaml
 ./poc/cve/CVE-2024-8520.yaml
 ./poc/cve/CVE-2024-8522-29b9e24c70ba3cd60461931eec1fd527.yaml
+./poc/cve/CVE-2024-8522.yaml
 ./poc/cve/CVE-2024-8522_1.yaml
 ./poc/cve/CVE-2024-8522_2.yaml
 ./poc/cve/CVE-2024-8529-e2a9975debb93f28e1a8c207f744d964.yaml
@@ -86489,6 +86492,8 @@
 ./poc/cve/CVE-2025-46541-9a22bf13acd0ad7ed5a98c3647cf6e51.yaml
 ./poc/cve/CVE-2025-46542-de136d6eb5ccec5b1572a9a5ed267558.yaml
 ./poc/cve/CVE-2025-46543-3b7379386aaa50148a8629092a90c4b6.yaml
+./poc/cve/CVE-2025-4682-f1c1635835ea4149fbaa955652368073.yaml
+./poc/cve/CVE-2025-4683-634a7e0e188697bd2804d2427647f910.yaml
 ./poc/cve/CVE-2025-47437-e2a3308f6f3708d805410d584f8b1b99.yaml
 ./poc/cve/CVE-2025-47438-5014f34943dcd4721a29f90b33f7c2d0.yaml
 ./poc/cve/CVE-2025-47439-4d5275fcc13c889cb32517e8809d6d07.yaml
@@ -86675,6 +86680,7 @@
 ./poc/cve/CVE-2025-47691-d7a5d31de29124139222e2a5ad191951.yaml
 ./poc/cve/CVE-2025-47692-1ccbcd12fa40293ba7c999b3e15e488a.yaml
 ./poc/cve/CVE-2025-47693-3894dea37d7bae46b38ed976a8c2fefd.yaml
+./poc/cve/CVE-2025-4783-7bfe03978466d36457c691bd24547e27.yaml
 ./poc/cve/CVE-2025-48079-07489b83e94b855b879eda646c110d36.yaml
 ./poc/cve/CVE-2025-48080-c01824af3c60103d82be27e9666e33c2.yaml
 ./poc/cve/CVE-2025-48112-aaf7d49b6cfcefd7d1a849b55caeba46.yaml
@@ -86699,6 +86705,7 @@
 ./poc/cve/CVE-2025-5055-fb174a8e1d267ab82d1495c6339dc341.yaml
 ./poc/cve/CVE-2025-5058-303275cabd3b50fbefba1e04e4847627.yaml
 ./poc/cve/CVE-2025-5062-9fd03cbdd8b0287d386bfa634dc7d278.yaml
+./poc/cve/CVE-2025-5117-36eb751e5f8974c4a9b1f709e118efad.yaml
 ./poc/cve/CVE_2023_49442.yaml
 ./poc/cve/CVE_2023_51467_1.yaml
 ./poc/cve/CVE_2023_51467_2.yaml
@@ -100769,6 +100776,7 @@
 ./poc/fuzz/fuzz-mode.yaml
 ./poc/fuzz/fuzz-multi-mode.yaml
 ./poc/fuzz/fuzz-oauth.yaml
+./poc/fuzz/fuzz-oob-all.yaml
 ./poc/fuzz/fuzz-path-sqli.yaml
 ./poc/fuzz/fuzz-query-num-replace.yaml
 ./poc/fuzz/fuzz-query.yaml
@@ -101641,7 +101649,7 @@
 ./poc/google/google-pagespeed-insights-fbcd19deaa7c1356237c305cbda46ee8.yaml
 ./poc/google/google-pagespeed-insights.yaml
 ./poc/google/google-pagespeed-insights_1.yaml
-./poc/google/google-phish_1.yaml
+./poc/google/google-phish.yaml
 ./poc/google/google-phish_1_1.yaml
 ./poc/google/google-phish_2.yaml
 ./poc/google/google-phish_3.yaml
@@ -102432,7 +102440,6 @@
 ./poc/http/http-cache-poisoning.yaml
 ./poc/http/http-cors-header.yaml
 ./poc/http/http-csp-header.yaml
-./poc/http/http-etcd-unauthenticated-api-data-leak.yaml
 ./poc/http/http-get.yaml
 ./poc/http/http-header-misconfiguration.yaml
 ./poc/http/http-headers-11c701ce2d0af62ea084b4889e52e678.yaml
@@ -104561,7 +104568,7 @@
 ./poc/local_file_inclusion/mthemeunus-lfi_1.yaml
 ./poc/local_file_inclusion/mthemeunus-lfi_2.yaml
 ./poc/local_file_inclusion/mthemeunus-lfi_3.yaml
-./poc/local_file_inclusion/ncast-lfi.yaml
+./poc/local_file_inclusion/ncast-lfi_1.yaml
 ./poc/local_file_inclusion/netpower-npfw-lfi_1.yaml
 ./poc/local_file_inclusion/nsfocus-lfi_1.yaml
 ./poc/local_file_inclusion/nuxt-js-lfi.yaml
@@ -106115,7 +106122,7 @@
 ./poc/microsoft/microsoft-sharepoint.yaml
 ./poc/microsoft/microsoft-silverlight.yaml
 ./poc/microsoft/microsoft-skype-for-business.yaml
-./poc/microsoft/microsoft-teams-phish_1.yaml
+./poc/microsoft/microsoft-teams-phish.yaml
 ./poc/microsoft/microsoft-teams-phish_2.yaml
 ./poc/microsoft/microsoft-teams-phish_3.yaml
 ./poc/microsoft/microsoft-technet-community.yaml
@@ -107070,6 +107077,7 @@
 ./poc/nginx/nginx-admin-panel.yaml
 ./poc/nginx/nginx-admin-panel_1.yaml
 ./poc/nginx/nginx-admin-panel_2.yaml
+./poc/nginx/nginx-alias-traversal.yaml
 ./poc/nginx/nginx-auto-installer.yaml
 ./poc/nginx/nginx-auto-installer_2.yaml
 ./poc/nginx/nginx-auto-installer_3.yaml
@@ -126023,7 +126031,7 @@
 ./poc/other/bitrix_content_spoofing_imagepg_1.yaml
 ./poc/other/bitspecter-suite-8175e402098f568253f30e3bfc34c7b1.yaml
 ./poc/other/bittube.yaml
-./poc/other/bitwarden-phish_1.yaml
+./poc/other/bitwarden-phish.yaml
 ./poc/other/bitwarden-phish_1_1.yaml
 ./poc/other/bitwarden-phish_2.yaml
 ./poc/other/bitwarden-phish_3.yaml
@@ -126208,6 +126216,7 @@
 ./poc/other/blocksy-companion-4879ed4d15d65f72d4f08a296722ff35.yaml
 ./poc/other/blocksy-companion-631e891298b1628f384247cba42cf5a1.yaml
 ./poc/other/blocksy-companion-ac12717fe5c807ae533668810c8ef04d.yaml
+./poc/other/blocksy-companion.yaml
 ./poc/other/blocksy-companion_1.yaml
 ./poc/other/blocksy-d12c504f05498f76e9577ef58283fd1e.yaml
 ./poc/other/blocksy.yaml
@@ -128691,6 +128700,7 @@
 ./poc/other/cdg.yaml
 ./poc/other/cdn-cache-poisoning.yaml
 ./poc/other/cdn-cache-poisoning_1.yaml
+./poc/other/cdn-origin-ip-leak.yaml
 ./poc/other/cdn.yaml
 ./poc/other/cdnvote-d3feccafca8f957dfd11e88c4a346635.yaml
 ./poc/other/cdnvote.yaml
@@ -129045,7 +129055,7 @@
 ./poc/other/chart-builder.yaml
 ./poc/other/chart-builder_1.yaml
 ./poc/other/chart-builder_2.yaml
-./poc/other/chase-phish_1.yaml
+./poc/other/chase-phish.yaml
 ./poc/other/chase-phish_2.yaml
 ./poc/other/chase-phish_3.yaml
 ./poc/other/chat-bee-ab3d2811b40cfb001a24722e62a5442e.yaml
@@ -132879,7 +132889,7 @@
 ./poc/other/dashicons-cpt_1.yaml
 ./poc/other/dashing-memberships-9b153bf9e2704601ce48bb5edfb78cc2.yaml
 ./poc/other/dashing-memberships.yaml
-./poc/other/dashlane-phish.yaml
+./poc/other/dashlane-phish_1.yaml
 ./poc/other/dashlane-phish_1_1.yaml
 ./poc/other/dashlane-phish_2.yaml
 ./poc/other/dashlane-phish_3.yaml
@@ -132996,7 +133006,7 @@
 ./poc/other/deeper-comments-plugin_1.yaml
 ./poc/other/deeper-comments.yaml
 ./poc/other/deeper-comments_1.yaml
-./poc/other/deezer-phish_1.yaml
+./poc/other/deezer-phish.yaml
 ./poc/other/deezer-phish_1_1.yaml
 ./poc/other/deezer-phish_1_1_1.yaml
 ./poc/other/deezer-phish_1_2.yaml
@@ -136803,6 +136813,7 @@
 ./poc/other/essential-addons-for-elementor-lite_5.yaml
 ./poc/other/essential-blocks-0368778a3dde119c48132ef88945e9f0.yaml
 ./poc/other/essential-blocks-04f2d656af8d26dc5ae258614d51b5c9.yaml
+./poc/other/essential-blocks-0e67c0227484c5c5376c232ad9d9c6dd.yaml
 ./poc/other/essential-blocks-1630e8ee95a2253cddeb0ac403e534d7.yaml
 ./poc/other/essential-blocks-3f99147789e8dff20415bce0a00a9c05.yaml
 ./poc/other/essential-blocks-6775ed87845d5a0e505cea6368e472c8.yaml
@@ -137462,6 +137473,7 @@
 ./poc/other/exclusive-addons-for-elementor-b22002f853e25973049d1d1881d3b198.yaml
 ./poc/other/exclusive-addons-for-elementor-b3bcca96e1c875ed49e977324ed1d1bf.yaml
 ./poc/other/exclusive-addons-for-elementor-b99a67e1a164b53e215f8fff1bd4be53.yaml
+./poc/other/exclusive-addons-for-elementor-c88f8d30ee55dceafa2bcc6038dca937.yaml
 ./poc/other/exclusive-addons-for-elementor-d816f3e5b6dd0614504b47cb61fe4920.yaml
 ./poc/other/exclusive-addons-for-elementor-e466b447a781f9d036099aa228150374.yaml
 ./poc/other/exclusive-addons-for-elementor-e959f2266e508572230ce39a0082a18a.yaml
@@ -152187,7 +152199,7 @@
 ./poc/other/o2-easy-panel.yaml
 ./poc/other/o2-easy-panel_1.yaml
 ./poc/other/o2-easy-panel_2.yaml
-./poc/other/o2-mobile-phish.yaml
+./poc/other/o2-mobile-phish_1.yaml
 ./poc/other/o2-mobile-phish_1_1.yaml
 ./poc/other/o2-mobile-phish_2.yaml
 ./poc/other/o2oa.yaml
@@ -156453,6 +156465,7 @@
 ./poc/other/proofreading-e013b665aa24a012961dcb02e614f854.yaml
 ./poc/other/proofreading.yaml
 ./poc/other/proofreading_1.yaml
+./poc/other/property-aa886d7e7a161e3c5a0efb7b73e34ce3.yaml
 ./poc/other/property-hive-mortgage-calculator-c760bbdc9bdcea05982c5bd90d16aa7b.yaml
 ./poc/other/property-hive-mortgage-calculator_1.yaml
 ./poc/other/property-hive-stamp-duty-calculator-16a9af1f4a5d2ccf56de55248353c80f.yaml
@@ -162272,6 +162285,7 @@
 ./poc/other/sitepact-klaviyo-contact-form-7-7b962b04ac600d64b9f90c5f5f452ad5.yaml
 ./poc/other/sitepact-klaviyo-contact-form-7.yaml
 ./poc/other/sitepact-klaviyo-contact-form-7_1.yaml
+./poc/other/siteseo.yaml
 ./poc/other/siteserver.yaml
 ./poc/other/sitesupercharger-a1987f8c2b26ab506f96799d87fb9b28.yaml
 ./poc/other/sitesupercharger.yaml
@@ -168339,6 +168353,7 @@
 ./poc/other/unlimited-elements-for-elementor-ee228b54115c8d18fc563600ce60dc8e.yaml
 ./poc/other/unlimited-elements-for-elementor-f11446120031e72e361d722e3757a368.yaml
 ./poc/other/unlimited-elements-for-elementor-fb87c8f4ea1042bf511b04c8fcd3c39a.yaml
+./poc/other/unlimited-elements-for-elementor.yaml
 ./poc/other/unlimited-elements-for-elementor_1.yaml
 ./poc/other/unlimited-elements-for-elementor_2.yaml
 ./poc/other/unlimited-page-sidebars-f70d52a06003e8579ebfd3c3aae1a855.yaml
@@ -181871,7 +181886,7 @@
 ./poc/social/linkedin-id-11853.yaml
 ./poc/social/linkedin-id.yaml
 ./poc/social/linkedin-lite-80c1106efc70ef9c6fe430244696035e.yaml
-./poc/social/linkedin-phish.yaml
+./poc/social/linkedin-phish_1.yaml
 ./poc/social/linkedin-phish_1_1.yaml
 ./poc/social/linkedin-phish_1_2.yaml
 ./poc/social/linkedin-phish_2.yaml
