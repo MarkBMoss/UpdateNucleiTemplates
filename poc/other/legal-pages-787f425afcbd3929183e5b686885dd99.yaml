@@ -1,31 +1,31 @@
-id: mapsvg-08340013ee7b70a35e75807ab0f261e3
+id: legal-pages-787f425afcbd3929183e5b686885dd99
 
 info:
   name: >
-    MapSVG <= 8.5.31 - Authenticated (Contributor+) Stored Cross-Site Scripting
+    Legal Pages <= 1.4.5 - Missing Authorization
   author: topscoder
-  severity: low
+  severity: high
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/0976ab6c-d7ad-47c6-9017-2cc6ebd8158f?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/330e40d9-56b2-446a-8aa9-22a59e17c122?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
     cve-id: 
   metadata:
-    fofa-query: "wp-content/plugins/mapsvg/"
-    google-query: inurl:"/wp-content/plugins/mapsvg/"
+    fofa-query: "wp-content/plugins/legal-pages/"
+    google-query: inurl:"/wp-content/plugins/legal-pages/"
     shodan-query: 'vuln:'
-  tags: cve,wordpress,wp-plugin,mapsvg,low
+  tags: cve,wordpress,wp-plugin,legal-pages,high
 
 http:
   - method: GET
     redirects: true
     max-redirects: 3
     path:
-      - "{{BaseURL}}/wp-content/plugins/mapsvg/readme.txt"
+      - "{{BaseURL}}/wp-content/plugins/legal-pages/readme.txt"
 
     extractors:
       - type: regex
@@ -51,9 +51,9 @@ http:
 
       - type: word
         words:
-          - "mapsvg"
+          - "legal-pages"
         part: body
 
       - type: dsl
         dsl:
-          - compare_versions(version, '<= 8.5.31')
+          - compare_versions(version, '<= 1.4.5')
