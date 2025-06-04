@@ -97955,6 +97955,10 @@
 ./poc/cve/CVE-2025-5290-f9669a3326656f13ba8099dd0070995a.yaml
 ./poc/cve/CVE-2025-5292-4df99530090c100c54e24d0bcd86a1fc.yaml
 ./poc/cve/CVE-2025-5340-c9f5edd0c61100c7d221075411efaf33.yaml
+./poc/cve/CVE-2025-5482-4598ed502f86426c1e73857fe53fc5b1.yaml
+./poc/cve/CVE-2025-5531-fab7ca22597df6876ec176d0743428f8.yaml
+./poc/cve/CVE-2025-5532-73aab4e90985a82882f137949339eddd.yaml
+./poc/cve/CVE-2025-5539-85afc728b7c273c230662c2cbcbf37a8.yaml
 ./poc/cve/CVE202127562-220331-222408.yaml
 ./poc/cve/CVE_2023_49442.yaml
 ./poc/cve/CVE_2023_51467.yaml
@@ -140091,6 +140095,7 @@
 ./poc/other/camptix.yaml
 ./poc/other/camptix_1.yaml
 ./poc/other/campus-card-management-system.yaml
+./poc/other/campus-directory-0aae19ea905dd7c25ae2d200bee498fc.yaml
 ./poc/other/campus-directory-86f4df854fc190d998463f5d1a0d4c76.yaml
 ./poc/other/campus-directory-d41d8cd98f00b204e9800998ecf8427e.yaml
 ./poc/other/campus-directory-plugin-d41d8cd98f00b204e9800998ecf8427e.yaml
@@ -148350,6 +148355,7 @@
 ./poc/other/empire-c2_1.yaml
 ./poc/other/empire-c2_2.yaml
 ./poc/other/empirebak.yaml
+./poc/other/employee-directory-87eb11c8934f298d07d77a1e3333544c.yaml
 ./poc/other/empowerment-f6f26f1b97e70c412a9cd8913978a751.yaml
 ./poc/other/empowerment.yaml
 ./poc/other/empty-catch-block.yaml
@@ -176897,6 +176903,7 @@
 ./poc/other/sunshine-photo-cart-03eee5abc8d42a5a715e7cc44871f517.yaml
 ./poc/other/sunshine-photo-cart-134cd95a06ebcf08d96d4f4774d40927.yaml
 ./poc/other/sunshine-photo-cart-321a942ffd5efc453ebf43af3878f5bb.yaml
+./poc/other/sunshine-photo-cart-357c26b8b9a6498233edc0af3f5d9cb3.yaml
 ./poc/other/sunshine-photo-cart-3bf29985748072fd759f4c521d6cec91.yaml
 ./poc/other/sunshine-photo-cart-3f85889adaf9e0670dd4a3150b81b6dc.yaml
 ./poc/other/sunshine-photo-cart-6e3f90d4c0069476c9606ab63adc7836.yaml
@@ -177355,7 +177362,6 @@
 ./poc/other/sync-qcloud-cos-5f2c9cd12b339ac23d5f58a0b0ebfc0f.yaml
 ./poc/other/sync-qcloud-cos.yaml
 ./poc/other/sync-qcloud-cos_1.yaml
-./poc/other/sync-storage-phish.yaml
 ./poc/other/sync-storage-phish_1.yaml
 ./poc/other/sync-storage-phish_1_1.yaml
 ./poc/other/sync-storage-phish_2.yaml
@@ -212575,6 +212581,7 @@
 ./poc/wordpress/wp-easy-booking.yaml
 ./poc/wordpress/wp-easy-booking_1.yaml
 ./poc/wordpress/wp-easy-contact-3b570fced573df49cceb54d741239f7e.yaml
+./poc/wordpress/wp-easy-contact-508e043c1893a01c1c1ead5cb489c99f.yaml
 ./poc/wordpress/wp-easy-contact.yaml
 ./poc/wordpress/wp-easy-contact_1.yaml
 ./poc/wordpress/wp-easy-events-3a485cee12d6a1286f70ea57901f8180.yaml
