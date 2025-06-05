@@ -545,7 +545,6 @@
 ./poc/apache/apache-loadbalancer-365.yaml
 ./poc/apache/apache-loadbalancer-365_1.yaml
 ./poc/apache/apache-loadbalancer.yaml
-./poc/apache/apache-loadbalancer_1.yaml
 ./poc/apache/apache-local-gadget-lfr.yaml
 ./poc/apache/apache-mesos-panel.yaml
 ./poc/apache/apache-mesos-panel_1.yaml
@@ -95884,6 +95883,7 @@
 ./poc/cve/CVE-2025-30534-50bd850f73f4809dad0feabf7b272be5.yaml
 ./poc/cve/CVE-2025-30537-e2df966aa36d3e315905cbac64b94f88.yaml
 ./poc/cve/CVE-2025-30539-48bae20840c0c467d568865a5c2272c3.yaml
+./poc/cve/CVE-2025-3054-20f7cb152676d6b5047346a9bc70f1e4.yaml
 ./poc/cve/CVE-2025-30540-de98a0b5aab319d4bf2c44a4919c0f8a.yaml
 ./poc/cve/CVE-2025-30541-77fabcffb5840a9079b1b1972cdfea31.yaml
 ./poc/cve/CVE-2025-30542-0d52f7a89f6dc2b48aa8c12d66005cb6.yaml
@@ -95894,6 +95894,7 @@
 ./poc/cve/CVE-2025-30547-312caa585f78972087a559a6becec78b.yaml
 ./poc/cve/CVE-2025-30548-ea8505a57ba6c07672bea93ae387c9f3.yaml
 ./poc/cve/CVE-2025-30549-14ad9a70eeba8b4071fe31cbca700fb2.yaml
+./poc/cve/CVE-2025-3055-7ffa0f868ff4ac4f7a849839cb6f07b0.yaml
 ./poc/cve/CVE-2025-30550-b4b9c876c076c1283e0df348f816ae2b.yaml
 ./poc/cve/CVE-2025-30551-1623af39b35caf24e086e4af376df60e.yaml
 ./poc/cve/CVE-2025-30552-35cca3e8cba337f3f00ef1141c0e19e6.yaml
@@ -97955,10 +97956,12 @@
 ./poc/cve/CVE-2025-5290-f9669a3326656f13ba8099dd0070995a.yaml
 ./poc/cve/CVE-2025-5292-4df99530090c100c54e24d0bcd86a1fc.yaml
 ./poc/cve/CVE-2025-5340-c9f5edd0c61100c7d221075411efaf33.yaml
+./poc/cve/CVE-2025-5341-4133d73b556e081f420037ede5957324.yaml
 ./poc/cve/CVE-2025-5482-4598ed502f86426c1e73857fe53fc5b1.yaml
 ./poc/cve/CVE-2025-5531-fab7ca22597df6876ec176d0743428f8.yaml
 ./poc/cve/CVE-2025-5532-73aab4e90985a82882f137949339eddd.yaml
 ./poc/cve/CVE-2025-5539-85afc728b7c273c230662c2cbcbf37a8.yaml
+./poc/cve/CVE-2025-5701-07ab1415a79cf5bcc7d9a5aff08b2ff8.yaml
 ./poc/cve/CVE202127562-220331-222408.yaml
 ./poc/cve/CVE_2023_49442.yaml
 ./poc/cve/CVE_2023_51467.yaml
@@ -113738,7 +113741,6 @@
 ./poc/header/header-footer-code.yaml
 ./poc/header/header-footer-composer-005264ce8e70698227732db0419f2dc3.yaml
 ./poc/header/header-footer-composer.yaml
-./poc/header/header-footer-elementor-13cbbdbbd61a4c045ef2ff7386dfb654.yaml
 ./poc/header/header-footer-elementor-13cd3c728a036abc42340e590babbe8b.yaml
 ./poc/header/header-footer-elementor-232faaa29b050dd09edb1a0a86fedae0.yaml
 ./poc/header/header-footer-elementor-59175a31e98560c347bf251075852edf.yaml
@@ -118655,10 +118657,8 @@
 ./poc/mysql/create-mysql-detection.yaml
 ./poc/mysql/create-mysql-detection_1.yaml
 ./poc/mysql/cyberpanel-upgrademysqlstatus-rce.yaml
-./poc/mysql/cyberpanel-upgrademysqlstatus-rce_1.yaml
 ./poc/mysql/dionaea-mysql-honeypot-detect.yaml
 ./poc/mysql/dionaea-mysql-honeypot-detect_1.yaml
-./poc/mysql/e-cology-e-office-mysql-config-leak.yaml
 ./poc/mysql/ecology-mysql-config.yaml
 ./poc/mysql/ecology-mysql-config_1.yaml
 ./poc/mysql/esafenet-mysql-fileread.yaml
@@ -118682,11 +118682,9 @@
 ./poc/mysql/mysql-history_1.yaml
 ./poc/mysql/mysql-info.yaml
 ./poc/mysql/mysql-info_1.yaml
-./poc/mysql/mysql-load-file.yaml
 ./poc/mysql/mysql-load-file_1.yaml
 ./poc/mysql/mysql-my-cnf-disclosure.yaml
 ./poc/mysql/mysql-native-cred-bruteforce.yaml
-./poc/mysql/mysql-native-password-8980.yaml
 ./poc/mysql/mysql-native-password-8981.yaml
 ./poc/mysql/mysql-native-password.yaml
 ./poc/mysql/mysql-show-databases.yaml
@@ -139357,6 +139355,7 @@
 ./poc/other/buddypress-media-12e722c83109c517566dd538aeeb7f46.yaml
 ./poc/other/buddypress-media-3e315d17a4925a161a6712e0be740bae.yaml
 ./poc/other/buddypress-media-418384a35ec4e559acd6da1a9c2715b4.yaml
+./poc/other/buddypress-media-4be8eb0f690f76c685d20a14b2674d8b.yaml
 ./poc/other/buddypress-media-4ca22759d38c0a0c3c3ae82665fa0a79.yaml
 ./poc/other/buddypress-media-52193452be1b7ff714846f4724f8ae85.yaml
 ./poc/other/buddypress-media-875891a93aa09c8ef57c7b93d5d39835.yaml
@@ -151635,6 +151634,7 @@
 ./poc/other/forminator-7fef02360cc50631d43592efcde1440e.yaml
 ./poc/other/forminator-8cc761c77eb56a15a155510f77a84eac.yaml
 ./poc/other/forminator-ad378f08d96b8aa2f2d56d67b34d4eb7.yaml
+./poc/other/forminator-b052079b00ecb9f67499d5972644b3bf.yaml
 ./poc/other/forminator-b290e5ef565060ae72d371a3f774262b.yaml
 ./poc/other/forminator-c3e981e9f59f9074a925e9024b1b7b28.yaml
 ./poc/other/forminator-c8d41ba71899e609312b42a81fb5361d.yaml
@@ -155167,6 +155167,7 @@
 ./poc/other/hydra-dashboard_3.yaml
 ./poc/other/hydra-dashboard_4.yaml
 ./poc/other/hydracrypt-malware.yaml
+./poc/other/hypercomments-0aec42d1982ab24928bd6b8ac7945aef.yaml
 ./poc/other/hypercomments-2aa23b17a9dea8fea7574134a10e3c84.yaml
 ./poc/other/hypercomments-c86aa8f55491a8564ef6c26de6b882c7.yaml
 ./poc/other/hypercomments-d41d8cd98f00b204e9800998ecf8427e.yaml
@@ -187346,7 +187347,6 @@
 ./poc/python/jupyter-ipython-unauth.yaml
 ./poc/python/jupyter-ipython-unauth_1.yaml
 ./poc/python/privesc-python.yaml
-./poc/python/python-app-sql-exceptions-9744.yaml
 ./poc/python/python-app-sql-exceptions.yaml
 ./poc/python/python-metrics-9745.yaml
 ./poc/python/python-metrics-9745_1.yaml
@@ -198052,6 +198052,7 @@
 ./poc/sql/anywhere-elementor-6477bf18cad6c823db485408d49b337b.yaml
 ./poc/sql/ap-custom-testimonial-0b815e1f51e256380959dc6cdbd58446.yaml
 ./poc/sql/ap-twig-bridge-b7de650c05254b194a03adb0bbb4b850.yaml
+./poc/sql/apache-loadbalancer_1.yaml
 ./poc/sql/api-abuseipdb-385.yaml
 ./poc/sql/api-abuseipdb.yaml
 ./poc/sql/api-dbt-413.yaml
@@ -199002,6 +199003,7 @@
 ./poc/sql/cvms-sqli_3.yaml
 ./poc/sql/cwd-stealth-links-e6c82bfdb97c37cc2eafc0f0194cffff.yaml
 ./poc/sql/cyber-new-slider-3535cc805e6ed0afdb0605779bad0d60.yaml
+./poc/sql/cyberpanel-upgrademysqlstatus-rce_1.yaml
 ./poc/sql/cybersoldier-0d4e2476f7a9f0dba7d4566f0c76ba66.yaml
 ./poc/sql/cyclone-slider-9e821dbd0d443e94c28eb42e2a474a7e.yaml
 ./poc/sql/da-reactions-6477bf18cad6c823db485408d49b337b.yaml
@@ -199359,6 +199361,7 @@
 ./poc/sql/dzs-zoomsounds-ba05311f1db4a89cbad85301cc535404.yaml
 ./poc/sql/e-Bridge-SQL.yaml
 ./poc/sql/e-Bridge-SQL_1.yaml
+./poc/sql/e-cology-e-office-mysql-config-leak.yaml
 ./poc/sql/e-cology-getsqldata-sql-inject.yaml
 ./poc/sql/e-cology-syncuserinfo-sqli.yaml
 ./poc/sql/e-cology-v8-sqli.yaml
@@ -200226,6 +200229,7 @@
 ./poc/sql/hasura-graphql-psql-exec.yaml
 ./poc/sql/haxcan-190425548dd1ddbb7321f1738c27beea.yaml
 ./poc/sql/hdw-player-video-player-video-gallery-32d133fdb223a5192744426dcadada98.yaml
+./poc/sql/header-footer-elementor-13cbbdbbd61a4c045ef2ff7386dfb654.yaml
 ./poc/sql/headline-analyzer-96310576ebee234dd51bdb139b9b082f.yaml
 ./poc/sql/healsoul-b5bcb97799c2dbe0f63d7bdf82dc79f2.yaml
 ./poc/sql/health-check-029bc10524096c5d6b42c53501db3fa1.yaml
@@ -201095,6 +201099,8 @@
 ./poc/sql/mycred-b69b74183494c4b8dbaaa94b47c77a89.yaml
 ./poc/sql/mycred-e577923b04d9cbb1dba64e0256a4900d.yaml
 ./poc/sql/myriad-e7ede6314c209b97480a8f0916dbaa81.yaml
+./poc/sql/mysql-load-file.yaml
+./poc/sql/mysql-native-password-8980.yaml
 ./poc/sql/mystickymenu-26dac3581d8db86abaf5759738230d68.yaml
 ./poc/sql/myticket-events-a51ceea4ede8075c2faadbcf913ced19.yaml
 ./poc/sql/mytreasures-a759e03a3140ab5da9f810ffbdb3a4c2.yaml
@@ -201700,6 +201706,7 @@
 ./poc/sql/push-notification-for-post-and-buddypress-87654db6955354f5bcd20cc2f2f16ee6.yaml
 ./poc/sql/push-notification-for-post-and-buddypress-b21ae21328ddb026c4ee0c78ad1c476d.yaml
 ./poc/sql/push-notification-for-wp-by-pushassist-a580f69484329c1256ea5b0e7db07107.yaml
+./poc/sql/python-app-sql-exceptions-9744.yaml
 ./poc/sql/q-and-a-cc8c9007fdb35c296b605f6ee57b128b.yaml
 ./poc/sql/qaengine-4ce5db8cdf77b4cf41d832a359d6b011.yaml
 ./poc/sql/qards-a5b42edbed684a8355294b4718afe158.yaml
@@ -216309,6 +216316,8 @@
 ./poc/wordpress/wp-user-frontend-plugin-d41d8cd98f00b204e9800998ecf8427e.yaml
 ./poc/wordpress/wp-user-frontend-plugin.yaml
 ./poc/wordpress/wp-user-frontend-plugin_1.yaml
+./poc/wordpress/wp-user-frontend-pro-2dd7d7c51be16798a5a9bf07d0ab4163.yaml
+./poc/wordpress/wp-user-frontend-pro-a14641679a85275885e899de07e59b40.yaml
 ./poc/wordpress/wp-user-frontend.yaml
 ./poc/wordpress/wp-user-frontend_1.yaml
 ./poc/wordpress/wp-user-groups-421b1b160bf4170c1abee47e6de13055.yaml
