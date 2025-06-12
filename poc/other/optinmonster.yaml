@@ -1,7 +1,7 @@
 id: wordpress-optinmonster
 
 info:
-  name: Popup Builder by OptinMonster – WordPress Popups for Optins, Email Newsletters and Lead Generation Detection
+  name: Popup Builder & Popup Maker for WordPress – OptinMonster Email Marketing and Lead Generation Detection
   author: ricardomaia
   severity: info
   reference:
@@ -13,7 +13,6 @@ info:
 
 http:
   - method: GET
-
     path:
       - "{{BaseURL}}/wp-content/plugins/optinmonster/readme.txt"
 

@@ -1,7 +1,7 @@
 id: wordpress-elementskit-lite
 
 info:
-  name: ElementsKit Elementor addons Detection
+  name: ElementsKit Elementor Addons and Templates Detection
   author: ricardomaia
   severity: info
   reference:
@@ -13,7 +13,6 @@ info:
 
 http:
   - method: GET
-
     path:
       - "{{BaseURL}}/wp-content/plugins/elementskit-lite/readme.txt"
 

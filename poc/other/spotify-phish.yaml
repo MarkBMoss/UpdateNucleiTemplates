@@ -8,8 +8,9 @@ info:
     A spotify phishing website was detected
   reference:
     - https://spotify.com
+  metadata:
+    max-request: 1
   tags: phishing,spotify,osint
-
 http:
   - method: GET
     path:
@@ -31,4 +32,4 @@ http:
       - type: dsl
         dsl:
           - '!contains(host,"spotify.com")'
-# digest: 4a0a00473045022100e8474169b857663240f6383575b12d9958ac2e7204b503909f23e3bba13d252202200e5fd1e2916c27031bc9a414ac9cb5d6b45cb902afd2f2af0801135d80be6dba:922c64590222798bb761d5b6d8e72950
+# digest: 490a0046304402204e88d9e64f7ca1fb5418f7a009186c73be4b01c64ea896f6b9814e52a34c7b1b022010d3b26c81bfefe770654d55ba25bb73d556fef2846f6361a0cb8d1b5ba8dd05:922c64590222798bb761d5b6d8e72950

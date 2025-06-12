@@ -8,8 +8,9 @@ info:
     A skyscanner phishing website was detected
   reference:
     - https://skyscanner.net
+  metadata:
+    max-request: 1
   tags: phishing,skyscanner,osint
-
 http:
   - method: GET
     path:
@@ -31,4 +32,4 @@ http:
       - type: dsl
         dsl:
           - '!contains(host,"skyscanner.net")'
-# digest: 4a0a0047304502210088891b65c99bf62676228badf12fae1505057cc0e59b28f69a125cbfdb04643f022043516ded24505a7db95bfdb6e7cef9ca525fe87d57ebb32381c92219fd5f45f3:922c64590222798bb761d5b6d8e72950
+# digest: 490a0046304402203fc9bb4384ae22c326cc312cdb591ea9c46f3f97eca03ba5266a069183389428022030c497da1f7629e5f53e370870cbc0868b10b57058f23e658c84264789dfe94b:922c64590222798bb761d5b6d8e72950
