@@ -90644,6 +90644,7 @@
 ./poc/cve/CVE-2025-31125.yaml
 ./poc/cve/CVE-2025-31125_1.yaml
 ./poc/cve/CVE-2025-31125_2.yaml
+./poc/cve/CVE-2025-31125_3.yaml
 ./poc/cve/CVE-2025-31324.yaml
 ./poc/cve/CVE-2025-31375-fbf02d38c99bb1655fb19a450b0e0043.yaml
 ./poc/cve/CVE-2025-31376-77139cd56cecf8404360b036107aee38.yaml
@@ -102567,6 +102568,7 @@
 ./poc/detect/meilisearch-detect_1_1.yaml
 ./poc/detect/meilisearch-detect_2.yaml
 ./poc/detect/meilisearch-detect_3.yaml
+./poc/detect/meilisearch-detect_4.yaml
 ./poc/detect/metabase-detect-8804.yaml
 ./poc/detect/metabase-detect-8804_1.yaml
 ./poc/detect/metabase-detect-8804_2.yaml
@@ -102947,6 +102949,7 @@
 ./poc/detect/pghero-detect_1_1.yaml
 ./poc/detect/pghero-detect_2.yaml
 ./poc/detect/pghero-detect_3.yaml
+./poc/detect/pghero-detect_4.yaml
 ./poc/detect/pgsql-detect_1.yaml
 ./poc/detect/pgsql-detect_2.yaml
 ./poc/detect/pgsql-detect_3.yaml
@@ -103866,6 +103869,7 @@
 ./poc/directory_listing/directory-traversal-7002.yaml
 ./poc/directory_listing/directory-traversal.yaml
 ./poc/directory_listing/directory-traversal_1.yaml
+./poc/directory_listing/django-nginx-alias-traversal.yaml
 ./poc/directory_listing/e-cology-filedownload-directory-traversal.yaml
 ./poc/directory_listing/e-cology-springframework-directory-traversal.yaml
 ./poc/directory_listing/ecology-fileDownload-directoryTraversal.yaml
@@ -104093,7 +104097,6 @@
 ./poc/directory_listing/yonyou-fe-templateOfTaohong_manager-traversal.yaml
 ./poc/directory_listing/yonyou-fe-templateOfTaohong_manager-traversal_1.yaml
 ./poc/directory_listing/yonyou-nc-ncfindweb-directory-traversal.yaml
-./poc/directory_listing/zeit-nodejs-cve-2020-5284-directory-traversal.yml
 ./poc/docker/Kubernetes-unauth.yaml
 ./poc/docker/amazon-docker-config-279.yaml
 ./poc/docker/amazon-docker-config-280.yaml
@@ -104207,6 +104210,7 @@
 ./poc/docker/exposed-dockerd_1.yaml
 ./poc/docker/exposed-dockerd_2.yaml
 ./poc/docker/exposed-kubernetes-dashboard-advanced.yaml
+./poc/docker/flask-redis-docker_1.yaml
 ./poc/docker/insecure-kubernetes-api-server.yaml
 ./poc/docker/k8s-containers-share-host-ipc.yaml
 ./poc/docker/k8s-privileged-container.yaml
@@ -106176,6 +106180,7 @@
 ./poc/git/digital-ocean-phish_1_1.yaml
 ./poc/git/digital-ocean-phish_2.yaml
 ./poc/git/digital-ocean-phish_3.yaml
+./poc/git/digital-ocean-phish_4.yaml
 ./poc/git/digital-publications-by-supsystic-3654b5b992852653b7e966396c0613b4.yaml
 ./poc/git/digital-publications-by-supsystic-376d5bb594e0789e7ff3e9afba783e55.yaml
 ./poc/git/digital-publications-by-supsystic-649cb376d7c1277944e0913827259656.yaml
@@ -113059,6 +113064,7 @@
 ./poc/nodejs/yith-paypal-express-checkout-for-woocommerce-plugin_1.yaml
 ./poc/nodejs/yith-paypal-express-checkout-for-woocommerce.yaml
 ./poc/nodejs/yith-paypal-express-checkout-for-woocommerce_1.yaml
+./poc/nodejs/zeit-nodejs-cve-2020-5284-directory-traversal.yml
 ./poc/open_redirect/404-redirection-manager-7466b5060bfc9d29c19f9c189db7d170.yaml
 ./poc/open_redirect/404-redirection-manager-cd29b860b8988cf80803bf6d2f9ab3b4.yaml
 ./poc/open_redirect/404-redirection-manager.yaml
@@ -129825,6 +129831,7 @@
 ./poc/other/aryo-activity-log_1.yaml
 ./poc/other/aryo-activity-log_2.yaml
 ./poc/other/aryo-activity-log_3.yaml
+./poc/other/aryo-activity-log_4.yaml
 ./poc/other/as-create-pinterest-pinboard-pages-83c4f0c73f0e42354c4d9ddc78df05fd.yaml
 ./poc/other/as-create-pinterest-pinboard-pages.yaml
 ./poc/other/as-create-pinterest-pinboard-pages_1.yaml
@@ -130572,6 +130579,7 @@
 ./poc/other/avg-phish_2.yaml
 ./poc/other/avg-phish_3.yaml
 ./poc/other/avg-phish_4.yaml
+./poc/other/avg-phish_5.yaml
 ./poc/other/aviatrix-panel-608.yaml
 ./poc/other/aviatrix-panel-609.yaml
 ./poc/other/aviatrix-panel-610.yaml
@@ -146989,6 +146997,7 @@
 ./poc/other/gimp-phish_2.yaml
 ./poc/other/gimp-phish_3.yaml
 ./poc/other/gimp-phish_4.yaml
+./poc/other/gimp-phish_5.yaml
 ./poc/other/ginandjuice.proxify.yaml
 ./poc/other/giop.yaml
 ./poc/other/giphy.yaml
@@ -150772,6 +150781,7 @@
 ./poc/other/ivanti-traffic-manager-panel_1.yaml
 ./poc/other/ivanti-traffic-manager-panel_1_1.yaml
 ./poc/other/ivanti-traffic-manager-panel_2.yaml
+./poc/other/ivanti-traffic-manager-panel_3.yaml
 ./poc/other/ivy-school-0e407a80cc67290148430760195b2c11.yaml
 ./poc/other/iwjob-19eb2285d50f5af8bc085b64a820b93a.yaml
 ./poc/other/iwjob-8100f901e3c4d7744615884c511ad9cd.yaml
@@ -154895,6 +154905,7 @@
 ./poc/other/mcafee-phish_1.yaml
 ./poc/other/mcafee-phish_1_1.yaml
 ./poc/other/mcafee-phish_1_2.yaml
+./poc/other/mcafee-phish_2.yaml
 ./poc/other/mcjh-button-shortcode-6f0d040a4389746a570b6b33787a7fbc.yaml
 ./poc/other/mcjh-button-shortcode.yaml
 ./poc/other/mcloud-installer_1.yaml
@@ -160950,6 +160961,7 @@
 ./poc/other/plusnet-phish_1_1.yaml
 ./poc/other/plusnet-phish_2.yaml
 ./poc/other/plusnet-phish_3.yaml
+./poc/other/plusnet-phish_4.yaml
 ./poc/other/pm43_firmware.yaml
 ./poc/other/pma-server-import 2.yaml
 ./poc/other/pma-server-import 8.yaml
@@ -167531,6 +167543,7 @@
 ./poc/other/signal-phish_1_1.yaml
 ./poc/other/signal-phish_2.yaml
 ./poc/other/signal-phish_3.yaml
+./poc/other/signal-phish_4.yaml
 ./poc/other/signature-verification-management-system.yaml
 ./poc/other/signatures-10240.yaml
 ./poc/other/signatures-10240_1.yaml
@@ -169570,6 +169583,7 @@
 ./poc/other/sophos-phish_1.yaml
 ./poc/other/sophos-phish_1_1.yaml
 ./poc/other/sophos-phish_1_2.yaml
+./poc/other/sophos-phish_2.yaml
 ./poc/other/sophos-安全产品.yaml
 ./poc/other/soplanning.yaml
 ./poc/other/sosen-airsoft.yaml
@@ -170371,6 +170385,7 @@
 ./poc/other/steam-phish_2.yaml
 ./poc/other/steam-phish_3.yaml
 ./poc/other/steam-phish_4.yaml
+./poc/other/steam-phish_5.yaml
 ./poc/other/steam.yaml
 ./poc/other/steel-6865e54559d0989dc99e9072bf016660.yaml
 ./poc/other/steel_1.yaml
@@ -181316,7 +181331,6 @@
 ./poc/python/django-framework-exceptions-7033.yaml
 ./poc/python/django-framework-exceptions-7034.yaml
 ./poc/python/django-framework-exceptions.yaml
-./poc/python/django-nginx-alias-traversal.yaml
 ./poc/python/django-orm-leak.yaml
 ./poc/python/django-rest-framework.yaml
 ./poc/python/django-secret-key.yaml
@@ -181331,7 +181345,6 @@
 ./poc/python/djangodebug.yaml
 ./poc/python/exposing-django-debug-panel.yaml
 ./poc/python/flask-redis-docker.yaml
-./poc/python/flask-redis-docker_1.yaml
 ./poc/python/flask-werkzeug-debug.yaml
 ./poc/python/flask-werkzeug-debug_1.yaml
 ./poc/python/flask-werkzeug-debug_1_1.yaml
@@ -186957,6 +186970,7 @@
 ./poc/social/linkedin-phish_1_1.yaml
 ./poc/social/linkedin-phish_1_2.yaml
 ./poc/social/linkedin-phish_2.yaml
+./poc/social/linkedin-phish_3.yaml
 ./poc/social/linkedin.yaml
 ./poc/social/linkedin_1.yaml
 ./poc/social/live-chat-facebook-fanpage-09712df89f849ba85b08f5f0deb0865b.yaml
@@ -192410,6 +192424,7 @@
 ./poc/sql_injection/sql-server-dump.yaml
 ./poc/sql_injection/sql-server-dump_1.yaml
 ./poc/sql_injection/sql-server-dump_1_1.yaml
+./poc/sql_injection/sql-server-dump_2.yaml
 ./poc/sql_injection/sql-server-report-viewer_1.yaml
 ./poc/sql_injection/sql-server-reporting-10507.yaml
 ./poc/sql_injection/sql-server-reporting-10508.yaml
