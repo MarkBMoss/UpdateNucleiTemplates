@@ -1,23 +1,23 @@
-id: wordpress-pagelayer
+id: wordpress-unlimited-elements-for-elementor
 
 info:
-  name: Page Builder' Pagelayer – Drag and Drop website builder Detection
+  name: Unlimited Elements For Elementor Detection
   author: ricardomaia
   severity: info
   reference:
-    - https://wordpress.org/plugins/pagelayer/
+    - https://wordpress.org/plugins/unlimited-elements-for-elementor/
   metadata:
-    plugin_namespace: pagelayer
-    wpscan: https://wpscan.com/plugin/pagelayer
+    plugin_namespace: unlimited-elements-for-elementor
+    wpscan: https://wpscan.com/plugin/unlimited-elements-for-elementor
   tags: tech,wordpress,wp-plugin,top-200
 
 http:
   - method: GET
     path:
-      - "{{BaseURL}}/wp-content/plugins/pagelayer/readme.txt"
+      - "{{BaseURL}}/wp-content/plugins/unlimited-elements-for-elementor/readme.txt"
 
     payloads:
-      last_version: helpers/wordpress/plugins/pagelayer.txt
+      last_version: helpers/wordpress/plugins/unlimited-elements-for-elementor.txt
 
     extractors:
       - type: regex

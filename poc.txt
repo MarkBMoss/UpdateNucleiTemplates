@@ -69916,6 +69916,8 @@
 ./poc/cve/CVE-2024-2430-f174ae8390e3564352994de87fc569cc.yaml
 ./poc/cve/CVE-2024-2430.yaml
 ./poc/cve/CVE-2024-2430_1.yaml
+./poc/cve/CVE-2024-24328.yaml
+./poc/cve/CVE-2024-24329.yaml
 ./poc/cve/CVE-2024-2436-f1f5c398a1e4d1eadd61e851ddeaf676.yaml
 ./poc/cve/CVE-2024-2436.yaml
 ./poc/cve/CVE-2024-2436_1.yaml
@@ -103232,6 +103234,7 @@
 ./poc/detect/searxng-detect_1_1.yaml
 ./poc/detect/searxng-detect_2.yaml
 ./poc/detect/searxng-detect_3.yaml
+./poc/detect/searxng-detect_4.yaml
 ./poc/detect/secmail-detect-10109.yaml
 ./poc/detect/secmail-detect-10109_1.yaml
 ./poc/detect/secmail-detect-10110.yaml
@@ -103833,13 +103836,14 @@
 ./poc/directory_listing/Directory traversal.yaml
 ./poc/directory_listing/Directory traversal_1.yaml
 ./poc/directory_listing/Path-Traversal.yaml
+./poc/directory_listing/Path_traversal_NodeJs.yaml
 ./poc/directory_listing/SAP-Path-Traversal.yaml
 ./poc/directory_listing/YonyouNc-Directory-Traversal.yaml
 ./poc/directory_listing/aero-cms-directory-traversal.yaml
 ./poc/directory_listing/apache-httpd-cve-2021-41773-path-traversal.yml
 ./poc/directory_listing/apache_traversal.yaml
+./poc/directory_listing/bitrix-path-traversal.yaml
 ./poc/directory_listing/bitrix-path-traversal_1.yaml
-./poc/directory_listing/bitrix-path-traversal_2.yaml
 ./poc/directory_listing/carel-bacnet-gateway-traversal-858.yaml
 ./poc/directory_listing/carel-bacnet-gateway-traversal-858_2.yaml
 ./poc/directory_listing/carel-bacnet-gateway-traversal-858_3.yaml
@@ -103869,6 +103873,7 @@
 ./poc/directory_listing/directory-traversal-7002.yaml
 ./poc/directory_listing/directory-traversal.yaml
 ./poc/directory_listing/directory-traversal_1.yaml
+./poc/directory_listing/django-directory-traversal.yaml
 ./poc/directory_listing/django-nginx-alias-traversal.yaml
 ./poc/directory_listing/e-cology-filedownload-directory-traversal.yaml
 ./poc/directory_listing/e-cology-springframework-directory-traversal.yaml
@@ -112764,7 +112769,6 @@
 ./poc/nginx/phpstudy-nginx-wrong-resolve.yml
 ./poc/nginx/snipe-nginx-cache-da85bb497f1cd4e16a921d6ce438db5e.yaml
 ./poc/nginx/snipe-nginx-cache.yaml
-./poc/nodejs/Path_traversal_NodeJs.yaml
 ./poc/nodejs/aem-dump-contentnode.yaml
 ./poc/nodejs/aem-dump-contentnode_1.yaml
 ./poc/nodejs/aem-dump-contentnode_2.yaml
@@ -132036,6 +132040,7 @@
 ./poc/other/blocksy-companion-4879ed4d15d65f72d4f08a296722ff35.yaml
 ./poc/other/blocksy-companion-631e891298b1628f384247cba42cf5a1.yaml
 ./poc/other/blocksy-companion-ac12717fe5c807ae533668810c8ef04d.yaml
+./poc/other/blocksy-companion.yaml
 ./poc/other/blocksy-companion_1.yaml
 ./poc/other/blocksy-d12c504f05498f76e9577ef58283fd1e.yaml
 ./poc/other/blocksy.yaml
@@ -138802,6 +138807,7 @@
 ./poc/other/dashlane-phish_2.yaml
 ./poc/other/dashlane-phish_3.yaml
 ./poc/other/dashlane-phish_4.yaml
+./poc/other/dashlane-phish_5.yaml
 ./poc/other/dashy-panel.yaml
 ./poc/other/dashy-panel_1.yaml
 ./poc/other/dashylite-ff9293ba28748efa2ab9a2fe77385468.yaml
@@ -151746,6 +151752,7 @@
 ./poc/other/keepersecurity-phish_1_1.yaml
 ./poc/other/keepersecurity-phish_2.yaml
 ./poc/other/keepersecurity-phish_3.yaml
+./poc/other/keepersecurity-phish_4.yaml
 ./poc/other/kemai-ras-ultra-vires-access.yaml
 ./poc/other/kemai-ras-ultra-vires-access_1.yaml
 ./poc/other/kemp-loadmaster-panel.yaml
@@ -171843,6 +171850,7 @@
 ./poc/other/teamviewer-phish_2.yaml
 ./poc/other/teamviewer-phish_3.yaml
 ./poc/other/teamviewer-phish_4.yaml
+./poc/other/teamviewer-phish_5.yaml
 ./poc/other/teamviewer.yaml
 ./poc/other/teardrop-b4d76613e7335efdff0b86f2400b044a.yaml
 ./poc/other/teardrop.yaml
@@ -174821,6 +174829,7 @@
 ./poc/other/unlimited-elements-for-elementor-ee228b54115c8d18fc563600ce60dc8e.yaml
 ./poc/other/unlimited-elements-for-elementor-f11446120031e72e361d722e3757a368.yaml
 ./poc/other/unlimited-elements-for-elementor-fb87c8f4ea1042bf511b04c8fcd3c39a.yaml
+./poc/other/unlimited-elements-for-elementor.yaml
 ./poc/other/unlimited-elements-for-elementor_1.yaml
 ./poc/other/unlimited-elements-for-elementor_2.yaml
 ./poc/other/unlimited-page-sidebars-f70d52a06003e8579ebfd3c3aae1a855.yaml
@@ -181327,7 +181336,6 @@
 ./poc/python/django-debugmode(1)_1.yaml
 ./poc/python/django-debugmode-7032.yaml
 ./poc/python/django-debugmode.yaml
-./poc/python/django-directory-traversal.yaml
 ./poc/python/django-framework-exceptions-7033.yaml
 ./poc/python/django-framework-exceptions-7034.yaml
 ./poc/python/django-framework-exceptions.yaml
