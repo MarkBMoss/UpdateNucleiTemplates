@@ -1,15 +1,15 @@
-id: nasa-core-677d63e1fdfe4f30bc6367d90e271e22
+id: nasa-core-13c846d002b8746c4e356de1cae48e6c
 
 info:
   name: >
-    Nasa Core <= 6.3.2 - Authenticated (Contributor+) Local File Inclusion
+    Nasa Core <= 6.3.2 - Reflected Cross-Site Scripting
   author: topscoder
-  severity: low
+  severity: medium
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/9e991342-b0d1-486c-a24d-e4d3f2be9b91?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/1f30ffe6-1045-454c-9f68-98a8a5183e1a?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
@@ -18,7 +18,7 @@ info:
     fofa-query: "wp-content/plugins/nasa-core/"
     google-query: inurl:"/wp-content/plugins/nasa-core/"
     shodan-query: 'vuln:'
-  tags: cve,wordpress,wp-plugin,nasa-core,low
+  tags: cve,wordpress,wp-plugin,nasa-core,medium
 
 http:
   - method: GET
