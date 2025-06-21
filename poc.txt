@@ -7932,7 +7932,6 @@
 ./poc/auth/vbsso-lite-788e1f523a1b1c87d4440e6883153b11.yaml
 ./poc/auth/vbsso-lite.yaml
 ./poc/auth/vcenter-weak-password-policy.yaml
-./poc/auth/veeam-backup-manager-login.yaml
 ./poc/auth/versa-default-login-11002.yaml
 ./poc/auth/versa-default-login-11002_2.yaml
 ./poc/auth/versa-default-login-11003.yaml
@@ -9451,6 +9450,7 @@
 ./poc/backup/veeam-backup-gcp_1.yaml
 ./poc/backup/veeam-backup-gcp_2.yaml
 ./poc/backup/veeam-backup-gcp_3.yaml
+./poc/backup/veeam-backup-manager-login.yaml
 ./poc/backup/veritas-netbackup-panel.yaml
 ./poc/backup/veritas-netbackup-panel_1.yaml
 ./poc/backup/veritas-netbackup-panel_1_1.yaml
@@ -92861,6 +92861,7 @@
 ./poc/cve/CVE-2025-5122-312ef69fc13b9c84673211551f8689e3.yaml
 ./poc/cve/CVE-2025-5123-8678487e5c0ff1c5b975e30ac82edee2.yaml
 ./poc/cve/CVE-2025-5142-ccec509288622c6c20d16923dd67c297.yaml
+./poc/cve/CVE-2025-5143-4b68d51b8692bd1235ce851e9c064b44.yaml
 ./poc/cve/CVE-2025-5144-fdc2c743dc722ffc4f11961cf5772816.yaml
 ./poc/cve/CVE-2025-5190-e5cf813891a25086ef94c98a98f8eb4a.yaml
 ./poc/cve/CVE-2025-5233-a34472d8df1f219430f4406bd5496d4e.yaml
@@ -92877,6 +92878,7 @@
 ./poc/cve/CVE-2025-5286-7688ab270441dcbfc6f90bcf39eb9819.yaml
 ./poc/cve/CVE-2025-5287-819f3cc6a500305e8613548fb916b731.yaml
 ./poc/cve/CVE-2025-5288-f37e83ed3934800bceca0dc209b53df9.yaml
+./poc/cve/CVE-2025-5289-92d8f6cee9e812c894a93ba6d8469a9a.yaml
 ./poc/cve/CVE-2025-5290-f9669a3326656f13ba8099dd0070995a.yaml
 ./poc/cve/CVE-2025-5291-a1caae89c495af4a12e2a260d9fb1455.yaml
 ./poc/cve/CVE-2025-5292-4df99530090c100c54e24d0bcd86a1fc.yaml
@@ -104000,7 +104002,7 @@
 ./poc/directory_listing/directory-traversal-7002.yaml
 ./poc/directory_listing/directory-traversal.yaml
 ./poc/directory_listing/directory-traversal_1.yaml
-./poc/directory_listing/django-directory-traversal.yaml
+./poc/directory_listing/django-nginx-alias-traversal.yaml
 ./poc/directory_listing/e-cology-filedownload-directory-traversal.yaml
 ./poc/directory_listing/e-cology-springframework-directory-traversal.yaml
 ./poc/directory_listing/ecology-fileDownload-directoryTraversal.yaml
@@ -104228,7 +104230,6 @@
 ./poc/directory_listing/yonyou-fe-templateOfTaohong_manager-traversal.yaml
 ./poc/directory_listing/yonyou-fe-templateOfTaohong_manager-traversal_1.yaml
 ./poc/directory_listing/yonyou-nc-ncfindweb-directory-traversal.yaml
-./poc/directory_listing/zeit-nodejs-cve-2020-5284-directory-traversal.yml
 ./poc/docker/Kubernetes-unauth.yaml
 ./poc/docker/amazon-docker-config-279.yaml
 ./poc/docker/amazon-docker-config-280.yaml
@@ -113199,6 +113200,7 @@
 ./poc/nodejs/yith-paypal-express-checkout-for-woocommerce-plugin_1.yaml
 ./poc/nodejs/yith-paypal-express-checkout-for-woocommerce.yaml
 ./poc/nodejs/yith-paypal-express-checkout-for-woocommerce_1.yaml
+./poc/nodejs/zeit-nodejs-cve-2020-5284-directory-traversal.yml
 ./poc/open_redirect/404-redirection-manager-7466b5060bfc9d29c19f9c189db7d170.yaml
 ./poc/open_redirect/404-redirection-manager-cd29b860b8988cf80803bf6d2f9ab3b4.yaml
 ./poc/open_redirect/404-redirection-manager.yaml
@@ -131103,8 +131105,8 @@
 ./poc/other/baggage-freight-plugin_1.yaml
 ./poc/other/baggage-freight.yaml
 ./poc/other/baggage-freight_1.yaml
-./poc/other/bagisto-csti.yaml
 ./poc/other/bagisto-csti_1.yaml
+./poc/other/bagisto-csti_2.yaml
 ./poc/other/bagisto-installer.yaml
 ./poc/other/bagisto-installer_1.yaml
 ./poc/other/bagisto-installer_1_1.yaml
@@ -150494,6 +150496,7 @@
 ./poc/other/interact-quiz-embed.yaml
 ./poc/other/interact-quiz-embed_1.yaml
 ./poc/other/interactive-3d-flipbook-powered-physics-engine-0f443dfc56f25e25cd26f23b9e4bc11d.yaml
+./poc/other/interactive-3d-flipbook-powered-physics-engine-3487d21b9aaa5f52ddc512c6f0cee555.yaml
 ./poc/other/interactive-3d-flipbook-powered-physics-engine-40ebbedff4f62b0e702d54e5246f57b4.yaml
 ./poc/other/interactive-3d-flipbook-powered-physics-engine-42f42d1f536c43a9944ffe9bb3a9b306.yaml
 ./poc/other/interactive-3d-flipbook-powered-physics-engine-61a0368e5a55ae7a66d2d34c3faac49f.yaml
@@ -156080,6 +156083,7 @@
 ./poc/other/misp-panel.yaml
 ./poc/other/misp-panel_1.yaml
 ./poc/other/misp-panel_2.yaml
+./poc/other/misp-panel_3.yaml
 ./poc/other/missing-csp.yaml
 ./poc/other/missing-csp_2.yaml
 ./poc/other/missing-hasfragileuserdata-attribute.yaml
@@ -162086,6 +162090,7 @@
 ./poc/other/posts-table-filterable-484471f043d4bebccc2aec16cad52bb5.yaml
 ./poc/other/posts-table-filterable-6b363299deaa2774178ff6df84952113.yaml
 ./poc/other/posts-table-filterable-6c115d410d6fc3595409d48d3708fb21.yaml
+./poc/other/posts-table-filterable-77015ba2c529154b25c6bd4e70472615.yaml
 ./poc/other/posts-table-filterable-7845660a1895fa84cb8ece56f814d34b.yaml
 ./poc/other/posts-table-filterable-d41d8cd98f00b204e9800998ecf8427e.yaml
 ./poc/other/posts-table-filterable-e29cea7be2e66e64d75e5520413cc13a.yaml
@@ -171585,7 +171590,6 @@
 ./poc/other/sync-qcloud-cos-5f2c9cd12b339ac23d5f58a0b0ebfc0f.yaml
 ./poc/other/sync-qcloud-cos.yaml
 ./poc/other/sync-qcloud-cos_1.yaml
-./poc/other/sync-storage-phish.yaml
 ./poc/other/sync-storage-phish_1.yaml
 ./poc/other/sync-storage-phish_1_1.yaml
 ./poc/other/sync-storage-phish_2.yaml
@@ -181537,10 +181541,10 @@
 ./poc/python/django-debugmode(1)_1.yaml
 ./poc/python/django-debugmode-7032.yaml
 ./poc/python/django-debugmode.yaml
+./poc/python/django-directory-traversal.yaml
 ./poc/python/django-framework-exceptions-7033.yaml
 ./poc/python/django-framework-exceptions-7034.yaml
 ./poc/python/django-framework-exceptions.yaml
-./poc/python/django-nginx-alias-traversal.yaml
 ./poc/python/django-orm-leak.yaml
 ./poc/python/django-rest-framework.yaml
 ./poc/python/django-secret-key.yaml
