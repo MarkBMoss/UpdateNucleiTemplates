@@ -104343,6 +104343,7 @@
 ./poc/docker/exposed-dockerd_1.yaml
 ./poc/docker/exposed-dockerd_2.yaml
 ./poc/docker/exposed-kubernetes-dashboard-advanced.yaml
+./poc/docker/flask-redis-docker_1.yaml
 ./poc/docker/insecure-kubernetes-api-server.yaml
 ./poc/docker/k8s-containers-share-host-ipc.yaml
 ./poc/docker/k8s-privileged-container.yaml
@@ -136825,7 +136826,6 @@
 ./poc/other/contact-form-7-style-ba8463f8475723d7b9fa15f84254b841.yaml
 ./poc/other/contact-form-7-style.yaml
 ./poc/other/contact-form-7-style_1.yaml
-./poc/other/contact-form-7.yaml
 ./poc/other/contact-form-7_1.yaml
 ./poc/other/contact-form-7_2.yaml
 ./poc/other/contact-form-7_3.yaml
@@ -156111,8 +156111,8 @@
 ./poc/other/mistape_1.yaml
 ./poc/other/mistrzowie.yaml
 ./poc/other/mitel-arbitary-file-read.yaml
-./poc/other/mitel-micollab-panel.yaml
 ./poc/other/mitel-micollab-panel_1.yaml
+./poc/other/mitel-micollab-panel_2.yaml
 ./poc/other/mitel-micollab-version.yaml
 ./poc/other/mitm-bug-tracker-83228c4c7f60502eea24e6ce5903d9f4.yaml
 ./poc/other/mitm-bug-tracker.yaml
@@ -181559,7 +181559,6 @@
 ./poc/python/djangodebug.yaml
 ./poc/python/exposing-django-debug-panel.yaml
 ./poc/python/flask-redis-docker.yaml
-./poc/python/flask-redis-docker_1.yaml
 ./poc/python/flask-werkzeug-debug.yaml
 ./poc/python/flask-werkzeug-debug_1.yaml
 ./poc/python/flask-werkzeug-debug_1_1.yaml
@@ -183459,8 +183458,8 @@
 ./poc/remote_code_execution/pi-woocommerce-order-date-time-and-type-a44345779387d191aa1fdac0be1e3bd0.yaml
 ./poc/remote_code_execution/pi-woocommerce-order-date-time-and-type.yaml
 ./poc/remote_code_execution/pi-woocommerce-order-date-time-and-type_1.yaml
-./poc/remote_code_execution/pinterest-for-woocommerce.yaml
 ./poc/remote_code_execution/pinterest-for-woocommerce_1.yaml
+./poc/remote_code_execution/pinterest-for-woocommerce_1_1.yaml
 ./poc/remote_code_execution/pinterest-for-woocommerce_2.yaml
 ./poc/remote_code_execution/pinterest-for-woocommerce_3.yaml
 ./poc/remote_code_execution/platformly-for-woocommerce-3a6b9732b888620374b97b7216ef3088.yaml
