@@ -100782,7 +100782,7 @@
 ./poc/debug/Django Debug Mode.yaml
 ./poc/debug/airflow-debug-231.yaml
 ./poc/debug/airflow-debug-232.yaml
-./poc/debug/airflow-debug.yaml
+./poc/debug/airflow-debug-233.yaml
 ./poc/debug/airflow-debug_1.yaml
 ./poc/debug/airflow-debug_1_1.yaml
 ./poc/debug/airflow-debug_2.yaml
@@ -104002,6 +104002,7 @@
 ./poc/directory_listing/directory-traversal-7002.yaml
 ./poc/directory_listing/directory-traversal.yaml
 ./poc/directory_listing/directory-traversal_1.yaml
+./poc/directory_listing/django-directory-traversal.yaml
 ./poc/directory_listing/django-nginx-alias-traversal.yaml
 ./poc/directory_listing/e-cology-filedownload-directory-traversal.yaml
 ./poc/directory_listing/e-cology-springframework-directory-traversal.yaml
@@ -136826,6 +136827,7 @@
 ./poc/other/contact-form-7-style-ba8463f8475723d7b9fa15f84254b841.yaml
 ./poc/other/contact-form-7-style.yaml
 ./poc/other/contact-form-7-style_1.yaml
+./poc/other/contact-form-7.yaml
 ./poc/other/contact-form-7_1.yaml
 ./poc/other/contact-form-7_2.yaml
 ./poc/other/contact-form-7_3.yaml
@@ -181541,7 +181543,6 @@
 ./poc/python/django-debugmode(1)_1.yaml
 ./poc/python/django-debugmode-7032.yaml
 ./poc/python/django-debugmode.yaml
-./poc/python/django-directory-traversal.yaml
 ./poc/python/django-framework-exceptions-7033.yaml
 ./poc/python/django-framework-exceptions-7034.yaml
 ./poc/python/django-framework-exceptions.yaml
@@ -183458,8 +183459,8 @@
 ./poc/remote_code_execution/pi-woocommerce-order-date-time-and-type-a44345779387d191aa1fdac0be1e3bd0.yaml
 ./poc/remote_code_execution/pi-woocommerce-order-date-time-and-type.yaml
 ./poc/remote_code_execution/pi-woocommerce-order-date-time-and-type_1.yaml
+./poc/remote_code_execution/pinterest-for-woocommerce.yaml
 ./poc/remote_code_execution/pinterest-for-woocommerce_1.yaml
-./poc/remote_code_execution/pinterest-for-woocommerce_1_1.yaml
 ./poc/remote_code_execution/pinterest-for-woocommerce_2.yaml
 ./poc/remote_code_execution/pinterest-for-woocommerce_3.yaml
 ./poc/remote_code_execution/platformly-for-woocommerce-3a6b9732b888620374b97b7216ef3088.yaml
