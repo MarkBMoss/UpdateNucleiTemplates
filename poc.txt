@@ -527,6 +527,7 @@
 ./poc/apache/apachesolrlfissrf-220331-222316.yaml
 ./poc/apache/apachesolrlfissrf.yaml
 ./poc/apache/apachesolrlfissrf_1.yaml
+./poc/apache/apachespark-ui-exposed.yaml
 ./poc/apache/apachestruts-rce.yaml
 ./poc/apache/askapache-firefox-adsense-f97340f5d88b3c5e1859d992075304c3.yaml
 ./poc/apache/askapache-firefox-adsense.yaml
@@ -10259,6 +10260,7 @@
 ./poc/config/composer-config_1.yaml
 ./poc/config/composer-config_2.yaml
 ./poc/config/conference-scheduler-43cc1c32a7af0d1769778ca9846f97ba.yaml
+./poc/config/conference-scheduler-f9685846105657b81dfb084b20fe4991.yaml
 ./poc/config/conference-scheduler.yaml
 ./poc/config/conference-scheduler_1.yaml
 ./poc/config/confetti-fall-animation-06b35776bf27c9084475b6109dda1921.yaml
@@ -92871,6 +92873,7 @@
 ./poc/cve/CVE-2025-5237-4463ae03c0f686ac9e63a4eb37cdc142.yaml
 ./poc/cve/CVE-2025-5238-6654f09a0036e22a5641c2da17a8faa1.yaml
 ./poc/cve/CVE-2025-5239-8fd1af3830d71a021406c9d53263cfcf.yaml
+./poc/cve/CVE-2025-5258-539c8dd4fa43ba6628f8c3434d403e35.yaml
 ./poc/cve/CVE-2025-5259-78fd29b895cbeef0c487073db2f62bc3.yaml
 ./poc/cve/CVE-2025-5282-686f0b3a25fb9e9def4b75b728ca8b15.yaml
 ./poc/cve/CVE-2025-5285-befe0b05af4aa47620f9895c05640d69.yaml
@@ -92948,6 +92951,7 @@
 ./poc/cve/CVE-2025-6070-af73faebc4b9695365e38e6ab2632e6b.yaml
 ./poc/cve/CVE-2025-6086-e8fd0165df69778ac623273227a49252.yaml
 ./poc/cve/CVE-2025-6201-b6d3f08a6a7aa685613b6b4ec632dca5.yaml
+./poc/cve/CVE-2025-6206-7d1f98efe11719261199e941f2bc3358.yaml
 ./poc/cve/CVE-2025-6220-1933f5a26a4e398a2acafaa09ad42013.yaml
 ./poc/cve/CVE-2025-6257-942200ca6dec77df9f159a811c699638.yaml
 ./poc/cve/CVE202127562-220331-222408.yaml
@@ -100481,6 +100485,7 @@
 ./poc/cve/cve-2024-8517.yaml
 ./poc/cve/cve-2025-24813.yaml
 ./poc/cve/cve-2025-4123.yaml
+./poc/cve/cve-2025-45985.draft.yaml
 ./poc/cve/cve-annotate.yaml
 ./poc/cve/cve-annotate.yml
 ./poc/cve/cve2json.yml
@@ -101439,9 +101444,11 @@
 ./poc/detect/artifactory-version-detect.yaml
 ./poc/detect/ascom-detect.yaml
 ./poc/detect/ascom-detect_1.yaml
+./poc/detect/aselect-server-detect.yaml
 ./poc/detect/aspnet-version-detect.yaml
 ./poc/detect/aspnet-version-detect_1.yaml
 ./poc/detect/aspnet-version-detect_2.yaml
+./poc/detect/assetlinks-detect.yaml
 ./poc/detect/atlantis-detect_1.yaml
 ./poc/detect/atlantis-detect_2.yaml
 ./poc/detect/atlantis-detect_3.yaml
@@ -101916,6 +101923,7 @@
 ./poc/detect/directus-detect.yaml
 ./poc/detect/directus-detect_1.yaml
 ./poc/detect/directus-detect_2.yaml
+./poc/detect/discord-invite-detect.yaml
 ./poc/detect/dizquetv-detect_1.yaml
 ./poc/detect/dmarc-detect.yaml
 ./poc/detect/dmarc-detect_1.yaml
@@ -102137,6 +102145,7 @@
 ./poc/detect/gaspot-honeypot-detection.yaml
 ./poc/detect/gaspot-honeypot-detection_1.yaml
 ./poc/detect/genetec-synergis-detect.yaml
+./poc/detect/geoserver-wfs-detect.yaml
 ./poc/detect/gerapy-detect.yaml
 ./poc/detect/gerapy-detect_1.yaml
 ./poc/detect/gerapy-detect_2.yaml
@@ -102721,6 +102730,7 @@
 ./poc/detect/microsoft-sharepoint-detect.yaml
 ./poc/detect/microsoft-sharepoint-detect_1.yaml
 ./poc/detect/microsoft-sharepoint-detect_2.yaml
+./poc/detect/microsoft-tunnel-detect.yaml
 ./poc/detect/microstrategy-detect-1.yaml
 ./poc/detect/microstrategy-detect-10.yaml
 ./poc/detect/microstrategy-detect-11.yaml
@@ -103656,6 +103666,7 @@
 ./poc/detect/tomcat-detect.yaml
 ./poc/detect/tomcat-detect_1.yaml
 ./poc/detect/tool-detect.yaml
+./poc/detect/tools4ever-helloid-detect.yaml
 ./poc/detect/topdesk-detect.yaml
 ./poc/detect/topdesk-detect_1.yaml
 ./poc/detect/torchserve-detect_1.yaml
@@ -103909,6 +103920,7 @@
 ./poc/detect/xxljob-admin-detect-11708.yaml
 ./poc/detect/xxljob-admin-detect-11708_1.yaml
 ./poc/detect/xxljob-admin-detect.yaml
+./poc/detect/xxllnc-zaaksysteem-detect.yaml
 ./poc/detect/xyz-domain-detection.yaml
 ./poc/detect/xyz-domain-detection_1.yaml
 ./poc/detect/yapi-detect-11719.yaml
@@ -103966,6 +103978,7 @@
 ./poc/directory_listing/Directory traversal.yaml
 ./poc/directory_listing/Directory traversal_1.yaml
 ./poc/directory_listing/Path-Traversal.yaml
+./poc/directory_listing/Path_traversal_NodeJs.yaml
 ./poc/directory_listing/SAP-Path-Traversal.yaml
 ./poc/directory_listing/YonyouNc-Directory-Traversal.yaml
 ./poc/directory_listing/aero-cms-directory-traversal.yaml
@@ -104231,6 +104244,7 @@
 ./poc/directory_listing/yonyou-fe-templateOfTaohong_manager-traversal.yaml
 ./poc/directory_listing/yonyou-fe-templateOfTaohong_manager-traversal_1.yaml
 ./poc/directory_listing/yonyou-nc-ncfindweb-directory-traversal.yaml
+./poc/directory_listing/zeit-nodejs-cve-2020-5284-directory-traversal.yml
 ./poc/docker/Kubernetes-unauth.yaml
 ./poc/docker/amazon-docker-config-279.yaml
 ./poc/docker/amazon-docker-config-280.yaml
@@ -104344,7 +104358,6 @@
 ./poc/docker/exposed-dockerd_1.yaml
 ./poc/docker/exposed-dockerd_2.yaml
 ./poc/docker/exposed-kubernetes-dashboard-advanced.yaml
-./poc/docker/flask-redis-docker_1.yaml
 ./poc/docker/insecure-kubernetes-api-server.yaml
 ./poc/docker/k8s-containers-share-host-ipc.yaml
 ./poc/docker/k8s-privileged-container.yaml
@@ -105355,6 +105368,7 @@
 ./poc/exposed/exposed-kafdrop_1.yaml
 ./poc/exposed/exposed-kafdrop_2.yaml
 ./poc/exposed/exposed-mcp-server.yaml
+./poc/exposed/exposed-mcp-sse-server.yaml
 ./poc/exposed/exposed-merge-metadata-servlet.yaml
 ./poc/exposed/exposed-merge-metadata-servlet_1.yaml
 ./poc/exposed/exposed-nomad-7325.yaml
@@ -112902,7 +112916,6 @@
 ./poc/nginx/phpstudy-nginx-wrong-resolve.yml
 ./poc/nginx/snipe-nginx-cache-da85bb497f1cd4e16a921d6ce438db5e.yaml
 ./poc/nginx/snipe-nginx-cache.yaml
-./poc/nodejs/Path_traversal_NodeJs.yaml
 ./poc/nodejs/aem-dump-contentnode.yaml
 ./poc/nodejs/aem-dump-contentnode_1.yaml
 ./poc/nodejs/aem-dump-contentnode_2.yaml
@@ -113202,7 +113215,6 @@
 ./poc/nodejs/yith-paypal-express-checkout-for-woocommerce-plugin_1.yaml
 ./poc/nodejs/yith-paypal-express-checkout-for-woocommerce.yaml
 ./poc/nodejs/yith-paypal-express-checkout-for-woocommerce_1.yaml
-./poc/nodejs/zeit-nodejs-cve-2020-5284-directory-traversal.yml
 ./poc/open_redirect/404-redirection-manager-7466b5060bfc9d29c19f9c189db7d170.yaml
 ./poc/open_redirect/404-redirection-manager-cd29b860b8988cf80803bf6d2f9ab3b4.yaml
 ./poc/open_redirect/404-redirection-manager.yaml
@@ -128393,6 +128405,7 @@
 ./poc/other/aio-time-clock-lite.yaml
 ./poc/other/aio-time-clock-lite_1.yaml
 ./poc/other/aiomatic-automatic-ai-content-writer-1de0cd3eb3858a51585d5a4eb1a1402e.yaml
+./poc/other/aiomatic-automatic-ai-content-writer-87629da15a34b3804590abfdae6ea08f.yaml
 ./poc/other/aiomatic-automatic-ai-content-writer-b1ccb28c2fa59e7b18e1ffd1e815d9d8.yaml
 ./poc/other/aiomatic-automatic-ai-content-writer-d1ada30f1be583cdc6da7a02651471a9.yaml
 ./poc/other/aiomatic-automatic-ai-content-writer.yaml
@@ -136028,6 +136041,7 @@
 ./poc/other/cobubrazor_v8-view_fixt2-info_1.yaml
 ./poc/other/cockpit-project-panel.yaml
 ./poc/other/cockpit-project-panel_1.yaml
+./poc/other/cockpit-project-panel_2.yaml
 ./poc/other/cockpit-workflow.yaml
 ./poc/other/cockpit.yaml
 ./poc/other/cocoon-workflow.yaml
@@ -146907,6 +146921,7 @@
 ./poc/other/geoportail-shortcode-33c752143215da55594e1c866737c291.yaml
 ./poc/other/geoportail-shortcode-7289cbccdd728e1542ccc0478bea520e.yaml
 ./poc/other/geoportail-shortcode.yaml
+./poc/other/geoserver-version.yaml
 ./poc/other/geoserver.yaml
 ./poc/other/geotagged-media-7543ab35ed9ecd67c785e8d8fd06eecc.yaml
 ./poc/other/geotagged-media-813ff2d697650e3322a48a8187c37190.yaml
@@ -173795,6 +173810,7 @@
 ./poc/other/trending-158816e2800c4ac859014b86d87135d2.yaml
 ./poc/other/trending.yaml
 ./poc/other/trending_1.yaml
+./poc/other/trendmicro-apex-central-panel.yaml
 ./poc/other/trendmicro-apexone-panel.yaml
 ./poc/other/trendy-news-34d326736b0381de2c4d24b067a7f68a.yaml
 ./poc/other/trendy-news.yaml
@@ -179514,6 +179530,7 @@
 ./poc/other/xxljob-panel_2.yaml
 ./poc/other/xxljob-workflow-11717.yaml
 ./poc/other/xxljob-workflow-11718.yaml
+./poc/other/xxllnc-zaaksysteem-panel.yaml
 ./poc/other/xxx.yaml
 ./poc/other/yaaburnee-themes-2350d664ec1fe331870fd08b06ffa2aa.yaml
 ./poc/other/yaaburnee-themes-65ec87abe2543c5f0d9ccf5f269fc91b.yaml
@@ -181560,6 +181577,7 @@
 ./poc/python/djangodebug.yaml
 ./poc/python/exposing-django-debug-panel.yaml
 ./poc/python/flask-redis-docker.yaml
+./poc/python/flask-redis-docker_1.yaml
 ./poc/python/flask-werkzeug-debug.yaml
 ./poc/python/flask-werkzeug-debug_1.yaml
 ./poc/python/flask-werkzeug-debug_1_1.yaml
@@ -195826,6 +195844,7 @@
 ./poc/web/onesignal-free-web-push-notifications.yaml
 ./poc/web/onesignal-free-web-push-notifications_1.yaml
 ./poc/web/onion-website-supported.yaml
+./poc/web/onion-website-supported_1.yaml
 ./poc/web/onoffice-for-wp-websites-1af0a22bff591109335c5e008f637ca6.yaml
 ./poc/web/onoffice-for-wp-websites-86e0c4fb598c00be6eaff25548faaa0f.yaml
 ./poc/web/onwebchat-c145e3807e1a4b3d935bf59cab21f294.yaml
