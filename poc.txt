@@ -10694,6 +10694,7 @@
 ./poc/config/phinx-config.yaml
 ./poc/config/php-fpm-config-9513.yaml
 ./poc/config/php-fpm-config-9514.yaml
+./poc/config/phpmyadmin-misconfiguration.yaml
 ./poc/config/phpmyadmin-misconfiguration_1.yaml
 ./poc/config/phpmyadmin-misconfiguration_2.yaml
 ./poc/config/phpsec-config_1.yaml
@@ -93155,6 +93156,7 @@
 ./poc/cve/CVE-2025-6379-cac6c2885be50b1ba75d89b51adbc9f6.yaml
 ./poc/cve/CVE-2025-6381-7e7c240e5ea33420ee4a7680983f06c4.yaml
 ./poc/cve/CVE-2025-6383-d84bbe60be049dabcb9b84e6984f8b27.yaml
+./poc/cve/CVE-2025-6462-5c7047cbd715093ad8f7243063edfd2c.yaml
 ./poc/cve/CVE-2025-6488-45b89c6505cb0c8c15a5324481a05500.yaml
 ./poc/cve/CVE-2025-6537-d28441cfe31eeac6a86e39ef00fb63a8.yaml
 ./poc/cve/CVE-2025-6538-eb14a29dbd30bc2d038324b5ba94b734.yaml
@@ -101738,6 +101740,7 @@
 ./poc/detect/bimi-detect_3.yaml
 ./poc/detect/bimi-detect_4.yaml
 ./poc/detect/bimi-detect_5.yaml
+./poc/detect/bimi-detect_6.yaml
 ./poc/detect/bimi-record-detect.yaml
 ./poc/detect/biometric-detect-736.yaml
 ./poc/detect/biometric-detect.yaml
@@ -104213,6 +104216,7 @@
 ./poc/directory_listing/Directory traversal.yaml
 ./poc/directory_listing/Directory traversal_1.yaml
 ./poc/directory_listing/Path-Traversal.yaml
+./poc/directory_listing/Path_traversal_NodeJs.yaml
 ./poc/directory_listing/SAP-Path-Traversal.yaml
 ./poc/directory_listing/YonyouNc-Directory-Traversal.yaml
 ./poc/directory_listing/aero-cms-directory-traversal.yaml
@@ -104250,7 +104254,6 @@
 ./poc/directory_listing/directory-traversal.yaml
 ./poc/directory_listing/directory-traversal_1.yaml
 ./poc/directory_listing/django-directory-traversal.yaml
-./poc/directory_listing/django-nginx-alias-traversal.yaml
 ./poc/directory_listing/e-cology-filedownload-directory-traversal.yaml
 ./poc/directory_listing/e-cology-springframework-directory-traversal.yaml
 ./poc/directory_listing/ecology-fileDownload-directoryTraversal.yaml
@@ -104478,6 +104481,7 @@
 ./poc/directory_listing/yonyou-fe-templateOfTaohong_manager-traversal.yaml
 ./poc/directory_listing/yonyou-fe-templateOfTaohong_manager-traversal_1.yaml
 ./poc/directory_listing/yonyou-nc-ncfindweb-directory-traversal.yaml
+./poc/directory_listing/zeit-nodejs-cve-2020-5284-directory-traversal.yml
 ./poc/docker/Kubernetes-unauth.yaml
 ./poc/docker/amazon-docker-config-279.yaml
 ./poc/docker/amazon-docker-config-280.yaml
@@ -104591,7 +104595,6 @@
 ./poc/docker/exposed-dockerd_1.yaml
 ./poc/docker/exposed-dockerd_2.yaml
 ./poc/docker/exposed-kubernetes-dashboard-advanced.yaml
-./poc/docker/flask-redis-docker_1.yaml
 ./poc/docker/insecure-kubernetes-api-server.yaml
 ./poc/docker/k8s-containers-share-host-ipc.yaml
 ./poc/docker/k8s-privileged-container.yaml
@@ -113162,7 +113165,6 @@
 ./poc/nginx/phpstudy-nginx-wrong-resolve.yml
 ./poc/nginx/snipe-nginx-cache-da85bb497f1cd4e16a921d6ce438db5e.yaml
 ./poc/nginx/snipe-nginx-cache.yaml
-./poc/nodejs/Path_traversal_NodeJs.yaml
 ./poc/nodejs/aem-dump-contentnode.yaml
 ./poc/nodejs/aem-dump-contentnode_1.yaml
 ./poc/nodejs/aem-dump-contentnode_2.yaml
@@ -113465,7 +113467,6 @@
 ./poc/nodejs/yith-paypal-express-checkout-for-woocommerce-plugin_1.yaml
 ./poc/nodejs/yith-paypal-express-checkout-for-woocommerce.yaml
 ./poc/nodejs/yith-paypal-express-checkout-for-woocommerce_1.yaml
-./poc/nodejs/zeit-nodejs-cve-2020-5284-directory-traversal.yml
 ./poc/open_redirect/404-redirection-manager-7466b5060bfc9d29c19f9c189db7d170.yaml
 ./poc/open_redirect/404-redirection-manager-cd29b860b8988cf80803bf6d2f9ab3b4.yaml
 ./poc/open_redirect/404-redirection-manager.yaml
@@ -172030,7 +172031,6 @@
 ./poc/other/sync-qcloud-cos-5f2c9cd12b339ac23d5f58a0b0ebfc0f.yaml
 ./poc/other/sync-qcloud-cos.yaml
 ./poc/other/sync-qcloud-cos_1.yaml
-./poc/other/sync-storage-phish.yaml
 ./poc/other/sync-storage-phish_1.yaml
 ./poc/other/sync-storage-phish_1_1.yaml
 ./poc/other/sync-storage-phish_2.yaml
@@ -182011,6 +182011,7 @@
 ./poc/python/django-framework-exceptions-7033.yaml
 ./poc/python/django-framework-exceptions-7034.yaml
 ./poc/python/django-framework-exceptions.yaml
+./poc/python/django-nginx-alias-traversal.yaml
 ./poc/python/django-orm-leak.yaml
 ./poc/python/django-rest-framework.yaml
 ./poc/python/django-secret-key.yaml
@@ -182025,6 +182026,7 @@
 ./poc/python/djangodebug.yaml
 ./poc/python/exposing-django-debug-panel.yaml
 ./poc/python/flask-redis-docker.yaml
+./poc/python/flask-redis-docker_1.yaml
 ./poc/python/flask-werkzeug-debug.yaml
 ./poc/python/flask-werkzeug-debug_1.yaml
 ./poc/python/flask-werkzeug-debug_1_1.yaml
@@ -192832,6 +192834,7 @@
 ./poc/sql_injection/elgg-sqli_1.yaml
 ./poc/sql_injection/elisqlreports-3207e414460d4c65e4d71947fd6b629e.yaml
 ./poc/sql_injection/elisqlreports-42e74f11219f83b87ad99deca2b40f32.yaml
+./poc/sql_injection/elisqlreports-71ea76adc5ed88e21b29e30dede80e2b.yaml
 ./poc/sql_injection/elisqlreports-c7ba03c12a7ae470660985334388b0d3.yaml
 ./poc/sql_injection/elisqlreports-d0fbfa246602ee66dbff8e004946cf18.yaml
 ./poc/sql_injection/enjoyrmis-sqli_1.yaml
