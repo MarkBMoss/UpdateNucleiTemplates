@@ -3021,9 +3021,9 @@
 ./poc/auth/cortex-xsoar-login-1227.yaml
 ./poc/auth/cortex-xsoar-login-1228.yaml
 ./poc/auth/cortex-xsoar-login-1229.yaml
+./poc/auth/cortex-xsoar-login.yaml
 ./poc/auth/cortex-xsoar-login_1.yaml
 ./poc/auth/cortex-xsoar-login_2.yaml
-./poc/auth/cortex-xsoar-login_3.yaml
 ./poc/auth/couchdb-default-login.yaml
 ./poc/auth/couchdb-unauth.yaml
 ./poc/auth/couchdb-unauthorized.yaml
@@ -134998,6 +134998,7 @@
 ./poc/other/ccleaner-phish_3.yaml
 ./poc/other/ccleaner-phish_4.yaml
 ./poc/other/ccleaner-phish_5.yaml
+./poc/other/ccleaner-phish_6.yaml
 ./poc/other/cd-action.yaml
 ./poc/other/cdapl.yaml
 ./poc/other/cdata.yaml
@@ -137132,7 +137133,6 @@
 ./poc/other/contact-form-7-style-ba8463f8475723d7b9fa15f84254b841.yaml
 ./poc/other/contact-form-7-style.yaml
 ./poc/other/contact-form-7-style_1.yaml
-./poc/other/contact-form-7.yaml
 ./poc/other/contact-form-7_1.yaml
 ./poc/other/contact-form-7_2.yaml
 ./poc/other/contact-form-7_3.yaml
@@ -147611,6 +147611,7 @@
 ./poc/other/gl-s20_firmware.yaml
 ./poc/other/gladinet-centrestack-panel.yaml
 ./poc/other/gladinet-centrestack-panel_1.yaml
+./poc/other/gladinet-centrestack-panel_2.yaml
 ./poc/other/glance-that-febd1194ea0e6e2b0806802be32fa17d.yaml
 ./poc/other/glance-that.yaml
 ./poc/other/glass-b3268283daf190fd77277f208bd83ee4.yaml
@@ -183927,8 +183928,8 @@
 ./poc/remote_code_execution/pi-woocommerce-order-date-time-and-type-a44345779387d191aa1fdac0be1e3bd0.yaml
 ./poc/remote_code_execution/pi-woocommerce-order-date-time-and-type.yaml
 ./poc/remote_code_execution/pi-woocommerce-order-date-time-and-type_1.yaml
-./poc/remote_code_execution/pinterest-for-woocommerce.yaml
 ./poc/remote_code_execution/pinterest-for-woocommerce_1.yaml
+./poc/remote_code_execution/pinterest-for-woocommerce_1_1.yaml
 ./poc/remote_code_execution/pinterest-for-woocommerce_2.yaml
 ./poc/remote_code_execution/pinterest-for-woocommerce_3.yaml
 ./poc/remote_code_execution/platformly-for-woocommerce-3a6b9732b888620374b97b7216ef3088.yaml
