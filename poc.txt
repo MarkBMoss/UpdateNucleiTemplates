@@ -105505,7 +105505,6 @@
 ./poc/directory_listing/directory-traversal.yaml
 ./poc/directory_listing/directory-traversal_1.yaml
 ./poc/directory_listing/django-directory-traversal.yaml
-./poc/directory_listing/django-nginx-alias-traversal.yaml
 ./poc/directory_listing/e-cology-filedownload-directory-traversal.yaml
 ./poc/directory_listing/e-cology-springframework-directory-traversal.yaml
 ./poc/directory_listing/ecology-fileDownload-directoryTraversal.yaml
@@ -105847,7 +105846,6 @@
 ./poc/docker/exposed-dockerd_1.yaml
 ./poc/docker/exposed-dockerd_2.yaml
 ./poc/docker/exposed-kubernetes-dashboard-advanced.yaml
-./poc/docker/flask-redis-docker_1.yaml
 ./poc/docker/insecure-kubernetes-api-server.yaml
 ./poc/docker/k8s-containers-share-host-ipc.yaml
 ./poc/docker/k8s-privileged-container.yaml
@@ -173425,7 +173423,6 @@
 ./poc/other/sync-qcloud-cos-5f2c9cd12b339ac23d5f58a0b0ebfc0f.yaml
 ./poc/other/sync-qcloud-cos.yaml
 ./poc/other/sync-qcloud-cos_1.yaml
-./poc/other/sync-storage-phish.yaml
 ./poc/other/sync-storage-phish_1.yaml
 ./poc/other/sync-storage-phish_1_1.yaml
 ./poc/other/sync-storage-phish_2.yaml
@@ -183429,6 +183426,7 @@
 ./poc/python/django-framework-exceptions-7033.yaml
 ./poc/python/django-framework-exceptions-7034.yaml
 ./poc/python/django-framework-exceptions.yaml
+./poc/python/django-nginx-alias-traversal.yaml
 ./poc/python/django-orm-leak.yaml
 ./poc/python/django-rest-framework.yaml
 ./poc/python/django-secret-key.yaml
@@ -183443,6 +183441,7 @@
 ./poc/python/djangodebug.yaml
 ./poc/python/exposing-django-debug-panel.yaml
 ./poc/python/flask-redis-docker.yaml
+./poc/python/flask-redis-docker_1.yaml
 ./poc/python/flask-werkzeug-debug.yaml
 ./poc/python/flask-werkzeug-debug_1.yaml
 ./poc/python/flask-werkzeug-debug_1_1.yaml
