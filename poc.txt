@@ -105467,7 +105467,6 @@
 ./poc/directory_listing/Directory traversal.yaml
 ./poc/directory_listing/Directory traversal_1.yaml
 ./poc/directory_listing/Path-Traversal.yaml
-./poc/directory_listing/Path_traversal_NodeJs.yaml
 ./poc/directory_listing/SAP-Path-Traversal.yaml
 ./poc/directory_listing/YonyouNc-Directory-Traversal.yaml
 ./poc/directory_listing/aero-cms-directory-traversal.yaml
@@ -105732,7 +105731,6 @@
 ./poc/directory_listing/yonyou-fe-templateOfTaohong_manager-traversal.yaml
 ./poc/directory_listing/yonyou-fe-templateOfTaohong_manager-traversal_1.yaml
 ./poc/directory_listing/yonyou-nc-ncfindweb-directory-traversal.yaml
-./poc/directory_listing/zeit-nodejs-cve-2020-5284-directory-traversal.yml
 ./poc/docker/Kubernetes-unauth.yaml
 ./poc/docker/amazon-docker-config-279.yaml
 ./poc/docker/amazon-docker-config-280.yaml
@@ -114421,6 +114419,7 @@
 ./poc/nginx/phpstudy-nginx-wrong-resolve.yml
 ./poc/nginx/snipe-nginx-cache-da85bb497f1cd4e16a921d6ce438db5e.yaml
 ./poc/nginx/snipe-nginx-cache.yaml
+./poc/nodejs/Path_traversal_NodeJs.yaml
 ./poc/nodejs/aem-dump-contentnode.yaml
 ./poc/nodejs/aem-dump-contentnode_1.yaml
 ./poc/nodejs/aem-dump-contentnode_2.yaml
@@ -114724,6 +114723,7 @@
 ./poc/nodejs/yith-paypal-express-checkout-for-woocommerce-plugin_1.yaml
 ./poc/nodejs/yith-paypal-express-checkout-for-woocommerce.yaml
 ./poc/nodejs/yith-paypal-express-checkout-for-woocommerce_1.yaml
+./poc/nodejs/zeit-nodejs-cve-2020-5284-directory-traversal.yml
 ./poc/open_redirect/404-redirection-manager-7466b5060bfc9d29c19f9c189db7d170.yaml
 ./poc/open_redirect/404-redirection-manager-cd29b860b8988cf80803bf6d2f9ab3b4.yaml
 ./poc/open_redirect/404-redirection-manager.yaml
@@ -173423,7 +173423,6 @@
 ./poc/other/sync-qcloud-cos-5f2c9cd12b339ac23d5f58a0b0ebfc0f.yaml
 ./poc/other/sync-qcloud-cos.yaml
 ./poc/other/sync-qcloud-cos_1.yaml
-./poc/other/sync-storage-phish.yaml
 ./poc/other/sync-storage-phish_1.yaml
 ./poc/other/sync-storage-phish_1_1.yaml
 ./poc/other/sync-storage-phish_2.yaml
