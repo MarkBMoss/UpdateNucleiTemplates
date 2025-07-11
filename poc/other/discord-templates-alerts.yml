@@ -1,0 +1,72 @@
+name: 🔄 Sync & Alert on new Nuclei templates
+
+# Trigger on your own pushes *and* on a cron schedule
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '**/*.yaml'
+      - '**/*.yml'
+  schedule:
+    - cron: '*/5 * * * *'   # every 5 min (GitHub minimum)
+
+permissions:
+  contents: write           # we need write to merge on schedule
+
+jobs:
+  sync-and-notify:
+    runs-on: ubuntu-latest
+    steps:
+
+      # 1) Grab the full history so we can merge and diff properly
+      - name: Check out repository (full history)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # 2) Only on the scheduled run: pull in upstream/main and merge
+      - name: Sync upstream repo
+        if: github.event_name == 'schedule'
+        run: |
+          git remote add upstream https://github.com/projectdiscovery/nuclei-templates.git
+          git fetch upstream main
+          git merge --no-edit upstream/main
+
+      # 3) Install Python deps
+      - name: Set up Python & deps
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - run: pip install 'pyyaml>=6' 'requests>=2'
+
+      # 4) Detect new "*.yml"/"*.yaml" files added in the last commit
+      - name: Find newly added templates
+        id: find_new
+        run: |
+          # On pushes, compare HEAD~1..HEAD; on schedule, compare merge-parent..HEAD
+          if [ "${{ github.event_name }}" = "push" ]; then
+            RANGE="HEAD~1..HEAD"
+          else
+            RANGE="HEAD^..HEAD"
+          fi
+
+          git diff --name-status $RANGE \
+            | awk '$1=="A" && ($2 ~ /\.ya?ml$/){print $2}' \
+            > new_templates.txt || true
+
+          echo "::set-output name=count::$(wc -l < new_templates.txt)"
+      
+      # 5) Bail out if nothing new
+      - name: No new templates? skip
+        if: steps.find_new.outputs.count == '0'
+        run: echo "No new templates to notify."
+
+      # 6) Loop over each new file and hit Discord
+      - name: Notify Discord of each new template
+        if: steps.find_new.outputs.count != '0'
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        run: |
+          while read -r tpl; do
+            python .github/scripts/notify.py "$tpl"
+          done < new_templates.txt

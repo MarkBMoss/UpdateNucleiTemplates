@@ -1,23 +1,23 @@
-id: wordpress-copy-delete-posts
+id: wordpress-backuply
 
 info:
-  name: Duplicate Post Detection
+  name: Backuply – Backup, Restore, Migrate and Clone Detection
   author: ricardomaia
   severity: info
   reference:
-    - https://wordpress.org/plugins/copy-delete-posts/
+    - https://wordpress.org/plugins/backuply/
   metadata:
-    plugin_namespace: copy-delete-posts
-    wpscan: https://wpscan.com/plugin/copy-delete-posts
+    plugin_namespace: backuply
+    wpscan: https://wpscan.com/plugin/backuply
   tags: tech,wordpress,wp-plugin,top-200
 
 http:
   - method: GET
     path:
-      - "{{BaseURL}}/wp-content/plugins/copy-delete-posts/readme.txt"
+      - "{{BaseURL}}/wp-content/plugins/backuply/readme.txt"
 
     payloads:
-      last_version: helpers/wordpress/plugins/copy-delete-posts.txt
+      last_version: helpers/wordpress/plugins/backuply.txt
 
     extractors:
       - type: regex
