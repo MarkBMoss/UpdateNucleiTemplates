@@ -1,67 +1,74 @@
 name: 🔄 Sync & Alert on new Nuclei templates
 
-# Trigger on your own pushes *and* on a cron schedule
+# Fires on your pushes + every 5 min
 on:
   push:
-    branches: [ main ]
+    branches: [main]
     paths:
       - '**/*.yaml'
       - '**/*.yml'
   schedule:
-    - cron: '*/5 * * * *'   # every 5 min (GitHub minimum)
+    - cron: '*/5 * * * *'
 
 permissions:
-  contents: write           # we need write to merge on schedule
+  contents: write      # gives GITHUB_TOKEN push rights
 
 jobs:
   sync-and-notify:
     runs-on: ubuntu-latest
     steps:
 
-      # 1) Grab the full history so we can merge and diff properly
-      - name: Check out repository (full history)
+      # 1) Checkout with write-enabled token
+      - name: Check out repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          persist-credentials: true   # <-- important so push works
 
-      # 2) Only on the scheduled run: pull in upstream/main and merge
-      - name: Sync upstream repo
-        if: github.event_name == 'schedule'
+      # 2) Only on schedule: configure git + merge upstream
+      - name: Configure Git for merge
+        if: ${{ github.event_name == 'schedule' }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Fetch & merge upstream
+        if: ${{ github.event_name == 'schedule' }}
         run: |
           git remote add upstream https://github.com/projectdiscovery/nuclei-templates.git
           git fetch upstream main
           git merge --no-edit upstream/main
 
-      # 3) Install Python deps
+      # 2.1) Push that merge back so your fork’s main updates
+      - name: Push merge commit
+        if: ${{ github.event_name == 'schedule' }}
+        run: git push origin main
+
+      # 3) Install deps & find new templates
       - name: Set up Python & deps
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
       - run: pip install 'pyyaml>=6' 'requests>=2'
 
-      # 4) Detect new "*.yml"/"*.yaml" files added in the last commit
       - name: Find newly added templates
         id: find_new
         run: |
-          # On pushes, compare HEAD~1..HEAD; on schedule, compare merge-parent..HEAD
           if [ "${{ github.event_name }}" = "push" ]; then
             RANGE="HEAD~1..HEAD"
           else
             RANGE="HEAD^..HEAD"
           fi
-
           git diff --name-status $RANGE \
             | awk '$1=="A" && ($2 ~ /\.ya?ml$/){print $2}' \
             > new_templates.txt || true
+          lines=$(wc -l < new_templates.txt)
+          echo "count=$lines" >> $GITHUB_OUTPUT
 
-          echo "::set-output name=count::$(wc -l < new_templates.txt)"
-      
-      # 5) Bail out if nothing new
       - name: No new templates? skip
         if: steps.find_new.outputs.count == '0'
-        run: echo "No new templates to notify."
+        run: echo "Nothing new."
 
-      # 6) Loop over each new file and hit Discord
       - name: Notify Discord of each new template
         if: steps.find_new.outputs.count != '0'
         env:
