@@ -8057,12 +8057,12 @@
 ./poc/cnnvd/CNNVD-201610-923.yaml
 ./poc/cnnvd/cnnvd-200705-315-1035.yaml
 ./poc/cnnvd/cnnvd-200705-315-1036.yaml
+./poc/cnnvd/resin-cnnvd-200705-315-9864.yaml
 ./poc/cnnvd/resin-cnnvd-200705-315-9865.yaml
 ./poc/cnnvd/resin-cnnvd-200705-315-9865_1.yaml
 ./poc/cnnvd/resin-cnnvd-200705-315-9866.yaml
 ./poc/cnnvd/resin-cnnvd-200705-315-9866_1.yaml
 ./poc/cnnvd/resin-cnnvd-200705-315-9867.yaml
-./poc/cnnvd/resin-cnnvd-200705-315.yml
 ./poc/cnnvd/resin-cnnvd-200705-315_1.yaml
 ./poc/cnnvd/resin-cnnvd-200705-315_1_1.yaml
 ./poc/cnnvd/resin-cnnvd-200705-315_2.yaml
@@ -102612,7 +102612,7 @@
 ./poc/drupal/drupal_module-consent_popup-cross-site-scripting.yaml
 ./poc/drupal/drupal_module-consent_popup-cross-site-scripting_1.yaml
 ./poc/drupal/drupal_module-content_moderation_notifications-information-disclosure.yaml
-./poc/drupal/drupal_module-context-cross-site-scripting_1.yaml
+./poc/drupal/drupal_module-context-cross-site-scripting.yaml
 ./poc/drupal/drupal_module-context-cross-site-scripting_2.yaml
 ./poc/drupal/drupal_module-context-cross-site-scripting_2_1.yaml
 ./poc/drupal/drupal_module-cookiebot_gtm-cross-site-scripting.yaml
@@ -103054,9 +103054,8 @@
 ./poc/drupal/drupal_module-select_or_other-cross-site-scripting_1.yaml
 ./poc/drupal/drupal_module-sendinblue-unsupported.yaml
 ./poc/drupal/drupal_module-sendinblue-unsupported_1.yaml
+./poc/drupal/drupal_module-services-access-bypass.yaml
 ./poc/drupal/drupal_module-services-access-bypass_1.yaml
-./poc/drupal/drupal_module-services-access-bypass_2.yaml
-./poc/drupal/drupal_module-services-sql-injection.yaml
 ./poc/drupal/drupal_module-services-sql-injection_1.yaml
 ./poc/drupal/drupal_module-services_sso_client-cross-site-scripting.yaml
 ./poc/drupal/drupal_module-services_sso_client-cross-site-scripting_1.yaml
@@ -134960,7 +134959,6 @@
 ./poc/other/contact-form-7-style-ba8463f8475723d7b9fa15f84254b841.yaml
 ./poc/other/contact-form-7-style.yaml
 ./poc/other/contact-form-7-style_1.yaml
-./poc/other/contact-form-7.yaml
 ./poc/other/contact-form-7_1.yaml
 ./poc/other/contact-form-7_2.yaml
 ./poc/other/contact-form-7_3.yaml
@@ -184596,6 +184594,7 @@
 ./poc/remote_code_execution/wordpress-rce-simplefilelist-11303_1.yaml
 ./poc/remote_code_execution/wordpress-rce-simplefilelist-11304.yaml
 ./poc/remote_code_execution/wordpress-rce-simplefilelist-11304_1.yaml
+./poc/remote_code_execution/wordpress-rce-simplefilelist.yaml
 ./poc/remote_code_execution/wordpress-rce-simplefilelist_1.yaml
 ./poc/remote_code_execution/wordpress-rce-simplefilelist_2.yaml
 ./poc/remote_code_execution/wordpress-simplefilelist-rce.yaml
@@ -193071,6 +193070,7 @@
 ./poc/sql/drop-shadow-boxes-b9897e5fa8077484ddbb305a1633d5ca.yaml
 ./poc/sql/dropdown-menu-widget-87bf2d9db4f7339dc4405be8857b6f15.yaml
 ./poc/sql/drozd-addons-for-elementor-db9780da0131469d450f49e3e0dd2524.yaml
+./poc/sql/drupal_module-services-sql-injection.yaml
 ./poc/sql/ds-suit-6477bf18cad6c823db485408d49b337b.yaml
 ./poc/sql/dsidxpress-2658f3433bcaa5a5dbae5ef9ad80afd8.yaml
 ./poc/sql/dsubscribers-0c89a0c3acd55ab44cdfdb4797515d25.yaml
@@ -204660,7 +204660,6 @@
 ./poc/wordpress/wordpress-processing-embed.yaml
 ./poc/wordpress/wordpress-processing-embed_1.yaml
 ./poc/wordpress/wordpress-public-api-csp-bypass.yaml
-./poc/wordpress/wordpress-rce-simplefilelist.yaml
 ./poc/wordpress/wordpress-rdf-user-enum-11305.yaml
 ./poc/wordpress/wordpress-rdf-user-enum_1.yaml
 ./poc/wordpress/wordpress-rdf-user-enum_2.yaml
