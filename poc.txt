@@ -88723,6 +88723,7 @@
 ./poc/cve/CVE-2025-4336-bb8e18df6c26fa09abe4898596b38c09.yaml
 ./poc/cve/CVE-2025-4337-dc8036d27370cb14b8517d609d625f1f.yaml
 ./poc/cve/CVE-2025-4339-3070c947cc2826ad93824ded1ce11c60.yaml
+./poc/cve/CVE-2025-4369-58c401e2820e72fd7852f7f688a9774f.yaml
 ./poc/cve/CVE-2025-4380-091d79aac59b950934cab7de3b79eb61.yaml
 ./poc/cve/CVE-2025-4381-235782c473604f32ff8eb50def797569.yaml
 ./poc/cve/CVE-2025-43834-233c6deb9a1aa15c79d7418ffd77823e.yaml
@@ -89698,6 +89699,8 @@
 ./poc/cve/CVE-2025-53568-17041f0783eed7d526c7331abb3b17f1.yaml
 ./poc/cve/CVE-2025-53569-e27746bbf52606e7c3760980ae7a5bae.yaml
 ./poc/cve/CVE-2025-5392-b0b9e8c8679e2c78fbf559c83f498138.yaml
+./poc/cve/CVE-2025-5393-ff0bdcb479cbc8592fd3b265835b0d1a.yaml
+./poc/cve/CVE-2025-5394-6aa2adc4d12ae88527ae6c5c2dab821b.yaml
 ./poc/cve/CVE-2025-5482-4598ed502f86426c1e73857fe53fc5b1.yaml
 ./poc/cve/CVE-2025-5486-6b7a86f7defb6469fa10a95a34d1932e.yaml
 ./poc/cve/CVE-2025-5486-ccd724567d77d5c1272486b5e4900625.yaml
@@ -89847,9 +89850,13 @@
 ./poc/cve/CVE-2025-6976-c3b67d4adc3ccf609e728ab029be0fb7.yaml
 ./poc/cve/CVE-2025-7046-34dcb6856a9793657619d1ed1b31dcc7.yaml
 ./poc/cve/CVE-2025-7059-3e164a176ba1f41989b40cca2763aee3.yaml
+./poc/cve/CVE-2025-7340-bf05aaa9a814e800d553d13b6df8e195.yaml
+./poc/cve/CVE-2025-7360-d2266090615ece1463c36d19688797df.yaml
+./poc/cve/CVE-2025-7367-10fa9da04357a78e786a63af7187fa6f.yaml
 ./poc/cve/CVE-2025-7387-19a9b923f01aa9a2b19ee4d03962d9e6.yaml
 ./poc/cve/CVE-2025-7401-0122b6418c1b5f0f740a9aa23623a189.yaml
 ./poc/cve/CVE-2025-7504-0a00aef6ddf37c7f4866d738b78f2fbf.yaml
+./poc/cve/CVE-2025-7667-69b3764f20e8705c96daeddd048ae39f.yaml
 ./poc/cve/CVE_2023_51467.yaml
 ./poc/cve/CVE_2023_51467_1.yaml
 ./poc/cve/CVE_2023_51467_2.yaml
@@ -102569,7 +102576,6 @@
 ./poc/drupal/drupal_module-ckeditor_lts-cross-site-scripting_2.yaml
 ./poc/drupal/drupal_module-ckeditor_uploadimage-access-bypass.yaml
 ./poc/drupal/drupal_module-ckeditor_uploadimage-access-bypass_1.yaml
-./poc/drupal/drupal_module-cleantalk-cross-site-scripting-and-sql-injection.yaml
 ./poc/drupal/drupal_module-cleantalk-cross-site-scripting-and-sql-injection_1.yaml
 ./poc/drupal/drupal_module-cleantalk-sql-injection.yaml
 ./poc/drupal/drupal_module-cleantalk-sql-injection_2.yaml
@@ -102916,7 +102922,6 @@
 ./poc/drupal/drupal_module-nvp-cross-site-scripting.yaml
 ./poc/drupal/drupal_module-nvp-cross-site-scripting_1.yaml
 ./poc/drupal/drupal_module-oauth_server_sso-sql-injection.yaml
-./poc/drupal/drupal_module-oauth_server_sso-sql-injection_1.yaml
 ./poc/drupal/drupal_module-obfuscate_email-cross-site-scripting.yaml
 ./poc/drupal/drupal_module-obfuscate_email-cross-site-scripting_1.yaml
 ./poc/drupal/drupal_module-obfuscate_email-cross-site-scripting_2.yaml
@@ -103056,6 +103061,7 @@
 ./poc/drupal/drupal_module-sendinblue-unsupported_1.yaml
 ./poc/drupal/drupal_module-services-access-bypass.yaml
 ./poc/drupal/drupal_module-services-access-bypass_1.yaml
+./poc/drupal/drupal_module-services-sql-injection.yaml
 ./poc/drupal/drupal_module-services-sql-injection_1.yaml
 ./poc/drupal/drupal_module-services_sso_client-cross-site-scripting.yaml
 ./poc/drupal/drupal_module-services_sso_client-cross-site-scripting_1.yaml
@@ -110754,7 +110760,6 @@
 ./poc/mongodb/mongodb-detect-8919.yaml
 ./poc/mongodb/mongodb-detect-8919_1.yaml
 ./poc/mongodb/mongodb-detect-8920.yaml
-./poc/mongodb/mongodb-detect-8920_1.yaml
 ./poc/mongodb/mongodb-detect-8921.yaml
 ./poc/mongodb/mongodb-detect-8921_1.yaml
 ./poc/mongodb/mongodb-detect_1.yaml
@@ -126925,7 +126930,9 @@
 ./poc/other/alojapro-widget-a4c255bf2ed77730bf3bb306fccc9782.yaml
 ./poc/other/alojapro-widget.yaml
 ./poc/other/alojapro-widget_1.yaml
+./poc/other/alone-5ef65f37ffb2461816c3950599ce6a82.yaml
 ./poc/other/alone-6925d54f578e9f9682a9dccb8a9725aa.yaml
+./poc/other/alone-978ace1fe431b2d276d542ea4c1b82d0.yaml
 ./poc/other/alpha-price-table-for-elementor-d05c10c630198745316be91666c6f09f.yaml
 ./poc/other/alpha-price-table-for-elementor.yaml
 ./poc/other/alphabetic-pagination-47c31955959e4384439c072942a75303.yaml
@@ -134618,6 +134625,7 @@
 ./poc/other/companion-auto-update-4523308d7d068021a1f50b479e587f6f.yaml
 ./poc/other/companion-auto-update-d41d8cd98f00b204e9800998ecf8427e.yaml
 ./poc/other/companion-auto-update-dacd39483dd27ed56fd38bf0c95d8688.yaml
+./poc/other/companion-auto-update-e5d1fa3b46bd993d435d4c4acf0f2ce5.yaml
 ./poc/other/companion-auto-update-fbff65588577f70c0e774cc66830284b.yaml
 ./poc/other/companion-auto-update-plugin-d41d8cd98f00b204e9800998ecf8427e.yaml
 ./poc/other/companion-auto-update-plugin.yaml
@@ -147273,6 +147281,8 @@
 ./poc/other/ht-builder_1.yaml
 ./poc/other/ht-builder_2.yaml
 ./poc/other/ht-contactform-3c6decfae8258c82348526e1dd9cb541.yaml
+./poc/other/ht-contactform-65810a711936bea03b6688d5ee8e71d7.yaml
+./poc/other/ht-contactform-afb1cc42cbb9f597ffe8e3351b8549bf.yaml
 ./poc/other/ht-contactform-f196fe5ed4df4f6300f159343d9f4562.yaml
 ./poc/other/ht-contactform.yaml
 ./poc/other/ht-contactform_1.yaml
@@ -163503,6 +163513,7 @@
 ./poc/other/restrict-content-plugin_1.yaml
 ./poc/other/restrict-content.yaml
 ./poc/other/restrict-content_1.yaml
+./poc/other/restrict-file-access-99e9cbb0fb386dfbd55bb4a1cbba811b.yaml
 ./poc/other/restrict-file-access-ebf292b00912caaf1da510aeb14a39a4.yaml
 ./poc/other/restrict-for-elementor-b95fdfa2a43d5b36772255b837cd4fac.yaml
 ./poc/other/restrict-for-elementor.yaml
@@ -169408,6 +169419,7 @@
 ./poc/other/strong-testimonials-b7c241812e7b43626aad364190fc9ce5.yaml
 ./poc/other/strong-testimonials-c729a0f42c875d471776c48685dc6e57.yaml
 ./poc/other/strong-testimonials-c847c368d6b35a2ce5f5484d7845d716.yaml
+./poc/other/strong-testimonials-d3cd42c21351bc3f1ca347764693640f.yaml
 ./poc/other/strong-testimonials-d41d8cd98f00b204e9800998ecf8427e.yaml
 ./poc/other/strong-testimonials-e1dcb9b81930a70955ca2daeb8b3eabc.yaml
 ./poc/other/strong-testimonials-e77a68d985b856efc277c5fbcb984645.yaml
@@ -185374,7 +185386,7 @@
 ./poc/sap/sap-netweaver-portal.yaml
 ./poc/sap/sap-netweaver-portal_1.yaml
 ./poc/sap/sap-netweaver-workflow-10060.yaml
-./poc/sap/sap-netweaver-workflow.yaml
+./poc/sap/sap-netweaver-workflow-10061.yaml
 ./poc/sap/sap-nw-abap-icm.yaml
 ./poc/sap/sap-nw-abap-info-leakyaml.yaml
 ./poc/sap/sap-nw-abap.yaml
@@ -191033,6 +191045,7 @@
 ./poc/sql/CVE-2025-6744-b66a790e016c95193b70eed3c01db079.yaml
 ./poc/sql/CVE-2025-6782-941292ab807b3ea2872e19f9dbb8beb4.yaml
 ./poc/sql/CVE-2025-7327-4db70a3dbcf5fc486e4318bb91833e38.yaml
+./poc/sql/CVE-2025-7341-f99fdcb9b9b1f7689d5f8bdbaaa6853b.yaml
 ./poc/sql/CVE-2025-7442-ae0f1ab1f63fc37070ddb099f73eca58.yaml
 ./poc/sql/Changdao-165-SQLi.yaml
 ./poc/sql/Changdao-165-SQLi_1.yaml
@@ -193070,7 +193083,8 @@
 ./poc/sql/drop-shadow-boxes-b9897e5fa8077484ddbb305a1633d5ca.yaml
 ./poc/sql/dropdown-menu-widget-87bf2d9db4f7339dc4405be8857b6f15.yaml
 ./poc/sql/drozd-addons-for-elementor-db9780da0131469d450f49e3e0dd2524.yaml
-./poc/sql/drupal_module-services-sql-injection.yaml
+./poc/sql/drupal_module-cleantalk-cross-site-scripting-and-sql-injection.yaml
+./poc/sql/drupal_module-oauth_server_sso-sql-injection_1.yaml
 ./poc/sql/ds-suit-6477bf18cad6c823db485408d49b337b.yaml
 ./poc/sql/dsidxpress-2658f3433bcaa5a5dbae5ef9ad80afd8.yaml
 ./poc/sql/dsubscribers-0c89a0c3acd55ab44cdfdb4797515d25.yaml
@@ -194092,6 +194106,7 @@
 ./poc/sql/houzez-login-register-bb43e7e2104f92ffb17608db5afe8e6a.yaml
 ./poc/sql/hqtheme-extra-6477bf18cad6c823db485408d49b337b.yaml
 ./poc/sql/hrm-9fbab2574790ec12adb0baf3ea63f92c.yaml
+./poc/sql/ht-contactform-1f3b172640db46b5e42416e309ce9427.yaml
 ./poc/sql/ht-easy-google-analytics-4e668dbcf82ef1f7d19762b237c5c111.yaml
 ./poc/sql/ht-easy-google-analytics-f342c9bf1167dbf0d72408ef9672c740.yaml
 ./poc/sql/ht-mega-for-elementor-3c7aa42dba29110e082169c980c05e3d.yaml
@@ -194789,6 +194804,7 @@
 ./poc/sql/monalisa-81b006d6ad49305b73fdb0ff51154780.yaml
 ./poc/sql/moneymasters-02a4bc9438adbcdaa5664f021e38f12e.yaml
 ./poc/sql/moneytheme-0560e2fcc6071d361ddbd57a75ed8daf.yaml
+./poc/sql/mongodb-detect-8920_1.yaml
 ./poc/sql/mongodb-detect.yaml
 ./poc/sql/mongodb-exception-page.yaml
 ./poc/sql/mongodb-exporter-metrics.yaml
