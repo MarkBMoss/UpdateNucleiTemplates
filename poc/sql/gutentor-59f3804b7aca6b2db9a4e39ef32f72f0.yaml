@@ -1,31 +1,31 @@
-id: shortcodes-ultimate-f092e6c75d20b9ed16374591753831f0
+id: gutentor-59f3804b7aca6b2db9a4e39ef32f72f0
 
 info:
   name: >
-    Multiple Plugins <= (Various Versions) - Authenticated (Contributor+) Stored DOM-Based Cross-Site Scripting via Magnific Popups JavaScript Library
+    Gutentor – Gutenberg Blocks – Page Builder for Gutenberg Editor <= 3.4.8 - Authenticated (Contributor+) Stored Cross-Site Scripting via Multiple Widgets
   author: topscoder
   severity: low
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/dae80fc2-3076-4a32-876d-5df1c62de9bd?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/0e9ec6af-fa51-4e14-abf6-450c1ca6f8d5?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
     cve-id: 
   metadata:
-    fofa-query: "wp-content/plugins/shortcodes-ultimate/"
-    google-query: inurl:"/wp-content/plugins/shortcodes-ultimate/"
+    fofa-query: "wp-content/plugins/gutentor/"
+    google-query: inurl:"/wp-content/plugins/gutentor/"
     shodan-query: 'vuln:'
-  tags: cve,wordpress,wp-plugin,shortcodes-ultimate,low
+  tags: cve,wordpress,wp-plugin,gutentor,low
 
 http:
   - method: GET
     redirects: true
     max-redirects: 3
     path:
-      - "{{BaseURL}}/wp-content/plugins/shortcodes-ultimate/readme.txt"
+      - "{{BaseURL}}/wp-content/plugins/gutentor/readme.txt"
 
     extractors:
       - type: regex
@@ -51,9 +51,9 @@ http:
 
       - type: word
         words:
-          - "shortcodes-ultimate"
+          - "gutentor"
         part: body
 
       - type: dsl
         dsl:
-          - compare_versions(version, '<= 7.4.2')
+          - compare_versions(version, '<= 3.4.8')
