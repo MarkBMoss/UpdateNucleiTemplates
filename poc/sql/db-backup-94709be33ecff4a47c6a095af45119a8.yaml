@@ -1,31 +1,31 @@
-id: mediabay-4b71142828f74831f6dc8b130f4fd0c7
+id: db-backup-94709be33ecff4a47c6a095af45119a8
 
 info:
   name: >
-    Mediabay - WordPress Media Library Folders <= 1.4 - Reflected Cross-Site Scripting
+    DB Backup <= 6.0 - Missing Authorization
   author: topscoder
-  severity: medium
+  severity: high
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/f8de9a0d-d199-4268-84d3-71830003b311?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/12913ac3-82a7-42e9-ba44-8e6577e0fbc7?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
     cve-id: 
   metadata:
-    fofa-query: "wp-content/plugins/mediabay/"
-    google-query: inurl:"/wp-content/plugins/mediabay/"
+    fofa-query: "wp-content/plugins/db-backup/"
+    google-query: inurl:"/wp-content/plugins/db-backup/"
     shodan-query: 'vuln:'
-  tags: cve,wordpress,wp-plugin,mediabay,medium
+  tags: cve,wordpress,wp-plugin,db-backup,high
 
 http:
   - method: GET
     redirects: true
     max-redirects: 3
     path:
-      - "{{BaseURL}}/wp-content/plugins/mediabay/readme.txt"
+      - "{{BaseURL}}/wp-content/plugins/db-backup/readme.txt"
 
     extractors:
       - type: regex
@@ -51,9 +51,9 @@ http:
 
       - type: word
         words:
-          - "mediabay"
+          - "db-backup"
         part: body
 
       - type: dsl
         dsl:
-          - compare_versions(version, '<= 1.4')
+          - compare_versions(version, '<= 6.0')

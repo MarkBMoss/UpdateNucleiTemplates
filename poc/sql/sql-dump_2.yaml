@@ -3,7 +3,7 @@ id: default-sql-dump
 info:
   name: MySQL - Dump Files
   author: geeknik,dwisiswant0,ELSFA7110,mastercho
-  severity: high
+  severity: medium
   description: A MySQL dump file was found
   classification:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N
