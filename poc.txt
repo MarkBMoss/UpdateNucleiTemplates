@@ -104861,7 +104861,6 @@
 ./poc/drupal/drupal_module-ckeditor_lts-cross-site-scripting_2.yaml
 ./poc/drupal/drupal_module-ckeditor_uploadimage-access-bypass.yaml
 ./poc/drupal/drupal_module-ckeditor_uploadimage-access-bypass_1.yaml
-./poc/drupal/drupal_module-cleantalk-cross-site-scripting-and-sql-injection.yaml
 ./poc/drupal/drupal_module-cleantalk-cross-site-scripting-and-sql-injection_1.yaml
 ./poc/drupal/drupal_module-cleantalk-sql-injection.yaml
 ./poc/drupal/drupal_module-cleantalk-sql-injection_2.yaml
@@ -105207,8 +105206,6 @@
 ./poc/drupal/drupal_module-noggin-unsupported_1.yaml
 ./poc/drupal/drupal_module-nvp-cross-site-scripting.yaml
 ./poc/drupal/drupal_module-nvp-cross-site-scripting_1.yaml
-./poc/drupal/drupal_module-oauth_server_sso-sql-injection.yaml
-./poc/drupal/drupal_module-oauth_server_sso-sql-injection_1.yaml
 ./poc/drupal/drupal_module-obfuscate_email-cross-site-scripting.yaml
 ./poc/drupal/drupal_module-obfuscate_email-cross-site-scripting_1.yaml
 ./poc/drupal/drupal_module-obfuscate_email-cross-site-scripting_2.yaml
@@ -105348,7 +105345,6 @@
 ./poc/drupal/drupal_module-sendinblue-unsupported_1.yaml
 ./poc/drupal/drupal_module-services-access-bypass.yaml
 ./poc/drupal/drupal_module-services-access-bypass_1.yaml
-./poc/drupal/drupal_module-services-sql-injection.yaml
 ./poc/drupal/drupal_module-services-sql-injection_1.yaml
 ./poc/drupal/drupal_module-services_sso_client-cross-site-scripting.yaml
 ./poc/drupal/drupal_module-services_sso_client-cross-site-scripting_1.yaml
@@ -113189,7 +113185,6 @@
 ./poc/mongodb/mongodb-detect-8919.yaml
 ./poc/mongodb/mongodb-detect-8919_1.yaml
 ./poc/mongodb/mongodb-detect-8920.yaml
-./poc/mongodb/mongodb-detect-8920_1.yaml
 ./poc/mongodb/mongodb-detect-8921.yaml
 ./poc/mongodb/mongodb-detect-8921_1.yaml
 ./poc/mongodb/mongodb-detect_1.yaml
@@ -113204,7 +113199,6 @@
 ./poc/mongodb/mongodb-info-enum_2.yaml
 ./poc/mongodb/mongodb-ops-manager-8922.yaml
 ./poc/mongodb/mongodb-ops-manager-8922_1.yaml
-./poc/mongodb/mongodb-ops-manager-8923.yaml
 ./poc/mongodb/mongodb-ops-manager-8924.yaml
 ./poc/mongodb/mongodb-ops-manager-8924_1.yaml
 ./poc/mongodb/mongodb-ops-manager_1.yaml
@@ -169925,6 +169919,7 @@
 ./poc/other/simple-history.yaml
 ./poc/other/simple-history_1.yaml
 ./poc/other/simple-history_2.yaml
+./poc/other/simple-history_3.yaml
 ./poc/other/simple-icons-03e487465bb923661d049aafb077d022.yaml
 ./poc/other/simple-icons-77fb32c5c3aa2b70b15423e0972c0c7c.yaml
 ./poc/other/simple-icons.yaml
@@ -196826,6 +196821,10 @@
 ./poc/sql/drop-shadow-boxes-b9897e5fa8077484ddbb305a1633d5ca.yaml
 ./poc/sql/dropdown-menu-widget-87bf2d9db4f7339dc4405be8857b6f15.yaml
 ./poc/sql/drozd-addons-for-elementor-db9780da0131469d450f49e3e0dd2524.yaml
+./poc/sql/drupal_module-cleantalk-cross-site-scripting-and-sql-injection.yaml
+./poc/sql/drupal_module-oauth_server_sso-sql-injection.yaml
+./poc/sql/drupal_module-oauth_server_sso-sql-injection_1.yaml
+./poc/sql/drupal_module-services-sql-injection.yaml
 ./poc/sql/ds-suit-6477bf18cad6c823db485408d49b337b.yaml
 ./poc/sql/dsidxpress-2658f3433bcaa5a5dbae5ef9ad80afd8.yaml
 ./poc/sql/dsubscribers-0c89a0c3acd55ab44cdfdb4797515d25.yaml
@@ -198568,10 +198567,12 @@
 ./poc/sql/monalisa-81b006d6ad49305b73fdb0ff51154780.yaml
 ./poc/sql/moneymasters-02a4bc9438adbcdaa5664f021e38f12e.yaml
 ./poc/sql/moneytheme-0560e2fcc6071d361ddbd57a75ed8daf.yaml
+./poc/sql/mongodb-detect-8920_1.yaml
 ./poc/sql/mongodb-detect.yaml
 ./poc/sql/mongodb-exception-page.yaml
 ./poc/sql/mongodb-exporter-metrics.yaml
 ./poc/sql/mongodb-info-enum.yaml
+./poc/sql/mongodb-ops-manager-8923.yaml
 ./poc/sql/mongodb-ops-manager.yaml
 ./poc/sql/mongodb-unauth.yaml
 ./poc/sql/monsters-editor-10-for-wp-super-edit-973edbc42b401e04f2817347dbb88982.yaml
