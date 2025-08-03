@@ -106491,6 +106491,7 @@
 ./poc/drupal/drupal_module-permissions_by_term-access-bypass_1.yaml
 ./poc/drupal/drupal_module-permissions_by_term-access-bypass_2.yaml
 ./poc/drupal/drupal_module-phonefield-sql-injection.yaml
+./poc/drupal/drupal_module-phonefield-sql-injection_1.yaml
 ./poc/drupal/drupal_module-photos-access-bypass.yaml
 ./poc/drupal/drupal_module-phpconfig-arbitrary-php-code-execution.yaml
 ./poc/drupal/drupal_module-postfile-cross-site-request-forgery.yaml
@@ -106590,6 +106591,7 @@
 ./poc/drupal/drupal_module-sendinblue-unsupported_1.yaml
 ./poc/drupal/drupal_module-services-access-bypass.yaml
 ./poc/drupal/drupal_module-services-access-bypass_1.yaml
+./poc/drupal/drupal_module-services-sql-injection.yaml
 ./poc/drupal/drupal_module-services-sql-injection_1.yaml
 ./poc/drupal/drupal_module-services_sso_client-cross-site-scripting.yaml
 ./poc/drupal/drupal_module-services_sso_client-cross-site-scripting_1.yaml
@@ -114451,6 +114453,7 @@
 ./poc/mongodb/mongodb-info-enum_2.yaml
 ./poc/mongodb/mongodb-ops-manager-8922.yaml
 ./poc/mongodb/mongodb-ops-manager-8922_1.yaml
+./poc/mongodb/mongodb-ops-manager-8923.yaml
 ./poc/mongodb/mongodb-ops-manager-8924.yaml
 ./poc/mongodb/mongodb-ops-manager-8924_1.yaml
 ./poc/mongodb/mongodb-ops-manager_1.yaml
@@ -198168,8 +198171,6 @@
 ./poc/sql/drop-shadow-boxes-b9897e5fa8077484ddbb305a1633d5ca.yaml
 ./poc/sql/dropdown-menu-widget-87bf2d9db4f7339dc4405be8857b6f15.yaml
 ./poc/sql/drozd-addons-for-elementor-db9780da0131469d450f49e3e0dd2524.yaml
-./poc/sql/drupal_module-phonefield-sql-injection_1.yaml
-./poc/sql/drupal_module-services-sql-injection.yaml
 ./poc/sql/ds-suit-6477bf18cad6c823db485408d49b337b.yaml
 ./poc/sql/dsidxpress-2658f3433bcaa5a5dbae5ef9ad80afd8.yaml
 ./poc/sql/dsubscribers-0c89a0c3acd55ab44cdfdb4797515d25.yaml
@@ -199918,7 +199919,6 @@
 ./poc/sql/mongodb-exception-page.yaml
 ./poc/sql/mongodb-exporter-metrics.yaml
 ./poc/sql/mongodb-info-enum.yaml
-./poc/sql/mongodb-ops-manager-8923.yaml
 ./poc/sql/mongodb-ops-manager.yaml
 ./poc/sql/mongodb-unauth.yaml
 ./poc/sql/monsters-editor-10-for-wp-super-edit-973edbc42b401e04f2817347dbb88982.yaml
