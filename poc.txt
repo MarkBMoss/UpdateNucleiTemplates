@@ -2091,6 +2091,7 @@
 ./poc/auth/checkmk-login_4.yaml
 ./poc/auth/chefio-login-check.yaml
 ./poc/auth/chinaunicom-default-login.yaml
+./poc/auth/chips-partitioned-cookies-state-confusion.yaml
 ./poc/auth/christian-science-bible-lesson-subjects-c33e5f7de7f3bebfe420108158e380f8.yaml
 ./poc/auth/christian-science-bible-lesson-subjects.yaml
 ./poc/auth/cipher-secret-key.yaml
@@ -2607,6 +2608,7 @@
 ./poc/auth/dlink-unauth-cgi-script.yaml
 ./poc/auth/dlink-unauth-cgi-script_1.yaml
 ./poc/auth/dn-cookie-notice-cb4fd336731b21f00efa9a562f202e2f.yaml
+./poc/auth/dns-cache-poisoning-authoritative-oob.yaml
 ./poc/auth/doccheck-login-2125da382a7cc7dceda3d2beaa5737e5.yaml
 ./poc/auth/docker-api-uauth.yaml
 ./poc/auth/docker-credentials-exposure.yaml
@@ -6570,6 +6572,7 @@
 ./poc/auth/weaver-userselect-unauth_2.yaml
 ./poc/auth/web3-authentication-53a207cc153af27c7b9bc24ea25dfec1.yaml
 ./poc/auth/web3-authentication.yaml
+./poc/auth/webauthn-passkey-bypass.yaml
 ./poc/auth/weblogic-login-11149.yaml
 ./poc/auth/weblogic-login-11149_1.yaml
 ./poc/auth/weblogic-login-11150.yaml
@@ -6589,6 +6592,8 @@
 ./poc/auth/webriti-custom-login-page.yaml
 ./poc/auth/webroot-login_1.yaml
 ./poc/auth/webroot-login_2.yaml
+./poc/auth/websocket-auth-bypass-oob.yaml
+./poc/auth/websocket-auth-bypass-real.yaml
 ./poc/auth/websphere-portal-preauth-ssrf.yaml
 ./poc/auth/websphere-preauth-ssrf.yaml
 ./poc/auth/webtoffee-gdpr-cookie-consent-06912f51d2ec918f28076a7a3b043da3.yaml
@@ -8053,6 +8058,7 @@
 ./poc/backup/php-backup-files-9497_1.yaml
 ./poc/backup/php-backup-files-9498.yaml
 ./poc/backup/php-backup-files-9498_1.yaml
+./poc/backup/php-config-backup-exposure.yaml
 ./poc/backup/phpmybackuppro.yaml
 ./poc/backup/rds-automated-backup-disabled.yaml
 ./poc/backup/rds-backup-enable.yaml
@@ -103414,6 +103420,7 @@
 ./poc/detect/dolibarr-detect-7069.yaml
 ./poc/detect/dolibarr-detect-7070.yaml
 ./poc/detect/dolibarr-detect.yaml
+./poc/detect/dom-xss-detection.yaml
 ./poc/detect/domibus-detect.yaml
 ./poc/detect/domibus-detect_1.yaml
 ./poc/detect/domibus-detect_2.yaml
@@ -106574,7 +106581,6 @@
 ./poc/drupal/drupal_module-permissions_by_term-access-bypass_1.yaml
 ./poc/drupal/drupal_module-permissions_by_term-access-bypass_2.yaml
 ./poc/drupal/drupal_module-phonefield-sql-injection.yaml
-./poc/drupal/drupal_module-phonefield-sql-injection_1.yaml
 ./poc/drupal/drupal_module-photos-access-bypass.yaml
 ./poc/drupal/drupal_module-phpconfig-arbitrary-php-code-execution.yaml
 ./poc/drupal/drupal_module-postfile-cross-site-request-forgery.yaml
@@ -106674,7 +106680,6 @@
 ./poc/drupal/drupal_module-sendinblue-unsupported_1.yaml
 ./poc/drupal/drupal_module-services-access-bypass.yaml
 ./poc/drupal/drupal_module-services-access-bypass_1.yaml
-./poc/drupal/drupal_module-services-sql-injection.yaml
 ./poc/drupal/drupal_module-services-sql-injection_1.yaml
 ./poc/drupal/drupal_module-services_sso_client-cross-site-scripting.yaml
 ./poc/drupal/drupal_module-services_sso_client-cross-site-scripting_1.yaml
@@ -109967,6 +109972,8 @@
 ./poc/http/http-xframe-header.yaml
 ./poc/http/http.yaml
 ./poc/http/http2-request-smuggling.yaml
+./poc/http/http3-protocol-downgrade-attack.yaml
+./poc/http/http3-quic-smuggling.yaml
 ./poc/http/http_file_server.yaml
 ./poc/http/http_server.yaml
 ./poc/http/httpbin-ip.yaml
@@ -110254,6 +110261,7 @@
 ./poc/injection/saxparser_xxeinjection.yaml
 ./poc/injection/saxreader_xxeinjection.yaml
 ./poc/injection/servicenow-title-injection.yaml
+./poc/injection/smtp-header-injection-relay-oob.yaml
 ./poc/injection/ssrf-injection.yaml
 ./poc/injection/template-injection.yaml
 ./poc/injection/text-injection.yaml
@@ -114544,7 +114552,6 @@
 ./poc/mongodb/mongodb-info-enum_2.yaml
 ./poc/mongodb/mongodb-ops-manager-8922.yaml
 ./poc/mongodb/mongodb-ops-manager-8922_1.yaml
-./poc/mongodb/mongodb-ops-manager-8923.yaml
 ./poc/mongodb/mongodb-ops-manager-8924.yaml
 ./poc/mongodb/mongodb-ops-manager-8924_1.yaml
 ./poc/mongodb/mongodb-ops-manager_1.yaml
@@ -115680,6 +115687,7 @@
 ./poc/open_redirect/zip-codes-redirect-plugin_1.yaml
 ./poc/open_redirect/zip-codes-redirect.yaml
 ./poc/open_redirect/zip-codes-redirect_1.yaml
+./poc/oracle/brotli-compression-oracle-attack.yaml
 ./poc/oracle/card-oracle-833b10d6da67aa79d387735989f25a32.yaml
 ./poc/oracle/card-oracle.yaml
 ./poc/oracle/card-oracle_1.yaml
@@ -142023,6 +142031,7 @@
 ./poc/other/dnp-firewall.yaml
 ./poc/other/dns-320_firmware.yaml
 ./poc/other/dns-320l.yaml
+./poc/other/dns-data-exfiltration-base32-oob.yaml
 ./poc/other/dns-multiple-example.yaml
 ./poc/other/dns-ns-probe.yaml
 ./poc/other/dns-value-share-template-1.yaml
@@ -176739,6 +176748,7 @@
 ./poc/other/tlr-2005ksh.yaml
 ./poc/other/tlr-2005ksh_firmware.yaml
 ./poc/other/tlr-2855ks6_firmware.yaml
+./poc/other/tls-pqc-downgrade-attack.yaml
 ./poc/other/tls-sni-proxy.yaml
 ./poc/other/tls-sni-proxy_1.yaml
 ./poc/other/tls-sni-proxy_2.yaml
@@ -177316,6 +177326,7 @@
 ./poc/other/trust-payments-gateway-3ds2-plugin_1.yaml
 ./poc/other/trust-payments-gateway-3ds2.yaml
 ./poc/other/trust-payments-gateway-3ds2_1.yaml
+./poc/other/trusted-types-dom-clobbering-bypass.yaml
 ./poc/other/trustist-reviewer-b8ad102b588e5f6a7887e9f9996f9a73.yaml
 ./poc/other/trustist-reviewer_1.yaml
 ./poc/other/trustmary-7fb601aef196ad4d474d4871bdd063d3.yaml
@@ -185510,6 +185521,7 @@
 ./poc/remote_code_execution/blaze-online-eparcel-for-woocommerce_1.yaml
 ./poc/remote_code_execution/blind-rce-ff.yaml
 ./poc/remote_code_execution/blind-rce-origin.yaml
+./poc/remote_code_execution/blind-rce-polyglot-chain-oob.yaml
 ./poc/remote_code_execution/blind-rce-referer.yaml
 ./poc/remote_code_execution/blind-rce-user-agent.yaml
 ./poc/remote_code_execution/blind-rce-xff.yaml
@@ -191354,6 +191366,7 @@
 ./poc/sensitive/s3-sensitive-api.yaml
 ./poc/sensitive/sap-sensitive-information-disclosure.yaml
 ./poc/sensitive/sensitive-chinese-words-scanner-408b10164fc34663fb7e10bde0cd605b.yaml
+./poc/sensitive/sensitive-config-exposure.yaml
 ./poc/sensitive/sensitive-data-clear-text.yaml
 ./poc/sensitive/sensitive-env-file-disclosure.yaml
 ./poc/sensitive/sensitive-storage-data-expose.yaml
@@ -198337,6 +198350,8 @@
 ./poc/sql/drop-shadow-boxes-b9897e5fa8077484ddbb305a1633d5ca.yaml
 ./poc/sql/dropdown-menu-widget-87bf2d9db4f7339dc4405be8857b6f15.yaml
 ./poc/sql/drozd-addons-for-elementor-db9780da0131469d450f49e3e0dd2524.yaml
+./poc/sql/drupal_module-phonefield-sql-injection_1.yaml
+./poc/sql/drupal_module-services-sql-injection.yaml
 ./poc/sql/ds-suit-6477bf18cad6c823db485408d49b337b.yaml
 ./poc/sql/dsidxpress-2658f3433bcaa5a5dbae5ef9ad80afd8.yaml
 ./poc/sql/dsubscribers-0c89a0c3acd55ab44cdfdb4797515d25.yaml
@@ -200086,6 +200101,7 @@
 ./poc/sql/mongodb-exception-page.yaml
 ./poc/sql/mongodb-exporter-metrics.yaml
 ./poc/sql/mongodb-info-enum.yaml
+./poc/sql/mongodb-ops-manager-8923.yaml
 ./poc/sql/mongodb-ops-manager.yaml
 ./poc/sql/mongodb-unauth.yaml
 ./poc/sql/monsters-editor-10-for-wp-super-edit-973edbc42b401e04f2817347dbb88982.yaml
@@ -201926,6 +201942,7 @@
 ./poc/sql/tidio-live-chat-5841edbae5f362f60a79d9cb73e8dd52.yaml
 ./poc/sql/tier-pricing-table-6477bf18cad6c823db485408d49b337b.yaml
 ./poc/sql/tigris-flexplatform-dba80fe99e484a21ab25d186b603b3a8.yaml
+./poc/sql/time-based-correlation-sqli-xpath-oob.yaml
 ./poc/sql/time-based-sql-injection.yaml
 ./poc/sql/time-based-sqli.yaml
 ./poc/sql/time-clock-5db4fc5896a9bd72f5bd5311a362b679.yaml
@@ -204119,6 +204136,7 @@
 ./poc/ssrf/splash-render-ssrf_1.yaml
 ./poc/ssrf/splash-render-ssrf_2.yaml
 ./poc/ssrf/spon-ip-ssrf.yaml
+./poc/ssrf/ssrf-advanced-chain-correlation-oob.yaml
 ./poc/ssrf/ssrf-blind-host.yaml
 ./poc/ssrf/ssrf-blind-host_1.yaml
 ./poc/ssrf/ssrf-blind.yaml
@@ -205038,6 +205056,7 @@
 ./poc/template_injection/ssti-jinja2.yaml
 ./poc/template_injection/ssti-jinja2_1.yaml
 ./poc/template_injection/ssti-path.yaml
+./poc/template_injection/ssti-polyglot-multi-engine-oob.yaml
 ./poc/template_injection/ssti-query.yaml
 ./poc/template_injection/ssti-vuln-params.yaml
 ./poc/template_injection/ssti.yaml
@@ -207105,6 +207124,7 @@
 ./poc/web/web-application-firewall_1.yaml
 ./poc/web/web-cache-poising.yaml
 ./poc/web/web-cache-poisoning-2.yaml
+./poc/web/web-cache-poisoning-real.yaml
 ./poc/web/web-cache-poisoning.yaml
 ./poc/web/web-cache-poisoning_1.yaml
 ./poc/web/web-cache-port-poisoning.yaml
@@ -207518,6 +207538,10 @@
 ./poc/web/website-toolbox-forums-a94eb018448072820780a2ad17abf871.yaml
 ./poc/web/website-toolbox-forums.yaml
 ./poc/web/websitepanel.yaml
+./poc/web/websocket-origin-bypass-oob.yaml
+./poc/web/websocket-relay-oob.yaml
+./poc/web/websocket-subscription-oob.yaml
+./poc/web/websocket-upgrade-oob.yaml
 ./poc/web/websocket.yaml
 ./poc/web/websphere.yaml
 ./poc/web/websvn-workflow.yaml
