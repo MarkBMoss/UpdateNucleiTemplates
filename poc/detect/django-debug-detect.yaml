@@ -5,10 +5,8 @@ info:
   author: dhiyaneshDK,hackergautam
   severity: medium
   tags: django,debug
-  metadata:
-    max-request: 1
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/NON_EXISTING_PATH/"

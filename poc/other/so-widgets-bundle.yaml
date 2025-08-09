@@ -7,6 +7,7 @@ info:
   reference:
     - https://wordpress.org/plugins/so-widgets-bundle/
   metadata:
+    max-request: 1
     plugin_namespace: so-widgets-bundle
     wpscan: https://wpscan.com/plugin/so-widgets-bundle
   tags: tech,wordpress,wp-plugin,top-200
@@ -46,4 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4b0a00483046022100bb697f743353ed9e1bc9d6204c24d1ba01cad8b5673c74e0a271187bfa08af27022100df7b09912b5c0a93dd8c63ca3284d87634088c05f637550817c488982379e79a:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a004730450220220e08a15ab63e4f3b6114774461934535265654cce02f1b576ff3aa64c70f76022100d170dfe84866f1cfd21c85464f6b11db411d084ab756b8c703058a4b0273c000:922c64590222798bb761d5b6d8e72950

@@ -7,6 +7,7 @@ info:
   reference:
     - https://wordpress.org/plugins/contact-form-cfdb7/
   metadata:
+    max-request: 1
     plugin_namespace: contact-form-cfdb7
     wpscan: https://wpscan.com/plugin/contact-form-cfdb7
   tags: tech,wordpress,wp-plugin,top-200
@@ -46,4 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 490a0046304402203c2815445bf7fea46f68f4ebf980dcf55cbae9b74f0325e3485104bf36cc55a102202686967bcd84665a3c0688fc73bd1d9285625904f9f5a23915acd6f80df2515c:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a004730450221009f7d2e3370fa930b184e11a58816f9bc0034127f755109bb8c7115f030a10ee702200dbe8506eea9df7e887f75d9b5797a222173ae2ff129b3d7e9de02c030316d17:922c64590222798bb761d5b6d8e72950

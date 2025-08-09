@@ -1,12 +1,13 @@
 id: wordpress-templately
 
 info:
-  name: Templately – Elementor & Gutenberg Template Library' 5500+ Free & Pro Ready Templates And Cloud! Detection
+  name: Templately – Gutenberg & Elementor Template Library' 5000+ Free & Pro Ready Templates & Cloud! Detection
   author: ricardomaia
   severity: info
   reference:
     - https://wordpress.org/plugins/templately/
   metadata:
+    max-request: 1
     plugin_namespace: templately
     wpscan: https://wpscan.com/plugin/templately
   tags: tech,wordpress,wp-plugin,top-200
@@ -46,4 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4a0a00473045022100ce666edf5e7c740f9b150f9f93a2c2ffb0a608092582e5deb956646213eea9880220771be236c1d55713ed5161dcd75fca39e98e4f197e11ab3bb1240fd30b516240:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022100d8911f369bcf27a136526a256422797170f4e13b731a0af4ca8c6e711ade6b0802206c84a945ff2cd945e14318308560b0de6686a2ff7ef1633e5edc7509d9d347f0:922c64590222798bb761d5b6d8e72950

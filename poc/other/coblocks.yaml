@@ -7,6 +7,7 @@ info:
   reference:
     - https://wordpress.org/plugins/coblocks/
   metadata:
+    max-request: 1
     plugin_namespace: coblocks
     wpscan: https://wpscan.com/plugin/coblocks
   tags: tech,wordpress,wp-plugin,top-200
@@ -46,4 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4a0a00473045022100fabbfaf018304cc088cb5713646739e2911375a6a7af9e88fe73963ba22efe3c02203948ab9176c0489b15d1a5b6da369b22ffd375d9a6c2ec8c935105dbef33508d:922c64590222798bb761d5b6d8e72950
+# digest: 490a0046304402206eae0cf4733b63610bab25a976ae35067e6bb5509c025d898dc368abc520272b0220621814216f0fefd09e2ccf68c89bd56dadadf313569a6a4f58a7664a5c6e81e8:922c64590222798bb761d5b6d8e72950

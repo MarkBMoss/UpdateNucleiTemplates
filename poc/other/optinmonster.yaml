@@ -1,12 +1,13 @@
 id: wordpress-optinmonster
 
 info:
-  name: Popup Builder & Popup Maker for WordPress – OptinMonster Email Marketing and Lead Generation Detection
+  name: Popup Builder by OptinMonster – WordPress Popups for Optins, Email Newsletters and Lead Generation Detection
   author: ricardomaia
   severity: info
   reference:
     - https://wordpress.org/plugins/optinmonster/
   metadata:
+    max-request: 1
     plugin_namespace: optinmonster
     wpscan: https://wpscan.com/plugin/optinmonster
   tags: tech,wordpress,wp-plugin,top-100,top-200
@@ -46,4 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 490a0046304402205715adf456b3c7b4100caa2ad63171fc0dfea9bd4787ce58e3ce3a6107542a73022043270235982383b6882dd63d12503c47f9ec1d373663405a60a92df641dc4ead:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a00483046022100b75698207fadd11fb78efe2641fe28cb3519845303976a97bad3dfe6fdf2d9b7022100a53e6c54b826da53d407481eae7add6662d3e149b51c404fdad24694220ca877:922c64590222798bb761d5b6d8e72950

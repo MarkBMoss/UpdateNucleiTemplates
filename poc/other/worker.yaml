@@ -7,6 +7,7 @@ info:
   reference:
     - https://wordpress.org/plugins/worker/
   metadata:
+    max-request: 1
     plugin_namespace: worker
     wpscan: https://wpscan.com/plugin/worker
   tags: tech,wordpress,wp-plugin,top-100,top-200
@@ -46,4 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4a0a00473045022100c7d9c907b7880e99fcbf4f173e073fe0e866ad395ae1c09e15a9fa7ff92248e802207007abb31be5b4da33448c1172d91c54f04e92bd034bce5bb1e30526237e310d:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022100cdcaadb5426466a3aae3b8ce5a31568e31efe2efdc576657b91b85d8c2c4dd000220186b0a4e424ec09b90f9fa01d2a592731458c71c39dbc89e331899fdf0a0d753:922c64590222798bb761d5b6d8e72950

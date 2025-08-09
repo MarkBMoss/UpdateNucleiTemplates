@@ -8,9 +8,8 @@ info:
     A mega phishing website was detected
   reference:
     - https://mega.io
-  metadata:
-    max-request: 1
   tags: phishing,mega,osint
+
 http:
   - method: GET
     path:
@@ -34,4 +33,4 @@ http:
       - type: dsl
         dsl:
           - '!contains(host,"mega.io")'
-# digest: 4b0a00483046022100e8940dd9113e85a68df2ca763e90d1dff8ff989c49655264fc57e9bf48d63c2d022100b38eab36ed27e244fd6de3b271d57124b5cee9f80651f74a16dd3a0cec7331ac:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a004730450221009baa3990ca348f0540033117fb6eddf9786c8e4fe9ece684fe92c3402577bc86022073364b3a538d0d5840614b48ad922c7a4e87e9e9aef60f926fc0244719d857e9:922c64590222798bb761d5b6d8e72950

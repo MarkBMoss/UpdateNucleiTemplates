@@ -8,9 +8,8 @@ info:
     A booking phishing website was detected
   reference:
     - https://booking.com
-  metadata:
-    max-request: 1
   tags: phishing,booking,osint
+
 http:
   - method: GET
     path:
@@ -32,4 +31,4 @@ http:
       - type: dsl
         dsl:
           - '!contains(host,"booking.com")'
-# digest: 4a0a00473045022100b22d2c9b00f9379875392376023a5b2d203ef14a399a06e5f435f50a80bc830b02207b512d910075a89a4a29cd91caaa033c44cca53b0a6f9321a12a5dfbeeb97715:922c64590222798bb761d5b6d8e72950
+# digest: 490a004630440220772f841d43a89673dc9ddbe88a6b9fdce187ff33ae079668fe5b25d3962a3ccb022047ca736f3ff7f90fc7a113b7567c0bedb0bb0d82784c9d6e6f7557e2af286a7e:922c64590222798bb761d5b6d8e72950

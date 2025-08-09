@@ -7,6 +7,7 @@ info:
   reference:
     - https://wordpress.org/plugins/easy-table-of-contents/
   metadata:
+    max-request: 1
     plugin_namespace: easy-table-of-contents
     wpscan: https://wpscan.com/plugin/easy-table-of-contents
   tags: tech,wordpress,wp-plugin,top-200
@@ -46,4 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 490a0046304402202f8f2432d79688f3a78a9b7af34c2145a08a7cb265fbf769f7a6eba9cac0db79022003647cb2aaa6eedd4e60d059fafcd370cd5a4a2e9488f4cdd5ea7d274906169a:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022100c746f9dc213de69d8dbd47da61a0ac6c35077beca9c4d4082a7f46c7cb1e4f4b02205f532ff6bb5535c203e1727c0ab3f570636603920b327abcfd82e503903784a4:922c64590222798bb761d5b6d8e72950

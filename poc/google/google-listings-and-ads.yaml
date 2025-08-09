@@ -1,12 +1,13 @@
 id: wordpress-google-listings-and-ads
 
 info:
-  name: Google for WooCommerce Detection
+  name: Google Listings & Ads Detection
   author: ricardomaia
   severity: info
   reference:
     - https://wordpress.org/plugins/google-listings-and-ads/
   metadata:
+    max-request: 1
     plugin_namespace: google-listings-and-ads
     wpscan: https://wpscan.com/plugin/google-listings-and-ads
   tags: tech,wordpress,wp-plugin,top-100,top-200
@@ -46,4 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4a0a0047304502204998f28e0e87cfb4023914b6857fc506c3952d69c6ebd77624e9741dfe5b54cb022100f14aa8f1452d2967feed1d4519b150c92fc6a3f143de00f289348189f71ec52f:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022100a6db2eee26f3ef933403087fcd949db4ae1ef14c4fabb6a9e68b127777711d5b022068f170eb46b58bed57b20ac1be71d5a40e456b9d7f75d7e6f9a5ce9e310a0b39:922c64590222798bb761d5b6d8e72950

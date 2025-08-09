@@ -1,12 +1,13 @@
 id: wordpress-sg-cachepress
 
 info:
-  name: Speed Optimizer – The All-In-One Performance-Boosting Plugin Detection
+  name: Speed Optimizer – The All-In-One WordPress Performance-Boosting Plugin Detection
   author: ricardomaia
   severity: info
   reference:
     - https://wordpress.org/plugins/sg-cachepress/
   metadata:
+    max-request: 1
     plugin_namespace: sg-cachepress
     wpscan: https://wpscan.com/plugin/sg-cachepress
   tags: tech,wordpress,wp-plugin,top-100,top-200
@@ -46,4 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4a0a00473045022100bfb56aff520991fa352bf18d942871f67cc9289d7d2ed943a6d8e1ccbb197228022014c8fd35037a3f7909636fb01e67adafaedf944bd36b038ea6e25242d5df7105:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a004830460221008b4837113af347f990fa7de9becd0987b37138979149a41f183b0f2b2aaec32302210085f2c4f20e986dc9dacfb9955d35e27f7dd146c222a4a939e18d2363f9b009a5:922c64590222798bb761d5b6d8e72950

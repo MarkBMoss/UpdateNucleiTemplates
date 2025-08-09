@@ -7,6 +7,7 @@ info:
   reference:
     - https://wordpress.org/plugins/google-sitemap-generator/
   metadata:
+    max-request: 1
     plugin_namespace: google-sitemap-generator
     wpscan: https://wpscan.com/plugin/google-sitemap-generator
   tags: tech,wordpress,wp-plugin,top-100,top-200
@@ -46,4 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4b0a00483046022100c7b3a68081f20da895d7a88aefc16a10462c0ef9ba4c4480c7aadaf89e920b200221008e707ec3f2274de0f55f953cfc73a9eef22639e5aff1629ce1b98a56556f142b:922c64590222798bb761d5b6d8e72950
+# digest: 490a00463044022019c0b37a14c216fe4a5729ab1c8f3874970755a7b734ea614ca5fee9c8255fb102207cc0d6072ff0573aa77397bd974bbf7758a00415a37fdb7e6bbecf4be64c9bb5:922c64590222798bb761d5b6d8e72950

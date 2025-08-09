@@ -1,53 +1,44 @@
-id: login-page-detection
+id: login-field
 
 info:
-  name: Login Page Detection
-  author: Zahir
-  severity: low
-  description: |
-    Detects the presence of a login page by looking for typical keywords like "login", "signin", or "password" in the HTML response and by checking common login URLs.
-  tags: login, detection, information-gathering
+  name: Login Field Detection Template
+  author: foulenzer
+  severity: info
+  description: Searches Response body for input-tag and id= or name=
+  tags: login,input
 
 requests:
   - method: GET
+    redirects: true
+    # max-redirects is max number of redirects to follow. Can be blank.
+    max-redirects: 1
     path:
+      - "{{BaseURL}}/"
       - "{{BaseURL}}/login"
-      - "{{BaseURL}}/signin"
       - "{{BaseURL}}/admin"
-      - "{{BaseURL}}/administrator"
-      - "{{BaseURL}}/auth"
-      - "{{BaseURL}}/account/login"
-      - "{{BaseURL}}/user/login"
-      - "{{BaseURL}}/users/login"
-      - "{{BaseURL}}/admin/login"
-      - "{{BaseURL}}/wp-login.php"
-      - "{{BaseURL}}/login.aspx"
-      - "{{BaseURL}}/login.php"
-      - "{{BaseURL}}/login.html"
-      - "{{BaseURL}}/member/login"
-      - "{{BaseURL}}/cpanel"
-    matchers-condition: or
+
+    matchers-condition: and
     matchers:
       - type: word
-        part: body
         words:
-          - "login"
-          - "signin"
-          - "sign in"
-          - "password"
-          - "user"
-          - "username"
-          - "email"
-          - "remember me"
-          - "forgot password"
+          - 'id="login"'
+          - 'id="username"'
+          - 'id="user"'
+          - 'id="mail"'
+          - 'id="email"'
+          - 'name="login"'
+          - 'name="username"'
+          - 'name="user"'
+          - 'name="mail"'
+          - 'name="email"'
+          - 'id="password"'
+          - 'name="password"'
+        condition: or
+
       - type: status
         status:
           - 200
-          - 302
-      - type: word
-        part: header
-        words:
-          - "Location: /login"
-          - "Location: /signin"
-          - "Location: /auth"
 
+      - type: word
+        words:
+          - '<input '

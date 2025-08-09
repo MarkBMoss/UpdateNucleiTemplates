@@ -7,6 +7,7 @@ info:
   reference:
     - https://wordpress.org/plugins/mailchimp-for-woocommerce/
   metadata:
+    max-request: 1
     plugin_namespace: mailchimp-for-woocommerce
     wpscan: https://wpscan.com/plugin/mailchimp-for-woocommerce
   tags: tech,wordpress,wp-plugin,top-200
@@ -46,4 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4b0a00483046022100e3eb0d052c4f5a504feb134e30637106cef73d77863dba6991d925ca3a1cd7e5022100f7f15a2593448c30d980d33f5d8f7ce835bae5b76daf12d75833edb1a512cb96:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a004830460221009968ca76b979eca20539040a83b50ff17f53b51c8c8dd6e6d6ec8526d2ca9a03022100883b3e14eec183f79b82f96ad363b22cf7fc733a0d3144b875999963edaaf24b:922c64590222798bb761d5b6d8e72950

@@ -1,12 +1,13 @@
 id: wordpress-duplicator
 
 info:
-  name: Duplicator – Backups & Migration Plugin – Cloud Backups, Scheduled Backups, & More Detection
+  name: Duplicator – WordPress Migration & Backup Plugin Detection
   author: ricardomaia
   severity: info
   reference:
     - https://wordpress.org/plugins/duplicator/
   metadata:
+    max-request: 1
     plugin_namespace: duplicator
     wpscan: https://wpscan.com/plugin/duplicator
   tags: tech,wordpress,wp-plugin,top-100,top-200
@@ -46,4 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4a0a00473045022062d4973ad76a5723022b9d05092b09aebeb41dffa514727539bb6e6bcb8e1c2b022100a33f183003b704019c7a8df006b8e871c010e3da633ca8945e422057f0846b39:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a0047304502203d3bb63ccc2f3753c8dae8a29e3938b48119a7b6041941302aa9ae8ee10edf82022100cada44c817baaccd55659d8ca1e5cb6d6010022ff2816cea6ff2645ac8db5419:922c64590222798bb761d5b6d8e72950

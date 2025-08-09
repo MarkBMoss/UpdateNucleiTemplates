@@ -7,6 +7,7 @@ info:
   reference:
     - https://wordpress.org/plugins/sucuri-scanner/
   metadata:
+    max-request: 1
     plugin_namespace: sucuri-scanner
     wpscan: https://wpscan.com/plugin/sucuri-scanner
   tags: tech,wordpress,wp-plugin,top-100,top-200
@@ -46,4 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4b0a00483046022100826bc72e86e406e0d5aa48526b03058be2ee67ecf30c00d4f744661306ad17d90221009aecc53ab46214f9488a51f43b750400f9bda96a52310cc7723ece2020151cf0:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022039ed08050cc4865af998b5bb9ae3ad1077d6de1900e0634f41c8545def5db06a022100d93599c232eb5e9fc5b32a467d31eb379d814bda14727594bf266ed401ac2426:922c64590222798bb761d5b6d8e72950

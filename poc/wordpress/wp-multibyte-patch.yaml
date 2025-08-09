@@ -7,6 +7,7 @@ info:
   reference:
     - https://wordpress.org/plugins/wp-multibyte-patch/
   metadata:
+    max-request: 1
     plugin_namespace: wp-multibyte-patch
     wpscan: https://wpscan.com/plugin/wp-multibyte-patch
   tags: tech,wordpress,wp-plugin,top-100,top-200
@@ -46,4 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4a0a0047304502206969e313c94e515149ef3d46395e2d0a0e162bfc21d150d198b56ad27151ace7022100d8919463f520d947a0e7a7dc3daab6323c7be649effab9b85ea7ccfb91349ab6:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a0047304502210099c7dca2078280c067bad3e95b7de59de5efad94c54beb77b8827152d70045e402201fbf4f9f1270e4b982c69b16af31b002b04133adca0d4b268d1487d809dc7df4:922c64590222798bb761d5b6d8e72950

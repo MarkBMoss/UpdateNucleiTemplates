@@ -8,9 +8,8 @@ info:
     A wetransfer phishing website was detected
   reference:
     - https://wetransfer.com
-  metadata:
-    max-request: 1
   tags: phishing,wetransfer,osint
+
 http:
   - method: GET
     path:
@@ -32,4 +31,4 @@ http:
       - type: dsl
         dsl:
           - '!contains(host,"wetransfer.com")'
-# digest: 490a00463044022073fa2b419f15f4a48cb623e46da5d9ad25163b88b6370645bdc37ed0b8adcdb00220469ad8cd82fcbba22aa22b35161db61c1e09e6653a253657ee76423181460a70:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a0047304502201ec209ca33e9f45db3cdd355e63bcc4b1b157a3f9f467bbff8d9657bc2675cea02210098b466821c0ec3acf30851d98bcbeaf293984dd86954d0aa24a601fd909183e3:922c64590222798bb761d5b6d8e72950

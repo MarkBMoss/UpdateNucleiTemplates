@@ -7,6 +7,7 @@ info:
   reference:
     - https://wordpress.org/plugins/wp-super-cache/
   metadata:
+    max-request: 1
     plugin_namespace: wp-super-cache
     wpscan: https://wpscan.com/plugin/wp-super-cache
   tags: tech,wordpress,wp-plugin,top-100,top-200
@@ -46,4 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4a0a00473045022073601ac1aa51b3f63903fbc6d471bfe157a977f876ade35cccb9dd3ea38cdd0a022100bdf42c53c71bb2fde8a24b28fbab369919273550c28cf65dbc05f5ca732c2e35:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a0047304502210097721f985b6e8fe850d2891e218773f2dd3def3fcb31ae72011a2fbb9888639b02204abf56bde7dde91b71d7760231a3fa6f9ad712cb0ac9fc958a2d11a8dfdfa356:922c64590222798bb761d5b6d8e72950

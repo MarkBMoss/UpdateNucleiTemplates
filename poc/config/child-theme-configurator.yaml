@@ -7,6 +7,7 @@ info:
   reference:
     - https://wordpress.org/plugins/child-theme-configurator/
   metadata:
+    max-request: 1
     plugin_namespace: child-theme-configurator
     wpscan: https://wpscan.com/plugin/child-theme-configurator
   tags: tech,wordpress,wp-plugin,top-200
@@ -46,4 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4a0a00473045022053746a1fbe617dac249c05fd75c9abc79e7751ef7b025895e9e977293679d8ca022100dadf94d5e45faf4106a5d0d4597c5b6c89c3729fedd8ea96b81e61e164f701b7:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a00483046022100e98dd468a62e8768d87cef35610a1e020108bb4bedab9ba26d8b6797d4743238022100d9dc4dead9d61ba08e97667952e2e04c5099fa3f1dc93469616a8ce2317581e5:922c64590222798bb761d5b6d8e72950

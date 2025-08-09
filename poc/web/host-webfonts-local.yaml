@@ -7,6 +7,7 @@ info:
   reference:
     - https://wordpress.org/plugins/host-webfonts-local/
   metadata:
+    max-request: 1
     plugin_namespace: host-webfonts-local
     wpscan: https://wpscan.com/plugin/host-webfonts-local
   tags: tech,wordpress,wp-plugin,top-200
@@ -46,4 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4a0a00473045022100fa8b96b1f89d8edde1e8e7ecb9510610fa07037abdfc9a4b9984dee24a9e93d202204699b318c06cd0b788f10a22ed2d0109e08e87096a7540d1caaacd7235d9167a:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a0047304502205ff8b2ab193d006636b28e53959b09406c57db5056d44812b35272c83e083577022100841d4c973cb97b078f1c04db42cbea1a255249ab72c65a4dbad27cf0b631a041:922c64590222798bb761d5b6d8e72950

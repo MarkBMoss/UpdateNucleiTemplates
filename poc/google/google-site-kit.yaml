@@ -7,6 +7,7 @@ info:
   reference:
     - https://wordpress.org/plugins/google-site-kit/
   metadata:
+    max-request: 1
     plugin_namespace: google-site-kit
     wpscan: https://wpscan.com/plugin/google-site-kit
   tags: tech,wordpress,wp-plugin,top-100,top-200
@@ -46,4 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4a0a00473045022100fc2e31fe9e05dd8a8476f36348ee8979473939de77c4385061ffe859a13a0347022017fdd2fdb72b4b80284939ef5d38543ba0d314db7323185b078a2d366c48d60b:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a00483046022100fbed97ae66b961fddddcd4d28588b65821565132d9149ea0dda5ca57ae8cfcc9022100a11de81da039bfdcfb224fefb82f01ed699a88b8bf764120bfdbd914f4cc007a:922c64590222798bb761d5b6d8e72950

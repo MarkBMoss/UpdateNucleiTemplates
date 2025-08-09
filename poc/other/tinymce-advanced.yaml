@@ -7,6 +7,7 @@ info:
   reference:
     - https://wordpress.org/plugins/tinymce-advanced/
   metadata:
+    max-request: 1
     plugin_namespace: tinymce-advanced
     wpscan: https://wpscan.com/plugin/tinymce-advanced
   tags: tech,wordpress,wp-plugin,top-100,top-200
@@ -46,4 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4a0a00473045022100b2f91d2a04855f11848708225ecb5becdeb99becad6a0000db41289568976abe022041833924ff6d246f04cf9a16949adbdd368c348650538897d3ec0fe8759b397e:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a004730450221008bc05bc984da1578bcbf32dcf039621db464f1e3f9f46d34acca4547e8b88ebd02203d5a0f7d208ee491a1a4ba4573cc8b4138535df52bcca5f495711fa46ed48fa6:922c64590222798bb761d5b6d8e72950

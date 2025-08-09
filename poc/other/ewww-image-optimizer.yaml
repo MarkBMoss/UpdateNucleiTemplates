@@ -7,6 +7,7 @@ info:
   reference:
     - https://wordpress.org/plugins/ewww-image-optimizer/
   metadata:
+    max-request: 1
     plugin_namespace: ewww-image-optimizer
     wpscan: https://wpscan.com/plugin/ewww-image-optimizer
   tags: tech,wordpress,wp-plugin,top-100,top-200
@@ -46,4 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4b0a004830460221009656a2a6711979dc97428475cd82445d6e4cafd931d94f8fa12289a765dbfb610221008256984ab8c9b2cf47ba25e16409a8166b2ce4dfe04c305fbcc15c474fbe212a:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a004730450221008ef875151474cb22cb35ba42271ad6bca21879435615004abd454067fbd5afcd02203e3def7ca135a110bd5ac8d3d311666d29877a5a19444b5c1ae272c85f5b1d89:922c64590222798bb761d5b6d8e72950

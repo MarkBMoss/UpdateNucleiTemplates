@@ -1,12 +1,13 @@
 id: wordpress-forminator
 
 info:
-  name: Forminator Forms – Contact Form, Payment Form & Custom Form Builder Detection
+  name: Forminator – Contact Form, Payment Form & Custom Form Builder Detection
   author: ricardomaia
   severity: info
   reference:
     - https://wordpress.org/plugins/forminator/
   metadata:
+    max-request: 1
     plugin_namespace: forminator
     wpscan: https://wpscan.com/plugin/forminator
   tags: tech,wordpress,wp-plugin,top-200
@@ -46,4 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 490a0046304402201e0335338e4a5f793667bd2df608c810fb86db7a2795fd621b988ad757f25a93022030b55a0257097b38f4c87806ec7c9faf06c287e662d4c78b25d6ac83bd628119:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a004730450220577b4e2cda128cb8f1c96248066fb9c479f58a9231efafa652bdac82e2995e0d02210092e0885396fbd96a882fa8fd42dc6e1723637b5adb10099cd0b327cf58f92bf2:922c64590222798bb761d5b6d8e72950

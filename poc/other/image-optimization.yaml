@@ -1,7 +1,7 @@
 id: wordpress-image-optimization
 
 info:
-  name: Image Optimizer – Optimize Images and Convert to WebP or AVIF Detection
+  name: Image Optimizer by Elementor – Compress, Resize and Optimize Images Detection
   author: ricardomaia
   severity: info
   reference:
@@ -9,10 +9,11 @@ info:
   metadata:
     plugin_namespace: image-optimization
     wpscan: https://wpscan.com/plugin/image-optimization
-  tags: tech,wordpress,wp-plugin,top-100,top-200
+  tags: tech,wordpress,wp-plugin,top-200
 
 http:
   - method: GET
+
     path:
       - "{{BaseURL}}/wp-content/plugins/image-optimization/readme.txt"
 
@@ -46,4 +47,3 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4a0a00473045022100f0d06db4a220dc54e666b82b187b0b1a818a31d2263ae8489b1edb72cefc168502205d6bb9e52b4218d6f3cde157993a3df2abe41c39d292a1473464473447e83a85:922c64590222798bb761d5b6d8e72950

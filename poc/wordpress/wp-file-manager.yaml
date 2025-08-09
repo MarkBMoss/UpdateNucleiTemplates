@@ -7,6 +7,7 @@ info:
   reference:
     - https://wordpress.org/plugins/wp-file-manager/
   metadata:
+    max-request: 1
     plugin_namespace: wp-file-manager
     wpscan: https://wpscan.com/plugin/wp-file-manager
   tags: tech,wordpress,wp-plugin,top-100,top-200
@@ -46,4 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4b0a0048304602210081a2fe432a70eaeecd3d0628c768d1b61f28c95db7fa6e2253fcf70c43d2e08b022100e2a2bec135a0c89e4a1ff6c79e6ae7eece2171f9889145364987ebe00d12f31e:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022033debe09d4702c4d57fff7b94e2b5694faa81301ba08be7e4ce414f26580be14022100e3b344cdbbd704dcd969c69b868f4305a34ef8e813dbb713cd1a102ebe88b33a:922c64590222798bb761d5b6d8e72950

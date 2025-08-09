@@ -7,6 +7,7 @@ info:
   reference:
     - https://wordpress.org/plugins/classic-editor/
   metadata:
+    max-request: 1
     plugin_namespace: classic-editor
     wpscan: https://wpscan.com/plugin/classic-editor
   tags: tech,wordpress,wp-plugin,top-100,top-200
@@ -46,4 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4a0a00473045022034d0ef81892b91f495fd2a175b15c71a9b7b9a58dc44cabb36a94e2cea794c01022100db7e60c0e8613256f2b3a4159404cf4a45c245ae8fc29b62dd518fe73267e334:922c64590222798bb761d5b6d8e72950
+# digest: 490a0046304402207416dbd4e333276c46d81385dcfee15d7de1f193e32e086090512330eed7649f02204f902148c675431ed8e46375de267e638266680e4b5425fbe9b467ae20cf31a6:922c64590222798bb761d5b6d8e72950

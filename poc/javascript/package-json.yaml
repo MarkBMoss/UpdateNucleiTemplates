@@ -20,21 +20,7 @@ http:
     path:
       - "{{BaseURL}}/package.json"
       - "{{BaseURL}}/package-lock.json"
-      - "{{BaseURL}}/ui/package.json"
-      - "{{BaseURL}}/.config/yarn/global/package.json"
-      - "{{BaseURL}}/api/javascript/package.json"
-      - "{{BaseURL}}/api/package.json"
-      - "{{BaseURL}}/package.json.localhost.bak"
-      - "{{BaseURL}}/package.json.bak"
-      - "{{BaseURL}}/package.json.swp"
-      - "{{BaseURL}}/core/assets/vendor/jquery.ui/package.json"
-      - "{{BaseURL}}/core/assets/vendor/normalize-css/package.json"
-      - "{{BaseURL}}/core/misc/ui/package.json"
-      - "{{BaseURL}}/core/package.json"
-      - "{{BaseURL}}/library/package.json"
-      - "{{BaseURL}}/js/lazyload/package.json"
 
-    stop-at-first-match: true
     matchers-condition: and
     matchers:
       - type: word
@@ -51,3 +37,5 @@ http:
       - type: status
         status:
           - 200
+
+# digest: 4a0a00473045022041a2b51adce1e4d2a01fd0017fbe04dbb4d313af6b075e94190bb5368dd55fa2022100b34322e5720bd3eb652a881f24425e0c081e155e6a2c36782bccaf21a07409d2:922c64590222798bb761d5b6d8e72950

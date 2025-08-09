@@ -7,6 +7,7 @@ info:
   reference:
     - https://wordpress.org/plugins/redux-framework/
   metadata:
+    max-request: 1
     plugin_namespace: redux-framework
     wpscan: https://wpscan.com/plugin/redux-framework
   tags: tech,wordpress,wp-plugin,top-100,top-200
@@ -46,4 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4a0a0047304502201370876622d915139b34aa78f80a2d06d41cd4298ceb56a357ae0ed6e7736540022100c59ec1121541a7f914ff5e418370a6a82e05d17526f1710115c3ad747099d58f:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a00483046022100a174f0f2aae16ca8ded4c5c76657ed6a2303be9499fbdb27ed88b7659a833f060221008d74a1a4c3385f0c14737c1add5fbcb5632e1b7c6be11f8cf7699e1e19d665a8:922c64590222798bb761d5b6d8e72950

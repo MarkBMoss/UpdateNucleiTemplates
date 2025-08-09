@@ -1,12 +1,13 @@
 id: wordpress-duracelltomi-google-tag-manager
 
 info:
-  name: GTM4WP – A Google Tag Manager (GTM) plugin for WordPress Detection
+  name: GTM4WP Detection
   author: ricardomaia
   severity: info
   reference:
     - https://wordpress.org/plugins/duracelltomi-google-tag-manager/
   metadata:
+    max-request: 1
     plugin_namespace: duracelltomi-google-tag-manager
     wpscan: https://wpscan.com/plugin/duracelltomi-google-tag-manager
   tags: tech,wordpress,wp-plugin,top-100,top-200
@@ -46,4 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4a0a0047304502207ea84b67b5d930e90833aa269f921cbee49b639595e948d43e18c1b28f297590022100f5a08010367417349ef3769d43640b45960b47e5376beab567a615f07bbac4ca:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a0047304502207bb6fb114c571bfd5695c5c6eb2166f85080d570fce9617689d96d5915895405022100cb9e22a6ac8b4b00cbd96575e75e8989ce02bd3ef9907e095ed48fdf558ccf68:922c64590222798bb761d5b6d8e72950

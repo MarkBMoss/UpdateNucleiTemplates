@@ -7,6 +7,7 @@ info:
   reference:
     - https://wordpress.org/plugins/under-construction-page/
   metadata:
+    max-request: 1
     plugin_namespace: under-construction-page
     wpscan: https://wpscan.com/plugin/under-construction-page
   tags: tech,wordpress,wp-plugin,top-100,top-200
@@ -46,4 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4a0a0047304502204fde49b485876bfe21b501b6b6cacbeff9efc7010f339f9ef5c6790f251254c5022100ab0316cfbb75b4ae524ff8fe1015e2d11b19d4f73260f1d534b5f6d0fb4fc9f5:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a004830460221009c8a121f18a8ce093a054b2331c667452378de8a0c21a4ccd102931c142781d2022100a3d9dcfcb88b83732fb8ca8e75e1728274f2c464606c6e15956c7fe3ad5028b8:922c64590222798bb761d5b6d8e72950

@@ -7,6 +7,7 @@ info:
   reference:
     - https://wordpress.org/plugins/megamenu/
   metadata:
+    max-request: 1
     plugin_namespace: megamenu
     wpscan: https://wpscan.com/plugin/megamenu
   tags: tech,wordpress,wp-plugin,top-200
@@ -46,4 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4b0a00483046022100a4ab4bb3c57a50c9ab9bdc6b4f7c422b5f43741e35eface2f764ad9b8459cdbf022100f8fa1d9e3838b048b1573b7a45148711be213e03d4c5717e77036c8a15178972:922c64590222798bb761d5b6d8e72950
+# digest: 490a004630440220681925ab0e97e049c2a5a96c025ae5503e3b46b22324bbd671f54f65202e8fa702204f902011fff57f02fe58b41e4bc742848991cae0d873ecab9d80927c97f13fb5:922c64590222798bb761d5b6d8e72950

@@ -7,6 +7,7 @@ info:
   reference:
     - https://wordpress.org/plugins/happy-elementor-addons/
   metadata:
+    max-request: 1
     plugin_namespace: happy-elementor-addons
     wpscan: https://wpscan.com/plugin/happy-elementor-addons
   tags: tech,wordpress,wp-plugin,top-200
@@ -46,4 +47,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 490a0046304402200abd9941e67f5c8fb429a670b32e4651d35c7ee840628e5ab04b039c97c5f0aa02205d345611b4e466b482fcc42489807b52545a51063a8c9cb921623f1424850c5e:922c64590222798bb761d5b6d8e72950
+# digest: 490a004630440220626024e1b3d553b62847c5f6aefeabd2470b7eedeae6ccbd3c61e658c02d994d0220549a762083080cde19f7f5fbfed0aa36b4931cd7042df15d188d55ff8d0cf8fe:922c64590222798bb761d5b6d8e72950

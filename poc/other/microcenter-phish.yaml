@@ -8,9 +8,8 @@ info:
     A microcenter phishing website was detected
   reference:
     - https://microcenter.com
-  metadata:
-    max-request: 1
   tags: phishing,microcenter,osint
+
 http:
   - method: GET
     path:
@@ -32,4 +31,4 @@ http:
       - type: dsl
         dsl:
           - '!contains(host,"microcenter.com")'
-# digest: 4b0a00483046022100b7b5d9ce0bfb7c643587d7c2f60aa0c1e37543bd0c3cf82d44070808ba12e910022100a0e87fd6f40dad793e71d91f01cc6175e846b67cafd73bc11a333aba90b3ff40:922c64590222798bb761d5b6d8e72950
+# digest: 490a0046304402205b787aad2295c31b7655d8bcad89e8da7b9ca44f091ca8ba6d96e0d9782537bb022025615a0482526ab7306196e2349fa91fc91e560eddff767166e678a3850be5ad:922c64590222798bb761d5b6d8e72950
