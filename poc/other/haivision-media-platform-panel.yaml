@@ -10,7 +10,7 @@ info:
   metadata:
     verified: true
     max-request: 1
-    shodan-query: http.title:"Haivision Media Platform"
+    shodan-query: "http.title:\"Haivision Media Platform\""
   tags: panel,haivision,login,detect
 
 http:
@@ -24,4 +24,4 @@ http:
           - 'status_code == 200'
           - 'contains_any(body, "<title>Haivision Media Platform", "content=\"Haivision Network Video")'
         condition: and
-# digest: 4b0a00483046022100afe3f5be5af684233c937265f991d6b59fad56a9e5efa05347f2c2d3c1cd2d2b022100f4304c1f67aa35130eb53dc49c7f08e0af479a0fab1ce89371c9886266b49089:922c64590222798bb761d5b6d8e72950
+# digest: 490a0046304402205b887d409f93bb8c6bca75ccede4fb4ede2c9c827e9b47af66ef16486efe5bed022013582e7154224d6596931d51c61ce2b4c11d03fc9682a4b29f4731c8cd797b21:922c64590222798bb761d5b6d8e72950
