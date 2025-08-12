@@ -1,31 +1,31 @@
-id: wp-ulike-749e642edda4a63698f2edf828f6c605
+id: idonate-pro-d348e6827af3e9d05f86136084d4fe21
 
 info:
   name: >
-    WP ULike <=  4.7.9.1 - Missing Authorization to Unauthenticated Content Spoofing
+    IDonatePro <= 2.1.9 - Missing Authorization
   author: topscoder
   severity: high
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/f72a8b6b-2eef-4245-b215-5ae6fa31e650?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/52454f57-0b23-4c5f-b100-9b1fcdf00c21?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
     cve-id: 
   metadata:
-    fofa-query: "wp-content/plugins/wp-ulike/"
-    google-query: inurl:"/wp-content/plugins/wp-ulike/"
+    fofa-query: "wp-content/plugins/idonate-pro/"
+    google-query: inurl:"/wp-content/plugins/idonate-pro/"
     shodan-query: 'vuln:'
-  tags: cve,wordpress,wp-plugin,wp-ulike,high
+  tags: cve,wordpress,wp-plugin,idonate-pro,high
 
 http:
   - method: GET
     redirects: true
     max-redirects: 3
     path:
-      - "{{BaseURL}}/wp-content/plugins/wp-ulike/readme.txt"
+      - "{{BaseURL}}/wp-content/plugins/idonate-pro/readme.txt"
 
     extractors:
       - type: regex
@@ -51,9 +51,9 @@ http:
 
       - type: word
         words:
-          - "wp-ulike"
+          - "idonate-pro"
         part: body
 
       - type: dsl
         dsl:
-          - compare_versions(version, '<= 4.7.9.1')
+          - compare_versions(version, '<= 2.1.9')
