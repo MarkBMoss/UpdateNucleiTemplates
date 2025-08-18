@@ -1,14 +1,16 @@
-id: topdesk-detect
+id: topdesk-panel
 
 info:
-  name: TOPdesk - Detect
+  name: TOPdesk - Panel
   author: darses
   severity: info
   description: |
-    Detect TOPdesk and extract timestamp from static files. This template does not detect the 404 error page by "TOPDesk ApplicationServer".
+    TOPdesk was detected.
   metadata:
     verified: true
     max-requests: 1
+    vendor: topdesk
+    product: topdesk
     shodan-query:
       - http.favicon.hash:-1177777311
       - http.favicon.hash:589927604
@@ -19,8 +21,7 @@ info:
       - icon_hash="589927604"
       - icon_hash="1123106483"
       - icon_hash="1431756848"
-    vendor: TOPDesk
-  tags: detect,topdesk,release-date
+  tags: detect,panel,topdesk
 
 http:
   - method: GET

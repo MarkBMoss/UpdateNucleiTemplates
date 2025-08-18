@@ -1,16 +1,16 @@
-id: msafe-detect
+id: msafe-panel
 
 info:
-  name: mSafe - Detect
+  name: mSafe - Panel
   author: darses
   severity: info
   description: |
-    Detects the presence and version of mSafe file transfer.
+    mSafe file transfer was detected.
   metadata:
     verified: true
     max-request: 1
-    vendor: mSafe
-  tags: detect,version,msafe
+    vendor: msafe
+  tags: detect,panel,msafe
 
 http:
   - method: GET

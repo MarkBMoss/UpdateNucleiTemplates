@@ -4690,6 +4690,7 @@
 ./poc/auth/list-all-posts-by-authors-nested-categories-and-titles-b42b05f52515fe0313f046f50f84548f.yaml
 ./poc/auth/list-all-posts-by-authors-nested-categories-and-titles.yaml
 ./poc/auth/list-all-posts-by-authors-nested-categories-and-titles_1.yaml
+./poc/auth/litemall-jwt.yaml
 ./poc/auth/livezilla-login-panel-8649.yaml
 ./poc/auth/livezilla-login-panel.yaml
 ./poc/auth/livezilla-login-panel_1.yaml
@@ -99732,6 +99733,7 @@
 ./poc/cve/CVE-2025-25174-7713a440fd6481ec92a3d77bca209ff1.yaml
 ./poc/cve/CVE-2025-2519-44755966269966b3cf1304615c9fee14.yaml
 ./poc/cve/CVE-2025-2525-4a4f50c06f065498fee27362d9762e9c.yaml
+./poc/cve/CVE-2025-25256-oob.yaml
 ./poc/cve/CVE-2025-2526-ee91deed7e4def5f725289f1920525e0.yaml
 ./poc/cve/CVE-2025-25291.yaml
 ./poc/cve/CVE-2025-2537-7382d36d086b3e7fcf2de097b386a7a4.yaml
@@ -101715,6 +101717,7 @@
 ./poc/cve/CVE-2025-34141.yaml
 ./poc/cve/CVE-2025-34143.yaml
 ./poc/cve/CVE-2025-3415.yaml
+./poc/cve/CVE-2025-34152.yaml
 ./poc/cve/CVE-2025-3417-1d6a9664ecd54a09078e61fac0c7dcdd.yaml
 ./poc/cve/CVE-2025-3418-0aa49a393e7dc8d08134f92ab4c73898.yaml
 ./poc/cve/CVE-2025-3419-b20754924a31026d1094b3ee8463d347.yaml
@@ -103501,6 +103504,7 @@
 ./poc/cve/CVE-2025-6257-942200ca6dec77df9f159a811c699638.yaml
 ./poc/cve/CVE-2025-6258-4a4861075d292e0cf84615c5562be717.yaml
 ./poc/cve/CVE-2025-6259-ec6ddf6d35a5e3213d568deed8568d61.yaml
+./poc/cve/CVE-2025-6260.yaml
 ./poc/cve/CVE-2025-6261-94c6b6dc281f6c18a13752ed16bd86f0.yaml
 ./poc/cve/CVE-2025-6262-88ce1c7bdf835fe9779040de61aa8ab5.yaml
 ./poc/cve/CVE-2025-6290-5c68ed19c41cd1cc59ca54c69c83a5de.yaml
@@ -117919,6 +117923,7 @@
 ./poc/header/based_sqli_header.yaml
 ./poc/header/beescms-header-sqli.yaml
 ./poc/header/beescms-header-sqli_1.yaml
+./poc/header/blind_xss_header.yaml
 ./poc/header/boostify-header-footer-builder-098c9b899450c0200fe6036cd3656e84.yaml
 ./poc/header/boostify-header-footer-builder-24727e32b718b5ec6f893516a4dab827.yaml
 ./poc/header/boostify-header-footer-builder-4e0b3f5938dbbcb7b6d25d649232d602.yaml
@@ -118054,6 +118059,7 @@
 ./poc/header/header-ssrf_1.yaml
 ./poc/header/header_blind_xss-7914.yaml
 ./poc/header/header_blind_xss-7916.yaml
+./poc/header/header_blind_xss_1.yaml
 ./poc/header/header_reflection.yaml
 ./poc/header/header_reflection_body.yaml
 ./poc/header/header_reflection_body_1.yaml
@@ -118187,6 +118193,7 @@
 ./poc/header/x-recruiting-header_1.yaml
 ./poc/header/x-recruiting-header_2.yaml
 ./poc/header/xss-deprecated-header.yaml
+./poc/header/xss-header.yaml
 ./poc/header/xss_in_headers.yaml
 ./poc/http/CL-TE-http-smuggling.yaml
 ./poc/http/CL-TE-http-smuggling_1.yaml
@@ -122604,8 +122611,11 @@
 ./poc/microsoft/microsoft-phish_8.yaml
 ./poc/microsoft/microsoft-phish_9.yaml
 ./poc/microsoft/microsoft-remote-web-workplace.yaml
+./poc/microsoft/microsoft-sharepoint-amsi.yaml
 ./poc/microsoft/microsoft-sharepoint-detect.yaml
 ./poc/microsoft/microsoft-sharepoint-detect_2.yaml
+./poc/microsoft/microsoft-sharepoint-favicon.yaml
+./poc/microsoft/microsoft-sharepoint-version.yaml
 ./poc/microsoft/microsoft-sharepoint.yaml
 ./poc/microsoft/microsoft-silverlight.yaml
 ./poc/microsoft/microsoft-skype-for-business.yaml
@@ -122681,6 +122691,7 @@
 ./poc/microsoft/ms10-17-eternalblue.yaml
 ./poc/microsoft/msa-gateway-read-file.yaml
 ./poc/microsoft/msafe-detect.yaml
+./poc/microsoft/msafe-panel.yaml
 ./poc/microsoft/mshift.yaml
 ./poc/microsoft/mshop-mysite-476ee02a3de040690a5d24933c3885b8.yaml
 ./poc/microsoft/mshop-mysite.yaml
@@ -124168,14 +124179,12 @@
 ./poc/nginx/nginx-merge-slashes-path-traversal-9105.yaml
 ./poc/nginx/nginx-merge-slashes-path-traversal.yaml
 ./poc/nginx/nginx-module-vts-xss-9106.yaml
-./poc/nginx/nginx-module-vts-xss-9107.yaml
+./poc/nginx/nginx-module-vts-xss-9106_1.yaml
 ./poc/nginx/nginx-module-vts-xss-9108.yaml
 ./poc/nginx/nginx-module-vts-xss-9108_1.yaml
-./poc/nginx/nginx-module-vts-xss-9109.yaml
-./poc/nginx/nginx-module-vts-xss-9110.yaml
 ./poc/nginx/nginx-module-vts-xss-9110_1.yaml
-./poc/nginx/nginx-module-vts-xss.yaml
 ./poc/nginx/nginx-module-vts-xss_1.yaml
+./poc/nginx/nginx-module-vts-xss_2.yaml
 ./poc/nginx/nginx-path-traversal.yaml
 ./poc/nginx/nginx-plus-rest-api.yaml
 ./poc/nginx/nginx-proxy-manager-9111.yaml
@@ -124189,6 +124198,7 @@
 ./poc/nginx/nginx-proxy-manager-default-login_1.yaml
 ./poc/nginx/nginx-proxy-manager.yaml
 ./poc/nginx/nginx-proxy-manager_1.yaml
+./poc/nginx/nginx-reverse-proxy-xss.yaml
 ./poc/nginx/nginx-server-detection.yaml
 ./poc/nginx/nginx-shards.yaml
 ./poc/nginx/nginx-shards_1.yaml
@@ -150012,6 +150022,7 @@
 ./poc/other/cryptocurrency_2.yaml
 ./poc/other/cryptographic-failures.yaml
 ./poc/other/cryptographic-failures_1.yaml
+./poc/other/cryptshare-panel.yaml
 ./poc/other/cryptxxx-dropper-malware.yaml
 ./poc/other/cryptxxx-malware.yaml
 ./poc/other/crywolf.yaml
@@ -157944,6 +157955,7 @@
 ./poc/other/fortinet-fortimanager-panel.yaml
 ./poc/other/fortinet-fortimanager-panel_1.yaml
 ./poc/other/fortinet-fortimanager-panel_2.yaml
+./poc/other/fortinet-fortimanager-panel_4.yaml
 ./poc/other/fortinet-fortinac-panel.yaml
 ./poc/other/fortinet-fortinac-panel_1.yaml
 ./poc/other/fortinet-fortinac-panel_2.yaml
@@ -158041,6 +158053,7 @@
 ./poc/other/founder-all-media-editing-system.yaml
 ./poc/other/founder-operation-management-and-decision-support-system.yaml
 ./poc/other/founder-xinwencaibian-imageProxy-download.yaml
+./poc/other/foundry-virtual-tabletop-panel.yaml
 ./poc/other/fourseasonsvpn.yaml
 ./poc/other/foursquare-checkins-e1e1a92249da54658e2d3da41734b08d.yaml
 ./poc/other/foursquare-checkins.yaml
@@ -167146,6 +167159,7 @@
 ./poc/other/manageengine-desktop_2.yaml
 ./poc/other/manageengine-desktop_3.yaml
 ./poc/other/manageengine-deviceexpert.yaml
+./poc/other/manageengine-exchangereporter-panel.yaml
 ./poc/other/manageengine-opmanager-8765.yaml
 ./poc/other/manageengine-opmanager-8766.yaml
 ./poc/other/manageengine-opmanager-8767.yaml
@@ -172157,6 +172171,7 @@
 ./poc/other/osd-subscribe-66955537f5ca829f1d6c0dca1566131b.yaml
 ./poc/other/osd-subscribe.yaml
 ./poc/other/osd-subscribe_1.yaml
+./poc/other/osgeo-geoserver-version.yaml
 ./poc/other/oshine-modules-785d411583414f69c5757eeaa00d04b0.yaml
 ./poc/other/oshine-modules-974812a9ebbf198c9b9940bdd11b1044.yaml
 ./poc/other/oshine-modules.yaml
@@ -172644,6 +172659,7 @@
 ./poc/other/paloalto-globalprotect-version-date_1.yaml
 ./poc/other/paloalto-globalprotect-version-date_2.yaml
 ./poc/other/paloalto-globalprotect.yaml
+./poc/other/paloaltonetworks-globalprotect-version.yaml
 ./poc/other/pan-os.yaml
 ./poc/other/panabit-gateway.yaml
 ./poc/other/panabit-ixcache.yaml
@@ -186791,6 +186807,7 @@
 ./poc/other/topaccess-panel.yaml
 ./poc/other/topbar-id-for-elementor-8513861933448f8860977aebd099c336.yaml
 ./poc/other/topbar-id-for-elementor_1.yaml
+./poc/other/topdesk-panel.yaml
 ./poc/other/topquark-60aa2580f7256ea0f4baada3ad5090ae.yaml
 ./poc/other/topquark-67ce96eb97290b00c5919a918b3bcd33.yaml
 ./poc/other/topquark-d41d8cd98f00b204e9800998ecf8427e.yaml
@@ -189334,6 +189351,7 @@
 ./poc/other/versa-analytics-server_1.yaml
 ./poc/other/versa-analytics-server_2.yaml
 ./poc/other/versa-analytics-server_3.yaml
+./poc/other/versa-director-panel.yaml
 ./poc/other/versa-flexvnf-panel.yaml
 ./poc/other/versa-flexvnf-panel_1.yaml
 ./poc/other/versa-flexvnf-panel_2.yaml
@@ -194885,6 +194903,7 @@
 ./poc/php/simplesamlphp-authentication.yaml
 ./poc/php/simplesamlphp-authentication_1.yaml
 ./poc/php/simplesamlphp-detect.yaml
+./poc/php/simplesamlphp.yaml
 ./poc/php/symfony-phpinfo.yaml
 ./poc/php/thinkphp-50x-arbitrary-file-read.yaml
 ./poc/php/thinkphp-errors.yaml
@@ -201318,6 +201337,7 @@
 ./poc/smtp/fluent-smtp_5.yaml
 ./poc/smtp/free-wp-mail-smtp-b4f8cc1d692770ea516777dff77475ea.yaml
 ./poc/smtp/gosmtp.yaml
+./poc/smtp/interactsh-smtp.yaml
 ./poc/smtp/post-smtp-01bed4d8fc18f92e932ac3e1e0f4f5cb.yaml
 ./poc/smtp/post-smtp-1c60fa32acf2539fdc2944eaf19fbe1e.yaml
 ./poc/smtp/post-smtp-20b5a1223c8140b840ffff5422240c1d.yaml
@@ -212940,7 +212960,7 @@
 ./poc/ssh/ssh-known-hosts.yaml
 ./poc/ssh/ssh-password-auth.yaml
 ./poc/ssh/ssh-server-enumeration.yaml
-./poc/ssh/ssh-server-fingerprint_1.yaml
+./poc/ssh/ssh-server-fingerprint.yaml
 ./poc/ssh/ssh-server-fingerprint_2.yaml
 ./poc/ssh/ssh-sha1-hmac-algo.yaml
 ./poc/ssh/ssh-sha1-hmac-algo_2.yaml
@@ -227016,7 +227036,6 @@
 ./poc/xss/blind-xss.yaml
 ./poc/xss/blindXss-fuzzer.yaml
 ./poc/xss/blind_xss_fuzz_param.yaml
-./poc/xss/blind_xss_header.yaml
 ./poc/xss/blindxss2.yaml
 ./poc/xss/brutelogic-xss.yaml
 ./poc/xss/btoptionscom-financial_times-xss.yaml
@@ -227215,7 +227234,6 @@
 ./poc/xss/gz-forum-script-xss_1.yaml
 ./poc/xss/header_blind_xss-7915.yaml
 ./poc/xss/header_blind_xss.yaml
-./poc/xss/header_blind_xss_1.yaml
 ./poc/xss/header_blind_xss_2.yaml
 ./poc/xss/headless-advanced-dom-xss.yaml
 ./poc/xss/headless-reflected-xss.yaml
@@ -227393,10 +227411,11 @@
 ./poc/xss/new-user-approve-xss_2_1.yaml
 ./poc/xss/new-user-approve-xss_3.yaml
 ./poc/xss/news-script-xss_1.yaml
-./poc/xss/nginx-module-vts-xss-9106_1.yaml
+./poc/xss/nginx-module-vts-xss-9107.yaml
+./poc/xss/nginx-module-vts-xss-9109.yaml
 ./poc/xss/nginx-module-vts-xss-9109_1.yaml
-./poc/xss/nginx-module-vts-xss_2.yaml
-./poc/xss/nginx-reverse-proxy-xss.yaml
+./poc/xss/nginx-module-vts-xss-9110.yaml
+./poc/xss/nginx-module-vts-xss.yaml
 ./poc/xss/nginx-vhost-xss.yaml
 ./poc/xss/ninja-forms-xss.yaml
 ./poc/xss/nscript-web-studios-xss.yaml
@@ -227897,7 +227916,6 @@
 ./poc/xss/xss-fuzz-javascript-schema-url-injection.yaml
 ./poc/xss/xss-fuzz.yaml
 ./poc/xss/xss-fuzz.yml
-./poc/xss/xss-header.yaml
 ./poc/xss/xss-headless-2.yaml
 ./poc/xss/xss-headless.yaml
 ./poc/xss/xss-img.yaml
