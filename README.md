@@ -4,18 +4,18 @@ UpdateNucleiTemplates，每日更新
 这个项目是一个 Python 脚本，用于批量克隆 GitHub 项目，获取 Nuclei Templates，并将 POC 按类别分类存放到文件夹中。同时，使用 GitHub Action 每日自动运行脚本。
 # POC 详情统计
 
-> **当前项目 POC 更新时间：**`2025-08-23 14:58`
+> **当前项目 POC 更新时间：**`2025-08-24 14:59`
 
 | ID | 标签      | 数量 | 目录       | 数量 | 严重性   | 数量 |
 |:---| :-------- | :--- | :--------- | :--- | :------- | :--- |
-| 1 | cve | 41172 | cve | 33590 | medium | 22195 |
-| 2 | wordpress | 36647 | other | 27194 | info | 19543 |
-| 3 | wp-plugin | 34033 | sql | 2117 | high | 13841 |
-| 4 | medium | 15834 | auth | 1820 | low | 10678 |
+| 1 | cve | 41173 | cve | 33591 | medium | 22195 |
+| 2 | wordpress | 36648 | other | 27194 | info | 19543 |
+| 3 | wp-plugin | 34034 | sql | 2117 | high | 13841 |
+| 4 | medium | 15834 | auth | 1820 | low | 10679 |
 | 5 | tech | 13736 | remote_code_execution | 1345 | critical | 7671 |
 | 6 | detect | 12961 | wordpress | 1312 | unknown | 91 |
 | 7 | service | 11683 | detect | 1065 | informative | 17 |
-| 8 | low | 9448 | microsoft | 1014 | hight | 16 |
+| 8 | low | 9449 | microsoft | 1014 | hight | 16 |
 | 9 | high | 6366 | api | 746 | meduim | 5 |
 | 10 | http | 4357 | web | 609 | cretical | 2 |
 

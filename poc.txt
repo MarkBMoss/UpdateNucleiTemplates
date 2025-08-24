@@ -103806,6 +103806,7 @@
 ./poc/cve/CVE-2025-8151-028529e54733e6e60ef82c93347c997b.yaml
 ./poc/cve/CVE-2025-8152-d4bb2d30cded4418c7995972c15528af.yaml
 ./poc/cve/CVE-2025-8198-0a9fef527f54d4f351b5a874f6654b28.yaml
+./poc/cve/CVE-2025-8208-382290a5eab66136f86b34b8c3ec1512.yaml
 ./poc/cve/CVE-2025-8212-284e87c6140e5a005ea4bf2baaf80f1a.yaml
 ./poc/cve/CVE-2025-8212-43899360c0185b33d6842a4bbddac3c8.yaml
 ./poc/cve/CVE-2025-8216-d4d3cdc25678600f8c9407e407487768.yaml
@@ -118283,6 +118284,7 @@
 ./poc/header/rce-header.yaml
 ./poc/header/reflected-header.yaml
 ./poc/header/reflected-headers.yaml
+./poc/header/reflected-xss-header-img.yaml
 ./poc/header/reflected-xss-header.yaml
 ./poc/header/responsive-header-image-slider-e707d0c350d8dc1c30ea42e9b727161b.yaml
 ./poc/header/responsive-header-image-slider.yaml
@@ -118331,7 +118333,6 @@
 ./poc/header/x-recruiting-header_1.yaml
 ./poc/header/x-recruiting-header_2.yaml
 ./poc/header/xss-deprecated-header.yaml
-./poc/header/xss-header.yaml
 ./poc/header/xss_in_headers.yaml
 ./poc/http/CL-TE-http-smuggling.yaml
 ./poc/http/CL-TE-http-smuggling_1.yaml
@@ -124318,13 +124319,10 @@
 ./poc/nginx/nginx-merge-slashes-path-traversal-9104_1.yaml
 ./poc/nginx/nginx-merge-slashes-path-traversal-9105.yaml
 ./poc/nginx/nginx-merge-slashes-path-traversal.yaml
-./poc/nginx/nginx-module-vts-xss-9106.yaml
 ./poc/nginx/nginx-module-vts-xss-9106_1.yaml
-./poc/nginx/nginx-module-vts-xss-9108.yaml
-./poc/nginx/nginx-module-vts-xss-9108_1.yaml
-./poc/nginx/nginx-module-vts-xss-9110_1.yaml
+./poc/nginx/nginx-module-vts-xss-9109_1.yaml
+./poc/nginx/nginx-module-vts-xss-9110.yaml
 ./poc/nginx/nginx-module-vts-xss_1.yaml
-./poc/nginx/nginx-module-vts-xss_2.yaml
 ./poc/nginx/nginx-path-traversal.yaml
 ./poc/nginx/nginx-plus-rest-api.yaml
 ./poc/nginx/nginx-proxy-manager-9111.yaml
@@ -124338,7 +124336,6 @@
 ./poc/nginx/nginx-proxy-manager-default-login_1.yaml
 ./poc/nginx/nginx-proxy-manager.yaml
 ./poc/nginx/nginx-proxy-manager_1.yaml
-./poc/nginx/nginx-reverse-proxy-xss.yaml
 ./poc/nginx/nginx-server-detection.yaml
 ./poc/nginx/nginx-shards.yaml
 ./poc/nginx/nginx-shards_1.yaml
@@ -124378,6 +124375,7 @@
 ./poc/nginx/nginx-vhost-traffic-status.yaml
 ./poc/nginx/nginx-vhost-traffic-status_1.yaml
 ./poc/nginx/nginx-vhost-traffic-status_2.yaml
+./poc/nginx/nginx-vhost-xss.yaml
 ./poc/nginx/nginx-vhosts-stat.yaml
 ./poc/nginx/nginx-webui-solon-rce.yaml
 ./poc/nginx/nginx-webui.yaml
@@ -179483,6 +179481,7 @@
 ./poc/other/sass-lint_1.yaml
 ./poc/other/sass-lint_2.yaml
 ./poc/other/sass-lint_3.yaml
+./poc/other/sastra-essential-addons-for-elementor-289a43a464667b6063877bd09fa4e3f8.yaml
 ./poc/other/sastra-essential-addons-for-elementor-68802b901f2d79660d61deff34df6965.yaml
 ./poc/other/sastra-essential-addons-for-elementor.yaml
 ./poc/other/sastra-essential-addons-for-elementor_1.yaml
@@ -227753,12 +227752,15 @@
 ./poc/xss/new-user-approve-xss_2_1.yaml
 ./poc/xss/new-user-approve-xss_3.yaml
 ./poc/xss/news-script-xss_1.yaml
+./poc/xss/nginx-module-vts-xss-9106.yaml
 ./poc/xss/nginx-module-vts-xss-9107.yaml
+./poc/xss/nginx-module-vts-xss-9108.yaml
+./poc/xss/nginx-module-vts-xss-9108_1.yaml
 ./poc/xss/nginx-module-vts-xss-9109.yaml
-./poc/xss/nginx-module-vts-xss-9109_1.yaml
-./poc/xss/nginx-module-vts-xss-9110.yaml
+./poc/xss/nginx-module-vts-xss-9110_1.yaml
 ./poc/xss/nginx-module-vts-xss.yaml
-./poc/xss/nginx-vhost-xss.yaml
+./poc/xss/nginx-module-vts-xss_2.yaml
+./poc/xss/nginx-reverse-proxy-xss.yaml
 ./poc/xss/ninja-forms-xss.yaml
 ./poc/xss/nscript-web-studios-xss.yaml
 ./poc/xss/nuxt-js-xss.yaml
@@ -227866,7 +227868,6 @@
 ./poc/xss/reflected-xss-body.yaml
 ./poc/xss/reflected-xss-check.yaml
 ./poc/xss/reflected-xss-cookie.yaml
-./poc/xss/reflected-xss-header-img.yaml
 ./poc/xss/reflected-xss-path.yaml
 ./poc/xss/reflected-xss-pj.yaml
 ./poc/xss/reflected-xss-query.yaml
@@ -228257,6 +228258,7 @@
 ./poc/xss/xss-fuzz-javascript-schema-url-injection.yaml
 ./poc/xss/xss-fuzz.yaml
 ./poc/xss/xss-fuzz.yml
+./poc/xss/xss-header.yaml
 ./poc/xss/xss-headless-2.yaml
 ./poc/xss/xss-headless.yaml
 ./poc/xss/xss-img.yaml
