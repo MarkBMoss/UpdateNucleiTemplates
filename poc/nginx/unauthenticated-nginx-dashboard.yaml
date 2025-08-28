@@ -10,7 +10,7 @@ info:
     shpdan-query: html:"NGINX+ Dashboard"
   tags: misconfig,nginx
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/dashboard.html"

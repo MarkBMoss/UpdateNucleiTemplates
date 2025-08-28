@@ -5,17 +5,19 @@ info:
   author: SirBugs
   severity: high
   description: This Template checks disclosing secret information via /settings.py
-  tags: config, secrets, leaks, cheatset, tokens, sql, tokens
+  tags: config,generic
 
 http:
   - method: GET
     path:
       - '{{BaseURL}}/settings.py'
+      - '{{BaseURL}}/settings.py.local'
+      - '{{BaseURL}}/settings.py.env'
+      
     matchers:
       - type: word
         part: body
-
+        condition: and
         words:
           - 'DATABASES = {'
           - "'ENGINE':"
-        condition: or

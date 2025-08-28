@@ -14,8 +14,9 @@ info:
     cwe-id: CWE-79
   metadata:
     verified: true
+    max-request: 2
     shodan-query: http.html:"yeswiki"
-  tags: yeswiki,xss,stored,huntr
+  tags: yeswiki,xss,stored-xss,huntr,intrusive
 
 http:
   - raw:
@@ -54,7 +55,6 @@ http:
 
         2
         ------WebKitFormBoundaryT8dS2PT0WtxACLyu--
-
       - |
         GET /?BazaR&vue=consulter HTTP/1.1
         Host: {{Hostname}}
@@ -63,9 +63,9 @@ http:
     matchers:
       - type: dsl
         dsl:
-          - "contains(all_headers_2, 'text/html') && contains(all_headers_2, 'YesWiki')"
+          - "contains(header_2, 'text/html') && contains(header_2, 'YesWiki')"
           - "status_code_2 == 200"
           - contains(body_2, '><img src=x onerror=console.log(123);>')
         condition: and
 
-# Enhanced by mp on 2022/09/23
+# digest: 4b0a004830460221009b4921cb0a74d6977e3968603e7ca3577292cd3a1871c27554559869a7060776022100d0f493b0d6d7d5cbb18e716206ef7a156e556a17aab0a27b1c45569f2b8d8c54:922c64590222798bb761d5b6d8e72950

@@ -1,9 +1,6 @@
 name: 🛠 Template Validate
 
 on:
-  push:
-    paths:
-      - '**.yaml'
   pull_request:
     paths:
       - '**.yaml'
@@ -18,7 +15,7 @@ jobs:
           fetch-depth: 0
 
       - name: Set up Go
-        uses: actions/setup-go@v4
+        uses: actions/setup-go@v5
         with:
           go-version: 1.21.x
 
@@ -27,7 +24,6 @@ jobs:
 
       - name: Template Validation
         run: |
-          cp -r ${{ github.workspace }}/templates /home/runner/nuclei-templates
-          cd /home/runner/nuclei-templates
-          nuclei -duc -validate -allow-local-file-access
-          nuclei -duc -validate -allow-local-file-access -w /home/runner/nuclei-templates/workflows
+          cp -r ${{ github.workspace }} $HOME
+          nuclei -duc -validate -allow-local-file-access -et /home/runner/nuclei-templates/config/.git -et /home/runner/nuclei-templates/config
+          nuclei -duc -validate -w ./workflows -allow-local-file-access -et /home/runner/nuclei-templates/config/.git -et /home/runner/nuclei-templates/config

