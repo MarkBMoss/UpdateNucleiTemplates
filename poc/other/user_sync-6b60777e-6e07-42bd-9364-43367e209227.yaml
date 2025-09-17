@@ -1,31 +1,31 @@
-id: hackrepair_plugin_archiver-d449a285-34f5-41ed-acfd-2a9acfb04271
+id: user_sync-6b60777e-6e07-42bd-9364-43367e209227
 
 info:
   name: >
-    The Hack Repair Guy's Plugin Archiver <= 2.0.4 - Authenticated (Administrator+) Arbitrary File Deletion
+    User Sync – Remote User Sync <= 1.0.2 - Cross-Site Request Forgery to Plugin Deactivation
   author: topscoder
-  severity: low
+  severity: medium
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/d449a285-34f5-41ed-acfd-2a9acfb04271?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/6b60777e-6e07-42bd-9364-43367e209227?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
     cve-id: 
   metadata:
-    fofa-query: "wp-content/plugins/hackrepair-plugin-archiver/"
-    google-query: inurl:"/wp-content/plugins/hackrepair-plugin-archiver/"
-    shodan-query: 'http.html:"wp-content/plugins/hackrepair-plugin-archiver/"'
-  tags: cve,wordpress,wp-plugin,hackrepair-plugin-archiver,low,candidate
+    fofa-query: "wp-content/plugins/user-sync/"
+    google-query: inurl:"/wp-content/plugins/user-sync/"
+    shodan-query: 'http.html:"wp-content/plugins/user-sync/"'
+  tags: cve,wordpress,wp-plugin,user-sync,medium,candidate
 
 http:
   - method: GET
     redirects: true
     max-redirects: 3
     path:
-      - "{{BaseURL}}/wp-content/plugins/hackrepair-plugin-archiver/readme.txt"
+      - "{{BaseURL}}/wp-content/plugins/user-sync/readme.txt"
 
     extractors:
       - type: regex
@@ -51,9 +51,9 @@ http:
 
       - type: word
         words:
-          - "hackrepair-plugin-archiver"
+          - "user-sync"
         part: body
 
       - type: dsl
         dsl:
-          - compare_versions(version, '<= 2.0.4')
+          - compare_versions(version, '<= 1.0.2')
