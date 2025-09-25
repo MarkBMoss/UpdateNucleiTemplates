@@ -8,6 +8,7 @@ info:
   reference: https://blog.orange.tw/2024/08/confusion-attacks-en.html
   tags: apache,php,exposed
 
+requests:
 http:
   - method: GET
     path:
@@ -19,7 +20,7 @@ http:
       - type: status
         status:
           - 200
-          
+
       - type: word
         part: body
         words:

@@ -5,8 +5,10 @@ info:
   author: dhiyaneshDK
   severity: low
   tags: wordpress,log,plugin
+  metadata:
+    max-request: 1
 
-requests:
+http:
   - method: GET
     path:
       - '{{BaseURL}}/wp-content/uploads/affwp-debug.log'

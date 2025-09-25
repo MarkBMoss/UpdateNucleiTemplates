@@ -5,8 +5,10 @@ info:
   author: 0ut0fb4nd
   severity: info
   tags: wordpress
+  metadata:
+    max-request: 1
 
-requests:
+http:
   - method: POST
     path:
       - "{{BaseURL}}/xmlrpc.php"

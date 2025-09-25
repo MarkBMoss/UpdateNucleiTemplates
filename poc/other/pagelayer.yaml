@@ -1,48 +1,58 @@
-id: wordpress-pagelayer
+id: pagelayer
 
 info:
-  name: Page Builder' Pagelayer – Drag and Drop website builder Detection
-  author: ricardomaia
-  severity: info
+  name: >
+    Page Builder: Pagelayer – Drag and Drop website builder <= 1.1.1 - Cross-Site Request Forgery to Cross-Site Scripting
+  author: topscoder
+  severity: medium
+  description: >
+    
   reference:
-    - https://wordpress.org/plugins/pagelayer/
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/666c02bd-d3e2-4e40-b189-b73e1136610b?source=api-scan
+  classification:
+    cvss-metrics: 
+    cvss-score: 
+    cve-id: 
   metadata:
-    plugin_namespace: pagelayer
-    wpscan: https://wpscan.com/plugin/pagelayer
-  tags: tech,wordpress,wp-plugin,top-200
+    fofa-query: "wp-content/plugins/pagelayer/"
+    google-query: inurl:"/wp-content/plugins/pagelayer/"
+    shodan-query: 'vuln:'
+  tags: cve,wordpress,wp-plugin,pagelayer,medium
 
 http:
   - method: GET
+    redirects: true
+    max-redirects: 3
     path:
       - "{{BaseURL}}/wp-content/plugins/pagelayer/readme.txt"
 
-    payloads:
-      last_version: helpers/wordpress/plugins/pagelayer.txt
-
     extractors:
       - type: regex
+        name: version
         part: body
+        group: 1
         internal: true
-        name: internal_detected_version
-        group: 1
         regex:
-          - '(?i)Stable.tag:\s?([\w.]+)'
+          - "(?mi)Stable tag: ([0-9.]+)"
 
       - type: regex
+        name: version
         part: body
-        name: detected_version
         group: 1
         regex:
-          - '(?i)Stable.tag:\s?([\w.]+)'
+          - "(?mi)Stable tag: ([0-9.]+)"
 
-    matchers-condition: or
+    matchers-condition: and
     matchers:
-      - type: dsl
-        name: "outdated_version"
-        dsl:
-          - compare_versions(internal_detected_version, concat("< ", last_version))
+      - type: status
+        status:
+          - 200
 
-      - type: regex
+      - type: word
+        words:
+          - "pagelayer"
         part: body
-        regex:
-          - '(?i)Stable.tag:\s?([\w.]+)'
+
+      - type: dsl
+        dsl:
+          - compare_versions(version, '< 1.1.2')

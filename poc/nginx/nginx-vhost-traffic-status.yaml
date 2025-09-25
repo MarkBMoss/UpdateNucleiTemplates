@@ -1,5 +1,4 @@
 id: nginx-vhost-traffic-status
-
 info:
   name: Nginx Vhost Traffic Status
   author: geeknik
@@ -7,12 +6,10 @@ info:
   reference:
     - https://github.com/vozlt/nginx-module-vts
   tags: status,nginx,misconfig
-
 requests:
   - method: GET
     path:
       - "{{BaseURL}}/status"
-
     matchers-condition: and
     matchers:
       - type: word

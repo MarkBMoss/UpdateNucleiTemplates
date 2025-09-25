@@ -6,9 +6,11 @@ info:
   severity: high
   reference:
     - https://www.exploit-db.com/exploits/49252
-  tags: wordpress,wp-plugin
+  tags: wordpress,wp-plugin,edb
+  metadata:
+    max-request: 1
 
-requests:
+http:
   - method: GET
     path:
       - "{{BaseURL}}/wp-content/plugins/boldgrid-backup/cron/restore-info.json"

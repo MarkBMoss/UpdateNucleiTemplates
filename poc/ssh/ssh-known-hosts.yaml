@@ -1,5 +1,4 @@
 id: ssh-known-hosts
-
 info:
   name: SSH Known Hosts
   author: geeknik
@@ -7,13 +6,11 @@ info:
   reference:
     - https://datacadamia.com/ssh/known_hosts
   tags: config,exposure,ssh
-
 requests:
   - method: GET
     path:
       - "{{BaseURL}}/.ssh/known_hosts"
       - "{{BaseURL}}/.ssh/known_hosts.old"
-
     matchers-condition: and
     matchers:
       - type: word
@@ -23,7 +20,6 @@ requests:
           - "ssh-rsa"
           - "ecdsa-sha2-nistp256"
         condition: or
-
       - type: status
         status:
           - 200

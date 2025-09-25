@@ -7,8 +7,10 @@ info:
   reference:
     - https://storm.apache.org/releases/current/STORM-UI-REST-API.html
   tags: apache,unauth,misconfig
+  metadata:
+    max-request: 1
 
-requests:
+http:
   - method: GET
     path:
       - '{{BaseURL}}/api/v1/cluster/summary'

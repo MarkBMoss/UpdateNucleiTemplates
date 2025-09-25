@@ -1,10 +1,16 @@
-id: workflow-example
+id: basic-request
 
 info:
-  name: Test Workflow Template
+  name: Basic Request
   author: pdteam
   severity: info
 
-workflows:
-  - template: workflow/match-1.yaml
-  - template: workflow/match-2.yaml
+websocket:
+  - address: '{{Scheme}}://{{Hostname}}'
+    inputs:
+      - data: hello
+    matchers:
+      - type: word
+        words:
+          - world
+        part: response
