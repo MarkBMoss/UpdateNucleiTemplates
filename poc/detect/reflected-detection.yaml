@@ -1,0 +1,31 @@
+id: reflected-detection
+
+info:
+  name: Reflected Cross Site Scripting
+  author: reewardius
+  severity: medium
+  tags: reflected,dast,full
+  
+http:
+  - pre-condition:
+      - type: dsl
+        dsl:
+          - 'method != "OPTIONS"'
+        
+    payloads:
+      reflection:
+        - "reewardius"
+        
+    fuzzing:
+      - part: request
+        type: postfix
+        mode: single
+        fuzz:
+          - "{{reflection}}"
+          
+    stop-at-first-match: true
+    matchers:
+      - type: word
+        part: body
+        words:
+          - "reewardius"

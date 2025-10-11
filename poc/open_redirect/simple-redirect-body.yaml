@@ -33,12 +33,14 @@ http:
           - "https://{{redirect}}"
 
     stop-at-first-match: true
+    redirects: true
+    max-redirects: 3
     matchers-condition: and
     matchers:
       - type: regex
         part: header
         regex:
-          - '(?m)^(?:Location\s*?:\s*?)(?:https?:\/\/|\/\/|\/\\\\|\/\\)(?:[a-zA-Z0-9\-_\.@]*)oast\.me\/?(\/|[^.].*)?$' # https://regex101.com/r/idfD2e/1
+          - '(?m)^(?:Location\s*?:\s*?)(?:https?:\/\/|\/\/|\/\\\\|\/\\)?(?:[a-zA-Z0-9\-_\.@]*)evil\.com\/?(\/|[^.].*)?$'
 
       - type: status
         status:
