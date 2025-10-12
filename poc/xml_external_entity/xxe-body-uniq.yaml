@@ -17,7 +17,7 @@ http:
       xxe:
         - "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><!DOCTYPE foo [<!ELEMENT foo ANY ><!ENTITY xxe SYSTEM \"file:///etc/passwd\" >]><foo>&xxe;</foo>"
         
-    stop-at-first-match: true
+
     fuzzing:
       - part: body
         type: replace
@@ -25,6 +25,7 @@ http:
         fuzz:
           - "{{xxe}}"
           
+    stop-at-first-match: true
     matchers:
       - type: word
         part: body
