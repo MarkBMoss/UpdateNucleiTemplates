@@ -9,22 +9,21 @@ on:
   workflow_dispatch: # allows manual triggering of the workflow
 
 jobs:
-  checksum:
+  build:
     runs-on: ubuntu-latest
-    if: github.repository == 'projectdiscovery/nuclei-templates'
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
         with: 
           fetch-depth: 0
 
       - name: Set up Go
         uses: actions/setup-go@v4
         with:
-          go-version: 1.21.x
+          go-version: 1.19
 
       - name: install checksum generator
         run: |
-          go install -v github.com/projectdiscovery/nuclei/v3/cmd/generate-checksum@dev
+          go install -v github.com/projectdiscovery/nuclei/v2/cmd/generate-checksum@dev
 
       - name: generate checksum
         id: checksum
@@ -35,15 +34,12 @@ jobs:
       - name: Commit files
         if: steps.checksum.outputs.CHANGES > 0
         run: |
+          git add templates-checksum.txt
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add templates-checksum.txt
-          git commit -am "Auto Generated Templates Checksum [$(date)] :robot:"
+          git commit -m "Auto Generated Templates Checksum [$(date)] :robot:" -a
 
       - name: Push changes
-        if: steps.checksum.outputs.CHANGES > 0
-        run: |
-          git pull --rebase
-          git push origin ${{ github.ref }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
