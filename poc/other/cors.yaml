@@ -1,7 +1,7 @@
 id: cors-misconfig
 info:
   name: CORS Misconfiguration
-  author: r3dcl1ff
+  author: coffin
   severity: high
   tags: cors,generic,misconfig
 

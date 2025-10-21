@@ -1,42 +1,28 @@
 id: reflected-xss-header
 
 info:
-  name: Reflected Cross-Site Scripting
-  author: pdteam,0xKayala,AmirHossein Raeisi
-  severity: medium
-  tags: fuzzing-req,fuzzing-req-header,fuzzing-req-reflected,fuzzing-req-xss,dast
+  name: Reflected XSS via header
+  author: reewardius
+  severity: high
+  tags: generic,xss,reflected
   
-variables:
-  first: "{{rand_int(10000, 99999)}}"
-
 http:
-  - pre-condition:
-      - type: dsl
-        dsl:
-          - 'method == "GET"'
-
-    payloads:
-      reflection:
-        - "'\"><{{first}}>"
-        - "'><{{first}}>"
-        - "\"><{{first}}>"
-
-    fuzzing:
-      - part: header
-        type: postfix
-        mode: single
-        fuzz:
-          - "{{reflection}}"
-
-    stop-at-first-match: true
+  - raw:
+      - |
+        GET / HTTP/1.1
+        Host: {{Hostname}}
+        User-Agent: </script>'\"><img src="//js.rip/bugbounty">
+        Referer: https://bing.com\"></script>'\"><img src="//js.rip/bugbounty">
+        X-Forwarded-Host: bing.com\"></script>'\"><img src="//js.rip/bugbounty">
+        X-Forwarded-For: bing.com\"></script>'\"><img src="//js.rip/bugbounty">
+        
     matchers-condition: and
     matchers:
       - type: word
         part: body
         words:
-          - "{{reflection}}"
-
-      - type: word
-        part: header
-        words:
-          - "text/html"
+          - '<img src="//js.rip/bugbounty">'
+          
+      - type: status
+        status:
+          - 200
