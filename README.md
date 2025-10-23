@@ -4,18 +4,18 @@ UpdateNucleiTemplates，每日更新
 这个项目是一个 Python 脚本，用于批量克隆 GitHub 项目，获取 Nuclei Templates，并将 POC 按类别分类存放到文件夹中。同时，使用 GitHub Action 每日自动运行脚本。
 # POC 详情统计
 
-> **当前项目 POC 更新时间：**`2025-10-22 15:17`
+> **当前项目 POC 更新时间：**`2025-10-23 15:19`
 
 | ID | 标签      | 数量 | 目录       | 数量 | 严重性   | 数量 |
 |:---| :-------- | :--- | :--------- | :--- | :------- | :--- |
-| 1 | cve | 44260 | cve | 37531 | info | 25348 |
-| 2 | wordpress | 38934 | other | 31607 | medium | 24619 |
-| 3 | wp-plugin | 35999 | wordpress | 1852 | high | 15521 |
-| 4 | tech | 18252 | auth | 1850 | low | 11570 |
-| 5 | detect | 17535 | sql | 1817 | critical | 8756 |
-| 6 | medium | 16773 | detect | 1278 | unknown | 129 |
+| 1 | cve | 44283 | cve | 37533 | info | 25348 |
+| 2 | wordpress | 38956 | other | 31621 | medium | 24624 |
+| 3 | wp-plugin | 36021 | wordpress | 1856 | high | 15523 |
+| 4 | tech | 18252 | auth | 1850 | low | 11587 |
+| 5 | detect | 17535 | sql | 1819 | critical | 8756 |
+| 6 | medium | 16778 | detect | 1278 | unknown | 129 |
 | 7 | service | 13824 | default | 975 | hight | 4 |
-| 8 | low | 9977 | remote_code_execution | 960 | meduim | 3 |
+| 8 | low | 9994 | remote_code_execution | 960 | meduim | 3 |
 | 9 | high | 6570 | api | 911 | none | 1 |
 | 10 | http | 4566 | web | 813 | ciritical | 1 |
 
