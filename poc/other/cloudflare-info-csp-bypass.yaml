@@ -1,7 +1,7 @@
 id: cloudflare-info-csp-bypass
 
 info:
-  name: Content-Security-Policy Bypass via Cloudflare Info
+  name: Content-Security-Policy Bypass - Cloudflare Info
   author: renniepak,DhiyaneshDK
   severity: medium
   reference:
@@ -9,6 +9,22 @@ info:
   metadata:
     verified: true
   tags: xss,csp-bypass,cloudflare-info
+
+flow: http(1) && headless(1)
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers:
+      - type: word
+        part: header
+        words:
+          - "Content-Security-Policy"
+          - "cloudflare.com"
+        condition: and
+        internal: true
 
 headless:
   - steps:
@@ -36,4 +52,4 @@ headless:
       - type: dsl
         dsl:
           - "cloudflare_info_csp_xss == true"
-# digest: 4a0a00473045022100f46c09e62c0a002e8cd15705de5a19a8dc14e33f2952f1cefd125d8a60f4cff1022073ab01ac587a80d6a5e8fd46da39552c2c946eab40f50341cec09f79bf9008bf:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a0047304502205a5a7ad31eaaf7bae80ca264838bc96e260ff2752fbef9b15537c17499fc4dc7022100fa8d98ab76bedc48e5aa0327a2f13a0f1dd1d26ef5739973d58bde2bd9a5a7d8:922c64590222798bb761d5b6d8e72950
