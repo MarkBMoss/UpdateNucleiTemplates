@@ -1,17 +1,18 @@
-id: fortiddos-certificate
+id: fortimanager-certificate
 
 info:
-  name: Fortinet FortiDDoS Certificate - Detect
+  name: Fortinet FortiManager Certificate - Detect
   author: johnk3r
   severity: info
   metadata:
     verified: true
     max-request: 1
-    shodan-query: ssl:"ou=fortiddos"
-  tags: ssl,tls,fortinet,fortiddos,discovery
+    shodan-query: ssl:"ou=fortimanager"
+  tags: ssl,tls,fortinet,fortimanager,discovery
 
 ssl:
   - address: "{{Host}}:{{Port}}"
+  - address: "{{Host}}:541"
 
     matchers-condition: and
     matchers:
@@ -23,10 +24,10 @@ ssl:
       - type: word
         part: subject_dn
         words:
-          - "OU=FortiDDoS"
+          - "OU=FortiManager"
 
     extractors:
       - type: dsl
         dsl:
           - 'subject_cn'
-# digest: 490a004630440220133e4c6d68d9e5a0f0c246d42ea7766e995071a6372801fb790625ce1cccc4ed02203737e2050d6ed752534cb7b141e12d8614050535d264c02231b137627274f2ac:922c64590222798bb761d5b6d8e72950
+# digest: 490a004630440220719cde2a98eb7859fd014b9b64bde7ce9a4c05fc6e220722544ae7900af9a48f02206607c6c899ff211c01dee8b25574043d23f893488bdd32072d2662d88c10330b:922c64590222798bb761d5b6d8e72950
