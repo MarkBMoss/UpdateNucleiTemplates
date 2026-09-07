@@ -8,7 +8,6 @@ info:
   reference: https://blog.orange.tw/2024/08/confusion-attacks-en.html
   tags: apache,ssrf,feed2js
 
-requests:
 http:
   - method: GET
     path:
@@ -17,6 +16,6 @@ http:
       
     matchers:
       - type: word
-        part: interactsh_protocol  # Confirms the HTTP Interaction
+        part: interactsh_protocol
         words:
           - "http"

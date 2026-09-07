@@ -4,6 +4,7 @@ info:
   name: Unauthorized HP Printer
   author: pussycat0x
   severity: high
+  description: HP Printer is exposed.
   metadata:
     max-request: 1
   tags: hp,iot,unauth,misconfig
@@ -24,5 +25,4 @@ http:
       - type: status
         status:
           - 200
-
-# digest: 490a0046304402204b282a3754c6d2b6f7439c52ff219ba04c866bbbf8caaa366d25abff9e6fb914022059aac66a3fa616bddcf045b00da4148810ce86a00f9496adb5677890b24f28bb:922c64590222798bb761d5b6d8e72950
+# digest: 490a004630440220654fd3b4279985b791be4b9f4c50ad3d3cd66637da1c1221eceb461d001ffa9f02200a9906b296c3dcbb6a3b446f833c67519ca1a9cb7d55a67e036d23035a9c9d04:922c64590222798bb761d5b6d8e72950

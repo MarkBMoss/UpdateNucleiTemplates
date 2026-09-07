@@ -139,27 +139,43 @@ http:
     stop-at-first-match: true
     matchers-condition: or
     matchers:
+      # Строгая проверка формата вывода команды id (Unix/Linux)
+      - type: regex
+        part: body
+        regex:
+          # uid=NUMBER(username) gid=NUMBER(groupname)
+          - 'uid=\d+\([a-zA-Z0-9_-]+\)\s+gid=\d+\([a-zA-Z0-9_-]+\)'
+          # uid=NUMBER(username) gid=NUMBER(groupname) groups=...
+          - 'uid=\d+\([^)]+\).*gid=\d+\([^)]+\).*groups='
+        condition: or
+        
+      # Windows ошибка (доказательство попытки выполнения)
       - type: word
+        part: body
         words:
           - "'id' is not recognized as an internal or external command"
-          - "syntax error near unexpected token `"
-        condition: or
+          - "'id' не является внутренней или внешней командой"
         
-      - type: word
+      # Bash ошибка синтаксиса (доказательство интерпретации команды)
+      - type: regex
         part: body
-        words:
-          - "uid="
-          - "gid="
-        condition: or
-        
-      - type: word
+        regex:
+          - 'syntax error near unexpected token.*id'
+          - 'sh:.*id.*not found'
+          
+      # PHP info (для PHP RCE payloads)
+      - type: regex
         part: body
+        regex:
+          - 'PHP Version\s+\d+\.\d+\.\d+'
+          
+      - type: word
         words:
-          - "PHP Extension"
-          - "PHP Version"
-        condition: and
-        
+          - "This is perl"
+          
     extractors:
       - type: regex
+        part: body
         regex:
-          - "(u|g)id=.*"
+          - 'uid=\d+\([^)]+\).*gid=\d+\([^)]+\).*'
+        group: 0

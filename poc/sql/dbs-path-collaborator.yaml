@@ -15,6 +15,8 @@ http:
       - type: dsl
         dsl:
           - 'method == "GET"'
+          - '!contains(path, ".js")'  # exclude .js files
+        condition: and
         
     payloads:
       rce:

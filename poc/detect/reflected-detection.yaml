@@ -1,10 +1,11 @@
 id: reflected-detection
 
 info:
-  name: Reflected Cross Site Scripting
+  name: Reflected Input Detection
   author: reewardius
-  severity: medium
-  tags: reflected,dast,full
+  severity: info
+  description: Detects if user input is reflected in the response
+  tags: fuzzing-req,reflected,dast
   
 http:
   - pre-condition:
@@ -14,7 +15,7 @@ http:
         
     payloads:
       reflection:
-        - "reewardius"
+        - "rwtest{{randstr_1}}"  # ← Уникальный маркер с рандомом
         
     fuzzing:
       - part: request
@@ -24,8 +25,24 @@ http:
           - "{{reflection}}"
           
     stop-at-first-match: true
+    matchers-condition: and
     matchers:
+      # Проверяем что наш маркер отражается
       - type: word
         part: body
         words:
-          - "reewardius"
+          - "rwtest"
+          
+      # Проверяем что это не в комментариях или скриптах где безопасно
+      - type: dsl
+        dsl:
+          - '!contains(body, "<!--rwtest")'  # Не в HTML комментарии
+          - '!contains(body, "//rwtest")'     # Не в JS комментарии
+        condition: and
+        
+    extractors:
+      - type: regex
+        part: body
+        regex:
+          - 'rwtest[a-z0-9]+'
+        group: 0

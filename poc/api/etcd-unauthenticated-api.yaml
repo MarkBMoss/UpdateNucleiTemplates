@@ -4,6 +4,7 @@ info:
   name: etcd Unauthenticated HTTP API Leak
   author: dhiyaneshDk
   severity: high
+  description: etcd HTTP API is exposed.
   reference:
     - https://hackerone.com/reports/1088429
   metadata:
@@ -36,5 +37,4 @@ http:
       - type: status
         status:
           - 200
-
-# digest: 4b0a00483046022100897d3dde5e9a2dfd0ab7d17ab781c555d44ad28bc754236ec6bf33a7ec4c0d7c022100f5ba5418fa82fa65ff1d95bedc9dffea5b1861016c575cc71e7898fbd6c8a3ea:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a0047304502205c6dd4e040362e3caf790ecbb519f29b1f386cbe1ddce58c0641208846715d96022100e53899d8a006ddc74541f9cb90bc6104cfbe2c38a5a41de488fbe579d046992f:922c64590222798bb761d5b6d8e72950

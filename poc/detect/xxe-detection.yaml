@@ -16,6 +16,8 @@ http:
       - type: dsl
         dsl:
           - 'method != "OPTIONS"'
+          - '!contains(path, ".js")'  # exclude .js files
+        condition: and
           
     payloads:
       xxe:

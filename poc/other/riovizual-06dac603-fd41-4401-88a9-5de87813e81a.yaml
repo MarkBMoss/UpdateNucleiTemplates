@@ -2,7 +2,7 @@ id: riovizual-06dac603-fd41-4401-88a9-5de87813e81a
 
 info:
   name: >
-    Table Block by RioVizual <= 2.3.2 - Missing Authorization
+    Table Block by RioVizual <= 3.0.1 - Missing Authorization
   author: topscoder
   severity: high
   description: >
@@ -48,4 +48,4 @@ http:
 
       - type: dsl
         dsl:
-          - compare_versions(version, '<= 2.3.2')
+          - compare_versions(version, '<= 3.0.1')

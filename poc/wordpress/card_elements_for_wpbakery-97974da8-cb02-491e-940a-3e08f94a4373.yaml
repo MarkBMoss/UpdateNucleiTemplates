@@ -2,7 +2,7 @@ id: card_elements_for_wpbakery-97974da8-cb02-491e-940a-3e08f94a4373
 
 info:
   name: >
-    Card Elements for WPBakery <= 1.0.8 - Authenticated (Contributor+) Stored Cross-Site Scripting
+    Card Elements for WPBakery <= 1.1.0 - Authenticated (Contributor+) Stored Cross-Site Scripting
   author: topscoder
   severity: low
   description: >
@@ -32,16 +32,8 @@ http:
         name: version
         part: body
         group: 1
-        internal: true
         regex:
-          - "(?mi)Stable tag: ([0-9.]+)"
-
-      - type: regex
-        name: version
-        part: body
-        group: 1
-        regex:
-          - "(?mi)Stable tag: ([0-9.]+)"
+          - "(?mi)Stable tag:\\s*([0-9.]+)"
 
     matchers-condition: and
     matchers:
@@ -56,4 +48,4 @@ http:
 
       - type: dsl
         dsl:
-          - compare_versions(version, '<= 1.0.8')
+          - compare_versions(version, '<= 1.1.0')
