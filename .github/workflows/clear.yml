@@ -1,0 +1,14 @@
+name: Clean Local Build Caches
+run: |
+    # 清理 npm / yarn 缓存
+    npm cache clean --force 2>/dev/null || true
+    
+    # 清理 Maven / Gradle 缓存
+    rm -rf ~/.m2/repository
+    rm -rf ~/.gradle/caches
+    
+    # 清理 Python pip / poetry 缓存
+    rm -rf ~/.cache/pip
+    
+    # 清理 Go 缓存
+    go clean -cache -modcache 2>/dev/null || true
