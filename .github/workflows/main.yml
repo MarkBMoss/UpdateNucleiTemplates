@@ -13,6 +13,15 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+      
+      # ✅ 核心修复：清理 Runner 预装的大型软件，释放 20GB+ 磁盘空间
+      - name: Maximize Build Space (Free Disk Space)
+        run: |
+          sudo rm -rf /usr/share/dotnet
+          sudo rm -rf /usr/local/lib/android
+          sudo rm -rf /opt/ghc
+          sudo rm -rf /usr/local/share/boost
+          sudo rm -rf "$AGENT_TOOLSDIRECTORY"
 
       - name: Set up Python
         uses: actions/setup-python@v4
