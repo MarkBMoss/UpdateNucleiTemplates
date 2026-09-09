@@ -1,24 +1,24 @@
-id: CVE-2011-4926-1779d9229b83a1399466ae14361bbefb
+id: adminimize-059c7a43b739973f315a4bfc34cdd2e8
 
 info:
   name: >
     Adminimize <= 1.7.21 - Cross-Site Scripting
   author: topscoder
-  severity: medium
+  severity: high
   description: >
-    Cross-site scripting (XSS) vulnerability in adminimize/adminimize_page.php in the Adminimize plugin before 1.7.22 for WordPress allows remote attackers to inject arbitrary web script or HTML via the page parameter.
+    
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/0d7fec5d-895e-4366-a31c-248a3daf8937?source=api-prod
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/0d7fec5d-895e-4366-a31c-248a3daf8937?source=api-scan
   classification:
-    cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
-    cvss-score: 6.1
-    cve-id: CVE-2011-4926
+    cvss-metrics: 
+    cvss-score: 
+    cve-id: 
   metadata:
     fofa-query: "wp-content/plugins/adminimize/"
     google-query: inurl:"/wp-content/plugins/adminimize/"
-    shodan-query: 'vuln:CVE-2011-4926'
-  tags: cve,wordpress,wp-plugin,adminimize,medium
+    shodan-query: 'vuln:'
+  tags: cve,wordpress,wp-plugin,adminimize,high
 
 http:
   - method: GET

@@ -1,15 +1,15 @@
-id: mail_mint-76c073d9-9572-43e4-82eb-49adf678535b
+id: mail_mint-af18f38a-f3cb-46ae-9409-80e35c34df83
 
 info:
   name: >
-    Mail Mint <= 1.31.0 - Unauthenticated PHP Object Injection in Arbitrary Form Fields
+    Mail Mint <= 1.31.0 - Authenticated (Custom+) SQL Injection via 'status' Parameter
   author: topscoder
-  severity: critical
+  severity: low
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/76c073d9-9572-43e4-82eb-49adf678535b?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/af18f38a-f3cb-46ae-9409-80e35c34df83?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
@@ -18,7 +18,7 @@ info:
     fofa-query: "wp-content/plugins/mail-mint/"
     google-query: inurl:"/wp-content/plugins/mail-mint/"
     shodan-query: 'http.html:"wp-content/plugins/mail-mint/"'
-  tags: cve,wordpress,wp-plugin,mail-mint,critical,candidate
+  tags: cve,wordpress,wp-plugin,mail-mint,low,candidate
 
 http:
   - method: GET

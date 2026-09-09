@@ -1,15 +1,15 @@
-id: gdpr_cookie_consent-4a47660e-67a6-42d4-a7ec-911dcf3e6e47
+id: gdpr_cookie_consent-6045c4fd-60ed-4771-93f4-d4df41ef888b
 
 info:
   name: >
-    WPLP Cookie Consent – Cookie Banner & Consent Management for GDPR, CCPA & Google Consent Mode <= 4.4.1 - Unauthenticated Arbitrary File Upload
+    Cookie Banner for GDPR / CCPA <= 4.4.1 - Unauthenticated Stored Cross-Site Scripting via 'wpl_user_preference' Parameter
   author: topscoder
-  severity: critical
+  severity: high
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/4a47660e-67a6-42d4-a7ec-911dcf3e6e47?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/6045c4fd-60ed-4771-93f4-d4df41ef888b?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
@@ -18,7 +18,7 @@ info:
     fofa-query: "wp-content/plugins/gdpr-cookie-consent/"
     google-query: inurl:"/wp-content/plugins/gdpr-cookie-consent/"
     shodan-query: 'http.html:"wp-content/plugins/gdpr-cookie-consent/"'
-  tags: cve,wordpress,wp-plugin,gdpr-cookie-consent,critical,candidate
+  tags: cve,wordpress,wp-plugin,gdpr-cookie-consent,high,candidate
 
 http:
   - method: GET
