@@ -56552,10 +56552,10 @@
 ./poc/cve/CVE-2020-9036-5356.yaml
 ./poc/cve/CVE-2020-9036-5358.yaml
 ./poc/cve/CVE-2020-9036-5359.yaml
-./poc/cve/CVE-2020-9036.yaml
 ./poc/cve/CVE-2020-9036_1.yaml
 ./poc/cve/CVE-2020-9036_2.yaml
 ./poc/cve/CVE-2020-9036_3.yaml
+./poc/cve/CVE-2020-9036_4.yaml
 ./poc/cve/CVE-2020-9043(1)_1_2.yaml
 ./poc/cve/CVE-2020-9043-71853e1d2641cd1f7430c643c9db64bd.yaml
 ./poc/cve/CVE-2020-9043-wp_central-540d444f-7a6c-4c14-a9c7-52209ad59a11.yaml
@@ -63754,7 +63754,6 @@
 ./poc/cve/CVE-2021-3374_4.yaml
 ./poc/cve/CVE-2021-3374_5.yaml
 ./poc/cve/CVE-2021-33766.yaml
-./poc/cve/CVE-2021-33766_3.yaml
 ./poc/cve/CVE-2021-3377-6196.yaml
 ./poc/cve/CVE-2021-3377-6196_1.yaml
 ./poc/cve/CVE-2021-3377-6197.yaml
