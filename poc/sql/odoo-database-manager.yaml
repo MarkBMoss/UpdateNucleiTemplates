@@ -5,19 +5,10 @@ info:
   author: __Fazal,R3dg33k
   severity: low
   description: Odoo database manager was discovered.
-  classification:
-    cpe: cpe:2.3:a:odoo:odoo:*:*:*:*:*:*:*:*
   metadata:
     verified: true
     max-request: 1
-    vendor: odoo
-    product: odoo
-    shodan-query:
-      - title:"Odoo"
-      - http.title:"odoo"
-      - cpe:"cpe:2.3:a:odoo:odoo"
-    fofa-query: title="odoo"
-    google-query: intitle:"odoo"
+    shodan-query: title:"Odoo"
   tags: panel,odoo,backup
 
 http:
@@ -36,4 +27,5 @@ http:
       - type: status
         status:
           - 200
-# digest: 490a004630440220338cb02f72e0bc84523f58199af9acf2e3096626b8ce9477a96b4c15fdd1336802207e51490dde00d36f1da56284279035a30b5219db9d1880327c0dc0e37c159ba2:922c64590222798bb761d5b6d8e72950
+
+# digest: 490a00463044022037f1b0d20785afd5a6e6af02fe5c7487a88f19e03717da8aa0fa8699c2e0f5aa02207a31c991987287be1a4654e689d46867859d0ce220b0dc743285c49ae17c207a:922c64590222798bb761d5b6d8e72950

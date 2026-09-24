@@ -9,7 +9,7 @@ info:
     - https://blog.csdn.net/m0_46257936/article/details/113150699
   metadata:
     max-request: 1
-  tags: cnvd,cnvd2020,lfi,seeyon
+  tags: lfi,cnvd,cnvd2020,seeyon
 
 http:
   - method: GET
@@ -33,4 +33,5 @@ http:
         words:
           - "ctpDataSource.password"
         condition: and
-# digest: 4a0a00473045022100ea5c58ba20210db7e09d21d342c1a27ac57706d5bb33e82d7efc0f266f009d2402207dd2ef1c2d5618aa9b4ba50ff552e9dc8a8d7a144939b4e3a947a764e9bb5dc4:922c64590222798bb761d5b6d8e72950
+
+# digest: 4a0a00473045022100f6d6b777d1f13c172240d455f0c6974a9968e177069a89149ea34e55ae35ae8c0220735e63fc18f12047743e25e59dd073d45c3dda25d513bce3b8328fe44236f083:922c64590222798bb761d5b6d8e72950

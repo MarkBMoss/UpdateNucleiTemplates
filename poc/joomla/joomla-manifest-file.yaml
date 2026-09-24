@@ -11,7 +11,7 @@ info:
     cwe-id: CWE-200
   metadata:
     max-request: 1
-  tags: miscellaneous,misc,joomla
+  tags: misc,joomla
 
 http:
   - method: GET
@@ -34,4 +34,5 @@ http:
       - type: status
         status:
           - 200
-# digest: 4a0a00473045022015fd2ab6b24d8fecdcd16e90664111aa733e53ea179156d5515f656fcf808205022100df66a049f09a1c98c6bd0a43bf29ecc8452e5ab9ac07b7fa76340c0b29b1ac3a:922c64590222798bb761d5b6d8e72950
+
+# digest: 4b0a00483046022100a26b4b71a3a6be06c77885821decf16fdb63cbf876d8fede26e01d8c6160423b022100bbb67b58010ba6da1298684dff7962474d426d0ef96c63c60cde6f715676dbeb:922c64590222798bb761d5b6d8e72950

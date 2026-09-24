@@ -1,23 +1,20 @@
+http:
+- matchers:
+  - condition: and
+    part: body
+    type: word
+    words:
+    - name="atlassian-token"
+    - This page allows you to view all popular dashboards
+    - Manage Dashboard
+  method: GET
+  path:
+  - '{{BaseURL}}/secure/ConfigurePortalPages!default.jspa?view=popular'
 id: jira-secure-configurePortal
-
 info:
-  name: jira secure configurePortal
   author: reewardius
-  severity: medium
-  tags: cloud
   metadata:
     max-request: 1
-  
-http:
-  - method: GET
-    path:
-      - "{{BaseURL}}/secure/ConfigurePortalPages!default.jspa?view=popular"
-      
-    matchers:
-      - type: word
-        part: body
-        words:
-          - 'name="atlassian-token"'
-          - 'This page allows you to view all popular dashboards'
-          - "Manage Dashboard"
-        condition: and
+  name: jira secure configurePortal
+  severity: medium
+  tags: cloud

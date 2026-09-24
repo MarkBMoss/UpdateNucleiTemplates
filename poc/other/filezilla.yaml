@@ -4,7 +4,6 @@ info:
   name: Filezilla
   author: amsda
   severity: medium
-  description: Filezilla internal file is exposed.
   metadata:
     max-request: 3
   tags: exposure,files
@@ -32,4 +31,5 @@ http:
       - type: status
         status:
           - 200
-# digest: 4a0a00473045022024a6b4b08b90c0cf10b74a3c1c4de490b8a49674684a00069d1e0b9916564e8c022100a55902e3c25c598124d952d839474d517b288700c8e5fa69d2343b5b40e873da:922c64590222798bb761d5b6d8e72950
+
+# digest: 490a0046304402202f796fb96ec1ca95e7dd9600b324b8026f564847dbfc635f398d36583450548002201f7d029f1360b4d9dd1d70b83e10ef637f6b623a27114a0e4dfa1dcd66bd9f95:922c64590222798bb761d5b6d8e72950

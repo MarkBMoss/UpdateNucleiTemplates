@@ -1,39 +1,36 @@
+http:
+- matchers:
+  - case-insensitive: true
+    condition: and
+    part: header
+    type: word
+    words:
+    - 'x-debug-token-link:'
+    - /_profiler/
+  - part: body
+    type: word
+    words:
+    - debug mode</a> is enabled.
+    - id="sfWebDebugSymfony"
+  matchers-condition: or
+  method: GET
+  path:
+  - '{{BaseURL}}'
+  - '{{BaseURL}}/admin_dev.php'
+  - '{{BaseURL}}/index_dev.php'
+  - '{{BaseURL}}/app_dev.php'
+  stop-at-first-match: true
 id: symfony-debug-pro
-
 info:
-  name: Symfony Debug Mode
   author: organiccrap,pdteam
-  severity: high
-  description: A Symfony installations 'debug' interface is enabled, allowing the disclosure and possible execution of arbitrary code.
-  reference:
-    - https://github.com/synacktiv/eos
+  description: A Symfony installations 'debug' interface is enabled, allowing the
+    disclosure and possible execution of arbitrary code.
   metadata:
-    verified: true
     max-request: 4
     shodan-query: http.html:"symfony Profiler"
+    verified: true
+  name: Symfony Debug Mode
+  reference:
+  - https://github.com/synacktiv/eos
+  severity: high
   tags: symfony,debug,php,generic
-
-http:
-  - method: GET
-    path:
-      - '{{BaseURL}}'
-      - "{{BaseURL}}/admin_dev.php"
-      - "{{BaseURL}}/index_dev.php"
-      - "{{BaseURL}}/app_dev.php"
-
-    stop-at-first-match: true
-    matchers-condition: or
-    matchers:
-      - type: word
-        part: header
-        words:
-          - 'x-debug-token-link:'
-          - '/_profiler/'
-        condition: and
-        case-insensitive: true
-
-      - type: word
-        part: body
-        words:
-          - 'debug mode</a> is enabled.'
-          - 'id="sfWebDebugSymfony"'

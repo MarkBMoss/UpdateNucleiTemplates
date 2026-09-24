@@ -1,25 +1,21 @@
-id: android-manifest-backup-enabled
-
-info:
-  name: Android manifest backup enabled
-  author: MrW0l05zyn
-  severity: low
-  tags: android,file
-  
 file:
-  - extensions:
-      - xml
-    
-    matchers:
-      - type: word
-        words:
-          - "<manifest"
-          - "<application"
-          - "android:allowBackup=\"true\""
-          - "</manifest>"
-        condition: and
-
-    extractors:
-      - type: regex
-        regex:
-          - "allowBackup=\"true\""
+- extensions:
+  - xml
+  extractors:
+  - regex:
+    - allowBackup="true"
+    type: regex
+  matchers:
+  - condition: and
+    type: word
+    words:
+    - <manifest
+    - <application
+    - android:allowBackup="true"
+    - </manifest>
+id: android-manifest-backup-enabled
+info:
+  author: MrW0l05zyn
+  name: Android manifest backup enabled
+  severity: low
+  tags: file,android,manifest

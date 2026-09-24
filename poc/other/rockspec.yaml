@@ -1,26 +1,22 @@
+http:
+- matchers:
+  - condition: and
+    type: word
+    words:
+    - package
+    - version
+    - dependencies
+    - source
+  - status:
+    - 200
+    type: status
+  matchers-condition: and
+  method: GET
+  path:
+  - '{{BaseURL}}/rockspec'
 id: rockspec
-
 info:
-  name: rockspec file disclosure
   author: reewardius
+  name: rockspec file disclosure
   severity: info
   tags: dependency,config
-
-http:
-  - method: GET
-    path:
-      - "{{BaseURL}}/rockspec"
-
-    matchers-condition: and
-    matchers:
-      - type: word
-        words:
-          - "package"
-          - "version"
-          - "dependencies"
-          - "source"
-        condition: and
-
-      - type: status
-        status:
-          - 200

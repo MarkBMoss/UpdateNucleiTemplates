@@ -13,7 +13,7 @@ info:
     cwe-id: CWE-89
   metadata:
     max-request: 1
-  tags: auth-bypass,edb,sqli
+  tags: auth-bypass,edb
 
 http:
   - raw:
@@ -40,4 +40,5 @@ http:
       - type: status
         status:
           - 200
-# digest: 4b0a0048304602210099f43c7a664504b04638ae00b4cbe03910facdd1bda5177a458560a77471b6f6022100e5a6b80a951bae1b32dc3f17203e6529b1060545cb5c440b373a864a5afcb6ba:922c64590222798bb761d5b6d8e72950
+
+# digest: 490a0046304402206e38a0e4ba0679fab1fa34b4d9596a613d592dc7fc2622341d9934c4b5ec95d502202b470ed5f37c57099b8354633137a705b97486e91ff3cac607fc2a0bcc5e654c:922c64590222798bb761d5b6d8e72950

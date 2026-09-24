@@ -1,41 +1,43 @@
-id: firebase-object-listing
-
-info:
-  name: Insecure Firebase Database
-  author: rafaelwdornelas
-  severity: high
-  description: If the owner of the app have set the security rules as true for both "read" & "write" an attacker can probably dump database and write his own data to firebase database.
-  reference:
-    - https://blog.securitybreached.org/2020/02/04/exploiting-insecure-firebase-database-bugbounty
-    - https://bhashit.in/?p=71
-  tags: listing,firebase
-
 http:
-  - raw:
-      - |
-        PUT /{{randstr}}.json HTTP/1.1
-        Host: {{Hostname}}
-        Content-Type: application/json
+- matchers:
+  - part: body_2
+    type: word
+    words:
+    - '{"id":"insecure-firebase-database"}'
+  - part: header
+    type: word
+    words:
+    - application/json
+  - status:
+    - 200
+    type: status
+  matchers-condition: and
+  raw:
+  - 'PUT /{{randstr}}.json HTTP/1.1
 
-        {"id":"insecure-firebase-database"}
+    Host: {{Hostname}}
 
-      - |
-        GET /{{randstr}}.json HTTP/1.1
-        Host: {{Hostname}}
+    Content-Type: application/json
 
-    req-condition: true
-    matchers-condition: and
-    matchers:
-      - type: word
-        part: body_2
-        words:
-          - '{"id":"insecure-firebase-database"}'
 
-      - type: word
-        part: header
-        words:
-          - "application/json"
+    {"id":"insecure-firebase-database"}
 
-      - type: status
-        status:
-          - 200
+    '
+  - 'GET /{{randstr}}.json HTTP/1.1
+
+    Host: {{Hostname}}
+
+    '
+  req-condition: true
+id: firebase-object-listing
+info:
+  author: rafaelwdornelas
+  description: If the owner of the app have set the security rules as true for both
+    "read" & "write" an attacker can probably dump database and write his own data
+    to firebase database.
+  name: Insecure Firebase Database
+  reference:
+  - https://blog.securitybreached.org/2020/02/04/exploiting-insecure-firebase-database-bugbounty
+  - https://bhashit.in/?p=71
+  severity: high
+  tags: listing,firebase

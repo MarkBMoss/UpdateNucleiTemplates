@@ -1,16 +1,13 @@
+file:
+- extensions:
+  - all
+  matchers:
+  - type: word
+    words:
+    - CFBundleURLTypes
 id: ios-custom-url-scheme
-
 info:
-  name: Custom URL Schemes
   author: reewardius
+  name: Custom URL Schemes
   severity: info
   tags: ios,file
-  
-file:
-  - extensions:
-      - all
-      
-    matchers:
-      - type: word
-        words:
-          - "CFBundleURLTypes"

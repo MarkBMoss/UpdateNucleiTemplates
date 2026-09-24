@@ -1,16 +1,13 @@
+file:
+- extensions:
+  - all
+  matchers:
+  - type: word
+    words:
+    - NSFileProtection
 id: ios-file-protection
-
 info:
-  name: File Protections
   author: reewardius
+  name: File Protections
   severity: info
   tags: ios,file
-  
-file:
-  - extensions:
-      - all
-      
-    matchers:
-      - type: word
-        words:
-          - "NSFileProtection"

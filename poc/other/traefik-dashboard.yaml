@@ -7,16 +7,12 @@ info:
   description: Traefik Dashboard panel was detected.
   classification:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
+    cvss-score: 0
     cwe-id: CWE-200
-    cpe: cpe:2.3:a:traefik:traefik:*:*:*:*:*:*:*:*
   metadata:
     verified: true
     max-request: 1
-    vendor: traefik
-    product: traefik
     shodan-query: http.title:"traefik"
-    fofa-query: title="traefik"
-    google-query: intitle:"traefik"
   tags: panel,traefik
 
 http:
@@ -29,4 +25,5 @@ http:
         words:
           - "<meta name=description content=\"Traefik UI\">"
         part: body
-# digest: 4a0a00473045022100e7feacec69b123853283aae728d7fd2084eb466d8b6e2cdd3ade60a9a5d4ce1b022011db4c2ab4982b1569f82ce49c0863d422c662cd3d9beecaddd4e274162c05be:922c64590222798bb761d5b6d8e72950
+
+# digest: 4a0a0047304502210097d0a3a0db954b6c0ab318ee882e149f93aa5cb7ef3ff6f6e122bc0aa5a5727102207c481df1d5b01dd179f6367488107f84cfcaa1594363ff60a4d070cc62b3c7e0:922c64590222798bb761d5b6d8e72950

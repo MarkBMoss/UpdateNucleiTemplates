@@ -4,7 +4,6 @@ info:
   name: Google Cloud Access Token
   author: DhiyaneshDK
   severity: medium
-  description: Internal Google Cloud access tokens are exposed.
   metadata:
     verified: true
     max-request: 2
@@ -35,4 +34,5 @@ http:
       - type: status
         status:
           - 200
-# digest: 4a0a00473045022100b7550a8fd9507e8e0c83181e81a861612212ee584a7da96eedf10470ffdd4556022003aa2c325c1fcc3f11289e4ff7b9ed1ec2126eb48c4196e8af95a42a9b13db2a:922c64590222798bb761d5b6d8e72950
+
+# digest: 490a00463044022016b5ccc080d0d55f9478e33b8abc443192ba913b02698e6585546708520ed47702206c9c643402846f40329d5080978dde6c31f694a0d81a7cd12b92b84ead77ecc8:922c64590222798bb761d5b6d8e72950

@@ -1,22 +1,19 @@
+http:
+- matchers:
+  - condition: and
+    part: body
+    type: word
+    words:
+    - 'version:'
+    - 'build:'
+    - 'steps:'
+  method: GET
+  path:
+  - '{{BaseURL}}/.circleci/config.yml'
+  - '{{BaseURL}}/.circleci/config.yaml'
 id: circle-ci
-
 info:
-  name: Circle CI Detect
   author: reewardius
+  name: Circle CI Detect
   severity: medium
   tags: cloud,config-files,config
-  
-http:
-  - method: GET
-    path:
-      - "{{BaseURL}}/.circleci/config.yml"
-      - "{{BaseURL}}/.circleci/config.yaml"
-      
-    matchers:
-      - type: word
-        part: body
-        words:
-          - "version:"
-          - "build:"
-          - "steps:"
-        condition: and

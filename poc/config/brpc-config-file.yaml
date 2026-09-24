@@ -1,32 +1,27 @@
+http:
+- matchers:
+  - part: body
+    type: word
+    words:
+    - server_connection_count
+  - part: header
+    type: word
+    words:
+    - text/html
+  - condition: or
+    status:
+    - 200
+    - 206
+    type: status
+  matchers-condition: and
+  method: GET
+  path:
+  - '{{BaseURL}}/connections'
 id: brpc-config-file
-
 info:
-  name: brpc config files
   author: reewardius
-  severity: medium
-  tags: generic,config
   metadata:
     max-request: 1
-    
-http:
-  - method: GET
-    path:
-      - "{{BaseURL}}/connections"
-      
-    matchers-condition: and
-    matchers:
-      - type: word
-        part: body
-        words:
-          - "server_connection_count"
-        
-      - type: word
-        part: header
-        words:
-          - "text/html"
-        
-      - type: status
-        status:
-          - 200
-          - 206
-        condition: or
+  name: brpc config files
+  severity: medium
+  tags: generic,config

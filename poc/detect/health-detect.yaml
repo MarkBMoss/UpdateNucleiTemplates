@@ -1,28 +1,23 @@
-id: health-detect
-
-info:
-  name: Health Endpoint Detector
-  author: reewardius
-  severity: info
-
 http:
-  - method: GET
-    path:
-      - "{{BaseURL}}/health"
-      
-    matchers-condition: and
-    matchers:
-      - type: word
-        part: body
-        words:
-          - "OK"
-          - "Healthy"
-          
-      - type: word
-        part: header
-        words:
-          - text/plain
-          
-      - type: status
-        status:
-          - 200
+- matchers:
+  - part: body
+    type: word
+    words:
+    - OK
+    - Healthy
+  - part: header
+    type: word
+    words:
+    - text/plain
+  - status:
+    - 200
+    type: status
+  matchers-condition: and
+  method: GET
+  path:
+  - '{{BaseURL}}/health'
+id: health-detect
+info:
+  author: reewardius
+  name: Health Endpoint Detector
+  severity: info

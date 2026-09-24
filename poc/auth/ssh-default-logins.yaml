@@ -1,14 +1,13 @@
-id: ssh-default-logins
+id: ssh-weak-credentials
 
 info:
   name: SSH - Default Logins
   author: tarunKoyalwar
   severity: critical
   metadata:
-    max-request: 223
-    shodan-query: port:22
-  tags: js,ssh,default-login,network,fuzz
-
+    max-request: 277
+    shodan-query: port:1433
+  tags: js,ssh,default-login,network
 javascript:
   - pre-condition: |
       var m = require("nuclei/ssh");
@@ -26,10 +25,10 @@ javascript:
       Username: "{{usernames}}"
       Password: "{{passwords}}"
     threads: 10
-    attack: pitchfork
+    attack: clusterbomb
     payloads:
-      usernames: helpers/wordlists/ssh-users.txt
-      passwords: helpers/wordlists/ssh-passwords.txt
+      usernames: helpers/wordlists/wp-users.txt
+      passwords: helpers/wordlists/wp-passwords.txt
     stop-at-first-match: true
     matchers:
       - type: dsl
@@ -37,4 +36,5 @@ javascript:
           - "response == true"
           - "success == true"
         condition: and
-# digest: 4a0a0047304502205c8741a48dfac58a57513fcde58d5cab336dbb2887438d2667b703416abe42840221009071a513c4e39427fc62f59a6db13d461858027b4f273c423237547166064299:922c64590222798bb761d5b6d8e72950
+
+# digest: 490a0046304402207683eb3f946a180d4799ec1414770ebf1d4c7c5921e641c27d6593a819f271d602207f268fbab9c40e6a5593c726eebab711133a0842db8cae92dc913a5c57bd9d08:922c64590222798bb761d5b6d8e72950

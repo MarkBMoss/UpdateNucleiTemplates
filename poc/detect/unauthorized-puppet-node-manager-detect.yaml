@@ -4,7 +4,6 @@ info:
   name: Puppet Node Manager - Unauthorized Access
   author: pussycat0x
   severity: medium
-  description: Pupper Node Manager is exposed to external users.
   metadata:
     max-request: 1
     fofa-query: 'app="puppet-Node-Manager"'
@@ -24,4 +23,5 @@ http:
       - type: status
         status:
           - 200
-# digest: 490a00463044022003ccd6fe2e0259a02cf374bf528013de630d149d97208c27f1272bb7a06658b9022061f24c0838b4fd2ca4b7148df410c060fdeea9c5a5e690bf7d7f6c447d15e603:922c64590222798bb761d5b6d8e72950
+
+# digest: 490a004630440220302dd4f63ddce12168518f0d398d2001b6a88e5bad6b2bdf2c1efa53a3e07bcc022001a50f5a5ae1e1b1c75ecf741ac85fdf3261bb0743c83b20804801e51399ebe7:922c64590222798bb761d5b6d8e72950

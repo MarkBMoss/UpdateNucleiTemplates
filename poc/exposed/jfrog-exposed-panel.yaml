@@ -1,20 +1,17 @@
+http:
+- matchers:
+  - part: body
+    type: word
+    words:
+    - <title>JFrog</title>
+  method: GET
+  path:
+  - '{{BaseURL}}/ui/packages'
 id: jfrog-exposed-panel
-
 info:
-  name: Jfrog panel exposed
   author: reewardius
-  severity: medium
-  tags: config,exposed,cloud,java,generic
   metadata:
     max-request: 1
-    
-http:
-  - method: GET
-    path:
-      - "{{BaseURL}}/ui/packages"
-      
-    matchers:
-      - type: word
-        part: body
-        words:
-          - "<title>JFrog</title>"
+  name: Jfrog panel exposed
+  severity: medium
+  tags: config,exposed,cloud,java,generic

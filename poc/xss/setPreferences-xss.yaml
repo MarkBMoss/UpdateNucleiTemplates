@@ -11,7 +11,10 @@ info:
 requests:
   - method: GET
     path:
-      - "{{BaseURL}}/crx/de/setPreferences.jsp;%0A.woff?language=en&keymap=<test>"
+      - "{{BaseURL}}/crx/de/setPreferences.jsp;%0A.html?language=en&keymap=<test>"
+      - "{{BaseURL}}/crx/nl/setPreferences.jsp;%0A.html?language=en&keymap=<test>"
+      - "{{BaseURL}}/crx/en/setPreferences.jsp;%0A.html?language=en&keymap=<test>"
+      - "{{BaseURL}}/crx/us/setPreferences.jsp;%0A.html?language=en&keymap=<test>"
       - "{{BaseURL}}/crx/de/setPreferences.jsp;%0A.js?language=en&keymap=<test>"
       - "{{BaseURL}}/crx/de/setPreferences.jsp?language=en&keymap=<test>"
       - "{{BaseURL}}/content/..;/crx/de/setPreferences.jsp;%0A.js?language=en&keymap=<test>"

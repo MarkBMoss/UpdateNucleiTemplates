@@ -4,7 +4,6 @@ info:
   name: XMLRPC Pingback SSRF
   author: geeknik
   severity: high
-  description: XMLRPC Pingback leads to SSRF.
   reference:
     - https://hackerone.com/reports/406387
   metadata:
@@ -33,4 +32,5 @@ http:
         part: interactsh_protocol
         words:
           - "http"
-# digest: 4b0a00483046022100b9c0df7388577f0b020d925d4faf1d98344d0fed6488b6d1500c5e703b0f54a0022100ce92f1150040cc336adbdbe2e31a4363e1973409b27ec81c125c172c155d2886:922c64590222798bb761d5b6d8e72950
+
+# digest: 490a00463044022054f09bba29b03fecfb48e1c7e01ea52ff60cce13d6a2e9c4ceee9b560f60497802200ef0fccebc5503c1da59a5cfda01788491c5da4155f3b6bbb6545b280ecdd20b:922c64590222798bb761d5b6d8e72950

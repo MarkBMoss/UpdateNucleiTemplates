@@ -4,17 +4,12 @@ info:
   name: Jetty showContexts Enable in DefaultHandler
   author: dhiyaneshDK
   severity: low
-  description: Jetty showContexts is Enabled in DefaultHandler
   reference:
     - https://github.com/jaeles-project/jaeles-signatures/blob/master/common/jetty-showcontexts-enable.yaml
     - https://swarm.ptsecurity.com/jetty-features-for-hacking-web-apps/
-  classification:
-    cpe: cpe:2.3:a:eclipse:jetty:*:*:*:*:*:*:*:*
   metadata:
     verified: true
     max-request: 1
-    vendor: eclipse
-    product: jetty
     shodan-query: html:"contexts known to this"
   tags: jetty,misconfig
 
@@ -32,4 +27,5 @@ http:
       - type: status
         status:
           - 404
-# digest: 4b0a00483046022100af518a4426f6248f49ca2e9a21dbe20df5d1ac74adabd68487bfc72ee51b5005022100d285cf8bb373a81c22db771a606a129049ca07573f8bae72dd3904adb970a710:922c64590222798bb761d5b6d8e72950
+
+# digest: 4a0a0047304502202bae84a7fad058c4599b190b04410e56ddaaff1871e2952d7b4fb314bd174d1e022100970603a3d8e738a49d3d3ce5cef378f8ef0b0bbd449402a29a4da59d2f6b10fd:922c64590222798bb761d5b6d8e72950

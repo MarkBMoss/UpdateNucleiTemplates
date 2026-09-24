@@ -1,19 +1,16 @@
+http:
+- matchers:
+  - part: body
+    type: word
+    words:
+    - allocated memory by gem
+  method: GET
+  path:
+  - '{{BaseURL}}?pp=analyze-memory'
+  stop-at-first-match: true
 id: ruby-dev-environment-check
-
 info:
-  name: Ruby Development Environment Check
   author: reewardius
+  name: Ruby Development Environment Check
   severity: high
   tags: ruby,exposed,debug,generic
-
-http:
-  - method: GET
-    path:
-      - "{{BaseURL}}?pp=analyze-memory"
-      
-    stop-at-first-match: true
-    matchers:
-      - type: word
-        part: body
-        words:
-          - "allocated memory by gem"

@@ -4,7 +4,6 @@ info:
   name: FCM Server Key
   author: absshax
   severity: high
-  description: FCM Server Key is leaked.
   reference:
     - https://abss.me/posts/fcm-takeover
   metadata:
@@ -21,4 +20,5 @@ http:
         part: body
         regex:
           - "AAAA[a-zA-Z0-9_-]{7}:[a-zA-Z0-9_-]{140}"
-# digest: 490a004630440220775b28edd740ef27ac029ee72bc65edbfec2b15993dfc9b3bd5a254ec7b141bf02205024a5d17710e4653e446e25ab85f303b31e8aa7c5bd590c033f8fe4ed97eb2b:922c64590222798bb761d5b6d8e72950
+
+# digest: 4a0a00473045022100b41bb0ec98e486a4c7fd946999c22c3cb30362c9107cf13d9d316e8c5928c89d02207435889383de319947eb4cdfb163f9e236927f766534c57020d12e198e175c5d:922c64590222798bb761d5b6d8e72950

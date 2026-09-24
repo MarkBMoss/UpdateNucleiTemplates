@@ -4,7 +4,6 @@ info:
   name: Discover development log files
   author: geeknik
   severity: info
-  description: Development log file was exposed.
   metadata:
     max-request: 3
   tags: logs,exposure,rails
@@ -46,4 +45,5 @@ http:
         part: header
         regex:
           - 'Last-Modified:.*'
-# digest: 490a004630440220378d66d160a1d01676ae8213f0108671ab7c0955868c7ea33bb208cdffeed34602206c429ba75bb8effa4c2b024af9a8e98237fffe6709160a5d140e6805c157bf28:922c64590222798bb761d5b6d8e72950
+
+# digest: 4b0a00483046022100ec0cab19e41834dbd98b3fad6f39e1e84ae68fda70aa02cfc0493041062fc9b1022100d427db1cb48ea9829c9d0dfe80fb9d19aff6ea0d86f868d72ca1df917d330835:922c64590222798bb761d5b6d8e72950

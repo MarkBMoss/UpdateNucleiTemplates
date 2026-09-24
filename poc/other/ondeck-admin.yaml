@@ -1,20 +1,17 @@
+http:
+- matchers:
+  - part: body
+    type: word
+    words:
+    - On Deck Admin
+  method: GET
+  path:
+  - '{{BaseURL}}/admin'
 id: ondeck-admin
-
 info:
-  name: Ondeck admin dashboard
   author: reewardius
-  tags: generic
-  severity: medium
   metadata:
     max-request: 1
-
-http:
-  - method: GET
-    path:
-      - '{{BaseURL}}/admin'
-      
-    matchers:
-      - type: word
-        part: body
-        words:
-          - 'On Deck Admin'
+  name: Ondeck admin dashboard
+  severity: medium
+  tags: generic

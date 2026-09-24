@@ -4,7 +4,6 @@ info:
   name: Sonarqube with public projects
   author: sickwell
   severity: low
-  description: Sonarqube public projects detected.
   reference:
     - https://next.sonarqube.com/sonarqube/web_api/api/components/suggestions?internal=true
   metadata:
@@ -29,4 +28,5 @@ http:
           - '"more":'
         part: body
         condition: and
-# digest: 4b0a00483046022100b1f505d3e844a33b2512ed3d067693da52a8c8b6d191f0a03820bfdd97970f42022100fd80d564667c58c121a5fc92292aa9570ea1034a7a378a77ef834ec0d7ec07d5:922c64590222798bb761d5b6d8e72950
+
+# digest: 490a0046304402207901c24b44f1388a4323def4f00faffb69cc506cbecd69cbc59841fe2ca240af02205eb7573ca9939e6241f0415543079c0da99d306e66b8bcbf2c9ed45995329179:922c64590222798bb761d5b6d8e72950

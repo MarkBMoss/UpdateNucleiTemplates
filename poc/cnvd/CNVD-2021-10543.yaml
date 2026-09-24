@@ -13,7 +13,7 @@ info:
     cwe-id: CWE-200
   metadata:
     max-request: 1
-  tags: cnvd,cnvd2021,config,exposure
+  tags: config,exposure,cnvd,cnvd2021
 
 http:
   - method: GET
@@ -31,4 +31,5 @@ http:
       - type: status
         status:
           - 200
-# digest: 4b0a00483046022100eeb06760fc3ea3a0a83a22febf2b75bc4e9e3e4bb6a0e6f1556336ce0056590c022100eb6dcf2e8892454e25dd66d2db58ec82dfdd4ec2c29adc5aef74a2f7924bc652:922c64590222798bb761d5b6d8e72950
+
+# digest: 4a0a00473045022100d379889d4aabf76f8cd7f19795af3a76697f5d146d32e431d5ee8439c72bddd60220225043edca5d64da1d85f67be59a3a8a6f8e97eda2a1cf8e2daf28caeb7758aa:922c64590222798bb761d5b6d8e72950

@@ -1,19 +1,16 @@
+http:
+- matchers:
+  - condition: and
+    type: word
+    words:
+    - '[requires]'
+    - '[generators]'
+  method: GET
+  path:
+  - '{{BaseURL}}/conanfile.txt'
 id: conanfile-txt
-
 info:
-  name: Conan File Disclosure
   author: reewardius
+  name: Conan File Disclosure
   severity: info
   tags: dependency
-
-http:
-  - method: GET
-    path:
-      - "{{BaseURL}}/conanfile.txt"
-
-    matchers:
-      - type: word
-        words:
-          - "[requires]"
-          - "[generators]"
-        condition: and
