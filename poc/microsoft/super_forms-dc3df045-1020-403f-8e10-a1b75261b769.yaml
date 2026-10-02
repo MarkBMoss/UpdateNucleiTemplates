@@ -1,15 +1,15 @@
-id: super_forms-25704473-1200-49df-aa16-9a9558bb4844
+id: super_forms-dc3df045-1020-403f-8e10-a1b75261b769
 
 info:
   name: >
-    Super Forms <= 6.3.316 - Authenticated (Subscriber+) Arbitrary File/Directory Deletion via 'subdir' / 'path' Parameter
+    Super Forms <= 6.3.316 - Unauthenticated Path Traversal to Arbitrary File Read via 'sfgtfi' URL Path Parameter
   author: topscoder
   severity: low
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/25704473-1200-49df-aa16-9a9558bb4844?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/dc3df045-1020-403f-8e10-a1b75261b769?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 

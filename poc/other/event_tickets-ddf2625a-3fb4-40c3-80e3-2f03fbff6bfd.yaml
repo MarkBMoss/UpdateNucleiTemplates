@@ -1,15 +1,15 @@
-id: event_tickets-42ce3bc1-ebcc-45e7-ab25-e3e0c60c4eb3
+id: event_tickets-ddf2625a-3fb4-40c3-80e3-2f03fbff6bfd
 
 info:
   name: >
-    Event Tickets and Registration <= 5.29.5 - Authenticated (Contributor+) SQL Injection
+    Event Tickets and Registration <= 5.29.5 - Authenticated (Contributor+) SQL Injection via 'orderby' Parameter
   author: topscoder
   severity: low
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/42ce3bc1-ebcc-45e7-ab25-e3e0c60c4eb3?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/ddf2625a-3fb4-40c3-80e3-2f03fbff6bfd?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 

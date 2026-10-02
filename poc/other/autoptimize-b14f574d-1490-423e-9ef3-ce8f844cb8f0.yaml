@@ -1,15 +1,15 @@
-id: autoptimize-1704cffa-75ed-415e-864f-de7ff8eea8dc
+id: autoptimize-b14f574d-1490-423e-9ef3-ce8f844cb8f0
 
 info:
   name: >
-    Autoptimize <= 3.1.15.1 - Unauthenticated Stored Cross-Site Scripting via REQUEST_URI Path
+    Autoptimize <= 3.1.15.1 - Unauthenticated Stored Cross-Site Scripting via Comment Author Name
   author: topscoder
   severity: high
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/1704cffa-75ed-415e-864f-de7ff8eea8dc?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/b14f574d-1490-423e-9ef3-ce8f844cb8f0?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
