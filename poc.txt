@@ -37004,7 +37004,6 @@
 ./poc/cve/CVE-2015-10139-99be6965c039ace5ca114abd5868944c.yaml
 ./poc/cve/CVE-2015-10140-82287d0a38744ba1a746d3179a11fb46.yaml
 ./poc/cve/CVE-2015-10140-ajax_load_more-10e98088-423d-45bb-ae90-51e895d2929b.yaml
-./poc/cve/CVE-2015-10141.yaml
 ./poc/cve/CVE-2015-10141_1.yaml
 ./poc/cve/CVE-2015-10141_10.yaml
 ./poc/cve/CVE-2015-10141_11.yaml
@@ -63263,7 +63262,6 @@
 ./poc/cve/CVE-2021-32305_3.yaml
 ./poc/cve/CVE-2021-32305_4.yaml
 ./poc/cve/CVE-2021-3239.yaml
-./poc/cve/CVE-2021-32478.yaml
 ./poc/cve/CVE-2021-32605.yaml
 ./poc/cve/CVE-2021-32615.yaml
 ./poc/cve/CVE-2021-32618-6137.yaml
@@ -71822,6 +71820,7 @@
 ./poc/cve/CVE-2022-29303_2.yaml
 ./poc/cve/CVE-2022-29303_3.yaml
 ./poc/cve/CVE-2022-29303_4.yaml
+./poc/cve/CVE-2022-29316.yaml
 ./poc/cve/CVE-2022-2933-0mk_shortener-3b798c64-3434-427d-b578-5abbdac8cd0e.yaml
 ./poc/cve/CVE-2022-2933-f5e6a7a570f5c7f71a3880029fa4ebf1.yaml
 ./poc/cve/CVE-2022-2933.yaml
@@ -72493,7 +72492,6 @@
 ./poc/cve/CVE-2022-31678.yaml
 ./poc/cve/CVE-2022-31704.yaml
 ./poc/cve/CVE-2022-31706.yaml
-./poc/cve/CVE-2022-31711.yaml
 ./poc/cve/CVE-2022-31793.yaml
 ./poc/cve/CVE-2022-31793_1.yaml
 ./poc/cve/CVE-2022-31793_2.yaml
@@ -75177,6 +75175,7 @@
 ./poc/cve/CVE-2022-41315_1.yaml
 ./poc/cve/CVE-2022-41315_3.yaml
 ./poc/cve/CVE-2022-41343.yaml
+./poc/cve/CVE-2022-41352.yaml
 ./poc/cve/CVE-2022-41352_1.yaml
 ./poc/cve/CVE-2022-41352_2_1.yaml
 ./poc/cve/CVE-2022-41352_3.yaml
@@ -104836,6 +104835,7 @@
 ./poc/cve/CVE-2024-13112-wp_mediatagger-87ee0da1-3a95-4e09-a070-4c8aa336ffe8.yaml
 ./poc/cve/CVE-2024-13112.yaml
 ./poc/cve/CVE-2024-13114-wp_projects_portfolio-ebb347a8-a8d2-4809-bfa5-772ad0de90f6.yaml
+./poc/cve/CVE-2024-13114.yaml
 ./poc/cve/CVE-2024-13115-wp_projects_portfolio-346d9473-8738-4a06-9bb3-0a018a4d4974.yaml
 ./poc/cve/CVE-2024-13115.yaml
 ./poc/cve/CVE-2024-13116-crelly_slider-1c94b876-0cc2-49bc-82e5-2c64bbf4e088.yaml
@@ -137666,7 +137666,6 @@
 ./poc/cve/CVE-2025-4420.yaml
 ./poc/cve/CVE-2025-4427-fix.yaml
 ./poc/cve/CVE-2025-4427.yaml
-./poc/cve/CVE-2025-4427_3.yaml
 ./poc/cve/CVE-2025-4428.yaml
 ./poc/cve/CVE-2025-4429-gearside_developer_dashboard-23b56bc5-0253-43bf-a4db-f924bfaf1225.yaml
 ./poc/cve/CVE-2025-4429.yaml
@@ -140941,6 +140940,7 @@
 ./poc/cve/CVE-2025-55715-otter_blocks-203950f3-f327-4d9e-afcf-8467aab23712.yaml
 ./poc/cve/CVE-2025-55716-wp_statistics-263029e3-68ef-416b-97f4-187647b9502d.yaml
 ./poc/cve/CVE-2025-55716.yaml
+./poc/cve/CVE-2025-55746.yaml
 ./poc/cve/CVE-2025-55747.yaml
 ./poc/cve/CVE-2025-55748.yaml
 ./poc/cve/CVE-2025-55749.yaml
@@ -142718,6 +142718,7 @@
 ./poc/cve/CVE-2025-66376.yaml
 ./poc/cve/CVE-2025-6639-tutor_pro-8dc16ba4-3c2e-43e2-82a0-b742276b9640.yaml
 ./poc/cve/CVE-2025-66472.yaml
+./poc/cve/CVE-2025-66516.yaml
 ./poc/cve/CVE-2025-66525-elastic_email_sender-bec89b35-8cf2-4afa-8f3e-92ee6420ae28.yaml
 ./poc/cve/CVE-2025-66526-tablesome-b03409ee-37bd-4c61-8a74-11fedac1d10f.yaml
 ./poc/cve/CVE-2025-66527-lobo-0abd5ca3-177f-43ef-b2ed-b3d7973c714e.yaml
@@ -144810,6 +144811,7 @@
 ./poc/cve/CVE-2026-10782-inspiry_memberships-16187b39-9b3a-4b1c-806c-37b62483a719.yaml
 ./poc/cve/CVE-2026-10795.yaml
 ./poc/cve/CVE-2026-1081-set_bulk_post_categories-9503f908-ead2-4c34-89b9-1e2348b90f3c.yaml
+./poc/cve/CVE-2026-10818.yaml
 ./poc/cve/CVE-2026-1082-title_animator-98736b9d-3e0a-40c0-900a-fbbaaac07958.yaml
 ./poc/cve/CVE-2026-10820-wp_user_avatar-6480715e-efb7-4dd2-8938-c5b662d86461.yaml
 ./poc/cve/CVE-2026-10821-wordpress_seo_premium-f99e62eb-5adb-40b8-87bd-ccec1e0fb80e.yaml
@@ -145007,6 +145009,7 @@
 ./poc/cve/CVE-2026-1219-mp3_music_player_by_sonaar-ce8fa964-d543-4d46-a534-e403dff4f425.yaml
 ./poc/cve/CVE-2026-12224-dokan_pro-6ff9c202-b3e8-4660-8763-a9fee468203e.yaml
 ./poc/cve/CVE-2026-12227-visualcomposer-486c1c7c-5a66-42d3-85b0-13ce52a16ed1.yaml
+./poc/cve/CVE-2026-12227.yaml
 ./poc/cve/CVE-2026-12230-learnpress-9f662888-c388-4191-bda9-b8a22d63cb3f.yaml
 ./poc/cve/CVE-2026-12231-exclusive_addons_for_elementor-9b9d66db-53a8-4d93-9222-6f9649a7d842.yaml
 ./poc/cve/CVE-2026-12240-export_user_data-39f12ff1-63ee-4131-a708-49633f22ccd4.yaml
@@ -147676,6 +147679,7 @@
 ./poc/cve/CVE-2026-2837-ricerca_smart_search-ddee4794-5b57-4af1-a427-3247882952e9.yaml
 ./poc/cve/CVE-2026-2838-whole_cart_enquiry-ddc14a98-1df8-480b-bae3-5ec057b498af.yaml
 ./poc/cve/CVE-2026-2840-email_encoder_bundle-9987b5b4-33d8-4446-acbe-58c6cb5604df.yaml
+./poc/cve/CVE-2026-28409.yaml
 ./poc/cve/CVE-2026-28411.yaml
 ./poc/cve/CVE-2026-28414.yaml
 ./poc/cve/CVE-2026-28496.yaml
@@ -147691,6 +147695,7 @@
 ./poc/cve/CVE-2026-2899-fluentformpro-bb036338-abd7-4061-835d-038b765c68a6.yaml
 ./poc/cve/CVE-2026-29014.yaml
 ./poc/cve/CVE-2026-2902-wp_meteor-dc92b20a-fb9b-477c-8fe4-68897c1fd07e.yaml
+./poc/cve/CVE-2026-29058.yaml
 ./poc/cve/CVE-2026-29059.yaml
 ./poc/cve/CVE-2026-29066.yaml
 ./poc/cve/CVE-2026-2916-jeg_elementor_kit-a420a8b5-e43e-4c0d-86f3-b35f11efdf46.yaml
@@ -149148,6 +149153,7 @@
 ./poc/cve/CVE-2026-4935-suretriggers-5797e529-5109-49bf-a687-e5bf8f350c8f.yaml
 ./poc/cve/CVE-2026-4945-otter_blocks-7ecb9f61-68d5-4c70-8d7d-e4fb067fcff9.yaml
 ./poc/cve/CVE-2026-49466-simple_draft_list-1c47f708-12c2-488b-b13f-9091f58f5369.yaml
+./poc/cve/CVE-2026-49468.yaml
 ./poc/cve/CVE-2026-4949-wp_user_avatar-4cc29d32-2727-42df-bd42-2caf0f182c0e.yaml
 ./poc/cve/CVE-2026-49763-cf7_hubspot-2f2fcad0-f948-4da5-9bb1-888fc0ced718.yaml
 ./poc/cve/CVE-2026-49764-custom_registration_form_builder_with_submission_manager-24986bbe-6584-4d0a-829c-684c60527482.yaml
@@ -165096,6 +165102,7 @@
 ./poc/ftp/vsftpd-detection.yaml
 ./poc/ftp/wanhu-download-ftp-file-read.yaml
 ./poc/ftp/wanhu-ezoffice-download-ftp-file-read.yaml
+./poc/ftp/wanhu-ezoffice-download-ftp-jsp-filedownload.yaml
 ./poc/ftp/wanhu-oa-download-ftp-file-read.yaml
 ./poc/ftp/wanhuOA-download-ftp.yaml
 ./poc/ftp/web-ftp-detect-11135.yaml
@@ -169649,7 +169656,7 @@
 ./poc/javascript/drupal-jsonapi-user-listing_2.yaml
 ./poc/javascript/drupal-jsonapi-user-listing_4.yaml
 ./poc/javascript/drupal-jsonapi-user-listing_5.yaml
-./poc/javascript/drupal_module-jsonapi-access-bypass_1.yaml
+./poc/javascript/drupal_module-jsonapi-access-bypass.yaml
 ./poc/javascript/drupal_module-jsonapi-cross-site-request-forgery.yaml
 ./poc/javascript/drupal_module-jsonapi-multiple-vulnerabilities.yaml
 ./poc/javascript/drupal_module-jsonapi-remote-code-execution.yaml
@@ -170285,7 +170292,6 @@
 ./poc/javascript/vscode-mcp-json.yaml
 ./poc/javascript/vvvebjs.yaml
 ./poc/javascript/wanhu-ezoffice-documentedit-jsp-sqli.yaml
-./poc/javascript/wanhu-ezoffice-download-ftp-jsp-filedownload.yaml
 ./poc/javascript/wanhu-ezoffice-download-jsp-filedownload.yaml
 ./poc/javascript/wanhu-ezoffice-downloadhttp-jsp-filedownload.yaml
 ./poc/javascript/wanhu-ezoffice-officeserver-jsp-fileupload.yaml
