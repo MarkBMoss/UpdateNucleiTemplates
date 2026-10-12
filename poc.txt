@@ -48145,6 +48145,7 @@
 ./poc/cve/CVE-2018-18323_2.yaml
 ./poc/cve/CVE-2018-18323_3.yaml
 ./poc/cve/CVE-2018-18323_5.yaml
+./poc/cve/CVE-2018-18325.yaml
 ./poc/cve/CVE-2018-18326.yaml
 ./poc/cve/CVE-2018-18373-2f9c6071bc35e450da7ba09e49c21eb3.yaml
 ./poc/cve/CVE-2018-18373-supportboard-46f144c9-2cd3-4320-b987-119b672e7e30.yaml
@@ -71820,7 +71821,6 @@
 ./poc/cve/CVE-2022-29303_2.yaml
 ./poc/cve/CVE-2022-29303_3.yaml
 ./poc/cve/CVE-2022-29303_4.yaml
-./poc/cve/CVE-2022-29316.yaml
 ./poc/cve/CVE-2022-2933-0mk_shortener-3b798c64-3434-427d-b578-5abbdac8cd0e.yaml
 ./poc/cve/CVE-2022-2933-f5e6a7a570f5c7f71a3880029fa4ebf1.yaml
 ./poc/cve/CVE-2022-2933.yaml
@@ -75179,7 +75179,6 @@
 ./poc/cve/CVE-2022-41352_1.yaml
 ./poc/cve/CVE-2022-41352_2_1.yaml
 ./poc/cve/CVE-2022-41352_3.yaml
-./poc/cve/CVE-2022-41352_6.yaml
 ./poc/cve/CVE-2022-4140-e17680627a7b6a373b05d37cb7fc9055.yaml
 ./poc/cve/CVE-2022-4140-usc_e_shop-bdfabd43-0ffa-4c25-aa72-0572e7007a01.yaml
 ./poc/cve/CVE-2022-4140.yaml
@@ -115991,7 +115990,6 @@
 ./poc/cve/CVE-2024-3639_1.yaml
 ./poc/cve/CVE-2024-36401_1.yaml
 ./poc/cve/CVE-2024-36404.yaml
-./poc/cve/CVE-2024-36404_3.yaml
 ./poc/cve/CVE-2024-3641-049362f736a248e461e7e2209124763e.yaml
 ./poc/cve/CVE-2024-3641-newsletter_popup-b980bcd6-5ae3-4fa8-843b-652bd94d1dc6.yaml
 ./poc/cve/CVE-2024-3641.yaml
@@ -133692,7 +133690,6 @@
 ./poc/cve/CVE-2025-2747.yaml
 ./poc/cve/CVE-2025-2748.yaml
 ./poc/cve/CVE-2025-27505.yaml
-./poc/cve/CVE-2025-27505_6.yaml
 ./poc/cve/CVE-2025-27506.yaml
 ./poc/cve/CVE-2025-2775.yaml
 ./poc/cve/CVE-2025-2776.yaml
@@ -151304,6 +151301,7 @@
 ./poc/cve/CVE-2026-8622-image_sizes_on_demand-ebcbb7bf-99fd-4a74-a4d3-eabf9edcadc4.yaml
 ./poc/cve/CVE-2026-8623-3d_flipbook_dflip_lite-27e2848d-6271-4bb9-92e2-0f8c8860745d.yaml
 ./poc/cve/CVE-2026-8624-lj_comments_import_reloaded-0f09cb59-dbbb-48a3-aeac-377f6ec87b88.yaml
+./poc/cve/CVE-2026-86242.yaml
 ./poc/cve/CVE-2026-8625-3d_flipbook_dflip_lite-741150a3-1b2a-4b54-9dd5-992d3d7079dc.yaml
 ./poc/cve/CVE-2026-8626-sponsorme-7df7f541-b8aa-46fa-bfca-b333beea27f9.yaml
 ./poc/cve/CVE-2026-8627-correct_prices-605c6c53-6920-42ba-8784-b3a186bbf821.yaml
@@ -165102,7 +165100,6 @@
 ./poc/ftp/vsftpd-detection.yaml
 ./poc/ftp/wanhu-download-ftp-file-read.yaml
 ./poc/ftp/wanhu-ezoffice-download-ftp-file-read.yaml
-./poc/ftp/wanhu-ezoffice-download-ftp-jsp-filedownload.yaml
 ./poc/ftp/wanhu-oa-download-ftp-file-read.yaml
 ./poc/ftp/wanhuOA-download-ftp.yaml
 ./poc/ftp/web-ftp-detect-11135.yaml
@@ -170292,6 +170289,7 @@
 ./poc/javascript/vscode-mcp-json.yaml
 ./poc/javascript/vvvebjs.yaml
 ./poc/javascript/wanhu-ezoffice-documentedit-jsp-sqli.yaml
+./poc/javascript/wanhu-ezoffice-download-ftp-jsp-filedownload.yaml
 ./poc/javascript/wanhu-ezoffice-download-jsp-filedownload.yaml
 ./poc/javascript/wanhu-ezoffice-downloadhttp-jsp-filedownload.yaml
 ./poc/javascript/wanhu-ezoffice-officeserver-jsp-fileupload.yaml
@@ -280692,6 +280690,7 @@
 ./poc/sql_injection/weaver-ecology-getsqldata-sqli.yaml
 ./poc/sql_injection/weaver-ecology-hrmcareer-sqli.yaml
 ./poc/sql_injection/weaver-ecology-workflowservicexml-sqli.yaml
+./poc/sql_injection/weaver-ecology9-doc-list-sqli.yaml
 ./poc/sql_injection/weaver-group-xml-sqli.yaml
 ./poc/sql_injection/weaver-mysql-config-exposure.yaml
 ./poc/sql_injection/weaver-mysql-config-info-leak.yaml
@@ -297799,6 +297798,7 @@
 ./poc/xss/discourse-xss_4.yaml
 ./poc/xss/dlink-netgear-xss.yaml
 ./poc/xss/dlink-netgear-xss_1.yaml
+./poc/xss/dom-invader-xss.yaml
 ./poc/xss/dom-xss-7078.yaml
 ./poc/xss/dom-xss-7079.yaml
 ./poc/xss/dom-xss-detection_3.yaml
