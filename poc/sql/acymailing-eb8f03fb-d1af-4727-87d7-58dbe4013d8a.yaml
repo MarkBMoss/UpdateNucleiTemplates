@@ -1,15 +1,15 @@
-id: acymailing-f9331d7b-da7d-4dda-8d34-6e5cade5e67e
+id: acymailing-eb8f03fb-d1af-4727-87d7-58dbe4013d8a
 
 info:
   name: >
-    AcyMailing – An Ultimate Newsletter Plugin and Marketing Automation Solution for WordPress <= 11.1.0 - Unauthenticated Stored Cross-Site Scripting
+    AcyMailing <= 11.1.0 - Unauthenticated Stored Cross-Site Scripting via 'customField[]' Parameter
   author: topscoder
   severity: high
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/f9331d7b-da7d-4dda-8d34-6e5cade5e67e?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/eb8f03fb-d1af-4727-87d7-58dbe4013d8a?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
