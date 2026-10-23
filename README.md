@@ -4,20 +4,20 @@ UpdateNucleiTemplates，每日更新
 这个项目是一个 Python 脚本，用于批量克隆 GitHub 项目，获取 Nuclei Templates，并将 POC 按类别分类存放到文件夹中。同时，使用 GitHub Action 每日自动运行脚本。
 # POC 详情统计
 
-> **当前项目 POC 更新时间：**`2026-10-22 19:18`
+> **当前项目 POC 更新时间：**`2026-10-23 18:44`
 
 | ID | 标签      | 数量 | 目录       | 数量 | 严重性   | 数量 |
 |:---| :-------- | :--- | :--------- | :--- | :------- | :--- |
-| 1 | cve | 82577 | other | 53770 | medium | 34051 |
-| 2 | wordpress | 76611 | cve | 41270 | low | 29262 |
-| 3 | wp-plugin | 70385 | sql | 6680 | info | 25857 |
-| 4 | candidate | 33309 | wordpress | 5192 | high | 24067 |
-| 5 | low | 27113 | auth | 4987 | critical | 13279 |
-| 6 | medium | 25566 | detect | 1798 | unknown | 142 |
-| 7 | tech | 17341 | microsoft | 1737 | informative | 19 |
-| 8 | detect | 16347 | remote_code_execution | 1345 | meduim | 19 |
-| 9 | high | 13876 | web | 1158 | hight | 16 |
-| 10 | service | 13823 | api | 917 | cretical | 4 |
+| 1 | cve | 82656 | other | 53931 | medium | 34273 |
+| 2 | wordpress | 76596 | cve | 41088 | low | 29215 |
+| 3 | wp-plugin | 70365 | wordpress | 5799 | info | 25887 |
+| 4 | candidate | 33086 | auth | 4185 | high | 24040 |
+| 5 | low | 27141 | sql | 4018 | critical | 13331 |
+| 6 | medium | 25613 | detect | 2482 | unknown | 147 |
+| 7 | tech | 17277 | microsoft | 2117 | informative | 17 |
+| 8 | detect | 16370 | remote_code_execution | 1266 | hight | 16 |
+| 9 | service | 13825 | sql_injection | 1196 | meduim | 13 |
+| 10 | high | 13822 | web | 1149 | cretical | 4 |
 
 **81 个目录，44572 个文件**
 ## 如何使用

