@@ -1,24 +1,24 @@
-id: CVE-2025-60122-hivepress_claim_listings-012e281d-7b9b-4ef1-ae8d-09984914a5e9
+id: hivepress_claim_listings-012e281d-7b9b-4ef1-ae8d-09984914a5e9
 
 info:
   name: >
     HivePress Claim Listings <= 1.1.4 - Missing Authorization
   author: topscoder
-  severity: low
+  severity: high
   description: >
-    The HivePress Claim Listings plugin for WordPress is vulnerable to unauthorized access due to a missing capability check on a function in versions up to, and including, 1.1.4. This makes it possible for authenticated attackers, with subscriber-level access and above, to perform an unauthorized action.
+    
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/012e281d-7b9b-4ef1-ae8d-09984914a5e9?source=api-prod
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/012e281d-7b9b-4ef1-ae8d-09984914a5e9?source=api-scan
   classification:
-    cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N
-    cvss-score: 4.3
-    cve-id: CVE-2025-60122
+    cvss-metrics: 
+    cvss-score: 
+    cve-id: 
   metadata:
     fofa-query: "wp-content/plugins/hivepress-claim-listings/"
     google-query: inurl:"/wp-content/plugins/hivepress-claim-listings/"
     shodan-query: 'http.html:"wp-content/plugins/hivepress-claim-listings/"'
-  tags: cve,wordpress,wp-plugin,hivepress-claim-listings,low,production
+  tags: cve,wordpress,wp-plugin,hivepress-claim-listings,high,candidate
 
 http:
   - method: GET
