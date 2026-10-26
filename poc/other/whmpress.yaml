@@ -1,15 +1,15 @@
-id: whmpress
+id: whmpress-ed6e3e1d7d15855157e15cde1dd4d0fc
 
 info:
   name: >
-    WHMpress <= 6.2-revision-5 - Reflected Cross-Site Scripting
+    WHMpress <= 6.3-revision-0 - Unauthenticated Local File Inclusion to Arbitrary Options Update
   author: topscoder
-  severity: medium
+  severity: critical
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/5dea4293-0496-4cee-9d8a-c15beaa51b14?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/5f3b0e75-d2f0-48b7-ba33-75c4e998030e?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
@@ -18,7 +18,7 @@ info:
     fofa-query: "wp-content/plugins/whmpress/"
     google-query: inurl:"/wp-content/plugins/whmpress/"
     shodan-query: 'vuln:'
-  tags: cve,wordpress,wp-plugin,whmpress,medium
+  tags: cve,wordpress,wp-plugin,whmpress,critical
 
 http:
   - method: GET
@@ -56,4 +56,4 @@ http:
 
       - type: dsl
         dsl:
-          - compare_versions(version, '<= 6.2-revision-5')
+          - compare_versions(version, '<= 6.3-revision-0')

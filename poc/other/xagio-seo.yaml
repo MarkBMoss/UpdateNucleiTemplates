@@ -1,15 +1,15 @@
-id: xagio-seo
+id: xagio-seo-cd15573f565b0fef3499d64f12c0f6a9
 
 info:
   name: >
-    Xagio SEO <= 7.0.0.20 - Authenticated (Contributor+) Stored Cross-Site Scripting
+    Xagio SEO <= 7.1.0.5 - Unauthenticated Sensitive Information Exposure via Unprotected Back-Up Files
   author: topscoder
   severity: low
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/2abe953c-dd50-413c-8424-7cd9dbf92d67?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/9d7b7f4b-6acb-4ccb-8f2e-951012996ac7?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
@@ -56,4 +56,4 @@ http:
 
       - type: dsl
         dsl:
-          - compare_versions(version, '<= 7.0.0.20')
+          - compare_versions(version, '<= 7.1.0.5')

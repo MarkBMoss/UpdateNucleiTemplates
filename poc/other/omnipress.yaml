@@ -1,15 +1,15 @@
-id: omnipress
+id: omnipress-3f2b7048b85567f93a7c0d1f8b9d793a
 
 info:
   name: >
-    Omnipress <= 1.4.3 - Authenticated (Contributor+) Stored Cross-Site Scripting
+    Omnipress <= 1.6.3 - Authenticated (Contributor+) Stored Cross-Site Scripting
   author: topscoder
   severity: low
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/cf238735-8c21-495b-8da0-912921c1f11c?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/00d46496-4ca0-4297-a276-a40f91d50555?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
@@ -56,4 +56,4 @@ http:
 
       - type: dsl
         dsl:
-          - compare_versions(version, '<= 1.4.3')
+          - compare_versions(version, '<= 1.6.3')

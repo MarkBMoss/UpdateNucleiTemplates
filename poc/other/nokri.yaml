@@ -1,15 +1,15 @@
-id: nokri
+id: nokri-f5079f789cb5cbd26ea550737c224e52
 
 info:
   name: >
-    Nokri – Job Board WordPress Theme <= 1.6.2 - Unauthenticated Arbitrary Password Change
+    Nokri - Job Board WordPress Theme <= 1.6.3 - Authenticated (Subscriber+) Privilege Escalation via Account Takeover
   author: topscoder
   severity: low
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/60a7cce0-637f-49bd-aa4a-fd7023d99a64?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/507c2abd-47d3-4a28-a9b7-a1ad9b026e7d?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
@@ -56,4 +56,4 @@ http:
 
       - type: dsl
         dsl:
-          - compare_versions(version, '<= 1.6.2')
+          - compare_versions(version, '<= 1.6.3')

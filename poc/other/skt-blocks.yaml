@@ -1,15 +1,15 @@
-id: skt-blocks
+id: skt-blocks-4cc53c61a0fe846c2c58375b76e9ac57
 
 info:
   name: >
-    SKT Blocks – Gutenberg based Page Builder <= 1.5 - Authenticated (Contributor+) Stored Cross-Site Scripting
+    SKT Blocks – Gutenberg based Page Builder <= 1.9 - Authenticated (Contributor+) Stored Cross-Site Scripting
   author: topscoder
   severity: low
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/8a2cd4d3-12d3-43bd-bde1-927b793f04a8?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/d9345eaa-c8c0-4830-a9af-48305a2f80fd?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
@@ -56,4 +56,4 @@ http:
 
       - type: dsl
         dsl:
-          - compare_versions(version, '<= 1.5')
+          - compare_versions(version, '<= 1.9')

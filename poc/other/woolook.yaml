@@ -1,15 +1,15 @@
-id: woolook-f6467730b5368f90aeaa47d35ce5baa5
+id: woolook-73afb21be3d3519e23ed4e15e3b68b5a
 
 info:
   name: >
-    Woolook <= 1.7.0 - Unauthenticated Local File Inclusion
+    Woocommerce Blocks – Woolook <= 1.7.0 - Authenticated (Admin+) Local File Inclusion
   author: topscoder
-  severity: critical
+  severity: low
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/535f9f16-a7fc-40fe-8be1-90c542675cc4?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/cf3916fc-f652-4615-872c-3f007b8999df?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
@@ -18,7 +18,7 @@ info:
     fofa-query: "wp-content/plugins/woolook/"
     google-query: inurl:"/wp-content/plugins/woolook/"
     shodan-query: 'vuln:'
-  tags: cve,wordpress,wp-plugin,woolook,critical
+  tags: cve,wordpress,wp-plugin,woolook,low
 
 http:
   - method: GET

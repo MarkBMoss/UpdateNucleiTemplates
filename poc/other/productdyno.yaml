@@ -1,15 +1,15 @@
-id: productdyno-928b56e5f3d4b9a535a0a365d16c0981
+id: productdyno-586c29135ced721028fadcc485f67f54
 
 info:
   name: >
-    ProductDyno <= 1.0.24 - Reflected Cross-Site Scripting
+    ProductDyno <= 1.0.24 - Reflected Cross-Site Scripting via 'res' Parameter
   author: topscoder
   severity: medium
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/6e4cc3e9-736c-47aa-b383-bd98377f51e1?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/fdc1289a-abd1-43db-89b7-3e81878a0f9a?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
