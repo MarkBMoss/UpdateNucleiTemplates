@@ -1,4 +1,4 @@
-id: random-id-826
+id: missing-authorization-simply-gallery-block
 
 info:
   name: Gallery Blocks with Lightbox <= 3.0.7 - Missing Authorization in pgc_sgb_add_dashboard_widget
@@ -15,7 +15,7 @@ info:
     fofa-query: "wp-content/plugins/simply-gallery-block/"
     google-query: inurl:"/wp-content/plugins/simply-gallery-block/"
   tags: wordpress-misc,cve,wordpress,wp-plugin,critical
-
+  
 http:
   - method: GET
     path:

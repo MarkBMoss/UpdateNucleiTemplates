@@ -1,13 +1,16 @@
-file:
-- extensions:
-  - all
-  matchers:
-  - type: word
-    words:
-    - UIRequiredDeviceCapabilities
 id: ios-required-device-capabilities
+
 info:
-  author: reewardius
   name: Required Device Capabilities
+  author: reewardius
   severity: info
   tags: ios,file
+  
+file:
+  - extensions:
+      - all
+      
+    matchers:
+      - type: word
+        words:
+          - "UIRequiredDeviceCapabilities"

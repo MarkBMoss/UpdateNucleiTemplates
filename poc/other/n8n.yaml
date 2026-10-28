@@ -1,30 +1,22 @@
-http:
-- extractors:
-  - json:
-    - .data.versionCli
-    type: json
-  matchers:
-  - condition: and
-    type: word
-    words:
-    - '{"data":{'
-    - endpointForm
-  - status:
-    - 200
-    type: status
-  matchers-condition: and
-  method: GET
-  path:
-  - '{{BaseURL}}/rest/settings'
 id: n8n
 info:
-  author: darses
-  description: N8N
+  name: n8n
+  author: cn-kali-team
+  tags: detect,tech,n8n
+  severity: info
   metadata:
-    max-requests: 1
+    fofa-query:
+    - icon_hash="-831756631"
     product: n8n
+    shodan-query:
+    - http.favicon.hash:-831756631
     vendor: n8n-io
     verified: true
-  name: n8n-io n8n - Detect
-  severity: info
-  tags: n8n
+http:
+- method: GET
+  path:
+  - '{{BaseURL}}/'
+  matchers:
+  - type: favicon
+    hash:
+    - '-831756631'

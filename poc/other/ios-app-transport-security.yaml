@@ -1,13 +1,16 @@
-file:
-- extensions:
-  - all
-  matchers:
-  - type: word
-    words:
-    - NSAppTransportSecurity
 id: ios-app-transport-security
+
 info:
-  author: reewardius
   name: Application Transport Security (ATS)
+  author: reewardius
   severity: info
   tags: ios,file
+  
+file:
+  - extensions:
+      - all
+      
+    matchers:
+      - type: word
+        words:
+          - "NSAppTransportSecurity"

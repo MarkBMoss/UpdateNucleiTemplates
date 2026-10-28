@@ -1,19 +1,23 @@
-http:
-- matchers:
-  - part: body
-    type: word
-    words:
-    - sourceMappingURL=
-  - status:
-    - 200
-    type: status
-  matchers-condition: and
-  method: GET
-  path:
-  - '{{BaseURL}}'
 id: sourcemap-detect
+
 info:
-  author: reewardius
   name: SourceMap Detector
+  author: reewardius
   severity: info
   tags: exposure
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+      
+    matchers-condition: and
+    matchers:
+      - type: word
+        part: body
+        words:
+          - "sourceMappingURL="
+
+      - type: status
+        status:
+          - 200

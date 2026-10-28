@@ -12,7 +12,7 @@ info:
     max-request: 1
     shodan-query: http.html:"Laravel FileManager"
     google-query: inurl:"laravel-filemanager?type=Files" -site:github.com -site:github.io
-  tags: lfr,edb,lfi,unisharp,laravel,filemanager,fileupload,intrusive
+  tags: lfr,laravel,php,lfi
 
 http:
   - method: GET

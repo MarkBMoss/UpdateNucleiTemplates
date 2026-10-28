@@ -2,48 +2,60 @@ id: config-properties
 
 info:
   name: Config Properties Exposure
-  author: j4vaovo,DhiyaneshDK
+  author: reewardius
   severity: high
   reference:
     - https://twitter.com/win3zz/status/1657624974851702784/photo/1
-  metadata:
-    verified: true
-    max-request: 3
-  tags: exposure,config,properties
-
+  tags: config-files,config
+    
 http:
   - method: GET
     path:
+      - "{{BaseURL}}/.config.properties"
+      - "{{BaseURL}}/.config.properties1"
+      - "{{BaseURL}}/.config.properties2"
+      - "{{BaseURL}}/.config.properties3"
+      - "{{BaseURL}}/.ui_config.properties"
+      - "{{BaseURL}}/cfg.properties"
       - "{{BaseURL}}/config.properties"
-      - "{{BaseURL}}/config.properties.bak"
+      - "{{BaseURL}}/config.properties.bkp"
+      - "{{BaseURL}}/config.properties.new"
+      - "{{BaseURL}}/config.properties.old"
+      - "{{BaseURL}}/config.properties1"
+      - "{{BaseURL}}/config.properties2"
+      - "{{BaseURL}}/config.properties3"
+      - "{{BaseURL}}/config.properties~"
       - "{{BaseURL}}/ui_config.properties"
-
-    stop-at-first-match: true
-
-    matchers-condition: and
+      
+    matchers-condition: or
     matchers:
-      - type: regex
+      - type: word
+        words:
+          - "MAIL_HOST="
+          - "MAIL_FROM_ADDRESS="
+          - "MAIL_ENCRYPTION="
         part: body
+        
+      - type: regex
         regex:
+          - "(?m)^APP_(NAME|ENV|KEY|DEBUG|URL|PASSWORD|SECRET)"
+          - "(?m)^DB_(HOST|PASSWORD|DATABASE|PASS)"
+          - "(?m)^AWS_(SESSION|LAMBDA|SECRET|REGION|ACCESS)"
           - 'jdbc:[a-z:]+://[A-Za-z0-9\.\-_:;=/@?,&]+'
-          - '((?i)password|pwd|pass|secretkey)='
-        condition: or
+          - '((?i)password|pwd|pass|secretkey|secret_key)='
+        
+      - type: word
+        part: body
+        words:
+          - "USER"
+          - "PASS"
+          - "HOST"
+        condition: and
 
       - type: word
-        part: header
+        part: body
         words:
-          - "text/plain"
-          - "bytes"
-        condition: or
-
-      - type: word
-        part: header
-        words:
-          - "text/html"
-        negative: true
-
-      - type: status
-        status:
-          - 200
-
-# digest: 4a0a004730450221009d35cc0f153d9d08be92b7bc3ef1efc26849cd32242b54dfdcd4665a321e604302202764b9df23f568d3f8ee7367800c9128cf5daffb696701f453379453d1a4e6e6:922c64590222798bb761d5b6d8e72950
+          - "env"
+          - "debug"
+          - "variable"
+        condition: and

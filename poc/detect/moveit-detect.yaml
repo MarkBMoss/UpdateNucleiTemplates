@@ -1,29 +1,33 @@
-id: moveit-detect
+id: moveit-transfer-detect
 
 info:
-  name: Moveit Detect
-  author: rix4uni
+  name: Moveit File Transfer - Detect
+  author: tess
   severity: info
-  description: description
-  reference:
-    - https://
   metadata:
-    shodan-query:
-      - http.favicon.hash:989289239
-    fofa-query:
-      - app="Progress-MOVEit"
-  tags: default-login,misconfig,moveit
+    max-request: 2
+    shodan-query: html:"human.aspx"
+    verified: true
+  tags: tech,moveit
 
-requests:
+http:
   - method: GET
     path:
-      - "{{BaseURL}}/favicon.ico"
+      - '{{BaseURL}}'
+      - '{{BaseURL}}/human.aspx'
 
+    stop-at-first-match: true
     matchers-condition: and
     matchers:
-      - type: dsl
-        dsl:
-          - "status_code==200 && (\"989289239\" == mmh3(base64_py(body)))"
+      - type: word
+        part: body
+        words:
+          - 'stylesheet_MOVEit'
+          - 'moveit.transfer'
+          - 'MOVEitPopUp'
+          - 'MOVEit Automation'
+        condition: or
+        case-insensitive: true
 
       - type: status
         status:

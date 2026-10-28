@@ -2,7 +2,7 @@ id: gitlab-weak-login
 
 info:
   name: Gitlab Default Login
-  author: Suman_Kar,dwisiswant0
+  author: Suman_Kar,dwisiswant0,reewardius
   severity: high
   description: Gitlab default login credentials were discovered.
   reference:
@@ -11,9 +11,8 @@ info:
   classification:
     cwe-id: CWE-798
   metadata:
-    max-request: 6
     shodan-query: http.title:"GitLab"
-  tags: gitlab,default-login
+  tags: gitlab,default-login,cloud
 
 http:
   - raw:
@@ -31,10 +30,20 @@ http:
       username:
         - "root"
         - "admin"
+        - "test"
         - "admin@local.host"
+        - "admin@localhost"
+        - "admin@{{Host}}"
+        
       password:
         - "5iveL!fe"
+        - "root"
+        - "admin"
+        - "test"
+        - "Test1234!@"
+        - "password"
         - "123456789"
+        - "123456"
 
     matchers-condition: and
     matchers:
@@ -54,5 +63,3 @@ http:
           - '"token_type":'
           - '"refresh_token":'
         condition: and
-
-# digest: 490a00463044022046b016d8df18dcff00ce41916e0870b3f20c707fc3edd900dbf9897898a41c0d022048a9aeebcf2906096985bd0cadec4bafd6bfa5dd5b3bbd959b1d3c5b0eb4186e:922c64590222798bb761d5b6d8e72950

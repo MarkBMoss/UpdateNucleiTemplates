@@ -3,12 +3,12 @@ id: github-debug
 info:
   name: GitHub Debug Page
   author: ritikchaddha
-  severity: info
+  severity: medium
   metadata:
-    verified: true
     max-request: 1
+    verified: true
     shodan-query: http.title:"GitHub Debug"
-  tags: misconfig,github,debug
+  tags: github,debug,cloud
 
 http:
   - method: GET
@@ -25,5 +25,3 @@ http:
       - type: status
         status:
           - 200
-
-# digest: 4a0a004730450220368f65ddbf626763d8326cc25f3668115141d7fd2180672ca147a14dec0236e502210080a54b7634fad72382160016ff20b85118873418acca127af37dd58707234329:922c64590222798bb761d5b6d8e72950

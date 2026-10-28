@@ -11,13 +11,13 @@ info:
     cwe-id: CWE-200
   metadata:
     verified: true
-    max-request: 1
-  tags: config,exposure,aws,credential
+  tags: config,amazon,aws,generic
 
 http:
   - method: GET
     path:
       - "{{BaseURL}}/.aws/config"
+      - "{{BaseURL}}/config"
 
     matchers-condition: and
     matchers:
@@ -25,6 +25,7 @@ http:
         regex:
           - 'aws_access_key_id\s*=\s*'
           - 'region\s*=\s*'
+        condition: and
 
       - type: word
         part: body
@@ -34,5 +35,3 @@ http:
       - type: status
         status:
           - 200
-
-# digest: 4b0a00483046022100c61812e7106a48c4c2fe5ff19dafdd3e8f2afae83e907dec240f59f0c799424f022100d8c06ad80e50982ac217c217076cbbda6918e54a8131274c7008fae8d171ded4:922c64590222798bb761d5b6d8e72950

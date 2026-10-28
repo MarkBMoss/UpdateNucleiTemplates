@@ -3,16 +3,74 @@ id: dockerfile-disclosure
 info:
   name: Dockerfile File Detection
   author: morgenm
-  severity: medium
+  severity: low
   description: Searches for exposed Dockerfiles.
-  tags: exposure,config
-
+  tags: generic,docker,config
+  
 http:
   - method: GET
     path:
-      - "{{BaseURL}}/dockerfile"
+      - "{{BaseURL}}/Dockerfile.simple"
+      - "{{BaseURL}}/Dockerfile.build"
+      - "{{BaseURL}}/Dockerfile.dev"
+      - "{{BaseURL}}/Dockerfile.test"
+      - "{{BaseURL}}/Dockerfile.qa"
+      - "{{BaseURL}}/Dockerfile.simple"
+      - "{{BaseURL}}/Dockerfile.development"
+      - "{{BaseURL}}/Dockerfile.devel"
+      - "{{BaseURL}}/Dockerfile.admin"
+      - "{{BaseURL}}/Dockerfile-admin"
+      - "{{BaseURL}}/Dockerfile.deploy"
+      - "{{BaseURL}}/Dockerfile.ci"
+      - "{{BaseURL}}/Dockerfile.cd"
+      - "{{BaseURL}}/Dockerfile.cicd"
+      - "{{BaseURL}}/Dockerfile.deps"
+      - "{{BaseURL}}/Dockerfile.config"
+      - "{{BaseURL}}/Dockerfile.conf"
+      - "{{BaseURL}}/Dockerfile_old"
+      - "{{BaseURL}}/Dockerfile_orig"
+      - "{{BaseURL}}/Dockerfile_original"
+      - "{{BaseURL}}/Dockerfile-old"
+      - "{{BaseURL}}/Dockerfile-web"
+      - "{{BaseURL}}/DockerfileDev"
+      - "{{BaseURL}}/DockerfileTest"
+      - "{{BaseURL}}/Dockerfile_Dev"
+      - "{{BaseURL}}/Dockerfile_Test"
+      - "{{BaseURL}}/Dockerfile-Test"
+      - "{{BaseURL}}/Dockerfile-Dev"
+      - "{{BaseURL}}/Dockerfile-development"
+      - "{{BaseURL}}/Dockerfile_web"
+      - "{{BaseURL}}/.Dockerfile"
       - "{{BaseURL}}/Dockerfile"
-
+      - "{{BaseURL}}/Dockerfile.original"
+      - "{{BaseURL}}/Dockerfile.orig"
+      - "{{BaseURL}}/Dockerfile.old"
+      - "{{BaseURL}}/Dockerfile.debug"
+      - "{{BaseURL}}/Dockerfile.backup"
+      - "{{BaseURL}}/Dockerfile.back"
+      - "{{BaseURL}}/Dockerfile_"
+      - "{{BaseURL}}/Dockerfile.bkp"
+      - "{{BaseURL}}/Dockerfile.1"
+      - "{{BaseURL}}/Dockerfile.2"
+      - "{{BaseURL}}/Dockerfile.3"
+      - "{{BaseURL}}/Dockerfile.4"
+      - "{{BaseURL}}/Dockerfile.5"
+      - "{{BaseURL}}/Dockerfile.6"
+      - "{{BaseURL}}/Dockerfile.7"
+      - "{{BaseURL}}/Dockerfile.8"
+      - "{{BaseURL}}/Dockerfile.9"
+      - "{{BaseURL}}/Dockerfile.10"
+      - "{{BaseURL}}/Dockerfile1"
+      - "{{BaseURL}}/Dockerfile2"
+      - "{{BaseURL}}/Dockerfile3"
+      - "{{BaseURL}}/Dockerfile4"
+      - "{{BaseURL}}/Dockerfile5"
+      - "{{BaseURL}}/Dockerfile6"
+      - "{{BaseURL}}/Dockerfile7"
+      - "{{BaseURL}}/Dockerfile8"
+      - "{{BaseURL}}/Dockerfile9"
+      - "{{BaseURL}}/Dockerfile10"
+      
     matchers-condition: and
     matchers:
       - type: regex

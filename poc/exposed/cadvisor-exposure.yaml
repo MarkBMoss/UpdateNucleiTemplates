@@ -11,15 +11,17 @@ info:
     cwe-id: CWE-200
   metadata:
     verified: true
-    max-request: 1
+    max-request: 2
     shodan-query: title:"cAdvisor"
-  tags: exposure,misconfig,dashboard
+  tags: cloud
 
 http:
   - method: GET
     path:
       - '{{BaseURL}}/containers/'
-
+      - '{{Host}}:4194/containers/'
+      
+    stop-at-first-match: true
     matchers-condition: and
     matchers:
       - type: word
@@ -35,5 +37,3 @@ http:
       - type: status
         status:
           - 200
-
-# digest: 4a0a004730450220515091c9abd1be7336f36822f19364219b2c464d72bf4e33c169b622053a1836022100a7971db39b70e7f7d07dce36e846523de1fef9b77e4bb0ca56c12d842e5acbf1:922c64590222798bb761d5b6d8e72950

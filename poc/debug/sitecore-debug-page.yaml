@@ -3,7 +3,7 @@ id: sitecore-debug-page
 info:
   name: SiteCore Debug Page
   author: dhiyaneshDK
-  severity: low
+  severity: medium
   metadata:
     max-request: 1
     shodan-query: http.title:"Welcome to Sitecore"

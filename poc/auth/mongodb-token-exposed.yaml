@@ -1,20 +1,24 @@
-http:
-- matchers:
-  - part: body
-    type: word
-    words:
-    - mongodb.net
-    - mongodb+srv://
-  - status:
-    - 200
-    type: status
-  matchers-condition: and
-  method: GET
-  path:
-  - '{{BaseURL}}'
 id: mongodb-token-exposed
+
 info:
-  author: reewardius
   name: Exposed MongoDB Token
+  author: reewardius
   severity: high
   tags: token,exposed
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+      
+    matchers-condition: and
+    matchers:
+      - type: word
+        part: body
+        words:
+          - "mongodb.net"
+          - "mongodb+srv://"
+        
+      - type: status
+        status:
+          - 200

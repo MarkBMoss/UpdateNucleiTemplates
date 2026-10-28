@@ -7,7 +7,7 @@ info:
   metadata:
     max-request: 1
     shodan-query: http.title:"PHP warning" || "Fatal error"
-  tags: debug,php,misconfig
+  tags: debug,php,misconfig,generic
 
 http:
   - method: GET

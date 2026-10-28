@@ -12,7 +12,7 @@ info:
     shodan-query:
       - http.title:"AEM Sign In"
       - http.component:"Adobe Experience Manager"
-  tags: misconfig,aem,adobe,exposure
+  tags: aem,admin
 
 http:
   - method: GET
@@ -28,7 +28,6 @@ http:
       - "{{BaseURL}}/miscadmin#/etc/msm/rolloutconfigs"
 
     stop-at-first-match: true
-
     matchers-condition: and
     matchers:
       - type: word

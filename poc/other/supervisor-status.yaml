@@ -1,21 +1,25 @@
-http:
-- matchers:
-  - condition: and
-    type: word
-    words:
-    - Supervisor Status
-    - Description
-    - supervisor.css
-  - status:
-    - 200
-    type: status
-  matchers-condition: and
-  method: GET
-  path:
-  - '{{BaseURL}}'
 id: supervisor-status
+
 info:
-  author: reewardius
   name: Supervisor - Unauthenticated Access
+  author: reewardius
   severity: high
   tags: cloud
+
+http:
+  - method: GET
+    path:
+      - '{{BaseURL}}'
+      
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "Supervisor Status"
+          - "Description"
+          - "supervisor.css"
+        condition: and
+        
+      - type: status
+        status:
+          - 200

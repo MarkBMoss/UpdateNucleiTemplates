@@ -7,13 +7,14 @@ info:
   description: Zabbix default admin credentials were discovered.
   reference:
     - https://openbaton.github.io/documentation/zabbix-server-configuration-3.0/
+    - https://telegra.ph/zametki-pro-zabbix-02-27
   classification:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:L
     cvss-score: 8.3
     cwe-id: CWE-522
-  metadata:
-    max-request: 1
   tags: zabbix,default-login
+  metadata:
+    max-request: 9
 
 http:
   - raw:
@@ -28,9 +29,15 @@ http:
     payloads:
       username:
         - Admin
+        - admin
+        - zabbix
+        - admin@{{Host}}
       password:
         - zabbix
-    attack: pitchfork
+        - admin
+        - admin123
+        - password
+    attack: clusterbomb
 
     matchers-condition: and
     matchers:
@@ -43,4 +50,4 @@ http:
         status:
           - 302
 
-# digest: 4b0a00483046022100bc45ed8e125e0d3a61aec24b54af545cb89f527e32d335145ac70aed44286d25022100d35dc718c76ceac0bf8334b3e3b8395ab4274fbc57dc8b6abc0316b1e7c1d82c:922c64590222798bb761d5b6d8e72950
+# Enhanced by mp on 2022/03/13

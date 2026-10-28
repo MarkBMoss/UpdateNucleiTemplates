@@ -1,39 +1,48 @@
-http:
-- extractors:
-  - group: 0
-    part: body
-    regex:
-    - rwtest[a-z0-9]+
-    type: regex
-  fuzzing:
-  - fuzz:
-    - '{{reflection}}'
-    mode: single
-    part: request
-    type: postfix
-  matchers:
-  - part: body
-    type: word
-    words:
-    - rwtest
-  - condition: and
-    dsl:
-    - '!contains(body, "<!--rwtest")'
-    - '!contains(body, "//rwtest")'
-    type: dsl
-  matchers-condition: and
-  payloads:
-    reflection:
-    - rwtest{{randstr_1}}
-  pre-condition:
-  - dsl:
-    - method != "OPTIONS"
-    type: dsl
-  stop-at-first-match: true
 id: reflected-detection
+
 info:
-  author: reewardius
-  description: Detects if user input is reflected in the response
   name: Reflected Input Detection
+  author: reewardius
   severity: info
+  description: Detects if user input is reflected in the response
   tags: fuzzing-req,reflected,dast
+  
+http:
+  - pre-condition:
+      - type: dsl
+        dsl:
+          - 'method != "OPTIONS"'
+        
+    payloads:
+      reflection:
+        - "rwtest{{randstr_1}}"  # ← Уникальный маркер с рандомом
+        
+    fuzzing:
+      - part: request
+        type: postfix
+        mode: single
+        fuzz:
+          - "{{reflection}}"
+          
+    stop-at-first-match: true
+    matchers-condition: and
+    matchers:
+      # Проверяем что наш маркер отражается
+      - type: word
+        part: body
+        words:
+          - "rwtest"
+          
+      # Проверяем что это не в комментариях или скриптах где безопасно
+      - type: dsl
+        dsl:
+          - '!contains(body, "<!--rwtest")'  # Не в HTML комментарии
+          - '!contains(body, "//rwtest")'     # Не в JS комментарии
+        condition: and
+        
+    extractors:
+      - type: regex
+        part: body
+        regex:
+          - 'rwtest[a-z0-9]+'
+        group: 0
