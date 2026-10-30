@@ -1,15 +1,15 @@
-id: ai_engine-1133aab2-172e-47d0-9e3c-1caaca474f5c
+id: ai_engine-eb115a8a-35f8-426f-bb67-4a523f67cb34
 
 info:
   name: >
-    AI Engine – MCP Server & AI Chatbot for WordPress, with Claude, ChatGPT & Gemini <= 3.8.6 - Missing Authorization
+    AI Engine – The Chatbot, AI Framework & MCP for WordPress <= 3.8.6 - Missing Authorization to Administrator Account Takeover via Unauthenticated MCP OAuth Client Registration
   author: topscoder
   severity: high
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/1133aab2-172e-47d0-9e3c-1caaca474f5c?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/eb115a8a-35f8-426f-bb67-4a523f67cb34?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 

@@ -1,15 +1,15 @@
-id: forminator-355d6e61-a45b-4682-bfad-77df18ae79f4
+id: forminator-de1aaacf-8fe1-4a1e-9846-f78cc469ec20
 
 info:
   name: >
-    Forminator Forms – Contact Form, Payment Form & Custom Form Builder <= 1.55.0.2 - Unauthenticated Arbitrary File Download
+    Forminator Forms <= 1.55.0.2 - Unauthenticated Limited File Deletion via Draft Upload Metadata
   author: topscoder
   severity: low
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/355d6e61-a45b-4682-bfad-77df18ae79f4?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/de1aaacf-8fe1-4a1e-9846-f78cc469ec20?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
