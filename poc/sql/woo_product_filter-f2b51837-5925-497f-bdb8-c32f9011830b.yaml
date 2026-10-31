@@ -1,15 +1,15 @@
-id: woo_product_filter-16a94e89-f21a-4cf4-8917-563c5353f2e3
+id: woo_product_filter-f2b51837-5925-497f-bdb8-c32f9011830b
 
 info:
   name: >
-    Product Filter for WooCommerce by WBW <= 3.4.6 - Unauthenticated SQL Injection
+    Product Filter for WooCommerce by WBW <= 3.4.6 - Missing Authorization to Unauthenticated Information Disclosure via filterSettings[default_query] Parameter
   author: topscoder
-  severity: critical
+  severity: high
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/16a94e89-f21a-4cf4-8917-563c5353f2e3?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/f2b51837-5925-497f-bdb8-c32f9011830b?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
@@ -18,7 +18,7 @@ info:
     fofa-query: "wp-content/plugins/woo-product-filter/"
     google-query: inurl:"/wp-content/plugins/woo-product-filter/"
     shodan-query: 'http.html:"wp-content/plugins/woo-product-filter/"'
-  tags: cve,wordpress,wp-plugin,woo-product-filter,critical,candidate
+  tags: cve,wordpress,wp-plugin,woo-product-filter,high,candidate
 
 http:
   - method: GET

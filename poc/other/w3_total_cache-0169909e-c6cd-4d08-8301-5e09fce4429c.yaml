@@ -1,15 +1,15 @@
-id: w3_total_cache-63d8c188-5126-461f-9e90-5c0edfc006a9
+id: w3_total_cache-0169909e-c6cd-4d08-8301-5e09fce4429c
 
 info:
   name: >
-    W3 Total Cache <= 2.10.7 - Unauthenticated Stored Cross-Site Scripting
+    W3 Total Cache <= 2.10.7 - Unauthenticated Stored Cross-Site Scripting via Comment Content Cached as HTML after License Expiry
   author: topscoder
   severity: high
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/63d8c188-5126-461f-9e90-5c0edfc006a9?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/0169909e-c6cd-4d08-8301-5e09fce4429c?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 

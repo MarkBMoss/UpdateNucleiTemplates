@@ -1,15 +1,15 @@
-id: ninja_forms-bdab3d77-1cec-4f16-8240-c9c5227b7178
+id: ninja_forms-54da4deb-e50c-478d-ab99-222c5573a036
 
 info:
   name: >
-    Ninja Forms – Contact Form Builder with Calculators, Quizzes, Signatures & AI Form Builder <= 3.15.5 - Unauthenticated Stored Cross-Site Scripting
+    Ninja Forms <= 3.15.5 - Unauthenticated Stored Cross-Site Scripting via 'extra' Parameter via Metadata Key Normalization
   author: topscoder
   severity: high
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/bdab3d77-1cec-4f16-8240-c9c5227b7178?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/54da4deb-e50c-478d-ab99-222c5573a036?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
