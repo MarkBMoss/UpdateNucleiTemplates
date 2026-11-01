@@ -18684,6 +18684,7 @@
 ./poc/config/zend-config-file_7.yaml
 ./poc/config/zend-config-file_8.yaml
 ./poc/config/zipkin-config-exposure.yaml
+./poc/cpanel/CVE-2025-22690-digitimber_cpanel_integration-937a1474-2fe8-40dd-86c3-2d839a7b9c07.yaml
 ./poc/cpanel/CVE-2026-84069-wf_cpanel_email_accounts-e169f372-d26f-4797-aa16-5492123c0aad.yaml
 ./poc/cpanel/OFJAAAH-cpanelXSS.yaml
 ./poc/cpanel/OFJAAAH-cpanelXSS_1.yaml
@@ -18704,6 +18705,8 @@
 ./poc/cpanel/cpanel-mailman-xss.yaml
 ./poc/cpanel/cpanel-whm-auth-bypass-exposure-cve-2026-41940.yaml
 ./poc/cpanel/cpanel.yaml
+./poc/cpanel/digitimber-cpanel-integration.yaml
+./poc/cpanel/digitimber_cpanel_integration-937a1474-2fe8-40dd-86c3-2d839a7b9c07.yaml
 ./poc/cpanel/wf_cpanel_email_accounts-e169f372-d26f-4797-aa16-5492123c0aad.yaml
 ./poc/crlf_injection/CRLF-Extended.yaml
 ./poc/crlf_injection/CRLF.yaml
@@ -157277,7 +157280,6 @@
 ./poc/git/CVE-2025-14783-easy_digital_downloads-3c0fb43c-f576-412e-a144-4725356ed9a0.yaml
 ./poc/git/CVE-2025-2252-easy_digital_downloads-9e0e3b81-55fe-46b2-bae1-d7321d74c485.yaml
 ./poc/git/CVE-2025-22549-wp_github-1fd45d76-d82b-46e6-b9fc-95d2d977fcd2.yaml
-./poc/git/CVE-2025-22690-digitimber_cpanel_integration-937a1474-2fe8-40dd-86c3-2d839a7b9c07.yaml
 ./poc/git/CVE-2025-22826-sell_digital_downloads-af12c836-a0ab-4d64-8921-61980edf47e7.yaml
 ./poc/git/CVE-2025-2635-digital_license_manager-a266e003-3a0a-4832-a88b-60c2a26b387c.yaml
 ./poc/git/CVE-2025-4094-digits-7ab50032-abc0-4160-b9ad-369da67ef79a.yaml
@@ -157469,8 +157471,6 @@
 ./poc/git/digitalrebar-traversal_1.yaml
 ./poc/git/digitalrebar-traversal_2.yaml
 ./poc/git/digitalspy.yaml
-./poc/git/digitimber-cpanel-integration.yaml
-./poc/git/digitimber_cpanel_integration-937a1474-2fe8-40dd-86c3-2d839a7b9c07.yaml
 ./poc/git/digits-02a283b2-a369-4927-a54a-61f26bee6ace.yaml
 ./poc/git/digits-7ab50032-abc0-4160-b9ad-369da67ef79a.yaml
 ./poc/git/digits-7c8b22aa-e7e3-4e20-8e4b-fa807d1d2963.yaml
