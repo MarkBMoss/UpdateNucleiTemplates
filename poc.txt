@@ -18684,7 +18684,6 @@
 ./poc/config/zend-config-file_7.yaml
 ./poc/config/zend-config-file_8.yaml
 ./poc/config/zipkin-config-exposure.yaml
-./poc/cpanel/CVE-2025-22690-digitimber_cpanel_integration-937a1474-2fe8-40dd-86c3-2d839a7b9c07.yaml
 ./poc/cpanel/CVE-2026-84069-wf_cpanel_email_accounts-e169f372-d26f-4797-aa16-5492123c0aad.yaml
 ./poc/cpanel/OFJAAAH-cpanelXSS.yaml
 ./poc/cpanel/OFJAAAH-cpanelXSS_1.yaml
@@ -18705,8 +18704,6 @@
 ./poc/cpanel/cpanel-mailman-xss.yaml
 ./poc/cpanel/cpanel-whm-auth-bypass-exposure-cve-2026-41940.yaml
 ./poc/cpanel/cpanel.yaml
-./poc/cpanel/digitimber-cpanel-integration.yaml
-./poc/cpanel/digitimber_cpanel_integration-937a1474-2fe8-40dd-86c3-2d839a7b9c07.yaml
 ./poc/cpanel/wf_cpanel_email_accounts-e169f372-d26f-4797-aa16-5492123c0aad.yaml
 ./poc/crlf_injection/CRLF-Extended.yaml
 ./poc/crlf_injection/CRLF.yaml
@@ -135960,6 +135957,7 @@
 ./poc/cve/CVE-2026-102399-gallery_by_supsystic-c3ec1155-a055-4eb2-8c6a-cae591ad6f87.yaml
 ./poc/cve/CVE-2026-102401-download_manager-4f5985b0-0e6c-4dd8-b5f8-53be62adc8dd.yaml
 ./poc/cve/CVE-2026-102402-tlp_team-a6c976fd-c35c-40ac-8151-565a7dd746ca.yaml
+./poc/cve/CVE-2026-102435-ultimate_addons_for_contact_form_7-187777a4-3438-489c-ad3b-7e16753189d6.yaml
 ./poc/cve/CVE-2026-102499-modern_events_calendar-6783c8a4-01a8-45be-97c5-7c8e0c9ac58d.yaml
 ./poc/cve/CVE-2026-102499-modern_events_calendar_lite-6783c8a4-01a8-45be-97c5-7c8e0c9ac58d.yaml
 ./poc/cve/CVE-2026-102565-ba_book_everything-16836d06-e248-4653-bc12-e193e6f9e6bf.yaml
@@ -142172,6 +142170,7 @@
 ./poc/cve/CVE-2026-86475-appointment_hour_booking-b6d9539f-1f75-49ca-b7b8-a400e948d6b5.yaml
 ./poc/cve/CVE-2026-86583-import_users_from_csv_with_meta-5b0f3444-4c10-45ce-a00b-4ed6038b8846.yaml
 ./poc/cve/CVE-2026-86591-botiga_pro-ee2d7d01-da87-43b4-8d2b-2c9eef3c80e6.yaml
+./poc/cve/CVE-2026-86596-s2member-bbe64cd3-c5ca-4867-90de-4784510a1126.yaml
 ./poc/cve/CVE-2026-86604-gtranslate-0e590759-0fba-4c64-bc63-7d907e8ff4fc.yaml
 ./poc/cve/CVE-2026-86610-downloadmanager-1cfba6a0-d473-4b8a-8b37-b58d00a51a92.yaml
 ./poc/cve/CVE-2026-86611-download_manager-6fb1e3ea-77ba-440a-a528-b477089101f6.yaml
@@ -157280,6 +157279,7 @@
 ./poc/git/CVE-2025-14783-easy_digital_downloads-3c0fb43c-f576-412e-a144-4725356ed9a0.yaml
 ./poc/git/CVE-2025-2252-easy_digital_downloads-9e0e3b81-55fe-46b2-bae1-d7321d74c485.yaml
 ./poc/git/CVE-2025-22549-wp_github-1fd45d76-d82b-46e6-b9fc-95d2d977fcd2.yaml
+./poc/git/CVE-2025-22690-digitimber_cpanel_integration-937a1474-2fe8-40dd-86c3-2d839a7b9c07.yaml
 ./poc/git/CVE-2025-22826-sell_digital_downloads-af12c836-a0ab-4d64-8921-61980edf47e7.yaml
 ./poc/git/CVE-2025-2635-digital_license_manager-a266e003-3a0a-4832-a88b-60c2a26b387c.yaml
 ./poc/git/CVE-2025-4094-digits-7ab50032-abc0-4160-b9ad-369da67ef79a.yaml
@@ -157471,6 +157471,8 @@
 ./poc/git/digitalrebar-traversal_1.yaml
 ./poc/git/digitalrebar-traversal_2.yaml
 ./poc/git/digitalspy.yaml
+./poc/git/digitimber-cpanel-integration.yaml
+./poc/git/digitimber_cpanel_integration-937a1474-2fe8-40dd-86c3-2d839a7b9c07.yaml
 ./poc/git/digits-02a283b2-a369-4927-a54a-61f26bee6ace.yaml
 ./poc/git/digits-7ab50032-abc0-4160-b9ad-369da67ef79a.yaml
 ./poc/git/digits-7c8b22aa-e7e3-4e20-8e4b-fa807d1d2963.yaml
@@ -222854,6 +222856,7 @@
 ./poc/other/landrayoa-panel.yaml
 ./poc/other/landrayoa-panel_1.yaml
 ./poc/other/lang-chao-fu-wu-qilpmi-guan-li-kou.yaml
+./poc/other/langchain-chatchat.yaml
 ./poc/other/langchain.yaml
 ./poc/other/langflow.yaml
 ./poc/other/langfuse-panel.yaml
@@ -242472,6 +242475,7 @@
 ./poc/other/s2member-98ca009b-0e15-4945-a5c3-b08c081e7577.yaml
 ./poc/other/s2member-9ed25de7-f002-4108-b2c6-f790acbbe27b.yaml
 ./poc/other/s2member-ab4b37ff0c3e8089c5da5a9af2eb7cb7.yaml
+./poc/other/s2member-bbe64cd3-c5ca-4867-90de-4784510a1126.yaml
 ./poc/other/s2member-e87da8fa-04cc-4b9a-9dde-be7d4f2bd76e.yaml
 ./poc/other/s2member-ffc6de82-a4c1-4125-9be0-4fb6de42c178.yaml
 ./poc/other/s2member-pro.yaml
@@ -254820,6 +254824,7 @@
 ./poc/other/ultimate_addons_for_beaver_builder_lite-b7c808ff-546b-445e-af38-0b45cab3f307.yaml
 ./poc/other/ultimate_addons_for_contact_form_7-015942ef-fb6c-4b58-ab67-f7e903321f32.yaml
 ./poc/other/ultimate_addons_for_contact_form_7-1723a465-75ca-4fea-ad9c-d96ffb5625a8.yaml
+./poc/other/ultimate_addons_for_contact_form_7-187777a4-3438-489c-ad3b-7e16753189d6.yaml
 ./poc/other/ultimate_addons_for_contact_form_7-29b9d978-f8b0-48f9-a10e-7e61a4f4a828.yaml
 ./poc/other/ultimate_addons_for_contact_form_7-2be06087-4616-47bb-8a33-3bba97c47cb2.yaml
 ./poc/other/ultimate_addons_for_contact_form_7-364946a5-ce1e-4872-895d-e7cf795a04f7.yaml
