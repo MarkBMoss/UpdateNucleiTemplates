@@ -9,7 +9,7 @@ info:
   metadata:
     max-request: 7
     shodan-query: port:1433
-  tags: default-login,brute
+  tags: js,mssql,default-login,network
 javascript:
   - pre-condition: |
       var m = require("nuclei/mssql");

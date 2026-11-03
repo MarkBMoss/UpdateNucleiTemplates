@@ -1,16 +1,13 @@
+file:
+- extensions:
+  - all
+  matchers:
+  - type: word
+    words:
+    - CFBundleIdentifier
 id: ios-cf-bundle-identifier
-
 info:
-  name: CF Bundle Identifier
   author: reewardius
+  name: CF Bundle Identifier
   severity: info
   tags: ios,file
-  
-file:
-  - extensions:
-      - all
-      
-    matchers:
-      - type: word
-        words:
-          - "CFBundleIdentifier"

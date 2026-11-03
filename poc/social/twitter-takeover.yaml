@@ -1,29 +1,26 @@
-id: twitter-takeover
-
-info:
-  name: Twitter Takeover
-  author: reewardius
-  severity: medium
-  reference:
-    - https://github.com/utkusen/socialhunter
-    - https://t.me/bughuntertips/440
-  tags: social-takeover,takeover
-
 http:
-  - method: GET
-    path:
-      - "{{BaseURL}}"
-
-    matchers-condition: and
-    matchers:
-      - type: word
-        part: body
-        words:
-          - 'href="//abs.twimg.com"'
-          - '<p class="errorButton">'
-        condition: and
-      - type: word
-        part: body
-        words:
-          - "https://twitter.com/i/flow/login?redirect_after_login="
-        negative: true
+- matchers:
+  - condition: and
+    part: body
+    type: word
+    words:
+    - href="//abs.twimg.com"
+    - <p class="errorButton">
+  - negative: true
+    part: body
+    type: word
+    words:
+    - https://twitter.com/i/flow/login?redirect_after_login=
+  matchers-condition: and
+  method: GET
+  path:
+  - '{{BaseURL}}'
+id: twitter-takeover
+info:
+  author: reewardius
+  name: Twitter Takeover
+  reference:
+  - https://github.com/utkusen/socialhunter
+  - https://t.me/bughuntertips/440
+  severity: medium
+  tags: social-takeover,takeover

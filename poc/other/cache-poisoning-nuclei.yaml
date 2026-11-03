@@ -1,23 +1,22 @@
-id: cache-poisoning-nuclei
+http:
+- matchers:
+  - dsl:
+    - status_code_1 == 200 && status_code_2 == 403
+    type: dsl
+  raw:
+  - 'GET /?{{randstr}}=9 HTTP/1.1
 
+    User-Agent: nuclei
+
+    '
+  - 'GET /?{{randstr}}=9 HTTP/1.1
+
+    '
+  req-condition: true
+  stop-at-first-match: true
+id: cache-poisoning-nuclei
 info:
-  name: cache poisoning nuclei
   author: reewardius
+  name: cache poisoning nuclei
   severity: high
   tags: cache,generic
-
-http:
-  - raw:
-      - |
-        GET /?{{randstr}}=9 HTTP/1.1
-        User-Agent: nuclei
-        
-      - |
-        GET /?{{randstr}}=9 HTTP/1.1
-
-    stop-at-first-match: true
-    req-condition: true
-    matchers:
-      - type: dsl
-        dsl:
-          - 'status_code_1 == 200 && status_code_2 == 403'

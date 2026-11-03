@@ -66,8 +66,8 @@ requests:
           - 405
           - 500
           - 403
-        condition: and
       - type: word
         words:
           - "Content-Type: application/json"
         part: header
+

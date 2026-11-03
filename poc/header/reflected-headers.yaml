@@ -1,336 +1,354 @@
-id: reflected-headers
+id: reflected-parameters
 
 info:
-  name: Reflected Headers
-  author: reewardius
+  name: Reflected Parameters
+  author: shelled
   severity: info
-  tags: reflected,generic
-  
-http:
+  tags: xss,cache
+
+variables:
+  first: "shelled"
+
+requests:
   - raw:
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        Referer: shelled
+        Referer: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        Accept: shelled
+        Accept: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        Accept-Charset: shelled
+        Accept-Charset: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        Accept-Datetime: shelled
+        Accept-Datetime: {{reflection}}
       
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        Accept-Encoding: shelled
+        Accept-Encoding: {{reflection}}
       
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        Accept-Language: shelled
+        Accept-Language: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        Authorization: shelled
+        Authorization: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        Cache-Control: shelled
+        Cache-Control: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        Content-MD5: shelled
+        Connection: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        Cookie: shelled
+        Content-Length: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        Date: shelled
+        Content-MD5: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        Expect: shelled
+        Content-Type: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        Forwarded: shelled
+        Cookie: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        From: shelled
+        Date: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        If-Match: shelled
+        Expect: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        If-Modified-Since: shelled
+        Forwarded: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        If-None-Match: shelled
+        From: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        If-Range: shelled
+        If-Match: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        If-Unmodified-Since: shelled
+        If-Modified-Since: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        Max-Forwards: shelled
+        If-None-Match: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        Pragma: shelled
-        Proxy-Authorization: shelled
+        If-Range: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        Range: shelled
+        If-Unmodified-Since: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        Referer: shelled
+        Max-Forwards: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        TE: shelled
+        Pragma: {{reflection}}
+        Proxy-Authorization: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        Upgrade: shelled
+        Range: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        User-Agent: shelled
+        Referer: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        Via: shelled
+        TE: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        Warning: shelled
+        Upgrade: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        DNT: shelled
+        User-Agent: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        Front-End-Https: shelled
+        Via: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        Proxy-Connection: shelled
+        Warning: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        PSU-IP-Address: shelled
+        DNT: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        PSU-IP-Port: shelled
+        Front-End-Https: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        PSU-HTTP-Method: shelled
+        Proxy-Connection: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        PSU-Date: shelled
+        PSU-IP-Address: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        PSU-User-Agent: shelled
+        PSU-IP-Port: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        PSU-Referer: shelled
+        PSU-HTTP-Method: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        PSU-Accept: shelled
+        PSU-Date: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        PSU-Accept-Charset: shelled
+        PSU-User-Agent: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        PSU-Accept-Encoding: shelled
+        PSU-Referer: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        PSU-Accept-Language: shelled
+        PSU-Accept: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        PSU-GEO-Location: shelled
+        PSU-Accept-Charset: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        PSU-Device-ID: shelled
+        PSU-Accept-Encoding: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        X-ATT-DeviceId: shelled
+        PSU-Accept-Language: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        X-CSRFToken: shelled
+        PSU-GEO-Location: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        X-Correlation-ID: shelled
+        PSU-Device-ID: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        X-Csrf-Token: shelled
+        X-ATT-DeviceId: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        X-XSRF-TOKEN: shelled
+        X-CSRFToken: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        X-Do-Not-Track: shelled
+        X-Correlation-ID: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        X-Forwarded-For: shelled
+        X-Csrf-Token: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        X-Forwarded-Host: shelled
+        X-XSRF-TOKEN: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        X-Forwarded-Proto: shelled
+        X-Do-Not-Track: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        X-Http-Method-Override: shelled
+        X-Forwarded-For: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        X-ProxyUser-Ip: shelled
+        X-Forwarded-Host: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        X-Request-ID: shelled
+        X-Forwarded-Proto: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        X-Requested-With: shelled
+        X-Http-Method-Override: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        X-UIDH: shelled
+        X-ProxyUser-Ip: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        X-Wap-Profile: shelled
+        X-Request-ID: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        X-XSRF-TOKEN: shelled
+        X-Requested-With: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        Client-IP: shelled
+        X-UIDH: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        True-Client-IP: shelled
+        X-Wap-Profile: {{reflection}}
         
       - | 
-        GET / HTTP/1.1
+        GET {{BaseURL}} HTTP/1.1
         Host: {{Hostname}}
-        Cluster-Client-IP: shelled
+        X-XSRF-TOKEN: {{reflection}}
+        
+      - | 
+        GET {{BaseURL}} HTTP/1.1
+        Host: {{Hostname}}
+        Client-IP: {{reflection}}
+        
+      - | 
+        GET {{BaseURL}} HTTP/1.1
+        Host: {{Hostname}}
+        True-Client-IP: {{reflection}}
+        
+      - | 
+        GET {{BaseURL}} HTTP/1.1
+        Host: {{Hostname}}
+        Cluster-Client-IP: {{reflection}}
 
-      - | 
-        GET / HTTP/1.1
-        Host: {{Hostname}}
-        X-Request-Id: shelled
+    payloads:
+      reflection:
+        - "shelled"
 
     matchers-condition: and
     matchers:
       - type: word
         part: body
         words:
-          - "shelled"
+          - "{{reflection}}"
 
-      - type: status
-        status:
-          - 200
+      - type: word
+        part: header
+        words:
+          - "text/html"

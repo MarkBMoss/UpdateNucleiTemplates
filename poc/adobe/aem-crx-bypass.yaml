@@ -11,7 +11,7 @@ info:
   metadata:
     max-request: 2
     shodan-query: http.component:"Adobe Experience Manager"
-  tags: aem
+  tags: aem,adobe,misconfig
 
 http:
   - raw:

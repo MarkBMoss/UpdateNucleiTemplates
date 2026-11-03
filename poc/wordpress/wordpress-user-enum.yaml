@@ -1,22 +1,33 @@
-id: wordpress-user-enum-01
+id: wordpress-user-enum
+
 info:
-  name: Wordpress REST API user enumeration
-  risk: Low
+  name: Wordpress User Enumeration
+  author: r3dg33k
+  severity: info
+  metadata:
+    max-request: 1
+  tags: wordpress
 
-params:
-  - root: '{{.BaseURL}}'
-
-variables:
-  - vul: |
-      wp-json/wp/v2/users/
-
-requests:
+http:
   - method: GET
-    redirect: false
-    url: >-
-      {{.root}}/{{.vul}}
-    headers:
-      - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36
-    detections:
-      - >-
-        StatusCode() == 200 && StringSearch("response", "avatar_urls")
+    path:
+      - "{{BaseURL}}/?author=1"
+
+    matchers-condition: and
+    matchers:
+      - type: regex
+        regex:
+          - '(?i)Location: http(s|):\/\/[\w\.\-]+\/author\/\w+'
+        part: header
+
+      - type: status
+        status:
+          - 301
+
+    extractors:
+      - type: regex
+        part: header
+        regex:
+          - 'author\/\w+'
+
+# digest: 4a0a00473045022100a9bd51a7335e4a3132dc7adf1b5faad143902b92a257ce67c7554206bb1208e60220524362849327f5644ce5e078f58218d5ed17ceaa3b90982ac8eb73b44b8348d5:922c64590222798bb761d5b6d8e72950

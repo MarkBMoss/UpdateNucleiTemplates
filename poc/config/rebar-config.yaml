@@ -1,24 +1,20 @@
+http:
+- matchers:
+  - type: word
+    words:
+    - '{deps,'
+    - '{erl_opts'
+  - status:
+    - 200
+    type: status
+  matchers-condition: and
+  method: GET
+  path:
+  - '{{BaseURL}}/rebar.config'
+  - '{{BaseURL}}/rebar3.config'
 id: rebar-config
-
 info:
-  name: Rebar Config File Disclosure
   author: reewardius
+  name: Rebar Config File Disclosure
   severity: info
   tags: dependency,config
-
-http:
-  - method: GET
-    path:
-      - "{{BaseURL}}/rebar.config"
-      - "{{BaseURL}}/rebar3.config"
-
-    matchers-condition: and
-    matchers:
-      - type: word
-        words:
-          - "{deps,"
-          - "{erl_opts"
-
-      - type: status
-        status:
-          - 200

@@ -1,16 +1,13 @@
+file:
+- extensions:
+  - all
+  extractors:
+  - regex:
+    - '[a-z0-9.-]+\.blob\.core\.windows\.net'
+    type: regex
 id: azure-bucket
-
 info:
-  name: Azure Bucket Detect 
   author: reewardius
+  name: Azure Bucket Detect
   severity: info
   tags: android,file
-  
-file:
-  - extensions:
-      - all
-      
-    extractors:
-      - type: regex
-        regex:
-          - "[a-z0-9.-]+\\.blob\\.core\\.windows\\.net"

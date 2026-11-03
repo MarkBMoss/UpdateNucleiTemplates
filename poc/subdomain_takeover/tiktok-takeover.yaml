@@ -1,21 +1,18 @@
-id: tiktok-takeover
-
-info:
-  name: TikTok Takeover
-  author: reewardius
-  severity: medium
-  reference:
-    - https://github.com/utkusen/socialhunter
-    - https://t.me/bughuntertips/440
-  tags: social-takeover,takeover
-
 http:
-  - method: GET
-    path:
-      - "{{BaseURL}}"
-      
-    matchers:
-      - type: word
-        part: body
-        words:
-          - '"statusCode":10221'
+- matchers:
+  - part: body
+    type: word
+    words:
+    - '"statusCode":10221'
+  method: GET
+  path:
+  - '{{BaseURL}}'
+id: tiktok-takeover
+info:
+  author: reewardius
+  name: TikTok Takeover
+  reference:
+  - https://github.com/utkusen/socialhunter
+  - https://t.me/bughuntertips/440
+  severity: medium
+  tags: social-takeover,takeover

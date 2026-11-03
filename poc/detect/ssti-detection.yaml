@@ -1,53 +1,27 @@
-id: ssti-detection
-
-info:
-  name: Reflected SSTI Arithmetic Based
-  author: pdteam
-  severity: medium
-  reference:
-    - https://github.com/zaproxy/zap-extensions/blob/2d9898900abe85a47b9fe0ceb85ec39070816b98/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/SstiScanRule.java
-    - https://github.com/DiogoMRSilva/websitesVulnerableToSSTI#list-of-seversneeds-update
-  tags: ssti,dast,full
-
-variables:
-  first: "{{rand_int(1000, 9999)}}"
-  second: "{{rand_int(1000, 9999)}}"
-  result: "{{to_number(first)*to_number(second)}}"
-  
 http:
-  - pre-condition:
-      - type: dsl
-        dsl:
-          - 'method != "OPTIONS"'
-
-    skip-variables-check: true
-    payloads:
-      ssti:
-        - '{{concat("${", "{{first}}*{{second}}", "}")}}'
-        - '{{concat("{{", "{{first}}*{{second}}", "}}")}}'
-        - '{{concat("<%=", "{{first}}*{{second}}", "%>")}}'
-        - '{{concat("{", "{{first}}*{{second}}", "}")}}'
-        - '{{concat("{{{", "{{first}}*{{second}}", "}}}")}}'
-        - '{{concat("${{", "{{first}}*{{second}}", "}}")}}'
-        - '{{concat("#{", "{{first}}*{{second}}", "}")}}'
-        - '{{concat("[[", "{{first}}*{{second}}", "]]")}}'
-        - '{{concat("{{=", "{{first}}*{{second}}", "}}")}}'
-        - '{{concat("[[${", "{{first}}*{{second}}", "}]]")}}'
-        - '{{concat("${xyz|", "{{first}}*{{second}}", "}")}}'
-        - '{{concat("#set($x=", "{{first}}*{{second}}", ")${x}")}}'
-        - '{{concat("@(", "{{first}}*{{second}}", ")")}}'
-        - '{{concat("{@", "{{first}}*{{second}}", "}")}}'
-
-    fuzzing:
-      - part: request
-        type: postfix
-        mode: single
-        fuzz:
-          - "{{ssti}}"
-
-    stop-at-first-match: true
-    matchers:
-      - type: word
-        part: body
-        words:
-          - "{{result}}"
+- matchers:
+  - condition: or
+    part: body
+    type: word
+    words:
+    - '49'
+    - <class 'object'>
+    - flask.config
+  method: GET
+  path:
+  - '{{BaseURL}}/search?q={{7*7}}'
+  - '{{BaseURL}}/error?msg=${7*7}'
+  - '{{BaseURL}}/template?name={{config}}'
+  - '{{BaseURL}}/render?template=<%=7*7%>'
+  - '{{BaseURL}}/page?content={{''''.__class__.__mro__[2].__subclasses__()}}'
+id: ssti-detection
+info:
+  author: security-team
+  classification:
+    cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+    cvss-score: 9.8
+    cwe-id: CWE-94
+  description: Detects Server-Side Template Injection vulnerabilities
+  name: Server-Side Template Injection
+  severity: critical
+  tags: ssti,injection,template

@@ -1,25 +1,21 @@
+http:
+- matchers:
+  - type: word
+    words:
+    - dependencies
+    - tasks
+    - repositories
+  - status:
+    - 200
+    type: status
+  matchers-condition: and
+  method: GET
+  path:
+  - '{{BaseURL}}/build.gradle'
+  - '{{BaseURL}}/build.gradle.kts'
 id: build-gradle
-
 info:
-  name: build gradle disclosure
   author: reewardius
+  name: build gradle disclosure
   severity: info
   tags: dependency
-
-http:
-  - method: GET
-    path:
-      - "{{BaseURL}}/build.gradle"
-      - "{{BaseURL}}/build.gradle.kts"
-
-    matchers-condition: and
-    matchers:
-      - type: word
-        words:
-          - "dependencies"
-          - "tasks"
-          - "repositories"
-
-      - type: status
-        status:
-          - 200

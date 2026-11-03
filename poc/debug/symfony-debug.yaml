@@ -11,7 +11,7 @@ info:
     verified: true
     max-request: 1
     shodan-query: http.html:"symfony Profiler"
-  tags: symfony,debug,php
+  tags: symfony,debug,misconfig
 
 http:
   - method: GET

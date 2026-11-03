@@ -1,32 +1,27 @@
 linters-settings:
-  golint:
-    min-confidence: 0
-
-  misspell:
-    locale: US
+  staticcheck:
+    checks: [
+      "all",
+      "-SA1019" # There are valid use cases of strings.Title
+    ]
+  nakedret:
+    max-func-lines: 0 # Disallow any unnamed return statement
 
 linters:
-  disable-all: true
   enable:
-    - typecheck
-    - goimports
-    - misspell
-    - govet
-    - golint
-    - ineffassign
-    - gosimple
     - deadcode
-    - unparam
-    - unused
+    - errcheck
+    - gosimple
+    - govet
+    - ineffassign
+    - staticcheck
     - structcheck
-    - prealloc
-    - maligned
+    - typecheck
+    - unused
+    - varcheck
+    - nakedret
+    - gofmt
+    - rowserrcheck
     - unconvert
-
-issues:
-  exclude-use-default: false
-  exclude:
-      - should have a package comment
-      - error strings should not be capitalized or end with punctuation or a newline
-service:
-  golangci-lint-version: 1.35.0 # use the fixed version to not introduce new linters unexpectedly
+    - goimports
+    - unparam

