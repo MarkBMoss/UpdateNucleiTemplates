@@ -15,7 +15,7 @@ info:
     verified: true
     max-request: 16
     shodan-query: http.title:phpMyAdmin
-  tags: default-login,phpmyadmin
+  tags: default-login,php
 
 http:
   - raw:

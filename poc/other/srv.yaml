@@ -1,7 +1,7 @@
-id: basic-dns-a-example
+id: dns-a-query-example
 
 info:
-  name: Test DNS A Query Template
+  name: Test DNS SRV Query Template
   author: pdteam
   severity: info
 

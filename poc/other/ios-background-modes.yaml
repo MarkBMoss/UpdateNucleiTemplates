@@ -1,13 +1,16 @@
-file:
-- extensions:
-  - all
-  matchers:
-  - type: word
-    words:
-    - UIBackgroundModes
 id: ios-background-modes
+
 info:
-  author: reewardius
   name: Background Modes
+  author: reewardius
   severity: info
   tags: ios,file
+  
+file:
+  - extensions:
+      - all
+      
+    matchers:
+      - type: word
+        words:
+          - "UIBackgroundModes"

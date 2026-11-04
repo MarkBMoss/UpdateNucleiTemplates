@@ -1,26 +1,30 @@
-http:
-- matchers:
-  - part: header
-    type: word
-    words:
-    - '*.instagram.com'
-    - facebook.net
-    - '*.teststagram.com'
-  - negative: true
-    part: body
-    type: word
-    words:
-    - <!--EF-->
-  matchers-condition: and
-  method: GET
-  path:
-  - '{{BaseURL}}'
 id: instagram-takeover
+
 info:
-  author: reewardius
   name: Instagram Takeover
-  reference:
-  - https://github.com/utkusen/socialhunter
-  - https://t.me/bughuntertips/440
+  author: reewardius
   severity: medium
+  reference:
+    - https://github.com/utkusen/socialhunter
+    - https://t.me/bughuntertips/440
   tags: social-takeover,takeover
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        part: header
+        words:
+          - "*.instagram.com"
+          - "facebook.net"
+          - "*.teststagram.com"
+          
+      - type: word
+        part: body
+        words:
+          - "<!--EF-->"
+        negative: true
