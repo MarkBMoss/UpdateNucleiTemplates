@@ -1,4 +1,4 @@
-id: mycred-32fe7659-095f-4256-b456-6d4877a02ea7
+id: mycred-87927bb0-6848-4714-9d28-f76c8cea838b
 
 info:
   name: >
@@ -9,7 +9,7 @@ info:
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/32fe7659-095f-4256-b456-6d4877a02ea7?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/87927bb0-6848-4714-9d28-f76c8cea838b?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 

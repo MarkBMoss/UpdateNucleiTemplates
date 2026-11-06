@@ -1,15 +1,15 @@
-id: customer_area-0bd20f7e-ed2a-4890-b337-9763cfd67bd1
+id: customer_area-4922c989-efb9-4148-8621-69c3755ea8d5
 
 info:
   name: >
-    WP Customer Area <= 8.4.0 - Authenticated (Subscriber+) Stored Cross-Site Scripting
+    WP Customer Area <= 8.4.1 - Unauthenticated Stored Cross-Site Scripting
   author: topscoder
-  severity: low
+  severity: high
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/0bd20f7e-ed2a-4890-b337-9763cfd67bd1?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/4922c989-efb9-4148-8621-69c3755ea8d5?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
@@ -18,7 +18,7 @@ info:
     fofa-query: "wp-content/plugins/customer-area/"
     google-query: inurl:"/wp-content/plugins/customer-area/"
     shodan-query: 'http.html:"wp-content/plugins/customer-area/"'
-  tags: cve,wordpress,wp-plugin,customer-area,low,candidate
+  tags: cve,wordpress,wp-plugin,customer-area,high,candidate
 
 http:
   - method: GET
@@ -48,4 +48,4 @@ http:
 
       - type: dsl
         dsl:
-          - compare_versions(version, '<= 8.4.0')
+          - compare_versions(version, '<= 8.4.1')
