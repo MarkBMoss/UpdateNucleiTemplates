@@ -6,7 +6,7 @@ info:
   severity: info
   metadata:
     max-request: 639
-  tags: prestashop,presta,cms
+  tags: fuzz,prestashop,fuzzing
 
 http:
   - raw:

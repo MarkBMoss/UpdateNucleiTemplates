@@ -8,11 +8,9 @@ info:
   reference:
     - https://github.com/alibaba/nacos/issues/4593
     - https://nacos.io/en-us/docs/auth.html
-  tags: cloud,nacos
-  metadata:
-    max-request: 2
-    
-http:
+  tags: nacos,unauth
+
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/nacos/v1/auth/users?pageNo=1&pageSize=9"
@@ -22,18 +20,21 @@ http:
 
     matchers-condition: and
     matchers:
+
       - type: word
         words:
           - "Content-Type: application/json"
         part: header
-        
+
       - type: regex
         regex:
           - '"username":'
           - '"password":'
         part: body
         condition: and
-        
+
       - type: status
         status:
           - 200
+
+# Enhanced by mp on 2022/05/20

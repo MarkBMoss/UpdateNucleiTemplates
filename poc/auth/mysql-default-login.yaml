@@ -10,18 +10,15 @@ info:
     verified: true
     max-request: 21
     shodan-query: "port:3306"
-  tags: brute,network,mysql
+  tags: js,mysql,default-login,network,fuzz,enum
 
 javascript:
   - pre-condition: |
-      var m = require("nuclei/mysql");
-      var c = m.MySQLClient();
-      c.IsMySQL(Host, Port);
-
+      isPortOpen(Host,Port);
     code: |
       var m = require("nuclei/mysql");
       var c = m.MySQLClient();
-      c.Connect(Host,Port,Username,Password)
+      c.Connect(Host,Port,User,Pass)
 
     args:
       Host: "{{Host}}"
@@ -49,3 +46,4 @@ javascript:
           - "response == true"
           - "success == true"
         condition: and
+# digest: 4a0a00473045022020b5985850e520423766544760d16470cd07fa324662d72c2cedfc5c933f82e30221008ad04236b102a9ab8c3052c7162ed079c8df251a5e97f623538d123026d50274:922c64590222798bb761d5b6d8e72950

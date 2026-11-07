@@ -1,31 +1,26 @@
+http:
+- matchers:
+  - status:
+    - 200
+    type: status
+  - condition: and
+    type: word
+    words:
+    - anonymousUsername
+    - rebuildingRepositories
+  - part: header
+    type: word
+    words:
+    - application/json
+  matchers-condition: and
+  method: GET
+  path:
+  - '{{BaseURL}}/service/extdirect/poll/rapture_State_get'
 id: nexus-repo-unauth
-
 info:
-  name: Nexus Repository Unauthentication
   author: reewardius
-  severity: medium
-  tags: cloud,sonatype,nexus
   metadata:
     max-request: 1
-    
-http:
-  - method: GET
-    path:
-      - "{{BaseURL}}/service/extdirect/poll/rapture_State_get"
-      
-    matchers-condition: and
-    matchers:
-      - type: status
-        status:
-          - 200
-          
-      - type: word
-        condition: and
-        words:
-          - 'anonymousUsername'
-          - 'rebuildingRepositories'
-          
-      - type: word
-        part: header
-        words:
-          - "application/json"
+  name: Nexus Repository Unauthentication
+  severity: medium
+  tags: cloud,sonatype,nexus

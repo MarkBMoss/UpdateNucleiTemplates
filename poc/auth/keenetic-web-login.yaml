@@ -1,25 +1,27 @@
 id: keenetic-web-login
 
 info:
-  name: Keenetic Web Login Panel - Detect
+  name: Keenetic Web Login
   author: dhiyaneshDK
   severity: info
-  description: Keenetic Web login panel was detected.
-  reference:
-    - https://www.exploit-db.com/ghdb/6817
-  classification:
-    cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
-    cvss-score: 0.0
-    cwe-id: CWE-200
-  tags: panel,keenetic,edb
-  metadata:
-    max-request: 1
+  reference: https://www.exploit-db.com/ghdb/6817
+  tags: panel,keenetic
 
-http:
-  - method: GET
-    path:
-      - '{{BaseURL}}/login#goto=%2Fdashboard'
+requests:
+  - payloads:
+      Subdomains: /home/mahmoud/Wordlist/AllSubdomains.txt
 
+    attack: sniper
+    threads: 100
+    raw:
+    - |+
+      GET /login#goto=%2Fdashboard HTTP/1.1
+      Host: {{Subdomains}}
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; rv:68.0) Gecko/20100101 Firefox/68.0
+      Accept-Encoding: gzip, deflate
+      Accept: */*
+      
+    unsafe: true
     matchers-condition: and
     matchers:
       - type: word
@@ -28,5 +30,3 @@ http:
       - type: status
         status:
           - 200
-
-# Enhanced by md on 2022/11/22

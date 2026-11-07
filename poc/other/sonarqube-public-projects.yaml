@@ -4,25 +4,29 @@ info:
   name: Sonarqube with public projects
   author: sickwell
   severity: low
-  reference:
-    - https://next.sonarqube.com/sonarqube/web_api/api/components/suggestions?internal=true
-  tags: sonarqube,cloud
-  metadata:
-    max-request: 3
+  tags: sonarqube,misconfig
+  reference: https://next.sonarqube.com/sonarqube/web_api/api/components/suggestions?internal=true
 
-http:
-  - method: GET
-    path:
-      - "{{BaseURL}}/api/components/suggestions?recentlyBrowsed="
-      - "{{BaseURL}}/api/components/search_projects?ps=1"
-      - "{{BaseURL}}/sonarqube/api/components/suggestions?recentlyBrowsed="
-      
+requests:
+  - payloads:
+      Subdomains: /home/mahmoud/Wordlist/AllSubdomains.txt
+    attack: sniper
+    threads: 100
+
+    raw:
+      - |
+        GET /api/components/suggestions?recentlyBrowsed= HTTP/1.1
+        Host: {{Subdomains}}
+        User-Agent: Mozilla/5.0 (Windows NT 10.0; rv:68.0) Gecko/20100101 Firefox/68.0
+        Accept-Encoding: gzip, deflate
+        Accept: */*
     matchers-condition: and
     matchers:
+
       - type: status
         status:
           - 200
-          
+
       - type: word
         words:
           - '"results":'

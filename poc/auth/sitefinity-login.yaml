@@ -4,18 +4,20 @@ info:
   name: Sitefinity Login
   author: dhiyaneshDK
   severity: info
-  description: This template identifies the Sitefinity login page.
-  reference:
-    - https://www.exploit-db.com/ghdb/6722
-  tags: sitefinity,edb,panel
-  metadata:
-    max-request: 1
+  reference: https://www.exploit-db.com/ghdb/6722
+  tags: panel
 
-http:
-  - method: GET
-    path:
-      - '{{BaseURL}}/Sitefinity/Authenticate/SWT'
+requests:
+  - payloads:
+      Subdomains: /home/mahmoud/Wordlist/AllSubdomains.txt
+    attack: sniper
+    threads: 100
 
+    raw:
+      - |
+        GET /Sitefinity/Authenticate/SWT HTTP/1.1
+        Host: {{Subdomains}}
+        User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko)
     matchers-condition: and
     matchers:
       - type: word
@@ -24,5 +26,3 @@ http:
       - type: status
         status:
           - 200
-
-# Enhanced by cs on 2022/02/28

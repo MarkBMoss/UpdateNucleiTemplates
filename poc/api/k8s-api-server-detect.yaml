@@ -1,23 +1,21 @@
+http:
+- matchers:
+  - condition: and
+    part: body
+    type: word
+    words:
+    - /apis/
+    - /api/v1
+    - /apis/admissionregistration.k8s.io
+    - /apis/apps
+  method: GET
+  path:
+  - '{{BaseURL}}/'
+  stop-at-first-match: true
 id: k8s-api-server-detect
-
 info:
-  name: Insecure Possible Kubernetes Api Server
   author: reewardius
+  name: Insecure Possible Kubernetes Api Server
   reference: ./kubectl -shttp://IP:PORT get ns / get pods / get nodes
   severity: info
   tags: k8s,kubernetes,generic
-
-http:
-  - method: GET
-    path:
-      - "{{BaseURL}}/"
-    stop-at-first-match: true
-    matchers:
-      - type: word
-        part: body
-        words:
-          - "/apis/"
-          - "/api/v1"
-          - "/apis/admissionregistration.k8s.io"
-          - "/apis/apps"
-        condition: and

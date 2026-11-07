@@ -8,6 +8,7 @@ info:
   reference: https://blog.orange.tw/2024/08/confusion-attacks-en.html
   tags: apache,rce,redmine
 
+requests:
 http:
   - method: GET
     path:

@@ -1,24 +1,27 @@
 id: kubernetes-enterprise-manager
 
 info:
-  name: Kubernetes Enterprise Manager Panel - Detect
+  name: Detect Kubernetes Enterprise Manager
   author: pussycat0x
   severity: info
-  description: Kubernetes Enterprise Manager panel was detected.
-  classification:
-    cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
-    cvss-score: 0.0
-    cwe-id: CWE-200
-  metadata:
-    max-request: 1
-    fofa-query: app="Kubernetes-Enterprise-Manager"
-  tags: tech,kubernetes,panel
+  tags: tech,kubernetes
+#  additional-fields:
+#    fofa-dork: 'app="Kubernetes-Enterprise-Manager"'
 
-http:
-  - method: GET
-    path:
-      - "{{BaseURL}}"
+requests:
+  - payloads:
+      Subdomains: /home/mahmoud/Wordlist/AllSubdomains.txt
+    attack: sniper
+    threads: 100
 
+    raw:
+      - |
+        GET / HTTP/1.1
+        Host: {{Subdomains}}
+        User-Agent: Mozilla/5.0 (Windows NT 10.0; rv:68.0) Gecko/20100101 Firefox/68.0
+        Accept-Encoding: gzip, deflate
+        Accept: */*
+        
     matchers-condition: and
     matchers:
       - type: word
@@ -29,5 +32,3 @@ http:
       - type: status
         status:
           - 200
-
-# Enhanced by md on 2023/04/25

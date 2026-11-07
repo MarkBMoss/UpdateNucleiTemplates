@@ -3,31 +3,36 @@ id: instagram
 info:
   name: Instagram User Name Information - Detect
   author: dwisiswant0
-  description: Instagram user name information check was conducted.
   severity: info
+  description: Instagram user name information check was conducted.
   classification:
     cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
-    cvss-score: 0.0
+    cvss-score: 0
     cwe-id: CWE-200
-  tags: osint,osint-social,instagram
   metadata:
     max-request: 1
+  tags: osint,osint-social,instagram
 
 self-contained: true
+
 http:
   - method: GET
     path:
-      - "https://www.picuki.com/profile/{{user}}"
+      - "https://www.instagram.com/{{user}}"
+
+    host-redirects: true
+    max-redirects: 2
 
     matchers-condition: and
     matchers:
-      - type: status
-        status:
-          - 200
-
       - type: word
         part: body
         words:
-          - "Instagram profile with posts and stories"
+          - '{"username":"{{user}}"}'
+          - 'Instagram photos and videos from'
+        condition: and
 
-# Enhanced by cs 03/17/2023
+      - type: status
+        status:
+          - 200
+# digest: 4a0a00473045022100ca9c1a305172b0b78c98b525d0afe5a3be097b9ffe3df79b18b4ef649c02331f022041c5a3437d4be4010462ee44558c9ce9e353224b1ad1b5bbbd439fb5b38b82fc:922c64590222798bb761d5b6d8e72950

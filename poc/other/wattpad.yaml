@@ -3,17 +3,18 @@ id: wattpad
 info:
   name: Wattpad User Name Information - Detect
   author: dwisiswant0
-  description: Wattpad user name information check was conducted.
   severity: info
+  description: Wattpad user name information check was conducted.
   classification:
     cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
-    cvss-score: 0.0
+    cvss-score: 0
     cwe-id: CWE-200
-  tags: osint,osint-social,wattpad
   metadata:
     max-request: 1
+  tags: osint,osint-social,wattpad
 
 self-contained: true
+
 http:
   - method: GET
     path:
@@ -29,5 +30,4 @@ http:
         part: body
         words:
           - "createDate"
-
-# Enhanced by cs 03/17/2023
+# digest: 490a0046304402206619fc39719aa2cbe838c4f50f0d6669b059ca7103f889f94fe6a3f12288efaa02205c9270755477829fe4476e89c9755913927f979ab436de7f6b5506a4a86babc3:922c64590222798bb761d5b6d8e72950

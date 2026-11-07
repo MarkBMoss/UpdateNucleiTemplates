@@ -3,17 +3,18 @@ id: line
 info:
   name: LINE User Name Information - Detect
   author: dwisiswant0
-  description: LINE user name information check was conducted.
   severity: info
+  description: LINE user name information check was conducted.
   classification:
     cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
-    cvss-score: 0.0
+    cvss-score: 0
     cwe-id: CWE-200
-  tags: osint,osint-social,line
   metadata:
     max-request: 1
+  tags: osint,osint-social,line
 
 self-contained: true
+
 http:
   - method: GET
     path:
@@ -29,5 +30,4 @@ http:
         part: body
         words:
           - "Add LINE Friends via QR Code"
-
-# Enhanced by cs 03/17/2023
+# digest: 490a0046304402200ce50c288278968d35e2676d59d4312ec472691925ae297a8f7a218a826fad570220208832cc42997b5d3dabd77963902826b980940bd27ce8d0a5ab2f7411809fe4:922c64590222798bb761d5b6d8e72950

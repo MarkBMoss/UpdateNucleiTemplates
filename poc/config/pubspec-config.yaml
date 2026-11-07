@@ -14,17 +14,15 @@ info:
     cwe-id: CWE-200
   metadata:
     verified: true
-    max-request: 4
+    max-request: 2
     shodan-query: html:"pubspec.yaml"
-  tags: dependency,config
+  tags: exposure,devops,pubsec,config,cicd
 
 http:
   - method: GET
     path:
       - "{{BaseURL}}/pubspec.yaml"
       - "{{BaseURL}}/assets/pubspec.yaml"
-      - "{{BaseURL}}/pubspec.yml"
-      - "{{BaseURL}}/assets/pubspec.yml"
 
     stop-at-first-match: true
 
@@ -41,3 +39,4 @@ http:
       - type: status
         status:
           - 200
+# digest: 490a0046304402205e518b5787f636271ac9f4bdcf911287c5f7680bfe78b1db5866083092b4af0402203daf255c1c6648bec8f5e3a0e90ac723bf6232eb8120830c48dfa3e4007d0dfe:922c64590222798bb761d5b6d8e72950

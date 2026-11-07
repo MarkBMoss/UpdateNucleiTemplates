@@ -4,12 +4,13 @@ info:
   name: System Properties Exposure
   author: DhiyaneshDk
   severity: low
+  description: System Properties is exposed.
   metadata:
-    max-request: 1
     verified: true
+    max-request: 1
     shodan-query: title:"System Properties"
-  tags: java,config,generic
-  
+  tags: misconfig,system,exposure
+
 http:
   - method: GET
     path:
@@ -23,21 +24,8 @@ http:
           - "System Properties:"
           - "Environment Variables:"
         condition: and
-        case-insensitive: true
 
-      - type: word
-        part: header
-        words:
-          - "text/plain"
-          - "bytes"
-        
-      - type: word
-        part: header
-        words:
-          - "text/html"
-        negative: true
-        
       - type: status
         status:
           - 200
-          - 206
+# digest: 4b0a004830460221008d4ed93bcee032e8e519e7516140b3d10001dac8b6e27dc6a357b6c4038e70de0221008aaebab06a10685b4c91a67739a27c531446be81cd8ca27fd4e826e94a1abccb:922c64590222798bb761d5b6d8e72950

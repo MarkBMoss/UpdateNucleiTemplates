@@ -1,31 +1,26 @@
+http:
+- matchers:
+  - condition: and
+    type: word
+    words:
+    - version
+    - language
+    - words
+    - ignorePaths
+  - part: header
+    type: word
+    words:
+    - application/json
+  - status:
+    - 200
+    type: status
+  matchers-condition: and
+  method: GET
+  path:
+  - '{{BaseURL}}/cspell.json'
 id: cpell-json
-
 info:
-  name: CPell Disclosure
   author: reewardius
+  name: CPell Disclosure
   severity: info
   tags: dependency
-
-http:
-  - method: GET
-    path:
-      - "{{BaseURL}}/cspell.json"
-
-    matchers-condition: and
-    matchers:
-      - type: word
-        words:
-          - "version"
-          - "language"
-          - "words"
-          - "ignorePaths"
-        condition: and
-
-      - type: word
-        part: header
-        words:
-          - "application/json"
-
-      - type: status
-        status:
-          - 200

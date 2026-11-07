@@ -4,7 +4,7 @@ info:
   name: Bitrix XSS - CVE-2006-2476
   author: 0x_Akoko
   severity: medium
-  tags: bitrix,xss,cve
+  tags: cve,cve2006,xss,bitrix
 
 http:
   - method: GET
@@ -19,7 +19,11 @@ http:
           - '{{randstr}}'
           - '<form action="javascript:alert'
         condition: and
-        
+
+      - type: status
+        status:
+          - 200
+
       - type: word
         part: header
         words:

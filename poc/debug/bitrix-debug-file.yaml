@@ -1,16 +1,14 @@
 id: bitrix-debug-file
-
 info:
   name: Bitrix Debug File Exposure
-  author: reewardius
+  author: trainzment
   severity: high
-  tags: bitrix,debug,generic
-  
+  tags: bitrix, exposure
+
 http:
   - method: GET
     path:
       - "{{BaseURL}}/bitrix_server_test.php"
-      
     matchers:
       - type: word
         words:

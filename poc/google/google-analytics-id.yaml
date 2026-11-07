@@ -4,13 +4,14 @@ info:
   name: Google Analytics ID Discovery
   author: dhn
   severity: info
-  tags: google,cloud
+  tags: tech
 
-http:
+requests:
   - method: GET
+
     path:
       - "{{BaseURL}}"
-      
+
     extractors:
       - type: regex
         name: ua-id

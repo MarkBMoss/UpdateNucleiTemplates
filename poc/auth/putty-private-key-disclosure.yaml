@@ -2,36 +2,31 @@ id: putty-private-key-disclosure
 
 info:
   name: Putty Private Key Disclosure
-  author: DhiyaneshDk,geeknik
+  author: dhiyaneshDk
   severity: medium
-  reference:
-    - https://github.com/detectify/ugly-duckling/blob/master/modules/crowdsourced/putty-private-key-disclosure.json
-  metadata:
-    max-request: 8
-    verified: true
-    github-query: filename:putty.ppk
-  tags: generic,config-files,config
+  reference: https://github.com/detectify/ugly-duckling/blob/master/modules/crowdsourced/putty-private-key-disclosure.json
+  tags: exposure,files
 
-http:
-  - method: GET
-    path:
-      - "{{BaseURL}}/my.ppk"
-      - "{{BaseURL}}/putty.ppk"
-      - "{{BaseURL}}/{{Host}}.ppk"
-      - "{{BaseURL}}/.ssh/putty.ppk"
-      - "{{BaseURL}}/.ssh/{{Host}}.ppk"
-      - "{{BaseURL}}/.putty/my.ppk"
-      - "{{BaseURL}}/.putty/putty.ppk"
-      - "{{BaseURL}}/.putty/{{Host}}.ppk"
+requests:
+  - payloads:
+      Subdomains: /home/mahmoud/Wordlist/AllSubdomains.txt
+    attack: sniper
+    threads: 100
 
-    stop-at-first-match: true
+    raw:
+      - |
+        GET /my.ppk HTTP/1.1
+        Host: {{Subdomains}}
+        User-Agent: Mozilla/5.0 (Windows NT 10.0; rv:68.0) Gecko/20100101 Firefox/68.0
+        Accept-Encoding: gzip, deflate
+        Accept: */*
     matchers-condition: and
     matchers:
       - type: word
-        part: body
         words:
           - "PuTTY-User-Key-File"
           - "Encryption:"
+        part: body
         condition: and
 
       - type: status
