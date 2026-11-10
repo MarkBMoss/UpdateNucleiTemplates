@@ -1,15 +1,15 @@
-id: everest_forms-8a017198-daf1-4779-a101-dc539e263e50
+id: everest_forms-0d61468b-8fda-4775-8099-a34ddf34566b
 
 info:
   name: >
-    Everest Forms <= 3.6.2 - Reflected Cross-Site Scripting via 'evf_toast_type' Parameter
+    Everest Forms <= 3.6.2 - Unauthenticated Arbitrary File Deletion via 'everest_forms_{form_id}_old_{field_id}' Parameter
   author: topscoder
-  severity: medium
+  severity: low
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/8a017198-daf1-4779-a101-dc539e263e50?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/0d61468b-8fda-4775-8099-a34ddf34566b?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
@@ -18,7 +18,7 @@ info:
     fofa-query: "wp-content/plugins/everest-forms/"
     google-query: inurl:"/wp-content/plugins/everest-forms/"
     shodan-query: 'http.html:"wp-content/plugins/everest-forms/"'
-  tags: cve,wordpress,wp-plugin,everest-forms,medium,candidate
+  tags: cve,wordpress,wp-plugin,everest-forms,low,candidate
 
 http:
   - method: GET

@@ -1,15 +1,15 @@
-id: fusion_builder-ebbd41a8-b9ff-4afe-bcfd-1df52d8d3b5f
+id: fusion_builder-ec9636d5-80bc-418e-9348-a1d2777bf1fc
 
 info:
   name: >
-    Avada (Fusion) Builder <= 3.16.1 - Unauthenticated Sensitive Information Exposure in 'args[link_target]' Parameter via {user_meta} Dynamic Data Token
+    Avada (Fusion) Builder <= 3.16.1 - Unauthenticated Stored Cross-Site Scripting via Form Notification Dynamic-Data action_hook
   author: topscoder
-  severity: low
+  severity: high
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/ebbd41a8-b9ff-4afe-bcfd-1df52d8d3b5f?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/ec9636d5-80bc-418e-9348-a1d2777bf1fc?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
@@ -18,7 +18,7 @@ info:
     fofa-query: "wp-content/plugins/fusion-builder/"
     google-query: inurl:"/wp-content/plugins/fusion-builder/"
     shodan-query: 'http.html:"wp-content/plugins/fusion-builder/"'
-  tags: cve,wordpress,wp-plugin,fusion-builder,low,candidate
+  tags: cve,wordpress,wp-plugin,fusion-builder,high,candidate
 
 http:
   - method: GET
