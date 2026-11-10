@@ -19553,6 +19553,7 @@
 ./poc/cve/CVE-2005-3128_8.yaml
 ./poc/cve/CVE-2005-3128_9.yaml
 ./poc/cve/CVE-2005-3344-1315.yaml
+./poc/cve/CVE-2005-3344.yaml
 ./poc/cve/CVE-2005-3344_1.yaml
 ./poc/cve/CVE-2005-3344_10.yaml
 ./poc/cve/CVE-2005-3344_11.yaml
@@ -19599,7 +19600,6 @@
 ./poc/cve/CVE-2005-3344_49.yaml
 ./poc/cve/CVE-2005-3344_5.yaml
 ./poc/cve/CVE-2005-3344_50.yaml
-./poc/cve/CVE-2005-3344_6.yaml
 ./poc/cve/CVE-2005-3344_7.yaml
 ./poc/cve/CVE-2005-3344_8.yaml
 ./poc/cve/CVE-2005-3344_9.yaml
@@ -37586,7 +37586,6 @@
 ./poc/cve/CVE-2015-10139.yaml
 ./poc/cve/CVE-2015-10140-ajax_load_more-10e98088-423d-45bb-ae90-51e895d2929b.yaml
 ./poc/cve/CVE-2015-10140.yaml
-./poc/cve/CVE-2015-10141.yaml
 ./poc/cve/CVE-2015-10141_1.yaml
 ./poc/cve/CVE-2015-10141_10.yaml
 ./poc/cve/CVE-2015-10141_11.yaml
@@ -49780,10 +49779,10 @@
 ./poc/cve/CVE-2018-6015.yaml
 ./poc/cve/CVE-2018-6015_1.yaml
 ./poc/cve/CVE-2018-6015_3.yaml
-./poc/cve/CVE-2018-6184.yaml
 ./poc/cve/CVE-2018-6184_1.yaml
 ./poc/cve/CVE-2018-6184_2.yaml
 ./poc/cve/CVE-2018-6184_3.yaml
+./poc/cve/CVE-2018-6184_4.yaml
 ./poc/cve/CVE-2018-6194-70c1302d994635e3b240661f877f003b.yaml
 ./poc/cve/CVE-2018-6194-wp_splashing_images-ae77b00e-bbcf-4fe2-ab7f-d2e21ef54d3e.yaml
 ./poc/cve/CVE-2018-6194_1.yaml
@@ -63699,10 +63698,10 @@
 ./poc/cve/CVE-2021-26691.yaml
 ./poc/cve/CVE-2021-26698.yaml
 ./poc/cve/CVE-2021-26699.yaml
+./poc/cve/CVE-2021-26702.yaml
 ./poc/cve/CVE-2021-26702_1.yaml
 ./poc/cve/CVE-2021-26702_2.yaml
 ./poc/cve/CVE-2021-26702_4.yaml
-./poc/cve/CVE-2021-26702_5.yaml
 ./poc/cve/CVE-2021-26703.yaml
 ./poc/cve/CVE-2021-26710.yaml
 ./poc/cve/CVE-2021-26710_1.yaml
@@ -66305,6 +66304,7 @@
 ./poc/cve/CVE-2021-40972_1.yaml
 ./poc/cve/CVE-2021-40972_2.yaml
 ./poc/cve/CVE-2021-40972_3.yaml
+./poc/cve/CVE-2021-40973.yaml
 ./poc/cve/CVE-2021-40973_1.yaml
 ./poc/cve/CVE-2021-40973_2.yaml
 ./poc/cve/CVE-2021-40973_3.yaml
@@ -73477,10 +73477,10 @@
 ./poc/cve/CVE-2022-3126.yaml
 ./poc/cve/CVE-2022-31260.yaml
 ./poc/cve/CVE-2022-31267.yaml
+./poc/cve/CVE-2022-31268.yaml
 ./poc/cve/CVE-2022-31268_1.yaml
 ./poc/cve/CVE-2022-31268_2.yaml
 ./poc/cve/CVE-2022-31268_3.yaml
-./poc/cve/CVE-2022-31268_5.yaml
 ./poc/cve/CVE-2022-31269.yaml
 ./poc/cve/CVE-2022-31269_1.yaml
 ./poc/cve/CVE-2022-31269_2.yaml
@@ -169668,8 +169668,8 @@
 ./poc/http/httpbin-xss.yaml
 ./poc/http/httpbin-xss_2.yaml
 ./poc/http/httpbin-xss_3.yaml
-./poc/http/httpd-config-8054.yaml
 ./poc/http/httpd-config-8055.yaml
+./poc/http/httpd-config.yaml
 ./poc/http/httpd-config_1.yaml
 ./poc/http/httpd-config_2.yaml
 ./poc/http/httpd-config_3.yaml
@@ -169859,8 +169859,8 @@
 ./poc/ibm/ibm-security-verify-panel.yaml
 ./poc/ibm/ibm-security-verify-panel_3.yaml
 ./poc/ibm/ibm-service-assistant-8116.yaml
-./poc/ibm/ibm-service-assistant-8117.yaml
 ./poc/ibm/ibm-service-assistant-8118.yaml
+./poc/ibm/ibm-service-assistant.yaml
 ./poc/ibm/ibm-service-assistant_2.yaml
 ./poc/ibm/ibm-spectrum-computing.yaml
 ./poc/ibm/ibm-spectrum-detect_1.yaml
@@ -171719,10 +171719,10 @@
 ./poc/joomla/joomla-component-vreview-sql.yml
 ./poc/joomla/joomla-config-dist-file.yaml
 ./poc/joomla/joomla-config-dist-file_1.yaml
-./poc/joomla/joomla-config-file-8374.yaml
 ./poc/joomla/joomla-config-file-8375.yaml
 ./poc/joomla/joomla-config-file-8376.yaml
 ./poc/joomla/joomla-config-file-8377.yaml
+./poc/joomla/joomla-config-file.yaml
 ./poc/joomla/joomla-config-file_1.yaml
 ./poc/joomla/joomla-config-file_2.yaml
 ./poc/joomla/joomla-config-file_3.yaml
@@ -275635,7 +275635,7 @@
 ./poc/php/phpmyadmin-setup_2.yaml
 ./poc/php/phpmyadmin-setup_3.yaml
 ./poc/php/phpmyadmin-setup_4.yaml
-./poc/php/phpmyadmin-setup_5_1.yaml
+./poc/php/phpmyadmin-setup_5.yaml
 ./poc/php/phpmyadmin-sql-9534.yaml
 ./poc/php/phpmyadmin-sql-9535.yaml
 ./poc/php/phpmyadmin-sql-9536.yaml
