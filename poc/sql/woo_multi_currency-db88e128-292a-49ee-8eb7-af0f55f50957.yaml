@@ -1,4 +1,4 @@
-id: woo_multi_currency-992836dd-4a76-450f-930c-a41e3065d05a
+id: woo_multi_currency-db88e128-292a-49ee-8eb7-af0f55f50957
 
 info:
   name: >
@@ -9,7 +9,7 @@ info:
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/992836dd-4a76-450f-930c-a41e3065d05a?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/db88e128-292a-49ee-8eb7-af0f55f50957?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 

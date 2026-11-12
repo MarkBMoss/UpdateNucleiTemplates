@@ -1,15 +1,15 @@
-id: invoicing-9a35cff6-f80c-47ce-9eef-ba56e38b7a12
+id: invoicing-b4cfca91-c897-4499-8ba3-7c45fe3e9005
 
 info:
   name: >
-    Payment forms, Buy now buttons, and Invoicing System | GetPaid <= 2.8.62 - Unauthenticated Stored Cross-Site Scripting
+    Payment forms, Buy now buttons, and Invoicing System | GetPaid <= 2.8.62 - Missing Authorization
   author: topscoder
   severity: high
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/9a35cff6-f80c-47ce-9eef-ba56e38b7a12?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/b4cfca91-c897-4499-8ba3-7c45fe3e9005?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 

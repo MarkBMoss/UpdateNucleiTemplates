@@ -1,15 +1,15 @@
-id: secure_custom_fields-d1238995-fb94-4b65-a730-83030ea7de3f
+id: secure_custom_fields-e199e9dc-96a9-4aee-b386-662993b6ede6
 
 info:
   name: >
-    Secure Custom Fields <= 6.9.7 - Authenticated (Contributor+) Insecure Direct Object Reference
+    Secure Custom Fields <= 6.9.7 - Authenticated (Administrator+) Stored Cross-Site Scripting
   author: topscoder
   severity: low
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/d1238995-fb94-4b65-a730-83030ea7de3f?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/e199e9dc-96a9-4aee-b386-662993b6ede6?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 

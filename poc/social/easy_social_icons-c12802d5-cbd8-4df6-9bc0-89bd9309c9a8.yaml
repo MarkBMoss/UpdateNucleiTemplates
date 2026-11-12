@@ -1,15 +1,15 @@
-id: easy_social_icons-c9d1bb31-ddc6-438f-b443-fedd25ac136e
+id: easy_social_icons-c12802d5-cbd8-4df6-9bc0-89bd9309c9a8
 
 info:
   name: >
-    Easy Social Icons <= 4.0.2 - Authenticated (Author+) Stored Cross-Site Scripting
+    Easy Social Icons <= 4.0.2 - Authenticated (Administrator+) Stored Cross-Site Scripting
   author: topscoder
   severity: low
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/c9d1bb31-ddc6-438f-b443-fedd25ac136e?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/c12802d5-cbd8-4df6-9bc0-89bd9309c9a8?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 

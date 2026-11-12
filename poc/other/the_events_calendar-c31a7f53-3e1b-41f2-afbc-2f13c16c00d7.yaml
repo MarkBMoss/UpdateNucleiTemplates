@@ -1,15 +1,15 @@
-id: the_events_calendar-16d5d7a1-6d90-44cd-a4cf-e55e83ea0670
+id: the_events_calendar-c31a7f53-3e1b-41f2-afbc-2f13c16c00d7
 
 info:
   name: >
-    The Events Calendar <= 6.18.3 - Authenticated (Contributor+) Stored Cross-Site Scripting
+    The Events Calendar <= 6.18.3 - Unauthenticated Arbitrary Shortcode Execution
   author: topscoder
   severity: low
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/16d5d7a1-6d90-44cd-a4cf-e55e83ea0670?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/c31a7f53-3e1b-41f2-afbc-2f13c16c00d7?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 

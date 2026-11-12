@@ -1,15 +1,15 @@
-id: azexo_store_locator-3b10a096-23fc-4f4d-b777-89b3bbcfe462
+id: azexo_store_locator-50ab312c-da30-4255-8aa3-ef05dc0d50a4
 
 info:
   name: >
-    AZEXO Store Locator <= 1.4 - Missing Authorization
+    AZEXO Store Locator <= 1.4 - Authenticated (Subscriber+) Arbitrary File Write
   author: topscoder
-  severity: high
+  severity: low
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/3b10a096-23fc-4f4d-b777-89b3bbcfe462?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/50ab312c-da30-4255-8aa3-ef05dc0d50a4?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
@@ -18,7 +18,7 @@ info:
     fofa-query: "wp-content/plugins/azexo-store-locator/"
     google-query: inurl:"/wp-content/plugins/azexo-store-locator/"
     shodan-query: 'http.html:"wp-content/plugins/azexo-store-locator/"'
-  tags: cve,wordpress,wp-plugin,azexo-store-locator,high,candidate
+  tags: cve,wordpress,wp-plugin,azexo-store-locator,low,candidate
 
 http:
   - method: GET
