@@ -1,15 +1,15 @@
-id: content_protector-de47ba6f-08ab-4ed0-8d3f-745082461344
+id: content_protector-81cf06d2-9b5a-4f9f-adf9-890b46db7783
 
 info:
   name: >
-    Passster – Password Protect Pages and Content <= 4.3.21 - Authenticated (Contributor+) Stored Cross-Site Scripting
+    Passster <= 4.3.21 - Authenticated (Contributor+) Stored Cross-Site Scripting via 'metavalue' Parameter
   author: topscoder
   severity: low
   description: >
     
   reference:
     - https://github.com/topscoder/nuclei-wordfence-cve
-    - https://www.wordfence.com/threat-intel/vulnerabilities/id/de47ba6f-08ab-4ed0-8d3f-745082461344?source=api-scan
+    - https://www.wordfence.com/threat-intel/vulnerabilities/id/81cf06d2-9b5a-4f9f-adf9-890b46db7783?source=api-scan
   classification:
     cvss-metrics: 
     cvss-score: 
