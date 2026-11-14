@@ -3,11 +3,11 @@ id: springboot-beans 1
 info:
   name: Detect Springboot Beans Actuator
   author: ajaysenr
-  severity: low
+  severity: medium
   description: Displays a complete list of all the Spring beans in the application
   tags: springboot,disclosure
 
-requests:
+http:
   - payloads:
       Subdomains: /home/mahmoud/Wordlist/AllSubdomains.txt
     attack: sniper

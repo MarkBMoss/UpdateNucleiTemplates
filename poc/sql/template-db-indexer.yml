@@ -8,14 +8,24 @@ on:
 
 jobs:
   index:
-    runs-on: ubuntu-latest
-    if: github.repository == 'projectdiscovery/nuclei-templates'
+    runs-on: ubuntu-latest-16-cores
+    if: github.repository == '0xKayala/Custom-Nuclei-Templates'
     steps:
-      - uses: projectdiscovery/actions/generate/db-indexer@v1
+      - name: Set up Go
+        uses: actions/setup-go@v5
         with:
-          token: '${{ secrets.ACCESS_TOKEN }}'
-          mode: 'templates'
-          args: '-eft'
+          go-version: 1.21.x
+
+      - name: Installing Indexer
+        run: |
+          git config --global url."https://${{ secrets.ACCESS_TOKEN }}@github".insteadOf https://github
+          git clone https://github.com/projectdiscovery/nucleish-api.git
+          cd nucleish-api/cmd/generate-index/
+          go install
+
+      - name: Generate Index
         env:
           AWS_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
           AWS_SECRET_KEY: ${{ secrets.AWS_SECRET_KEY }}
+        run: |
+          generate-index -mode templates

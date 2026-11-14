@@ -2,23 +2,23 @@ id: smtp-service-detect
 
 info:
   name: SMTP Service Detection
-  author: pussycat0x,userdehghani
+  author: pussycat0x
   severity: info
   description: |
     SMTP is part of the application layer of the TCP/IP protocol. Using a process called “store and forward,” SMTP moves your email on and across networks.
   metadata:
     max-request: 1
-  tags: network,service,smtp,detect,mail,detection,tcp
+  tags: network,service,smtp,detect
 
 tcp:
   - inputs:
       - data: "\r\n"
     host:
       - "{{Hostname}}"
-    port: 25,2525,465,587
+    port: 25
 
     matchers:
       - type: word
         words:
           - "SMTP"
-# digest: 490a00463044022061a8dacb933cb38524c81348015a0609146ee1c4509f75cb9199b847a9a1d58702201b12c7ed7e3d2e6f8694f32a6729e0ef8799775e0e4a5f7fc6da5270a4c7d6b7:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022065a129f2ea0bc8e89017da0a5d9d9f407d971bb8aaee49d2fe854a3f3b85dd3c022100d438048d4eb66c42c6f41921fddae31707b57ff55dc7d1c93135944d40ff5c53:922c64590222798bb761d5b6d8e72950
