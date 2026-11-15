@@ -8,7 +8,7 @@ info:
     Extract the Subject Alternative Name (SAN) from the target's certificate. SAN facilitates the usage of additional hostnames with the same certificate.
   metadata:
     max-request: 1
-  tags: ssl
+  tags: ssl,tls
 ssl:
   - address: "{{Host}}:{{Port}}"
 
@@ -16,5 +16,4 @@ ssl:
       - type: json
         json:
           - ".subject_an[]"
-
-# digest: 490a0046304402204b75178e9bd16b65589ab163f832e90ff572000ebbbb783fefa2229b49bbd21802202f08a9ba96f902169d7e1f1b4b530a93b18b26b253f11d63baa7c59872cb99a9:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a004830460221008cccda698acea30a1ef3a6d1c67091b3e04fc070516c7ca2a07030adf69d6204022100c853e64c8f6bcf10f27014694ec322d2b7769d210836103f5b35756c00f9fe52:922c64590222798bb761d5b6d8e72950

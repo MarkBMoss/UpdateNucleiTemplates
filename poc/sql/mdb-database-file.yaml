@@ -13,7 +13,7 @@ info:
     cwe-id: CWE-200
   metadata:
     max-request: 341
-  tags: fuzz,mdb,asp
+  tags: fuzz,mdb,asp,fuzzing
 
 http:
   - raw:
@@ -44,5 +44,4 @@ http:
       - type: status
         status:
           - 200
-
-# digest: 4a0a00473045022100b8c18fabbf7570876e7e8e0cde89698b72b46595559fb32c15a573b49c8d8ca20220510c4db98638c334eb53b77c93ac77d82895606a1f0295b3cdff3d37ca0f6997:922c64590222798bb761d5b6d8e72950
+# digest: 490a0046304402206b562150655fa9fa2276b77b4db3996c9817ba23af6c955e9c1d8bfdb0dcf09702201ea4b0f984a680eab465fd6d66e8f9d0c1d9ce874c522c223b2cfce0588b32a1:922c64590222798bb761d5b6d8e72950

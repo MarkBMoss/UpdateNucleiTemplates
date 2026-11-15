@@ -7,12 +7,16 @@ info:
   description: Phoronix Test Suite panel was detected.
   classification:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
-    cvss-score: 0
     cwe-id: CWE-200
+    cpe: cpe:2.3:a:phoronix-media:phoronix_test_suite:*:*:*:*:*:*:*:*
   metadata:
     max-request: 1
+    vendor: phoronix-media
+    product: phoronix_test_suite
     shodan-query: http.title:"phoronix-test-suite"
-  tags: panel,phoronix
+    fofa-query: title="phoronix-test-suite"
+    google-query: intitle:"phoronix-test-suite"
+  tags: panel,phoronix,phoronix-media
 
 http:
   - method: GET
@@ -35,5 +39,4 @@ http:
         group: 1
         regex:
           - '<title>Phoronix Test Suite (.*) - Phoromatic - Welcome</title>'
-
-# digest: 4a0a0047304502207d000bd8eb2d1f922aed3a1ab29ab0f6027cb32e00d9a5f91f4b6e87bb6ec5de022100dc664bb104ab52ff8c2d12b8c8df77f70adedceb873c94e0a9d04703a54a2ef8:922c64590222798bb761d5b6d8e72950
+# digest: 490a0046304402202f16965ef2d0871c3b68bd99465cda01848faf44769b37271efaa7a746017cb402203b1759434093090c7425d50e0b1263b69c6c9c3692e00eba25c75d4841dd269c:922c64590222798bb761d5b6d8e72950

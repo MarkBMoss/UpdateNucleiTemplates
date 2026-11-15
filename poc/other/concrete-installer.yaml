@@ -4,9 +4,14 @@ info:
   name: Concrete Installer
   author: pussycat0x
   severity: high
+  description: Concrete is susceptible to the Installation page exposure due to misconfiguration.
+  classification:
+    cpe: cpe:2.3:a:concretecms:concrete_cms:*:*:*:*:*:*:*:*
   metadata:
     verified: true
     max-request: 1
+    vendor: concretecms
+    product: concrete_cms
     shodan-query: title:"Install concrete"
   tags: misconfig,exposure,install,concrete
 
@@ -33,5 +38,4 @@ http:
       - type: status
         status:
           - 200
-
-# digest: 4b0a004830460221009a338753562420ba568058a3110857ab742196dafc95e5eb578f5225df06aa58022100e15e9a5e375d83811ad6af9fa3187ad6676ebead2af6e432a4b3d8bc4c6885fc:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a004730450220661d8d20c6459ea53952bfe283fa589edaa29dc1bce04cffbc2a4189962399e10221008c4df65562cd02de6199809a725190ebfd8d05a4b35fe2123deb02ab251836b5:922c64590222798bb761d5b6d8e72950

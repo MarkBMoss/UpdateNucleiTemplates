@@ -5,7 +5,7 @@ info:
   author: Ice3man
   severity: info
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/swagger/index.html"

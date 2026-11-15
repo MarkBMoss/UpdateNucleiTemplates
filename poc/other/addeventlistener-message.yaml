@@ -1,11 +1,13 @@
 id: addeventlistener-message
+
 info:
   name: AddEventlistener('message') in body
   author: yavolo
   severity: info
   tags: xss
   reference: https://github.com/yavolo/nuclei-templates/
-http:
+
+requests:
   - method: GET
     path:
       - '{{BaseURL}}/'

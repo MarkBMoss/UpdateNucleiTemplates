@@ -4,6 +4,7 @@ info:
   name: VerneMQ Status Page
   author: geeknik
   severity: low
+  description: VerneMQ Status Page is exposed.
   reference:
     - https://github.com/vernemq/vernemq
   metadata:
@@ -29,5 +30,4 @@ http:
       - type: status
         status:
           - 200
-
-# digest: 490a004630440220150b16aa863f5cdd41717a2b5f2f22ed5347c2966531a268422b5409ce98a3770220678cf95b55ca1ab947231aa609a5c49686ed3acf8bafba61399899d237b45163:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a00483046022100bb98db384e3495b227255470bbb66dc3330351a31a1e392a81605c807739bdab022100a3bb97b96ed7c712a53151cd6f358c34fd4e95ed281c28e2a5966094dc962c18:922c64590222798bb761d5b6d8e72950

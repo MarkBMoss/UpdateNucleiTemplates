@@ -7,10 +7,12 @@ info:
   description: Strapi CMS Documentation login panel was detected.
   classification:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
-    cvss-score: 0
     cwe-id: CWE-200
+    cpe: cpe:2.3:a:strapi:strapi:*:*:*:*:node.js:*:*:*
   metadata:
     max-request: 2
+    vendor: strapi
+    product: strapi
   tags: strapi,panel
 
 http:
@@ -38,5 +40,4 @@ http:
       - type: status
         status:
           - 200
-
-# digest: 4a0a004730450221008b82ce5ef2d13e4c92a314c3e332b6a8e5e5abb480c999f79771d7f0ab121428022028ba4513fef9237f07fdb351a65b7b6366936ae11dd7bbfa2f49e2870f1c629a:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022100a5011a64a0281b9817c526d1e01a6f10c611e4bf73837370fe6a4f9e9d3af6c902203cd8bb9fb467aa22f5bfca4dde0fead8cb5a9694d9a461f70363c4a1be83730b:922c64590222798bb761d5b6d8e72950

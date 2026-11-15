@@ -5,7 +5,7 @@ info:
   author: foulenzer
   severity: low
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/"

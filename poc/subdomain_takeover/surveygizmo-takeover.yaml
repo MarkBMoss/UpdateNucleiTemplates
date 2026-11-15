@@ -4,6 +4,7 @@ info:
   name: surveygizmo takeover detection
   author: pdteam
   severity: high
+  description: surveygizmo takeover was detected.
   reference:
     - https://github.com/EdOverflow/can-i-take-over-xyz
   metadata:
@@ -25,4 +26,8 @@ http:
         words:
           - data-html-name
 
-# digest: 4a0a00473045022100a55e4f33d81454252fcf8d37a2c68349b4245d4dfa731646f0d365078d22130d022020c3c53bbcb36abadb0f1f4fa8064771b006b2fc193a1bd0acd4a59f9e587cae:922c64590222798bb761d5b6d8e72950
+    extractors:
+      - type: dsl
+        dsl:
+          - cname
+# digest: 490a004630440220260c39fbe2b8603abe3d7ffe55b5ccd3fbfac262c14175959a4f9db88f5ff158022074d335497ce2ccdd831b91bff6320334c457e41cfc5467f84399b1b7910e2806:922c64590222798bb761d5b6d8e72950

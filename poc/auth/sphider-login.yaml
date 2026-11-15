@@ -9,11 +9,13 @@ info:
     - https://www.exploit-db.com/ghdb/6641
   classification:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
-    cvss-score: 0
     cwe-id: CWE-200
+    cpe: cpe:2.3:a:sphider:sphider:*:*:*:*:*:*:*:*
   metadata:
     max-request: 3
-  tags: edb,panel
+    vendor: sphider
+    product: sphider
+  tags: edb,panel,sphider
 
 http:
   - method: GET
@@ -33,5 +35,4 @@ http:
       - type: status
         status:
           - 200
-
-# digest: 4a0a004730450220189d990c7ed8618187a0925397f404775be07d3ca9d4d2be91643fdf0321a6d6022100c42cb786ca05f7be0ce6361bdb70299b93507de5f713637a2cae52fc639779ca:922c64590222798bb761d5b6d8e72950
+# digest: 490a0046304402203a16372f689f8a01fdc0eea981f34eca15057d0f907784775d0a84a2a9fe22e20220166dab10e1255f7896b2d53d2234523c74f390b3a4ff31bec63fd28d5c2efdb1:922c64590222798bb761d5b6d8e72950

@@ -10,7 +10,7 @@ info:
     - https://support.sap.com/en/tools/connectivity-tools/saprouter.html
   metadata:
     max-request: 1
-  tags: network,sap,misconfig
+  tags: network,sap,misconfig,saprouter,tcp
 
 tcp:
   - inputs:
@@ -28,4 +28,4 @@ tcp:
           - "Routtab"
           - "Working directory"
           - "SAProuter Connection Table"
-# digest: 4b0a00483046022100eec2aecc8e57cf5a1369be64c746474e6d82a4f64c82dd14c20ace85b158a5fa022100ee5c4c3824ca70141ce17c48a0d6589e1645f32f96e3379169588ebd6ed72769:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022100a20a823f331805c8a5c869eb3ee01f8b9bb7ea0b5941c76e1dc0dec21fe86ae502205820dfe57e65d5347698d16ee077267e80d6c7a725ee1f849afdb5f232a94365:922c64590222798bb761d5b6d8e72950

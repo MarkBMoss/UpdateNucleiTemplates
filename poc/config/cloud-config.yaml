@@ -4,6 +4,7 @@ info:
   name: Cloud Config File Exposure
   author: DhiyaneshDK,Hardik-Solanki
   severity: medium
+  description: Cloud Config file is exposed.
   reference: https://www.exploit-db.com/ghdb/7959
   metadata:
     verified: true
@@ -31,5 +32,4 @@ http:
       - type: status
         status:
           - 200
-
-# digest: 4a0a00473045022100970486dc36dabda0cb72ebcd42a3ad2c9d85b5ac543b34a5076e8ac6d22fd56f022027efb3393ed9d640b8980d808e86bafdb57b193d68947020e408fdfc18a4baf5:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a0047304502204b0c198a6690a10a5ed33df4c2e28cecc7ecf10933cf2ea03dff24929cb42da5022100bb99f15c50060c1d59c11d6ac4676396c9844ee9fbbb2bbb5889f56406080fea:922c64590222798bb761d5b6d8e72950

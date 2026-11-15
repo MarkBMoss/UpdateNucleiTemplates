@@ -4,6 +4,7 @@ info:
   name: Intercom Takeover Detection
   author: pdteam
   severity: high
+  description: Intercom takeover was detected.
   reference:
     - https://github.com/EdOverflow/can-i-take-over-xyz/issues/69
   metadata:
@@ -27,4 +28,8 @@ http:
           - 'This page is reserved for artistic dogs.'
         condition: and
 
-# digest: 4b0a00483046022100f12c6ca5696fa66cf34bbbee7629634f363adba0fdbcd0ebd88829c46adbf907022100d1e7cb89fbe5ce9e0ea10c06abb4accdf589153173c8ce503669a5df88597419:922c64590222798bb761d5b6d8e72950
+    extractors:
+      - type: dsl
+        dsl:
+          - cname
+# digest: 490a0046304402200296a9e7748cefb908936efe0a504dff1fe5f82236d1ee6ab7a7b09e22157531022024dc1e12967483bfe68e53d4a45d223ef7196806d272ef1e32e438a7d8b5ab56:922c64590222798bb761d5b6d8e72950

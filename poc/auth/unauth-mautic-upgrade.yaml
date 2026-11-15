@@ -4,6 +4,7 @@ info:
   name: Unauthenticated Mautic Upgrade.php Exposure
   author: huowuzhao
   severity: high
+  description: Upgrade.php page in Mautic is exposed.
   metadata:
     verified: true
     max-request: 1
@@ -32,5 +33,4 @@ http:
       - type: status
         status:
           - 200
-
-# digest: 4a0a0047304502207e93d8a408f2b4e4e1398ae3f7d86c63384e0701b2cf30e726d05e60225d000e022100c61ba17d47afdda9fee64db2cd690ca095c7fd15d4f6988f3cf06e5c4ce7993d:922c64590222798bb761d5b6d8e72950
+# digest: 490a004630440220395d4d9099c0b14ad7d129f6d86b88bfefdc9395094624b6b00081f206eacf0002207daacfe8ec4a32ba3d280e850c90530d1ad9cec6c63404e94ef1b968b1ac7dd8:922c64590222798bb761d5b6d8e72950

@@ -4,9 +4,14 @@ info:
   name: openSIS Installation Wizard
   author: DhiyaneshDk
   severity: high
+  description: openSIS is susceptible to the Installation page exposure due to misconfiguration.
+  classification:
+    cpe: cpe:2.3:a:os4ed:opensis:*:*:*:*:*:*:*:*
   metadata:
     verified: true
     max-request: 1
+    vendor: os4ed
+    product: opensis
     shodan-query: title:"openSIS"
   tags: misconfig,opensis,install,exposure
 
@@ -30,5 +35,4 @@ http:
       - type: status
         status:
           - 200
-
-# digest: 490a00463044022076f1f129e55eb192c7a32f316c149c0a4bd9ff75f1f2313af7e9ddc3b68c09d70220056dc1fafb5b54f182621141cf79e4d13887b62b1fc2824fbf7ef5f0fbf7fc60:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a004730450220332848d7462d3b6dc046b1f35254ef08160e9a0b85a40ed79ed6ae9bb6bcb37a022100bfa9fa0acf7181c634e799f8752995a5d36d9ec4f7a2acbcc1f0105bb7b2568c:922c64590222798bb761d5b6d8e72950

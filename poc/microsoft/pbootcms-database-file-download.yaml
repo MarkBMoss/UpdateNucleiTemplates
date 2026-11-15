@@ -14,7 +14,7 @@ info:
     cwe-id: CWE-89
   metadata:
     max-request: 1
-  tags: pbootcms,db,exposure,database,sqlite
+  tags: pbootcms,db,exposure,database,sqlite,sqli
 
 http:
   - method: GET
@@ -35,5 +35,4 @@ http:
       - type: status
         status:
           - 200
-
-# digest: 4b0a00483046022100d3d6817f5ef153a11819b3b25cc8cbb2b86775f9c41c57d52bcb228c84662786022100d980c25d1e941dce7e07856b34886409f80a611250fe4dcfa5193b7aa30cffd2:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a0047304502207970352f3a09cf67dcb5882d046e46d3921125fdf3a938f30c3cb5e438510c9b022100eb7e1248d089a259402df0cfb330406bfa8a86950517329b7caf2c4850261ed8:922c64590222798bb761d5b6d8e72950
