@@ -4,14 +4,9 @@ info:
   name: Pulse Secure Version
   author: dadevel
   severity: info
-  classification:
-    cpe: cpe:2.3:a:pulsesecure:pulse_connect_secure:*:*:*:*:*:*:*:*
   metadata:
     max-request: 2
-    vendor: pulsesecure
-    product: pulse_connect_secure
-    shodan-query: cpe:"cpe:2.3:a:pulsesecure:pulse_connect_secure"
-  tags: pulse,panel,pulsesecure
+  tags: pulse,panel
 
 http:
   - method: GET
@@ -43,4 +38,5 @@ http:
         part: body
         regex:
           - "(?i)<string>([^<]+)</string>"
-# digest: 4b0a00483046022100d89c1dc1b0c95fd003fc8c5618ad7437268b523fa7cf082517376933e09c051d022100db652e1f9349cff3a3f229f597212485ce9455c4d5093ca893c2471eafd67025:922c64590222798bb761d5b6d8e72950
+
+# digest: 490a00463044022061002e68a669bc8890e0dee0cb715d6f1c91f900d2d413bdbd985de4541f6249022067ee48b360d660227fd6575e14abd97124f58d6fcea16613443a0f060f8fa3dd:922c64590222798bb761d5b6d8e72950
