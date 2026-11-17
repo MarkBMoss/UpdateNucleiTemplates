@@ -9,7 +9,7 @@ info:
     - 
   tags: xss
 
-http:
+requests:
   - method: GET
 
     path:

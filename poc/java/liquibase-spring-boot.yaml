@@ -7,7 +7,7 @@ info:
   description: the liquibase endpoint provides information about database changes
   tags: springboot,exposure
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/liquibase"

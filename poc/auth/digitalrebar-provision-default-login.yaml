@@ -8,7 +8,7 @@ info:
   severity: high
   tags: rackn,digitalrebar,default-login
 
-http:
+requests:
   - raw:
       - |
         GET /api/v3/users HTTP/1.1

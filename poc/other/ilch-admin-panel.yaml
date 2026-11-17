@@ -7,12 +7,18 @@ info:
   description: Ilch CMS admin login panel was detected.
   classification:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
-    cvss-score: 0
     cwe-id: CWE-200
+    cpe: cpe:2.3:a:ilch:cms:*:*:*:*:*:*:*:*
   metadata:
     verified: true
     max-request: 1
-    shodan-query: http.title:"Ilch"
+    vendor: ilch
+    product: cms
+    shodan-query:
+      - http.title:"Ilch"
+      - http.title:"ilch"
+    fofa-query: title="ilch"
+    google-query: intitle:"ilch"
   tags: panel,ilch,cms
 
 http:
@@ -30,5 +36,4 @@ http:
       - type: status
         status:
           - 200
-
-# digest: 4a0a0047304502205fb387d2a58a2a74f4e8f414d9956054dd744cd331acd03b72aad1850d1368e1022100eff1828ffe9065b4dfb58a59feecc53a3b19659decdd10bef305d34012cc0ab2:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022071f78eb518a3776ba0c56124cae3f6e4c40d7626b3292cf38c098c8daa53de39022100b371050df087f9ce98e99c5a0b485e6c263dadeeaaacaa388b1fbf2d57317541:922c64590222798bb761d5b6d8e72950

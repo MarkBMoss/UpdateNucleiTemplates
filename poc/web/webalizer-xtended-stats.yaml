@@ -4,6 +4,7 @@ info:
   name: Webalizer Xtended Statistics Exposed
   author: ritikchaddha
   severity: low
+  description: Webalizer Xtended Statistics is exposed.
   reference:
     - https://www.patrickfrei.ch/webalizer/
   metadata:
@@ -30,5 +31,4 @@ http:
       - type: status
         status:
           - 200
-
-# digest: 4a0a00473045022035e49538161a1816b02f3b1dff9a00c4f4be3a258b6b9f910b77ad9c1f7e0f02022100dc611d3ab1647bc0c3777607238115983f76be21e1603abdb3c4571903b5f603:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022057551497dc4aeb9166e946234402658a1b154a70e393cff4f803a3a160ed364b022100925ba7cfcc87fbcc93eacd39806fae54b3ceb624426c00c788bcb837776c721a:922c64590222798bb761d5b6d8e72950

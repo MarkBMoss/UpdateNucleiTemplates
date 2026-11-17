@@ -10,7 +10,7 @@ info:
   severity: info
   tags: rackn,digitalrebar,webserver,panel
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/ui"

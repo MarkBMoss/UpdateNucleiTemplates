@@ -4,6 +4,7 @@ info:
   name: uptimerobot takeover detection
   author: pdteam
   severity: low
+  description: uptimerobot takeover was detected.
   reference:
     - https://exploit.linuxsec.org/uptimerobot-com-custom-domain-subdomain-takeover/
     - https://github.com/EdOverflow/can-i-take-over-xyz/issues/45
@@ -36,4 +37,8 @@ http:
         status:
           - 404
 
-# digest: 4b0a00483046022100dc400ad371fbecea451da1e543b2252087b69ac26f3bd2abb99db8bd6b6f4fb70221008f740e9dfa30c56335b70ceebed2b684eda34ceb848d12e1e2bcf37d32e3f56a:922c64590222798bb761d5b6d8e72950
+    extractors:
+      - type: dsl
+        dsl:
+          - cname
+# digest: 4a0a0047304502204d6a00f486435be185826bb7ae9198aefb90efa1c0cb37f0777bfe607e33792e022100d22e90db97932fee9f55871ff07aec33ad82d5ea0b1fcb8607a2ebc423e48696:922c64590222798bb761d5b6d8e72950

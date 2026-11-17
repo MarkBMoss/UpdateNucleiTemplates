@@ -7,7 +7,7 @@ info:
   description: Obtain cobbler version information
   tags: tech,cobbler,api
 
-http:
+requests:
   - method: POST
     path:
       - "{{BaseURL}}/cobbler_api"

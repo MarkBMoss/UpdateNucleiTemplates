@@ -6,7 +6,7 @@ info:
   severity: info
   tags: panel,spring-cloud
 
-http:
+requests:
   - method: GET
     path:
       - '{{BaseURL}}:8081'

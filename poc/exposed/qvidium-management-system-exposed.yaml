@@ -4,6 +4,7 @@ info:
   name: QVidium Management System Exposed
   author: tess
   severity: medium
+  description: QVidium Management System is Exposed.
   metadata:
     verified: true
     max-request: 1
@@ -35,5 +36,4 @@ http:
       - type: status
         status:
           - 200
-
-# digest: 4a0a00473045022031ae98aa8660ca85adfdd45aa1180d5a4b42c4ac851298bc831674960c5c4838022100eebb83fdbf83b3a3a68b4515f1b9d48b1f58197abfb5a5651521285a3ac47ba9:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a00483046022100e8ac36f969777407e1c50e2e0dcf039a2368c39fe542c0e101e045be6072bc93022100bd6220948d1cde98363dc4d07ad410676041cc0eab9d54c37ace9cb63ece3770:922c64590222798bb761d5b6d8e72950

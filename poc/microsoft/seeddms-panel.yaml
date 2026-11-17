@@ -7,11 +7,17 @@ info:
   description: SeedDMS login panel was detected.
   classification:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
-    cvss-score: 0
     cwe-id: CWE-200
+    cpe: cpe:2.3:a:seeddms:seeddms:*:*:*:*:*:*:*:*
   metadata:
     max-request: 2
-    shodan-query: http.title:"SeedDMS"
+    vendor: seeddms
+    product: seeddms
+    shodan-query:
+      - http.title:"SeedDMS"
+      - http.title:"seeddms"
+    fofa-query: title="seeddms"
+    google-query: intitle:"seeddms"
   tags: panel,seeddms,login
 
 http:
@@ -36,5 +42,4 @@ http:
       - type: status
         status:
           - 200
-
-# digest: 490a0046304402207def16e2467d759ac1f766655ad41cdd37c83d2885029a42a1b120aa912107eb022021abe57c97934eb9ef44e9d0f03366f65b37fa161447a74f4990756a1c188dec:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a00483046022100f235949f380f7a418734fb1211403cc10447925626d9232d1670782c8de005ba022100fa51e36b433462126f1374458027f93c4f01a141b2606d6f450b7778f38d023a:922c64590222798bb761d5b6d8e72950

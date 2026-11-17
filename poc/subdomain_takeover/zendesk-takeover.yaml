@@ -4,6 +4,7 @@ info:
   name: Zendesk Takeover Detection
   author: pdteam
   severity: high
+  description: Zendesk takeover was detected.
   reference:
     - https://github.com/EdOverflow/can-i-take-over-xyz/issues/23
     - https://hackerone.com/reports/869605
@@ -29,4 +30,8 @@ http:
           - "Help Center Closed"
         condition: or
 
-# digest: 4a0a00473045022100d23e43cb3494d8c45e5f2067eb2a364cc1f31806dc75b1e856bf23fa7a1a67c2022039385a0ea1220cabe375f9cf31f590f09e199bada9e52ddf0a618ce3aa015f04:922c64590222798bb761d5b6d8e72950
+    extractors:
+      - type: dsl
+        dsl:
+          - cname
+# digest: 4a0a00473045022006714154dda2b92746069118171542802db13be4684a7916e628ce9929657548022100bb1ba71f52399210ad5eb94a3529c6ec82e962f94b6d65969d810ea7857cb4c0:922c64590222798bb761d5b6d8e72950

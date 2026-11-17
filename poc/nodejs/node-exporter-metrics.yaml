@@ -5,15 +5,18 @@ info:
   author: pussycat0x
   severity: low
   description: Information Disclosure of Garbage Collection
-  metadata:
-    max-request: 1
-  tags: node,exposure,debug,misconfig
+  tags: node,exposure,debug
 
-http:
-  - method: GET
-    path:
-      - "{{BaseURL}}/metrics"
+requests:
+  - payloads:
+      Subdomains: /home/mahmoud/Wordlist/AllSubdomains.txt
+    attack: sniper
+    threads: 100
 
+    raw:
+      - |
+        GET /metrics HTTP/1.1
+        Host: {{Subdomains}}
     matchers-condition: and
     matchers:
       - type: word
@@ -26,5 +29,3 @@ http:
       - type: status
         status:
           - 200
-
-# digest: 490a00463044022019e1723235e1e41b38838bc5ba2cce876ce4148a7afaea2ee9844cd4a8c93226022039b5ffe270c416903ea017baf055f220c6af9f37707c87b72506fe64f39c7b1a:922c64590222798bb761d5b6d8e72950

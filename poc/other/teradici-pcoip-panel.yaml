@@ -7,10 +7,12 @@ info:
   description: Teradici PCoIP Zero Client login panel was detected.
   classification:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
-    cvss-score: 0
     cwe-id: CWE-200
+    cpe: cpe:2.3:a:teradici:pcoip_client:*:*:*:*:*:*:*:*
   metadata:
     max-request: 1
+    vendor: teradici
+    product: pcoip_client
   tags: panel,teradici,pcoip
 
 http:
@@ -30,5 +32,4 @@ http:
       - type: status
         status:
           - 200
-
-# digest: 4a0a00473045022100a4f9f1807a54478542c8d0d45d496376f00e65cdb9856503a64be3d42e4f4f77022038127ba1e7c8e3e9823997e30edfeac6f3f2869baacbd52301d3c55809448f92:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a00483046022100802c1027f3cf5ded2dbee69f145b6470263e21f9d6a80209547c8bee9d77aee3022100dcf49e5117bd13a68a0255077068802d8839a4f7dce0ce8eb41f0ab7dfe63686:922c64590222798bb761d5b6d8e72950

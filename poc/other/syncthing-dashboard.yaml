@@ -4,11 +4,16 @@ info:
   name: Syncthing Dashboard Exposure
   author: fabaff
   severity: medium
+  description: Syncthing Dashboard is exposed.
   reference:
     - https://syncthing.net/
+  classification:
+    cpe: cpe:2.3:a:syncthing:syncthing:*:*:*:*:*:*:*:*
   metadata:
     verified: true
     max-request: 1
+    vendor: syncthing
+    product: syncthing
     shodan-query: http.html:'ng-app="syncthing"'
   tags: misconfig,syncthing,exposure
 
@@ -32,5 +37,4 @@ http:
       - type: status
         status:
           - 200
-
-# digest: 4b0a00483046022100dd3f9c0bae3af19d9564ebed31c708fc6ba860d21079b1a685425a51c94bf63b022100b9b3ba3df0570cd968de67dab8e9fd222b1f15aefda77460032a100924957c84:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a004730450220261469958553dbfe6b08258869bf806d5a684bb633338201a900e49bb66fcdbd022100b125653ce8c47087bed6d27911d40c0b58e2e9dd0e7d6c7766a4467cad8d1c04:922c64590222798bb761d5b6d8e72950

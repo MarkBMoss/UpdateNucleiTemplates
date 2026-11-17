@@ -1,16 +1,19 @@
-id: basic-cswsh-request
-
+author: qaisar afridi
+id: cswsh
 info:
-  name: Basic cswsh Request
-  author: pdteam
-  severity: info
-
-websocket:
-  - address: '{{Scheme}}://{{Hostname}}'
-    headers: 
-      Origin: 'http://evil.com'
-    matchers:
-      - type: word
-        words:
-          - true
-        part: success
+  description: Detects potential CSWSH vulnerabilities in the target
+  name: Cross-Site WebSocket Hijacking (CSWSH)
+  severity: high
+requests:
+- matchers:
+  - part: body
+    regex:
+    - WebSocket connection established
+    type: regex
+  method: GET
+  path:
+  - /ws
+  - /chat
+tags:
+- web
+- cswsh

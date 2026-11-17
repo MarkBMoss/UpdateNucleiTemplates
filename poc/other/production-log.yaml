@@ -4,6 +4,7 @@ info:
   name: Production Log File Disclosure
   author: geeknik
   severity: low
+  description: Production log file was exposed.
   metadata:
     verified: true
     max-request: 3
@@ -34,5 +35,4 @@ http:
       - type: status
         status:
           - 200
-
-# digest: 4a0a0047304502204f46774f54879b8b387b742e70329d14c47fd4ab865dd250079e6d3a8c53fdfc0221009aa0cecd1b50fd59991b10a2ebc1056a01308a4e8ab4c2584bb2fba04df515e3:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022100c99385287f282afe2a0656369ef2d33852a4872ae79191edf7d6fbcbdcf08fa0022044f02e830c156ce7629401da28a9f15cda7e9ff06c5956bbacb1f1b1c6d07979:922c64590222798bb761d5b6d8e72950

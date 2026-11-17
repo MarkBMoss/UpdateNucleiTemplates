@@ -4,6 +4,7 @@ info:
   name: Tongda User Session Disclosure
   author: ritikchaddha
   severity: medium
+  description: Tongda User session exposed.
   reference:
     - https://mp.weixin.qq.com/s/llyGEBRo0t-C7xOLMDYfFQ
   metadata:
@@ -33,5 +34,4 @@ http:
       - type: status
         status:
           - 200
-
-# digest: 4a0a00473045022042c55572197fe62590ea68bfcffe5fefb8f20e640ce01f73b8d09827525e29de022100934eadb97937bc16763ec5d9221b7c1f6c41f985195db21250625142ef796973:922c64590222798bb761d5b6d8e72950
+# digest: 490a0046304402201c9a8ee33525bba8f8b67964b48d257c1b3b8c211917a0d4684f8fd8e5f32537022010e41a0ad400d24942a67b50cbd704c6d13c1301b73ec8cb36f97e4ef19ac30e:922c64590222798bb761d5b6d8e72950

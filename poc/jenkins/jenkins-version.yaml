@@ -11,7 +11,7 @@ info:
   description: Obtain Jenkins Version
   tags: tech,jenkins,api
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/whoAmI/"

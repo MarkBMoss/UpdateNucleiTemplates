@@ -4,6 +4,7 @@ info:
   name: Pantheon Takeover Detection
   author: pdteam
   severity: high
+  description: Pantheon takeover was detected.
   reference:
     - https://github.com/EdOverflow/can-i-take-over-xyz/issues/24
     - https://medium.com/bug-bounty/how-i-took-over-several-stanford-subdomains-also-let-me-explain-you-the-pain-to-report-it-d84b08704be8
@@ -30,4 +31,8 @@ http:
         dsl:
           - '!contains(host,"apigee.io")'
 
-# digest: 4a0a00473045022031b79d2c999678a8ad72638ecec6bc9b47dfd3769588fbf99ebed2f464a254de022100d6e183af8823a1f3f175555d4024cd6cd11e340dc881eb83c4de845c15ee15a6:922c64590222798bb761d5b6d8e72950
+    extractors:
+      - type: dsl
+        dsl:
+          - cname
+# digest: 4a0a00473045022100cdc5a75ea5818afd10d2e10cb13e96410a37ce22a5ffb45ee2798bb25106e8ab0220720e33747a235f54cdb21f9204d5c6fd681cd88cdd3189905943fc3938f7ee96:922c64590222798bb761d5b6d8e72950

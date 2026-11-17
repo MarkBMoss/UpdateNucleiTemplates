@@ -4,9 +4,14 @@ info:
   name: Gitea Installer Exposure
   author: DhiyaneshDk
   severity: medium
+  description: Gitea is susceptible to the Installation page exposure due to misconfiguration.
+  classification:
+    cpe: cpe:2.3:a:gitea:gitea:*:*:*:*:*:*:*:*
   metadata:
     verified: true
     max-request: 1
+    vendor: gitea
+    product: gitea
     shodan-query: 'title:"Installation -  Gitea: Git with a cup of tea"'
   tags: misconfig,gitea,install
 
@@ -32,5 +37,4 @@ http:
       - type: status
         status:
           - 200
-
-# digest: 4b0a00483046022100e62e7db37f07f3689ec799eea9ef3f69b9233b073139bab413ebe48082ec8655022100a611ec56d044606e0209727f4184bb084bad910415d3a0b9b5de15fb21f24215:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a00483046022100bdc6d8d0134394485b5a27f1ee50906f41c860e0f8c8ce5f3d8ec8917fb2fbbb022100f59901adbee0a042917f92354a6f6a05a832b0af1315f196804acec0dbbd50a0:922c64590222798bb761d5b6d8e72950

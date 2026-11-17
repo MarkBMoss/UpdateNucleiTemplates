@@ -4,6 +4,7 @@ info:
   name: shopify takeover detection
   author: pdteam,philippedelteil,Imjust0
   severity: high
+  description: shopify takeover was detected.
   reference:
     - https://medium.com/@thebuckhacker/how-to-do-55-000-subdomain-takeover-in-a-blink-of-an-eye-a94954c3fc75
     - https://github.com/EdOverflow/can-i-take-over-xyz/issues/32
@@ -41,4 +42,8 @@ http:
           - '!contains(host,"shopify.com")'
         condition: and
 
-# digest: 490a00463044022067aea8e26a3f4c0d13f77755424f8818dd8f425ee383d39e0a6a93f9c8b4f21c02200eb1e3964c91d1b6e6cee1ff5828e6e635ae80d1db2472524ede6206ebb32f4e:922c64590222798bb761d5b6d8e72950
+    extractors:
+      - type: dsl
+        dsl:
+          - cname
+# digest: 4a0a0047304502210080de10bc6b082036af6209a9225eaeb477346ee902cbfd15fd71f1401022795202203b01ab3fb4526264ee2460414a29825e568662b01369b5f60d5637aad41b9d5b:922c64590222798bb761d5b6d8e72950
