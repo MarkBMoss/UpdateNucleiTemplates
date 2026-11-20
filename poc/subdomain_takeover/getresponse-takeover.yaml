@@ -4,7 +4,6 @@ info:
   name: Getresponse Takeover Detection
   author: pdteam
   severity: high
-  description: Getresponse takeover was detected.
   reference:
     - https://github.com/EdOverflow/can-i-take-over-xyz/issues/235
   metadata:
@@ -26,8 +25,4 @@ http:
         words:
           - 'With GetResponse Landing Pages, lead generation has never been easier'
 
-    extractors:
-      - type: dsl
-        dsl:
-          - cname
-# digest: 4b0a00483046022100b7bfe9376b582398d1e31da186585d5ec76b9cbd9bf5e33470cc47c6f9ac005b022100818b59a19d39a07652fcd7605cd82142a76af7bac86c440494b347a97b6d6d2c:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a0047304502204cff17b20198cbb48bdc9ae3023965a5ba12d2b129bb954ce7124403da269703022100c216d012c4293f947b5651400178836b07b307c889d8de04b69c7fb355d51145:922c64590222798bb761d5b6d8e72950

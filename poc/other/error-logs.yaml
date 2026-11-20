@@ -1,40 +1,51 @@
 id: error-logs
-info:
-  name: common error log files
-  author: geeknik,daffainfo
-  severity: low
-  tags: logs,exposure
 
-requests:
+info:
+  name: Common Error Log Files
+  author: geeknik,daffainfo,ELSFA7110,Hardik-Solanki
+  severity: low
+  description: Error log files were exposed.
+  metadata:
+    max-request: 29
+  tags: logs,exposure,error
+
+http:
   - method: GET
     path:
-      - "{{BaseURL}}/routes/error_log"
-      - "{{BaseURL}}/config/error_log"
-      - "{{BaseURL}}/error_log"
-      - "{{BaseURL}}/errors_log"
-      - "{{BaseURL}}/logs/error.log"
-      - "{{BaseURL}}/logs/errors.log"
-      - "{{BaseURL}}/log/error.log"
-      - "{{BaseURL}}/log/errors.log"
-      - "{{BaseURL}}/errors/errors.log"
-      - "{{BaseURL}}/error/error.log"
-      - "{{BaseURL}}/errors.log"
-      - "{{BaseURL}}/error.log"
-      - "{{BaseURL}}/error.txt"
-      - "{{BaseURL}}/errors.txt"
-      - "{{BaseURL}}/admin/logs/error.log"
-      - "{{BaseURL}}/admin/logs/errors.log"
-      - "{{BaseURL}}/admin/log/error.log"
-      - "{{BaseURL}}/admin/error.log"
-      - "{{BaseURL}}/admin/errors.log"
-      - "{{BaseURL}}/{{Hostname}}/error.log"
-      - "{{BaseURL}}/{{Hostname}}/errors.log"
-      - "{{BaseURL}}/MyErrors.log"
-      - "{{BaseURL}}/log.txt"
-      - "{{BaseURL}}/logs.txt"
-      - "{{BaseURL}}/log.log"
-      - "{{BaseURL}}/application/logs/application.log"
-      - "{{BaseURL}}/application/logs/default.log"
+      - "{{BaseURL}}{{paths}}"
+    payloads:
+      paths:
+        - "/php_errors.log"
+        - "/MyErrors.log"
+        - "/admin/error.log"
+        - "/admin/errors.log"
+        - "/admin/log/error.log"
+        - "/admin/logs/error.log"
+        - "/admin/logs/errors.log"
+        - "/application/logs/application.log"
+        - "/application/logs/default.log"
+        - "/config/error_log"
+        - "/error.log"
+        - "/error.txt"
+        - "/error/error.log"
+        - "/error_log"
+        - "/error_log.txt"
+        - "/errors.log"
+        - "/errors.txt"
+        - "/errors/errors.log"
+        - "/errors_log"
+        - "/log.log"
+        - "/log.txt"
+        - "/log/error.log"
+        - "/log/errors.log"
+        - "/logs.txt"
+        - "/logs/error.log"
+        - "/logs/errors.log"
+        - "/routes/error_log"
+        - "/{{Hostname}}/error.log"
+        - "/{{Hostname}}/errors.log"
+
+    stop-at-first-match: true
 
     matchers-condition: and
     matchers:
@@ -45,13 +56,19 @@ requests:
           - "script headers"
           - "Broken pipe"
           - "Array"
+          - "Exception"
+          - "Fatal"
+          - "FastCGI sent in stderr"
         condition: or
 
       - type: word
+        condition: or
         words:
           - text/plain
+          - application/octet-stream
         part: header
 
       - type: status
         status:
           - 200
+# digest: 4a0a00473045022017663309e37ec100676a46d12842accb8f0908cb56129107a1a384d9df046d4a0221009df958466d672148f1d17432e7710fc5c16529a2ba19bf4fdc1683730f099718:922c64590222798bb761d5b6d8e72950

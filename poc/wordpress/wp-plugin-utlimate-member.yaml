@@ -4,23 +4,18 @@ info:
   name: WordPress Plugin Ultimate Member
   author: pussycat0x
   severity: info
-  description: Searches for sensitive directories present in the wordpress-plugins plugin.
-  reference: https://www.exploit-db.com/ghdb/6998
-  tags: wordpress,listing
+  description: Searches for sensitive directories present in the ultimate-member plugin.
+  reference:
+    - https://www.exploit-db.com/ghdb/6998
+  metadata:
+    max-request: 1
+  tags: wordpress,listing,plugin,edb
 
-requests:
-  - payloads:
-      Subdomains: /home/mahmoud/Wordlist/AllSubdomains.txt
-    attack: sniper
-    threads: 100
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}/wp-content/plugins/ultimate-member/"
 
-    raw:
-      - |
-        GET /wp-content/plugins/ultimate-member/ HTTP/1.1
-        Host: {{Subdomains}}
-        User-Agent: Mozilla/5.0 (Windows NT 10.0; rv:68.0) Gecko/20100101 Firefox/68.0
-        Accept-Encoding: gzip, deflate
-        Accept: */*
     matchers-condition: and
     matchers:
       - type: word
@@ -32,3 +27,5 @@ requests:
       - type: status
         status:
           - 200
+
+# digest: 490a0046304402204c4323b95026911a4005d6f3f0b102f6433af983ce8fe765f6d432d63c6a0a050220236566ad8c6a574adea7f9284a722f3d35bc3d9dead02ffca74a66cf197cef7e:922c64590222798bb761d5b6d8e72950

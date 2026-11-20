@@ -4,14 +4,9 @@ info:
   name: PHPUnit Result Cache File Exposure
   author: DhiyaneshDk
   severity: low
-  description: PHPUnit cache file is exposed.
-  classification:
-    cpe: cpe:2.3:a:phpunit_project:phpunit:*:*:*:*:-:*:*:*
   metadata:
     verified: true
     max-request: 1
-    vendor: phpunit_project
-    product: phpunit
     shodan-query: ".phpunit.result.cache"
   tags: config,exposure,devops,files
 
@@ -29,4 +24,5 @@ http:
       - type: status
         status:
           - 200
-# digest: 4a0a00473045022100b29b381caeda237f3cd25c6813ff93318a71d616ff71844a5d5d184aca03bdb802205c93158dc3409a4b67a7ef5bbc987b575da290722d47ca9143d9dc26b877cee3:922c64590222798bb761d5b6d8e72950
+
+# digest: 4a0a0047304502210098cd1e478fc7f8a20bede35edf2aae2bc25e1c026c2678c1536c6b3e20f45a5f0220363f73c757e2817a146693539d7ad5ebbdda182c2a6d31c59f924a24324b8074:922c64590222798bb761d5b6d8e72950

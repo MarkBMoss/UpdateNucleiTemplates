@@ -4,7 +4,6 @@ info:
   name: Php User.ini Disclosure
   author: dhiyaneshDk
   severity: medium
-  description: PHP user.ini file is exposed.
   reference:
     - https://github.com/detectify/ugly-duckling/blob/master/modules/crowdsourced/php-user-ini-disclosure.json
   metadata:
@@ -33,4 +32,5 @@ http:
       - type: status
         status:
           - 200
-# digest: 4a0a0047304502201308140ac67cf9363e4965754ee8ae9ddb264cbcd4d8cda9243fcc6a15dca2ce022100ce883363410f689cd5e02c7a54c0041796f58134993751815650847b24078002:922c64590222798bb761d5b6d8e72950
+
+# digest: 490a0046304402204032d3c4c015fc11f7019b6fc1f2cde28ccc0944712c5fa09aad3aa16a51a5e202201de193305284cbd651a3c22161f893de6f28daaf2e83d34dcacf06ffd0b94161:922c64590222798bb761d5b6d8e72950

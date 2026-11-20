@@ -9,7 +9,7 @@ variables:
  a1: "{{to_lower(rand_base(5))}}"
 
 
-http:
+requests:
   - method: GET
     path:
       - "{{BaseURL}}/?x={{a1}}"

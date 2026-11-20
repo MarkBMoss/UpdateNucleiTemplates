@@ -4,14 +4,9 @@ info:
   name: Atlassian Bamboo Setup Wizard
   author: pussycat0x
   severity: info
-  description: Atlassian Bamboo is susceptible to the Installation page exposure due to misconfiguration.
-  classification:
-    cpe: cpe:2.3:a:atlassian:bamboo:*:*:*:*:*:*:*:*
   metadata:
     verified: true
     max-request: 1
-    vendor: atlassian
-    product: bamboo
     shodan-query: title:"Bamboo setup wizard"
   tags: misconfig,atlassian,bamboo,setup,installer
 
@@ -36,4 +31,5 @@ http:
       - type: status
         status:
           - 200
-# digest: 4a0a00473045022100b4de40e18dc1894278a42bd52ecaff2ed9642af086c9f30db6abe4f02778fb0f0220239c0b6233feda473c0158a8c58a3cf4b7f9569227bc59a5e7d0913fb182f6ef:922c64590222798bb761d5b6d8e72950
+
+# digest: 4a0a004730450221009caeb0ecb0d83c552a725ab2c65492d6103c13df46d4c45b449b1fb7bbff3ab7022023c07fd23a3444e974349b4741ee0d1b5a1ea0d79ebe7518004d6547995c7269:922c64590222798bb761d5b6d8e72950

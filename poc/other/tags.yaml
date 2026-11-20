@@ -6,6 +6,8 @@ adobe-experience-manager:
   - - aem
 adobe-magento:
   - - magento
+alibaba-anyproxy:
+  - - anyproxy
 alibaba-fastjson:
   - - fastjson
 alibaba-nacos:
@@ -38,8 +40,9 @@ apache-guacamole:
 apache-hadoop:
   - - hadoop
 apache-http:
-  - - apache
-    - mod-proxy
+  - - mod-proxy
+  - - mod-jk
+    - apache
 apache-nifi:
   - - nifi
 apache-ofbiz:
@@ -65,17 +68,22 @@ apache-superset:
   - - superset
 apache-tomcat:
   - - tomcat
+    - apache
 apollo-adminservice:
   - - apollo
 appwrite:
   - - appwrite
 argocd:
   - - argocd
+aspcms:
+  - - aspcms
 atlassian-jira:
   - - jira
   - - atlassian
 avtech-video-web-server:
   - - avtech
+bitbucket:
+  - - bitbucket
 bt-control-pane:
   - - bt
 bullwark:
@@ -85,6 +93,8 @@ cacti:
 caucho-resin:
   - - caucho
     - resin
+chamilo:
+  - - chamilo
 citrix-access-gateway:
   - - citrix
 coldfusion:
@@ -101,6 +111,8 @@ dedecms:
   - - dedecms
 dell-idrac:
   - - idrac
+discuz:
+  - - discuz
 django:
   - - django
 doccms:
@@ -117,6 +129,8 @@ ecology-oa:
   - - ecology
 ecshop:
   - - ecshop
+elastic:
+  - - elasticsearch
 elastichd-dashboard:
   - - elastic
 elasticsearch:
@@ -127,6 +141,9 @@ ewebs:
   - - ewebs
 exponent-cms:
   - - exponentcms
+expressjs:
+  - - expressjs
+  - - nodejs
 eyou-email-system:
   - - eyou
   - - eyoumail
@@ -162,6 +179,8 @@ gogs:
   - - gogs
 grafana:
   - - grafana
+gravcms:
+  - - grav
 h3c-imc:
   - - h3c-imc
 haproxy-report:
@@ -206,6 +225,8 @@ jupyter-notebook:
   - - jupyter
 jupyterhub:
   - - jupyterhub
+kafka-center:
+  - - kafka
 kafka-manager:
   - - kafka
 kibana:
@@ -216,6 +237,8 @@ kingdee:
   - - kingdee
 kkfileview:
   - - kkFileView
+kong:
+  - - kong
 kubernetes:
   - - kubernetes
   - - k8
@@ -225,8 +248,12 @@ lansweeper:
   - - lansweeper
 laravel-framework:
   - - laravel
+lexmark:
+  - - lexmark
 lighttpd:
   - - lighttpd
+lucee:
+  - - lucee
 maccms:
   - - maccmsv10
   - - maccms
@@ -234,6 +261,10 @@ manageengine-admanager-plus:
   - - admanager
 mcms:
   - - mcms
+metabase:
+  - - metabase
+metersphere:
+  - - metersphere
 metinfo:
   - - metinfo
 microsoft-exchange:
@@ -244,6 +275,8 @@ minio-browser:
   - - minio
 mlflow:
   - - mlflow
+mobileiron-mdm:
+  - - mobileiron
 mongodb:
   - - mongodb
 moodle:
@@ -262,6 +295,8 @@ nextjs:
   - - nextjs
 nexus-repository-manager:
   - - nexus
+nginx-webui:
+  - - nginxwebui
 nps:
   - - nps
 odoo:
@@ -274,12 +309,18 @@ oracle-weblogic:
   - - weblogic
 panabit-gateway:
   - - panabit
+panabit-ixcache:
+  - - ixcache
 papercut:
   - - papercut
 parallels-plesk-panel:
   - - plesk
 phpmyadmin:
   - - phpmyadmin
+phpok:
+  - - phpok
+phpstudy:
+  - - phpstudy
 phpwiki:
   - - phpwiki
 portainer:
@@ -290,6 +331,10 @@ powerjob:
   - - powerjob
 prometheus:
   - - prometheus
+pulsesecure-ssl-vpn:
+  - - pulsesecure
+pypiserver:
+  - - pypiserver
 qcubed-development-framework:
   - - qcubed
 qizhi-fortress-aircraft:
@@ -315,6 +360,8 @@ saltstack:
 sangfor-edr:
   - - 深信服终端检测响应平台-sangfor-edr
   - - sangfor
+sentinel-dashboard:
+  - - sentinel
 showdoc:
   - - showdoc
 sitecore:
@@ -335,6 +382,8 @@ spark:
   - - spark
 splunk:
   - - splunk
+spring-boot-admin:
+  - - springboot
 spring-cloud-netflix:
   - - springcloud
 spring-framework:
@@ -409,6 +458,8 @@ xiuno:
   - - xiuno
 xstream:
   - - xstream
+xwiki:
+  - - xwiki
 xxl-job:
   - - xxljob
 yapi:
@@ -417,6 +468,9 @@ yii-framework:
   - - yii
 yonyou-erp-nc:
   - - erp-nc
+yonyou-nc-cloud:
+  - - yonyou-nc-cloud
+    - yonyou-nc-cloud
 yonyou-seeyon-oa:
   - - seeyon
   - - zhiyuan
@@ -434,3 +488,5 @@ zzcms:
   - - zzcms
 zzzcms:
   - - zzzcms
+红帆ioffice:
+  - - hongfan

